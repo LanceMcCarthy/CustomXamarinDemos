@@ -10,18 +10,17 @@ namespace RangeSelectionTest.Portable
         public MainPage()
         {
             InitializeComponent();
-
-            SelectionEffect.StartDate = DateTime.Today.AddDays(-3);
-            SelectionEffect.EndDate = DateTime.Today;
+            
+            SelectionEffect.StartDate = radCalendar.DisplayDate;
+            SelectionEffect.EndDate = radCalendar.DisplayDate;
         }
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
             incrementer++;
-
-            SelectionEffect.StartDate = DateTime.Today.AddDays(incrementer - 3);
-            SelectionEffect.EndDate = DateTime.Today.AddDays(incrementer);
-
+            
+            SelectionEffect.StartDate = radCalendar.DisplayDate;
+            SelectionEffect.EndDate = radCalendar.DisplayDate.AddDays(incrementer);
         }
     }
 }
