@@ -41,8 +41,9 @@ namespace CustomSeriesLabels.iOS.Effects
             series.Style.PointLabelStyle.ClipMode = TKChartPointLabelClipMode.Hidden;
             series.Style.PointLabelStyle.TextOrientation = TKChartPointLabelOrientation.Horizontal;
             series.Style.PointLabelStyle.TextColor = UIColor.Red;
+            series.Style.ShapeMode = TKChartSeriesStyleShapeMode.AlwaysShow; // override default behavior and renders first and last datapoint
 
-            return new TKChartPointLabel(point, series, String.Format("{0}", point.DataYValue));
+            return new TKChartPointLabel(point, series, $"{point.DataYValue}");
         }
     }
 }
