@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RenderImage.Portable"
+             xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             xmlns:input="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             x:Class="RenderImage.Portable.MainPage">
+
+    <Grid BackgroundColor="AntiqueWhite">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label x:Name="TitleLabel"
+               Text="Render Views as PNG"
+               HorizontalOptions="Center"
+               FontSize="Large"
+               Grid.Row="0" />
+
+        <input:RadButton Text="Render All as PNG"
+                         TextColor="White"
+                         BorderThickness="2"
+                         BorderColor="ForestGreen"
+                         Margin="5"
+                         Grid.Row="1"
+                         Clicked="Button_OnClicked" />
+
+        <input:RadButton Text="Render UI Cropped (enter crop rect below)"
+                         TextColor="White"
+                         BorderThickness="2"
+                         BorderColor="DarkOrange"
+                         Margin="5"
+                         Grid.Row="2"
+                         Clicked="Button2_OnClicked" />
+
+        <Grid Grid.Row="3"
+              Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <input:RadEntry x:Name="XEntry"
+                            WatermarkText="X"
+                            Grid.Column="0" />
+            <input:RadEntry x:Name="YEntry"
+                            WatermarkText="Y"
+                            Grid.Column="1" />
+            <input:RadEntry x:Name="WidthEntry"
+                            WatermarkText="Width"
+                            Grid.Column="2" />
+            <input:RadEntry x:Name="HeightEntry"
+                            WatermarkText="Height"
+                            Grid.Column="3" />
+        </Grid>
+
+        <Grid x:Name="ResultGrid"
+              BackgroundColor="White"
+              Padding="10"
+              Grid.Row="4">
+
+        </Grid>
+    </Grid>
+</ContentPage>
