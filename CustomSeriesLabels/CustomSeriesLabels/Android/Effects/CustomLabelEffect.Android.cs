@@ -4,6 +4,7 @@ using Com.Telerik.Widget.Chart.Engine.ElementTree;
 using Com.Telerik.Widget.Chart.Visualization.CartesianChart;
 using Com.Telerik.Widget.Chart.Visualization.CartesianChart.Series.Categorical;
 using Com.Telerik.Widget.Chart.Visualization.Common;
+using Telerik.XamarinForms.Common.Android;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
@@ -53,6 +54,13 @@ namespace CustomSeriesLabels.Android.Effects
             base.RenderLabel(p0, p1);
             DataPoint dataPoint = (DataPoint)p1;
             p0.DrawCircle((float)dataPoint.CenterX, (float)dataPoint.CenterY, 10, new Paint() { Color = Color.Red });
+        }
+
+        protected override string GetLabelText(DataPoint p0)
+        {
+            var convertibleObject = (ConvertibleObject<object>)p0.DataItem;
+            var categoricalData = (CustomSeriesLabels.Portable.Models.CategoricalData)convertibleObject.Instance;
+            return categoricalData.Label;
         }
     }
 }

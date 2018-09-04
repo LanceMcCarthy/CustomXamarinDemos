@@ -4,10 +4,11 @@
              xmlns:local="clr-namespace:CustomSeriesLabels.Portable"
              xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
              xmlns:effects="clr-namespace:CustomSeriesLabels.Portable.Effects"
+             xmlns:viewModels="clr-namespace:CustomSeriesLabels.Portable.ViewModels;assembly=CustomSeriesLabels.Portable"
              x:Class="CustomSeriesLabels.Portable.MainPage">
 
     <ContentPage.BindingContext>
-        <local:CategoricalViewModel />
+        <viewModels:CategoricalViewModel />
     </ContentPage.BindingContext>
 
     <Grid>
@@ -32,7 +33,7 @@
                         <telerikChart:PropertyNameDataPointBinding PropertyName="Category" />
                     </telerikChart:SplineAreaSeries.CategoryBinding>
                     <telerikChart:SplineAreaSeries.LabelBinding>
-                        <telerikChart:PropertyNameDataPointBinding PropertyName="Category" />
+                        <telerikChart:PropertyNameDataPointBinding PropertyName="Label" />
                     </telerikChart:SplineAreaSeries.LabelBinding>
                 </telerikChart:SplineAreaSeries>
             </telerikChart:RadCartesianChart.Series>
