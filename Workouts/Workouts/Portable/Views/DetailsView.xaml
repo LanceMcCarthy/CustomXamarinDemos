@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:common="clr-namespace:Workouts.Portable.Common;assembly=Workouts.Portable"
+             xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             x:Class="Workouts.Portable.Views.DetailsView">
+
+    <Grid Padding="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackLayout >
+            <Label Text="{Binding SelectedExercise.Title}"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center" 
+                   Margin="0,20"/>
+            <Label Text="{Binding SelectedExercise.ExerciseType}"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,0,0,10"/>
+        </StackLayout>
+
+        <primitives:RadAccordion x:Name="accordion"
+                                 Grid.Row="1">
+            <primitives:AccordionItem HeaderText="Animation" 
+                                      IsExpanded="True">
+                <primitives:AccordionItem.Content>
+                    <Grid HeightRequest="300">
+                        <forms:CachedImage x:Name="TensionImage"
+                                           Source="{Binding SelectedExercise.TensionImageUrl}"
+                                           Margin="5" />
+
+                        <forms:CachedImage x:Name="RelaxationImage"
+                                           IsVisible="False"
+                                           Source="{Binding SelectedExercise.RelaxationImageUrl}"
+                                           Margin="5" />
+                    </Grid>
+                </primitives:AccordionItem.Content>
+            </primitives:AccordionItem>
+            <primitives:AccordionItem HeaderText="Summary">
+                <primitives:AccordionItem.Content>
+                    <Grid Margin="10">
+                        <Label Text="{Binding SelectedExercise.Primer}"
+                               LineBreakMode="WordWrap" />
+                    </Grid>
+                </primitives:AccordionItem.Content>
+            </primitives:AccordionItem>
+            <primitives:AccordionItem HeaderText="Workout Steps">
+                <primitives:AccordionItem.Content>
+                    <ListView ItemsSource="{Binding SelectedExercise.Steps}"
+                              Margin="10" />
+                </primitives:AccordionItem.Content>
+            </primitives:AccordionItem>
+            <primitives:AccordionItem HeaderText="Primary Muscle Groups" >
+                <primitives:AccordionItem.Content>
+                    <ListView ItemsSource="{Binding SelectedExercise.PrimaryMuscleGroups}"
+                              Margin="10" />
+                </primitives:AccordionItem.Content>
+            </primitives:AccordionItem>
+            <primitives:AccordionItem HeaderText="Secondary Muscle Groups" >
+                <primitives:AccordionItem.Content>
+                    <ListView ItemsSource="{Binding SelectedExercise.SecondaryMuscleGroups}"
+                              Margin="10" />
+                </primitives:AccordionItem.Content>
+            </primitives:AccordionItem>
+            <primitives:AccordionItem HeaderText="Tips" >
+                <primitives:AccordionItem.Content>
+                    <ListView ItemsSource="{Binding SelectedExercise.Tips}"
+                              Margin="10"/>
+                </primitives:AccordionItem.Content>
+            </primitives:AccordionItem>
+            <primitives:AccordionItem HeaderText="Equipment" >
+                <primitives:AccordionItem.Content>
+                    <ListView ItemsSource="{Binding SelectedExercise.Equipment}"
+                              Margin="10" />
+                </primitives:AccordionItem.Content>
+            </primitives:AccordionItem>
+        </primitives:RadAccordion>
+
+        <Button Text="close"
+                Command="{Binding GoToViewCommand}"
+                CommandParameter="{x:Static common:ViewType.Home}"
+                Margin="5" 
+                Grid.Row="2"/>
+    </Grid>
+</ContentView>
