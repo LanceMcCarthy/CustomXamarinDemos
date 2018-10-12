@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             xmlns:input="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             x:Class="TelerikThemeEditor.Portable.Views.EditPage"
+             Title="Edit Color">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label Text="{Binding Title}"
+               HorizontalOptions="Center"
+               FontSize="Large"
+               Grid.Row="0" />
+        <Label Text="{Binding ThemeKey}"
+               FontSize="Medium"
+               HorizontalOptions="Center"
+               Grid.Row="1" />
+        <Label Text="{Binding ControlName}"
+               FontSize="Medium"
+               HorizontalOptions="Center"
+               Grid.Row="2" />
+
+        <StackLayout VerticalOptions="Center"
+                     Grid.Row="3">
+            <Label Text="Original Color"
+                   HorizontalOptions="Center" />
+            <primitives:RadBorder BorderColor="Black"
+                                  BackgroundColor="{Binding OriginalThemeColor}"
+                                  HeightRequest="50"
+                                  Margin="5" />
+
+            <Label Text="New Color"
+                   HorizontalOptions="Center"
+                   Margin="0,5,0,0" />
+            <!-- TODO - Implement a ColorPicker when this is tapped -->
+            <primitives:RadBorder BorderColor="Black"
+                                  BackgroundColor="{Binding SelectedThemeColor}"
+                                  HeightRequest="50"
+                                  Margin="5" />
+        </StackLayout>
+
+        <input:RadButton Text="Save"
+                         Clicked="SaveButton_OnClicked"
+                         Grid.Row="4" />
+        <input:RadButton Text="Cancel"
+                         Clicked="CancelButton_OnClicked"
+                         Grid.Row="5" />
+    </Grid>
+</ContentPage>

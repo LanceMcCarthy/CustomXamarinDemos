@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TelerikThemeEditor.Portable"
+             xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
+             xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             xmlns:data="clr-namespace:Telerik.XamarinForms.Common.Data;assembly=Telerik.XamarinForms.Common"
+             xmlns:viewModels="clr-namespace:TelerikThemeEditor.Portable.ViewModels;assembly=TelerikThemeEditor.Portable"
+             x:Class="TelerikThemeEditor.Portable.Views.MainPage"
+             Title="Home">
+
+    <ContentPage.BindingContext>
+        <viewModels:MainViewModel x:Name="ViewModel"/>
+    </ContentPage.BindingContext>
+
+    <Grid>
+        <telerikGrid:RadDataGrid x:Name="DataGrid"
+                                 ItemsSource="{Binding ThemeColors}"
+                                 SelectionChanged="DataGrid_OnSelectionChanged"
+                                 AutoGenerateColumns="False">
+            <telerikGrid:RadDataGrid.GroupDescriptors>
+                <data:PropertyGroupDescriptor PropertyName="ControlName" />
+            </telerikGrid:RadDataGrid.GroupDescriptors>
+            <telerikGrid:RadDataGrid.Columns>
+                <telerikGrid:DataGridTemplateColumn HeaderText="Color">
+                    <telerikGrid:DataGridTemplateColumn.CellContentTemplate>
+                        <DataTemplate>
+                            <primitives:RadBorder BorderColor="Black"
+                                                  BackgroundColor="{Binding SelectedThemeColor}"
+                                                  WidthRequest="50"
+                                                  HeightRequest="50" />
+                        </DataTemplate>
+                    </telerikGrid:DataGridTemplateColumn.CellContentTemplate>
+                </telerikGrid:DataGridTemplateColumn>
+                <telerikGrid:DataGridTextColumn HeaderText="Title"
+                                                PropertyName="Title" />
+                <telerikGrid:DataGridTextColumn HeaderText="Theme Key"
+                                                PropertyName="ThemeKey" />
+            </telerikGrid:RadDataGrid.Columns>
+        </telerikGrid:RadDataGrid>
+
+        <primitives:RadBusyIndicator IsBusy="{Binding IsBusy}"
+                                     IsVisible="{Binding IsBusy}">
+            <primitives:RadBusyIndicator.BusyContent>
+                <Label Text="{Binding IsBusyMessage}"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"/>
+            </primitives:RadBusyIndicator.BusyContent>
+        </primitives:RadBusyIndicator>
+    </Grid>
+</ContentPage>
