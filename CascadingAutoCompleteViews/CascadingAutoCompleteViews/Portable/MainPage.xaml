@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             x:Class="CascadingAutoCompleteViews.Portable.MainPage">
+
+    <Grid>
+        <StackLayout>
+            <telerikInput:RadAutoCompleteView x:Name="CountriesAcv"
+                                              Watermark="filter countries..."
+                                              SuggestionViewHeight="300"
+                                              SuggestionItemSelected="CountriesAcv_OnSuggestionItemSelected"
+                                              Focused="CountriesAcv_OnFocused" />
+
+            <telerikInput:RadAutoCompleteView x:Name="StatesAcv"
+                                              Watermark="filter states..."
+                                              IsEnabled="False"
+                                              SuggestionViewHeight="300"
+                                              SuggestionItemSelected="StatesAcv_OnSuggestionItemSelected"
+                                              Focused="StatesAcv_OnFocused" />
+
+            <telerikInput:RadAutoCompleteView x:Name="CityAcv"
+                                              SuggestionViewHeight="300"
+                                              Watermark="filter cities..."
+                                              IsEnabled="False"
+                                              Focused="CityAcv_OnFocused" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
