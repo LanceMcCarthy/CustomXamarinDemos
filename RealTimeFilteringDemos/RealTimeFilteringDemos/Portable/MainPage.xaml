@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             xmlns:listView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
+             x:Class="RealTimeFilteringDemos.Portable.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <telerikInput:RadEntry x:Name="SearchBox"
+                               WatermarkText="search people..."
+                               TextChanged="SearchBox_OnTextChanged"/>
+
+        <telerikDataControls:RadListView x:Name="PeopleListView" 
+                                         Grid.Row="1">
+            <telerikDataControls:RadListView.ItemTemplate>
+                <DataTemplate>
+                    <listView:ListViewTextCell Text="{Binding Name}" />
+                </DataTemplate>
+            </telerikDataControls:RadListView.ItemTemplate>
+        </telerikDataControls:RadListView>
+    </Grid>
+</ContentPage>
