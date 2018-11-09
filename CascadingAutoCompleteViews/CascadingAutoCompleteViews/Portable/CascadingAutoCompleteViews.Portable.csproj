@@ -10,6 +10,7 @@
         <DebugType>pdbonly</DebugType>
     </PropertyGroup>
     <ItemGroup>
+        <PackageReference Include="CommonHelpers" Version="1.0.7" />
         <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
         <PackageReference Include="SkiaSharp" Version="1.59.3" />
         <PackageReference Include="SkiaSharp.Views.Forms " Version="1.59.3" />
@@ -59,5 +60,10 @@
         <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
             <DependentUpon>*.xaml</DependentUpon>
         </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Update="MvvmPage.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
     </ItemGroup>
 </Project>

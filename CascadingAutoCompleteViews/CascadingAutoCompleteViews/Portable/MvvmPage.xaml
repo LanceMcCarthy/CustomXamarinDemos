@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             xmlns:behaviors="clr-namespace:CascadingAutoCompleteViews.Portable.Behaviors;assembly=CascadingAutoCompleteViews.Portable"
+             xmlns:viewModels="clr-namespace:CascadingAutoCompleteViews.Portable.ViewModels;assembly=CascadingAutoCompleteViews.Portable"
+             x:Class="CascadingAutoCompleteViews.Portable.MvvmPage">
+
+    <ContentPage.BindingContext>
+        <viewModels:ViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+
+    <Grid>
+        <StackLayout>
+            <!-- The Text property is two-way bound to a view model property. -->
+            <telerikInput:RadAutoCompleteView x:Name="CountriesAcv"
+                                              ItemsSource="{Binding Countries}"
+                                              Text="{Binding SelectedCountry, Mode=TwoWay}"
+                                              IsEnabled="{Binding IsCountriesAvcEnabled}"
+                                              Watermark="filter countries..."
+                                              SuggestionViewHeight="300">
+                <telerikInput:RadAutoCompleteView.Behaviors>
+                    <!-- The Focused event is invoked by ViewModel command which calls the AutoCompleteView.ShowSuggestions method  -->
+                    <behaviors:EventToCommandBehavior EventName="Focused"
+                                                      Command="{Binding AutoCompleteFocusedCommand}"
+                                                      CommandParameter="{x:Reference CountriesAcv}"/>
+                </telerikInput:RadAutoCompleteView.Behaviors>
+            </telerikInput:RadAutoCompleteView>
+
+            <telerikInput:RadAutoCompleteView x:Name="StatesAcv"
+                                              ItemsSource="{Binding States}"
+                                              Text="{Binding SelectedState, Mode=TwoWay}"
+                                              IsEnabled="{Binding IsStatesAvcEnabled}"
+                                              Watermark="filter states..."
+                                              SuggestionViewHeight="300">
+                <telerikInput:RadAutoCompleteView.Behaviors>
+                    <behaviors:EventToCommandBehavior EventName="Focused"
+                                                      Command="{Binding AutoCompleteFocusedCommand}"
+                                                      CommandParameter="{x:Reference StatesAcv}" />
+                </telerikInput:RadAutoCompleteView.Behaviors>
+            </telerikInput:RadAutoCompleteView>
+
+            <telerikInput:RadAutoCompleteView x:Name="CitiesAcv"
+                                              ItemsSource="{Binding Cities}"
+                                              Text="{Binding SelectedCity, Mode=TwoWay}"
+                                              IsEnabled="{Binding IsCitiesAvcEnabled}"
+                                              SuggestionViewHeight="300"
+                                              Watermark="filter cities...">
+                <telerikInput:RadAutoCompleteView.Behaviors>
+                    <behaviors:EventToCommandBehavior EventName="Focused"
+                                                      Command="{Binding AutoCompleteFocusedCommand}"
+                                                      CommandParameter="{x:Reference CitiesAcv}" />
+                </telerikInput:RadAutoCompleteView.Behaviors>
+            </telerikInput:RadAutoCompleteView>
+        </StackLayout>
+    </Grid>
+</ContentPage>
