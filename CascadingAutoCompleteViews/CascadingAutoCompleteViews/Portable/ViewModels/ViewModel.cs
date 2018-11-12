@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using CascadingAutoCompleteViews.Portable.Helpers;
 using CascadingAutoCompleteViews.Portable.Interfaces;
 using CommonHelpers.Common;
@@ -125,7 +126,8 @@ namespace CascadingAutoCompleteViews.Portable.ViewModels
 
         private void ExecuteAutoCompleteFocused(object obj)
         {
-            (obj as RadAutoCompleteView)?.ShowSuggestions();
+            var acv = obj as RadAutoCompleteView;
+            acv?.ShowSuggestions();
         }
     }
 }
