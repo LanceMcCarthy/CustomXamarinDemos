@@ -1,5 +1,4 @@
 ﻿using System.Collections.ObjectModel;
-using System.Threading.Tasks;
 using CascadingAutoCompleteViews.Portable.Helpers;
 using CascadingAutoCompleteViews.Portable.Interfaces;
 using CommonHelpers.Common;
@@ -14,9 +13,9 @@ namespace CascadingAutoCompleteViews.Portable.ViewModels
 
         private ObservableCollection<string> _states;
         private ObservableCollection<string> _cities;
-        private string _selectedCountry;
-        private string _selectedState;
-        private string _selectedCity;
+        private string _selectedCountry = "";
+        private string _selectedState = "";
+        private string _selectedCity = "";
         private bool _isCountriesAvcEnabled;
         private bool _isStatesAvcEnabled;
         private bool _isCitiesAvcEnabled;
