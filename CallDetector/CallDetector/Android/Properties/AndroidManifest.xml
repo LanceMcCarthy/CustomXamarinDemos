@@ -3,5 +3,10 @@
 	<uses-sdk android:minSdkVersion="15" />
 	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 	<uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+  <uses-permission android:name="android.permission.PROCESS_INCOMING_CALLS" />
+  <uses-permission android:name="android.permission.CALL_PHONE" />
+
+  <!-- This was added in API 28 https://developer.android.com/reference/android/telecom/TelecomManager#endCall() -->
+  <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
 	<application></application>
 </manifest>

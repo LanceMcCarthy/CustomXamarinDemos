@@ -8,6 +8,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <ScrollView>
@@ -15,12 +16,19 @@
                    LineBreakMode="WordWrap" />
         </ScrollView>
 
+        <Button x:Name="DeclineCallButton"
+                Text="Decline"
+                IsEnabled="False"
+                Clicked="DeclineCallButton_OnClicked"
+                Margin="5"
+                Grid.Row="1" />
+
         <Button x:Name="StartStopButton"
                 Text="Start/Stop CallManager"
                 Clicked="StartStopButton_OnClicked"
                 Margin="5"
                 TextColor="White"
                 BackgroundColor="Green"
-                Grid.Row="1"/>
+                Grid.Row="2"/>
     </Grid>
 </ContentPage>

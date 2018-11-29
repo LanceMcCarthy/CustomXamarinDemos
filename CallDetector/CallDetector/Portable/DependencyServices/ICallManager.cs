@@ -10,5 +10,7 @@ namespace CallDetector.Portable.DependencyServices
         void StartService();
 
         void StopService();
+
+        void DeclineCall();
     }
 }

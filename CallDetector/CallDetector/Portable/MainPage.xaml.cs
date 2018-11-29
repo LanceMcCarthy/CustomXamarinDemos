@@ -26,16 +26,25 @@ namespace CallDetector.Portable
             {
                 DependencyService.Get<ICallManager>().StopService();
                 StartStopButton.BackgroundColor = Color.Green;
+                DeclineCallButton.IsEnabled = false;
+
                 OutputLabel.Text += $"Service Stopped{Environment.NewLine}";
             }
             else
             {
                 DependencyService.Get<ICallManager>().StartService();
                 StartStopButton.BackgroundColor = Color.DarkRed;
+                DeclineCallButton.IsEnabled = true;
+
                 OutputLabel.Text += $"Service Started{Environment.NewLine}";
             }
 
             _isRunning = !_isRunning;
+        }
+
+        private void DeclineCallButton_OnClicked(object sender, EventArgs e)
+        {
+            DependencyService.Get<ICallManager>().DeclineCall();
         }
     }
 }

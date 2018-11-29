@@ -11,13 +11,10 @@ namespace CallDetector.Android.Listeners
         public CustomPhoneStateListener(EventHandler<CallStateChangedEventArgs> handler)
         {
             this._stateChangedHandler = handler;
-            System.Diagnostics.Debug.WriteLine("CustomPhoneStateListener Instantiated");
         }
 
         public override void OnCallStateChanged(CallState state, string incomingNumber)
         {
-            System.Diagnostics.Debug.WriteLine($"CustomPhoneStateListener OnCallStateChanged: {state}, {incomingNumber}");
-
             _stateChangedHandler?.Invoke(this, new CallStateChangedEventArgs
             {
                 CallState = state.ToString(),
