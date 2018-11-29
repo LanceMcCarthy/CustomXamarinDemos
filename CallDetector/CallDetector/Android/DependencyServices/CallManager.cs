@@ -1,7 +1,9 @@
 ﻿using System;
 using Android.App;
 using Android.Content;
+using Android.OS;
 using Android.Runtime;
+using Android.Telecom;
 using Android.Telephony;
 using CallDetector.Android.Listeners;
 using CallDetector.Portable.Common;
@@ -34,23 +36,37 @@ namespace CallDetector.Android.DependencyServices
             _telephonyManager = null;
             _listener = null;
         }
-        
-        public void DeclineCall()
+
+        public bool DeclineCall()
         {
-            // Credit https://stackoverflow.com/a/17538956/1406210
-            var telephonyManagerGetITelephony = JNIEnv.GetMethodID(
-                _telephonyManager.Class.Handle,
-                "getITelephony",
-                "()Lcom/android/internal/telephony/ITelephony;");
+            var success = false;
 
-            var telephony = JNIEnv.CallObjectMethod(_telephonyManager.Handle, telephonyManagerGetITelephony);
-            var telephonyClass = JNIEnv.GetObjectClass(telephony);
-            var telephonyEndCallMethod = JNIEnv.GetMethodID(telephonyClass, "endCall", "()Z");
+            if (Build.VERSION.SdkInt >= BuildVersionCodes.P)
+            {
+                //Available in API 28, found it here https://developer.android.com/reference/android/telecom/TelecomManager#endCall()
+                // permissions required ANSWER_PHONE_CALLS
+                var tm = (TelecomManager)Application.Context.GetSystemService(Context.TelecomService);
+                success = tm.EndCall();
+            }
+            else
+            {
+                // Credit https://stackoverflow.com/a/17538956/1406210
+                var telephonyManagerGetITelephony = JNIEnv.GetMethodID(
+                    _telephonyManager.Class.Handle,
+                    "getITelephony",
+                    "()Lcom/android/internal/telephony/ITelephony;");
 
-            JNIEnv.CallBooleanMethod(telephony, telephonyEndCallMethod);
+                var telephony = JNIEnv.CallObjectMethod(_telephonyManager.Handle, telephonyManagerGetITelephony);
+                var telephonyClass = JNIEnv.GetObjectClass(telephony);
+                var telephonyEndCallMethod = JNIEnv.GetMethodID(telephonyClass, "endCall", "()Z");
 
-            JNIEnv.DeleteLocalRef(telephony);
-            JNIEnv.DeleteLocalRef(telephonyClass);
+                success = JNIEnv.CallBooleanMethod(telephony, telephonyEndCallMethod);
+
+                JNIEnv.DeleteLocalRef(telephony);
+                JNIEnv.DeleteLocalRef(telephonyClass);
+            }
+
+            return success;
         }
     }
 }
