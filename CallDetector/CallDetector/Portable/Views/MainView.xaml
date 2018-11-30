@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:listView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             xmlns:helpers="clr-namespace:CallDetector.Portable.Helpers;assembly=CallDetector.Portable"
+             xmlns:input="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             x:Class="CallDetector.Portable.Views.MainView">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ScrollView>
+            <Label x:Name="OutputLabel"
+                   Text="{Binding Status}"
+                   LineBreakMode="WordWrap" />
+        </ScrollView>
+
+        <!-- TODO uncomment and work on this once logs are created for calls-->
+
+        <dataControls:RadListView x:Name="radListView"
+                                  ItemsSource="{Binding Logs}"
+                                  SelectionMode="None"
+                                  Style="{StaticResource LogFileListViewStyle}">
+            <dataControls:RadListView.ItemTemplate>
+                <DataTemplate>
+                    <listView:ListViewTemplateCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="3*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <primitives:RadBorder Style="{StaticResource RoundImageBorderStyle}"
+                                                  Grid.Column="0">
+                                <Image Source="{helpers:ImageResource Document.png}"
+                                       Style="{StaticResource LogFileImageStyle}" />
+                            </primitives:RadBorder>
+
+                            <Label Text="{Binding FileName}"
+                                   Style="{StaticResource LogFileNameLabelStyle}"
+                                   Grid.Column="1" />
+
+                            <input:RadButton BackgroundImage="{helpers:ImageResource RemoveAttachment.png}"
+                                             Command="{Binding BindingContext.DeleteLogFileCommand, Source={x:Reference radListView}}"
+                                             CommandParameter="{Binding }"
+                                             Style="{StaticResource LogFileButtonStyle}"
+                                             Grid.Column="2" />
+                        </Grid>
+                    </listView:ListViewTemplateCell>
+                </DataTemplate>
+            </dataControls:RadListView.ItemTemplate>
+        </dataControls:RadListView>
+
+        <Button x:Name="DeclineCallButton"
+                Text="Decline"
+                Command="{Binding DeclineCallCommand}"
+                IsEnabled="{Binding IsServiceRunning}"
+                Margin="5"
+                Grid.Row="1" />
+
+        <Button x:Name="StartStopButton"
+                Text="Start/Stop CallManager"
+                Command="{Binding StartStopServiceCommand}"
+                Margin="5"
+                TextColor="White"
+                BackgroundColor="{Binding ServiceButtonColor}"
+                Grid.Row="2" />
+    </Grid>
+</ContentView>

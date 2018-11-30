@@ -1,50 +1,45 @@
-using System;
 using CallDetector.Portable.Common;
-using CallDetector.Portable.DependencyServices;
+using CallDetector.Portable.Models;
+using CallDetector.Portable.ViewModels;
+using CallDetector.Portable.Views;
 using Xamarin.Forms;
 
 namespace CallDetector.Portable
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : ContentPage, INavigationHandler
     {
-        private bool _isRunning;
-
         public MainPage()
         {
             InitializeComponent();
-            DependencyService.Get<ICallManager>().CallStatedChanged += MainPage_CallStatedChanged;
+            BindingContext = new MainViewModel { NavigationHandler = this };
+            SideDrawer.MainContent = new MainView();
         }
-
-        private void MainPage_CallStatedChanged(object sender, CallStateChangedEventArgs e)
+        
+        public void LoadView(ViewType viewType)
         {
-            OutputLabel.Text += $"CallState {e.CallState}, PhoneNumber: {e.PhoneNumber}{Environment.NewLine}";
-        }
-
-        private void StartStopButton_OnClicked(object sender, EventArgs e)
-        {
-            if (_isRunning)
+            switch (viewType)
             {
-                DependencyService.Get<ICallManager>().StopService();
-                StartStopButton.BackgroundColor = Color.Green;
-                DeclineCallButton.IsEnabled = false;
-
-                OutputLabel.Text += $"Service Stopped{Environment.NewLine}";
+                case ViewType.Main:
+                    SideDrawer.MainContent = new MainView();
+                    break;
+                case ViewType.CallLog:
+                    SideDrawer.MainContent = new CallLogView();
+                    break;
+                case ViewType.About:
+                    SideDrawer.MainContent = new AboutView();
+                    break;
             }
-            else
-            {
-                DependencyService.Get<ICallManager>().StartService();
-                StartStopButton.BackgroundColor = Color.DarkRed;
-                DeclineCallButton.IsEnabled = true;
-
-                OutputLabel.Text += $"Service Started{Environment.NewLine}";
-            }
-
-            _isRunning = !_isRunning;
         }
 
-        private void DeclineCallButton_OnClicked(object sender, EventArgs e)
+        protected override bool OnBackButtonPressed()
         {
-            DependencyService.Get<ICallManager>().DeclineCall();
+            if (SideDrawer.MainContent.GetType() == typeof(CallLogView) || SideDrawer.MainContent.GetType() == typeof(AboutView))
+            {
+                SideDrawer.MainContent = new MainView();
+                return true;
+            }
+
+            return base.OnBackButtonPressed();
         }
     }
 }

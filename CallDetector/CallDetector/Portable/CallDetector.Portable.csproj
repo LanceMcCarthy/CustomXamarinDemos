@@ -10,6 +10,12 @@
         <DebugType>pdbonly</DebugType>
     </PropertyGroup>
     <ItemGroup>
+      <EmbeddedResource Include="Images\Attachment.png" />
+      <EmbeddedResource Include="Images\Document.png" />
+      <EmbeddedResource Include="Images\RemoveAttachment.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="CommonHelpers" Version="1.0.8" />
         <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
         <PackageReference Include="SkiaSharp" Version="1.68.0-preview28" />
         <PackageReference Include="SkiaSharp.Views.Forms " Version="1.68.0-preview28" />
@@ -59,5 +65,19 @@
         <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
             <DependentUpon>*.xaml</DependentUpon>
         </Compile>
+        <Compile Update="Views\CallLogView.xaml.cs">
+          <DependentUpon>CallLogView.xaml</DependentUpon>
+        </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Update="Views\AboutView.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Views\CallLogView.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Views\MainView.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
     </ItemGroup>
 </Project>

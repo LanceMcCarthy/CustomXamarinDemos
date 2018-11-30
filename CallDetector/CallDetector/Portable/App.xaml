@@ -1,10 +1,333 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             xmlns:system="clr-namespace:System;assembly=netstandard"
+             xmlns:input="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             xmlns:dataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:listView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
              x:Class="CallDetector.Portable.App">
-	<Application.Resources>
 
-		<!-- Application resource dictionary -->
+    <Application.Resources>
+        <Color x:Key="LightTextColor">#FFFFFF</Color>
+        <Color x:Key="MediumTextColor">#FF888888</Color>
+        <Color x:Key="DarkTextColor">#FF444444</Color>
+        <Color x:Key="LightBlueColor">#BCE0FD</Color>
+        <Color x:Key="MediumBlueColor">#2699FB</Color>
+        <Color x:Key="DarkBlueColor">#007FEB</Color>
 
-	</Application.Resources>
+        <Style x:Key="LightBlueBorderStyle"
+               TargetType="primitives:RadBorder">
+            <Setter Property="CornerRadius"
+                    Value="0" />
+            <Setter Property="BorderColor"
+                    Value="{StaticResource LightBlueColor}" />
+            <Setter Property="BorderThickness"
+                    Value="1" />
+        </Style>
+
+        <Style x:Key="RoundImageBorderStyle"
+               TargetType="primitives:RadBorder">
+            <Setter Property="BorderColor"
+                    Value="{StaticResource DarkBlueColor}" />
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource DarkBlueColor}" />
+            <Setter Property="HorizontalOptions"
+                    Value="Center" />
+            <Setter Property="VerticalOptions"
+                    Value="Center" />
+            <Setter Property="CornerRadius"
+                    Value="60" />
+            <Setter Property="Margin"
+                    Value="5" />
+            <Setter Property="HeightRequest">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="system:Double">
+                        <On Platform="Android, iOS"
+                            Value="23" />
+                        <On Platform="UWP"
+                            Value="30" />
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="WidthRequest">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="system:Double">
+                        <On Platform="Android, iOS"
+                            Value="23" />
+                        <On Platform="UWP"
+                            Value="30" />
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="NormalLabelStyle"
+               TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="{StaticResource MediumTextColor}" />
+            <Setter Property="FontSize"
+                    Value="12" />
+            <Setter Property="VerticalTextAlignment"
+                    Value="Center" />
+            <Setter Property="HorizontalTextAlignment"
+                    Value="Center" />
+        </Style>
+
+        <Style x:Key="PageTitleLabelStyle"
+               TargetType="Label">
+            <Setter Property="FontAttributes"
+                    Value="Bold" />
+            <Setter Property="FontSize">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="system:Double">
+                        <On Platform="Android, iOS"
+                            Value="20" />
+                        <On Platform="UWP"
+                            Value="22" />
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="TextColor"
+                    Value="{StaticResource MediumBlueColor}" />
+            <Setter Property="HorizontalOptions"
+                    Value="Center" />
+            <Setter Property="VerticalOptions"
+                    Value="Center" />
+            <Setter Property="Margin"
+                    Value="0,20" />
+        </Style>
+
+        <Style x:Key="LogFileNameLabelStyle"
+               TargetType="Label">
+            <Setter Property="FontSize">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="system:Double">
+                        <On Platform="Android, iOS"
+                            Value="12" />
+                        <On Platform="UWP"
+                            Value="16" />
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="VerticalOptions"
+                    Value="Center" />
+            <Setter Property="TextColor"
+                    Value="{StaticResource DarkBlueColor}" />
+        </Style>
+
+        <Style x:Key="ActionButtonStyle"
+               TargetType="input:RadButton">
+            <Setter Property="TextColor"
+                    Value="{StaticResource LightTextColor}" />
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource DarkBlueColor}" />
+            <Setter Property="FontAttributes"
+                    Value="Bold" />
+            <Setter Property="HeightRequest"
+                    Value="48" />
+            <Setter Property="Margin"
+                    Value="0,16,0,0" />
+        </Style>
+
+        <Style x:Key="CancelButtonStyle"
+               TargetType="input:RadButton">
+            <Setter Property="Text"
+                    Value="Cancel" />
+            <Setter Property="TextColor"
+                    Value="{StaticResource MediumBlueColor}" />
+            <Setter Property="BackgroundColor"
+                    Value="Transparent" />
+            <Setter Property="HeightRequest"
+                    Value="44" />
+            <Setter Property="HorizontalOptions"
+                    Value="End" />
+            <Setter Property="VerticalOptions"
+                    Value="End" />
+            <Setter Property="Margin"
+                    Value="0,8,0,0" />
+        </Style>
+
+        <Style x:Key="LogFileButtonStyle"
+               TargetType="input:RadButton">
+            <Setter Property="TextColor"
+                    Value="{StaticResource MediumBlueColor}" />
+            <Setter Property="BackgroundColor"
+                    Value="Transparent" />
+            <Setter Property="FontAttributes"
+                    Value="Bold" />
+            <Setter Property="FontSize">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="system:Double">
+                        <On Platform="Android, iOS"
+                            Value="12" />
+                        <On Platform="UWP"
+                            Value="16" />
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="HeightRequest"
+                    Value="44" />
+            <Setter Property="HorizontalOptions"
+                    Value="Fill" />
+            <Setter Property="VerticalOptions"
+                    Value="Start" />
+            <Setter Property="Margin"
+                    Value="0" />
+            <Setter Property="Padding"
+                    Value="0" />
+            <Setter Property="HorizontalContentAlignment"
+                    Value="Center" />
+            <Setter Property="VerticalContentAlignment"
+                    Value="Center" />
+        </Style>
+
+        <Style x:Key="RemoveLogFileButtonStyle"
+               TargetType="input:RadButton">
+            <Setter Property="TextColor"
+                    Value="{StaticResource DarkBlueColor}" />
+            <Setter Property="BackgroundColor"
+                    Value="Transparent" />
+            <Setter Property="WidthRequest"
+                    Value="24" />
+            <Setter Property="HeightRequest"
+                    Value="24" />
+            <Setter Property="HorizontalOptions"
+                    Value="Center" />
+            <Setter Property="VerticalOptions"
+                    Value="Center" />
+            <Setter Property="HorizontalContentAlignment"
+                    Value="Center" />
+            <Setter Property="VerticalContentAlignment"
+                    Value="Center" />
+        </Style>
+
+        <Style x:Key="FeedbackTextEditorStyle"
+               TargetType="Editor">
+            <Setter Property="TextColor"
+                    Value="{StaticResource DarkTextColor}" />
+            <Setter Property="FontSize">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="system:Double">
+                        <On Platform="UWP"
+                            Value="18" />
+                        <On Platform="Android, iOS"
+                            Value="14" />
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="HorizontalOptions"
+                    Value="Fill" />
+            <Setter Property="VerticalOptions"
+                    Value="Fill" />
+            <Setter Property="HeightRequest"
+                    Value="119" />
+            <Setter Property="IsSpellCheckEnabled"
+                    Value="True" />
+        </Style>
+
+        <Style x:Key="EmailEntryStyle"
+               TargetType="input:RadEntry">
+            <Setter Property="TextColor"
+                    Value="{StaticResource DarkTextColor}" />
+            <Setter Property="FontSize">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="system:Double">
+                        <On Platform="UWP"
+                            Value="18" />
+                        <On Platform="Android, iOS"
+                            Value="14" />
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="HorizontalOptions"
+                    Value="Fill" />
+            <Setter Property="VerticalOptions"
+                    Value="Fill" />
+            <Setter Property="HeightRequest"
+                    Value="48" />
+            <Setter Property="BorderStyle">
+                <Setter.Value>
+                    <input:BorderStyle BorderColor="{StaticResource LightBlueColor}"
+                                              BorderThickness="1" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="LogFileImageStyle"
+               TargetType="Image">
+            <Setter Property="Margin"
+                    Value="1,0,0,0" />
+            <Setter Property="HorizontalOptions"
+                    Value="Center" />
+            <Setter Property="VerticalOptions"
+                    Value="Center" />
+            <Setter Property="WidthRequest">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="system:Double">
+                        <On Platform="Android, iOS"
+                            Value="12" />
+                        <On Platform="UWP"
+                            Value="16" />
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="HeightRequest">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="system:Double">
+                        <On Platform="Android, iOS"
+                            Value="12" />
+                        <On Platform="UWP"
+                            Value="16" />
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="LogFileListViewStyle"
+               TargetType="dataControls:RadListView">
+            <Setter Property="SelectionMode"
+                    Value="None" />
+            <Setter Property="LayoutDefinition">
+                <Setter.Value>
+                    <listView:ListViewLinearLayout>
+                        <listView:ListViewLinearLayout.VerticalItemSpacing>
+                            <OnPlatform x:TypeArguments="system:Double">
+                                <On Platform="UWP"
+                                    Value="1" />
+                                <On Platform="Android, iOS"
+                                    Value="6" />
+                            </OnPlatform>
+                        </listView:ListViewLinearLayout.VerticalItemSpacing>
+                        <listView:ListViewLinearLayout.ItemLength>
+                            <OnPlatform x:TypeArguments="system:Double">
+                                <On Platform="UWP"
+                                    Value="60" />
+                                <On Platform="Android, iOS"
+                                    Value="38" />
+                            </OnPlatform>
+                        </listView:ListViewLinearLayout.ItemLength>
+                    </listView:ListViewLinearLayout>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="HeightRequest">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="system:Double">
+                        <On Platform="UWP"
+                            Value="162" />
+                        <On Platform="Android, iOS"
+                            Value="110" />
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="ItemStyle">
+                <Setter.Value>
+                    <listView:ListViewItemStyle BackgroundColor="{StaticResource LightBlueColor}"
+                                                       BorderColor="{StaticResource MediumBlueColor}"
+                                                       BorderWidth="1"
+                                                       BorderLocation="All" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Application.Resources>
 </Application>
