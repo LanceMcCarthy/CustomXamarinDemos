@@ -1,34 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage x:Name="Page" 
+             xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
              xmlns:local="clr-namespace:CallDetector.Portable.Models;assembly=CallDetector.Portable"
+             xmlns:input="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
              ios:Page.UseSafeArea="true"
              x:Class="CallDetector.Portable.MainPage">
 
-    <primitives:RadSideDrawer x:Name="SideDrawer"
-                              IsOpen="{Binding IsDrawerOpen, Mode=TwoWay}">
-        <primitives:RadSideDrawer.DrawerContent>
-            <Grid BackgroundColor="{StaticResource DarkBlueColor}">
-                <StackLayout>
-                    <Button Text="Home"
-                            TextColor="{StaticResource LightTextColor}"
-                            Command="{Binding GoToViewCommand}"
-                            CommandParameter="{x:Static local:ViewType.Main}"
-                            Margin="5" />
-                    <Button Text="Call Log"
-                            TextColor="{StaticResource LightTextColor}"
-                            Command="{Binding GoToViewCommand}"
-                            CommandParameter="{x:Static local:ViewType.CallLog}"
-                            Margin="5" />
-                    <Button Text="About"
-                            TextColor="{StaticResource LightTextColor}"
-                            Command="{Binding GoToViewCommand}"
-                            CommandParameter="{x:Static local:ViewType.About}"
-                            Margin="5" />
-                </StackLayout>
-            </Grid>
-        </primitives:RadSideDrawer.DrawerContent>
-    </primitives:RadSideDrawer>
+    <Grid>
+        <primitives:RadSideDrawer x:Name="SideDrawer"
+                                  IsOpen="{Binding IsDrawerOpen, Mode=TwoWay}">
+            <primitives:RadSideDrawer.DrawerContent>
+                <Grid>
+                    <StackLayout>
+                        <Button Text="Home"
+                                TextColor="{StaticResource LightTextColor}"
+                                Command="{Binding GoToViewCommand}"
+                                CommandParameter="{x:Static local:ViewType.Main}"
+                                Margin="5" />
+                        <Button Text="Call Log"
+                                TextColor="{StaticResource LightTextColor}"
+                                Command="{Binding GoToViewCommand}"
+                                CommandParameter="{x:Static local:ViewType.CallLog}"
+                                Margin="5" />
+                        <Button Text="About"
+                                TextColor="{StaticResource LightTextColor}"
+                                Command="{Binding GoToViewCommand}"
+                                CommandParameter="{x:Static local:ViewType.About}"
+                                Margin="5" />
+                    </StackLayout>
+                </Grid>
+            </primitives:RadSideDrawer.DrawerContent>
+        </primitives:RadSideDrawer>
+
+        <!--<input:RadButton Text="MENU"
+                         Command="{Binding ToggleDrawerCommand}"
+                         VerticalOptions="Start"
+                         HorizontalOptions="Start"
+                         Margin="5"
+                         BorderColor="Black"
+                         BorderThickness="2" />-->
+    </Grid>
 </ContentPage>

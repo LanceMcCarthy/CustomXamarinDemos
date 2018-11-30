@@ -6,6 +6,7 @@
              xmlns:input="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
              xmlns:dataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
              xmlns:listView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:converters="clr-namespace:CallDetector.Portable.Converters;assembly=CallDetector.Portable"
              x:Class="CallDetector.Portable.App">
 
     <Application.Resources>
@@ -15,6 +16,18 @@
         <Color x:Key="LightBlueColor">#BCE0FD</Color>
         <Color x:Key="MediumBlueColor">#2699FB</Color>
         <Color x:Key="DarkBlueColor">#007FEB</Color>
+
+        <converters:ConfigurableBoolConverter x:Key="InvertBoolConverter"
+                                              x:TypeArguments="x:Boolean"
+                                              TrueResult="False"
+                                              FalseResult="True" />
+
+        <converters:ConfigurableBoolConverter x:Key="BoolToGreenRedConverter"
+                                              x:TypeArguments="Color"
+                                              TrueResult="MediumSeaGreen"
+                                              FalseResult="DarkRed"/>
+
+        <converters:LineTypeDescriptionConverter x:Key="LineTypeDescriptionConverter"/>
 
         <Style x:Key="LightBlueBorderStyle"
                TargetType="primitives:RadBorder">
@@ -200,58 +213,6 @@
                     Value="Center" />
             <Setter Property="VerticalContentAlignment"
                     Value="Center" />
-        </Style>
-
-        <Style x:Key="FeedbackTextEditorStyle"
-               TargetType="Editor">
-            <Setter Property="TextColor"
-                    Value="{StaticResource DarkTextColor}" />
-            <Setter Property="FontSize">
-                <Setter.Value>
-                    <OnPlatform x:TypeArguments="system:Double">
-                        <On Platform="UWP"
-                            Value="18" />
-                        <On Platform="Android, iOS"
-                            Value="14" />
-                    </OnPlatform>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="HorizontalOptions"
-                    Value="Fill" />
-            <Setter Property="VerticalOptions"
-                    Value="Fill" />
-            <Setter Property="HeightRequest"
-                    Value="119" />
-            <Setter Property="IsSpellCheckEnabled"
-                    Value="True" />
-        </Style>
-
-        <Style x:Key="EmailEntryStyle"
-               TargetType="input:RadEntry">
-            <Setter Property="TextColor"
-                    Value="{StaticResource DarkTextColor}" />
-            <Setter Property="FontSize">
-                <Setter.Value>
-                    <OnPlatform x:TypeArguments="system:Double">
-                        <On Platform="UWP"
-                            Value="18" />
-                        <On Platform="Android, iOS"
-                            Value="14" />
-                    </OnPlatform>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="HorizontalOptions"
-                    Value="Fill" />
-            <Setter Property="VerticalOptions"
-                    Value="Fill" />
-            <Setter Property="HeightRequest"
-                    Value="48" />
-            <Setter Property="BorderStyle">
-                <Setter.Value>
-                    <input:BorderStyle BorderColor="{StaticResource LightBlueColor}"
-                                              BorderThickness="1" />
-                </Setter.Value>
-            </Setter>
         </Style>
 
         <Style x:Key="LogFileImageStyle"

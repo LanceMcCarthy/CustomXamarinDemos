@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.ObjectModel;
-using System.IO;
 using CallDetector.Portable.Common;
 using CallDetector.Portable.DependencyServices;
 using CallDetector.Portable.Helpers;
 using CallDetector.Portable.Models;
 using CommonHelpers.Common;
+using Telerik.XamarinForms.DataControls.ListView;
 using Telerik.XamarinForms.DataControls.ListView.Commands;
 using Xamarin.Forms;
 
@@ -16,7 +16,6 @@ namespace CallDetector.Portable.ViewModels
         private bool _isDrawerOpen;
         private bool _isServiceRunning;
         private string _status;
-        private Color _serviceButtonColor;
 
         public MainViewModel()
         {
@@ -24,15 +23,17 @@ namespace CallDetector.Portable.ViewModels
             
             GoToViewCommand = new Command(LoadView);
             ToggleDrawerCommand = new Command(ToggleDrawer);
-            DeleteLogFileCommand = new Command<ItemTapCommandContext>(DeleteLogFile);
+            DeleteLogFileCommand = new Command<ItemTapCommandContext>(RemoveCall);
 
             StartStopServiceCommand = new Command(StartStopService);
             DeclineCallCommand = new Command(DeclineCall);
         }
 
-        public ObservableCollection<LogFile> Logs { get; set; } = new ObservableCollection<LogFile>();
+        #region Properties
 
-        public ObservableCollection<LogFile> SelectedLogs { get; set; } = new ObservableCollection<LogFile>();
+        public ObservableCollection<Caller> Calls { get; set; } = new ObservableCollection<Caller>();
+
+        public ObservableCollection<Caller> SelectedCalls { get; set; } = new ObservableCollection<Caller>();
 
         public bool IsDrawerOpen
         {
@@ -46,22 +47,17 @@ namespace CallDetector.Portable.ViewModels
             set => SetProperty(ref _isServiceRunning, value);
         }
 
-        private void OnCallStatedChanged(object sender, CallStateChangedEventArgs e)
-        {
-            Status += $"CallState {e.CallState}, PhoneNumber: {e.PhoneNumber}{Environment.NewLine}";
-        }
-
         public string Status
         {
             get => _status;
             set => SetProperty(ref _status, value);
         }
 
-        public Color ServiceButtonColor
-        {
-            get => _serviceButtonColor;
-            set => SetProperty(ref _serviceButtonColor, value);
-        }
+        public SelectionMode CallListSelectionMode { get; set; }
+
+        #endregion
+
+        #region Commmands
 
         public Command GoToViewCommand { get; set; }
 
@@ -74,13 +70,37 @@ namespace CallDetector.Portable.ViewModels
 
         public Command DeclineCallCommand { get; }
 
-        public INavigationHandler NavigationHandler { private get; set; }
+        #endregion
 
+        #region Events and Methods
+
+        public INavigationHandler NavigationHandler { private get; set; }
+        
+        private async void OnCallStatedChanged(object sender, CallStateChangedEventArgs e)
+        {
+            if (e == null)
+                return;
+
+            if(string.IsNullOrEmpty(e.PhoneNumber))
+            {
+                Status = $"[{e.CallState}]";
+            }
+            else
+            {
+                Status = $"[{e.CallState}] PhoneNumber: {e.PhoneNumber}";
+
+                var caller = new Caller(e.PhoneNumber);
+                Calls.Add(caller);
+
+                await caller.ValidateCallerAsync();
+            }
+        }
+        
         private void LoadView(object viewType)
         {
             if ((ViewType)viewType == ViewType.CallLog)
             {
-                LoadFiles("*.log");
+                Calls.LoadFromCache();
             }
 
             NavigationHandler.LoadView((ViewType)viewType);
@@ -96,16 +116,12 @@ namespace CallDetector.Portable.ViewModels
             if (IsServiceRunning)
             {
                 DependencyService.Get<ICallManager>().StopService();
-                ServiceButtonColor = Color.Green;
-
-                Status += $"Service Stopped{Environment.NewLine}";
+                Status = "Service Stopped";
             }
             else
             {
                 DependencyService.Get<ICallManager>().StartService();
-                ServiceButtonColor = Color.DarkRed;
-
-                Status += $"Service Started{Environment.NewLine}";
+                Status = "Service Started";
             }
 
             IsServiceRunning = !IsServiceRunning;
@@ -116,32 +132,38 @@ namespace CallDetector.Portable.ViewModels
             DependencyService.Get<ICallManager>().DeclineCall();
         }
 
-        private void DeleteLogFile(ItemTapCommandContext context)
+        private async void RemoveCall(ItemTapCommandContext context)
         {
-            // TODO show dialog for confirmation
-            if(context?.Item is LogFile logFile)
+            if (CallListSelectionMode == SelectionMode.Single)
             {
-                if (File.Exists(logFile.FilePath))
+                if (context?.Item is Caller call)
                 {
-                    File.Delete(logFile.FilePath);
+                    var confirmed = await Application.Current.MainPage.DisplayAlert("Delete Call?", "This will permanently remove the selected call from the log.", "DELETE", "cancel");
+
+                    if (confirmed)
+                    {
+                        Calls.Remove(call);
+                        Calls.SaveToCache();
+                    }
+                }
+            }
+            else if(CallListSelectionMode == SelectionMode.Multiple)
+            {
+                var confirmed = await Application.Current.MainPage.DisplayAlert("Delete Call?", "This will permanently remove the selected call from the log.", "DELETE", "cancel");
+
+                if (confirmed)
+                {
+                    foreach (var call in SelectedCalls)
+                    {
+                        Calls.Remove(call);
+                    }
+
+                    Calls.SaveToCache();
                 }
             }
         }
+        
 
-        public void LoadFiles(string fileTypeFilter)
-        {
-            var filePaths = FileHelpers.GetLocalFolderFilePaths(fileTypeFilter);
-
-            Logs.Clear();
-
-            foreach (var filePath in filePaths)
-            {
-                Logs.Add(new LogFile
-                {
-                    FileName = Path.GetFileName(filePath),
-                    FilePath = filePath
-                });
-            }
-        }
+        #endregion
     }
 }

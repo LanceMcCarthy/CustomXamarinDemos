@@ -28,6 +28,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidSupportedAbis />
+    <JavaMaximumHeapSize>800M</JavaMaximumHeapSize>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -110,6 +112,7 @@
     <PackageReference Include="Xamarin.Android.Support.v8.RenderScript" Version="28.0.0-preview8" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomRenderers\CustomSideDrawerRenderer.cs" />
     <Compile Include="DependencyServices\BackgroundServiceManager.cs" />
     <Compile Include="Interfaces\IGetTimestamp.cs" />
     <Compile Include="Listeners\CustomPhoneStateListener.cs" />

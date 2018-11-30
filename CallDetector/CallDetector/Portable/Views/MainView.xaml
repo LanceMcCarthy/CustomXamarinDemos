@@ -9,48 +9,67 @@
              x:Class="CallDetector.Portable.Views.MainView">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <ScrollView>
-            <Label x:Name="OutputLabel"
+        <primitives:RadBorder BackgroundColor="{Binding Status, Converter={StaticResource BoolToGreenRedConverter}}">
+            <Label x:Name="CurrentStatusLabel"
                    Text="{Binding Status}"
-                   LineBreakMode="WordWrap" />
-        </ScrollView>
-
-        <!-- TODO uncomment and work on this once logs are created for calls-->
+                   Margin="5"
+                   FontSize="12"/>
+        </primitives:RadBorder>
 
         <dataControls:RadListView x:Name="radListView"
-                                  ItemsSource="{Binding Logs}"
+                                  ItemsSource="{Binding Calls}"
                                   SelectionMode="None"
-                                  Style="{StaticResource LogFileListViewStyle}">
+                                  Style="{StaticResource LogFileListViewStyle}"
+                                  Grid.Row="1">
             <dataControls:RadListView.ItemTemplate>
                 <DataTemplate>
                     <listView:ListViewTemplateCell>
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="3*" />
+                                <ColumnDefinition Width="4*" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
 
-                            <primitives:RadBorder Style="{StaticResource RoundImageBorderStyle}"
-                                                  Grid.Column="0">
-                                <Image Source="{helpers:ImageResource Document.png}"
-                                       Style="{StaticResource LogFileImageStyle}" />
-                            </primitives:RadBorder>
+                            <StackLayout>
+                                <Label Text="{Binding DisplayPhoneNumber}"
+                                       Style="{StaticResource LogFileNameLabelStyle}" />
+                                <Label Text="{Binding CallerId}" />
+                                <Label Text="Blocked!" 
+                                       TextColor="DarkRed"
+                                       IsVisible="{Binding IsBlocked}"/>
+                                <Label Text="Spam!"
+                                       TextColor="DarkRed"
+                                       IsVisible="{Binding IsSpam}" />
 
-                            <Label Text="{Binding FileName}"
-                                   Style="{StaticResource LogFileNameLabelStyle}"
-                                   Grid.Column="1" />
+                                <Label Text="Validating..."
+                                       IsVisible="{Binding IsValidating}" />
+
+                                <Label Text="{Binding ValidationInfo.Valid, StringFormat='Is Valid: {0}'}"
+                                       TextColor="{Binding ValidationInfo.Valid, Converter={StaticResource BoolToGreenRedConverter}}"/>
+
+                                <Label Text="{Binding ValidationInfo.Number, StringFormat='Number: {0}'}"
+                                       IsVisible="{Binding ValidationInfo.Valid}"/>
+                                <Label Text="{Binding ValidationInfo.Location, StringFormat='Location: {0}'}"
+                                       IsVisible="{Binding ValidationInfo.Valid}" />
+                                <Label Text="{Binding ValidationInfo.CountryName, StringFormat='CountryName: {0}'}"
+                                       IsVisible="{Binding ValidationInfo.Valid}" />
+                                <Label Text="{Binding ValidationInfo.Carrier, StringFormat='Carrier: {0}'}"
+                                       IsVisible="{Binding ValidationInfo.Valid}" />
+                                <Label Text="{Binding ValidationInfo.LineType, StringFormat='LineType: {0}'}"
+                                       IsVisible="{Binding ValidationInfo.Valid}" />
+                            </StackLayout>
 
                             <input:RadButton BackgroundImage="{helpers:ImageResource RemoveAttachment.png}"
                                              Command="{Binding BindingContext.DeleteLogFileCommand, Source={x:Reference radListView}}"
                                              CommandParameter="{Binding }"
                                              Style="{StaticResource LogFileButtonStyle}"
-                                             Grid.Column="2" />
+                                             Grid.Column="1" />
                         </Grid>
                     </listView:ListViewTemplateCell>
                 </DataTemplate>
@@ -69,7 +88,7 @@
                 Command="{Binding StartStopServiceCommand}"
                 Margin="5"
                 TextColor="White"
-                BackgroundColor="{Binding ServiceButtonColor}"
+                BackgroundColor="{Binding Status, Converter={StaticResource ServiceActiveToColorConverter}}"
                 Grid.Row="2" />
     </Grid>
 </ContentView>
