@@ -2,9 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
+// Update: Added XamlC to prevent iOS Linker from stripping out referenced assembly code
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace DrawerDismissEffect.Portable
 {
     public partial class App : Application
