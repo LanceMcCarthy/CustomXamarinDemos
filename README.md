@@ -1,13 +1,14 @@
 # CustomXamarinDemos
 
 Readme Quick-Links
-- [RealTimeFiltering Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#RealTimeFiltering) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/RealTimeFilteringDemos))
-- [CascadingAutoCompleteViews Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#CascadingAutoCompleteViews) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/CascadingAutoCompleteViews))
-- [CustomSeries Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#customserieslabels) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/CustomSeriesLabels))
-- [RenderImage Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#renderimage) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/RenderImage))
-- [RangeSelectionTest Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#rangeselectiontest) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/RangeSelectionTest))
-- [TelerikThemeEditor](https://github.com/LanceMcCarthy/CustomXamarinDemos#TelerikThemeEditor) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/TelerikThemeEditor))
+- [Real-time Filtering Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#RealTimeFiltering) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/RealTimeFilteringDemos))
+- [Cascading AutoCompleteViews Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#CascadingAutoCompleteViews) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/CascadingAutoCompleteViews))
+- [Custom Series Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#customserieslabels) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/CustomSeriesLabels))
+- [Render Image Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#renderimage) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/RenderImage))
+- [RangeSelection Test Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#rangeselectiontest) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/RangeSelectionTest))
+- [Telerik Theme Editor](https://github.com/LanceMcCarthy/CustomXamarinDemos#TelerikThemeEditor) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/TelerikThemeEditor))
 - [Workouts](https://github.com/LanceMcCarthy/CustomXamarinDemos#Workouts) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/Workouts))
+- [Drawer Dismiss Effect](https://github.com/LanceMcCarthy/CustomXamarinDemos#DrawerDismissEffect) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/DrawerDismissEffect))
 
 ## RealTimeFiltering
 
@@ -58,4 +59,8 @@ An application that lets you set colors of Telerik brushes and create custom the
 ## Workouts
 
 An application with RadDataGrid
+
+## DrawerDismissEffect
+
+This project shows how to use a Xamarin Platform Effect to disable the RadSideDrawer's ability to dismiss the drawer when tapping outside of the drawer area.
 
