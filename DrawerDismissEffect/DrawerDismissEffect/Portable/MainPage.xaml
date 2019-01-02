@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             xmlns:effects="clr-namespace:DrawerDismissEffect.Portable.Effects;assembly=DrawerDismissEffect.Portable"
+             x:Class="DrawerDismissEffect.Portable.MainPage">
+
+    <telerikPrimitives:RadSideDrawer DrawerLength="400"
+                                     DrawerTransitionType="Push"
+                                     IsOpen="True">
+
+        <!-- Using the PlatformEffect to access the native SideDrawer controls and disable their particular ability to dismiss the side drawer by tapping  outside the drawer -->
+        <telerikPrimitives:RadSideDrawer.Effects>
+            <effects:DrawerEffect TapOutsideToClose="False" />
+        </telerikPrimitives:RadSideDrawer.Effects>
+
+        <!-- The DrawerContent, with an example of content that has a 'header' area -->
+        <telerikPrimitives:RadSideDrawer.DrawerContent>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid x:Name="HeaderAreaGrid"
+                      BackgroundColor="Blue">
+                    <Label Text="Header"
+                           TextColor="White"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center" />
+                </Grid>
+
+                <Grid x:Name="RestOfDrawerAreaGrid"
+                      Grid.Row="1">
+                    <StackLayout>
+                        <Label Text="Item One"
+                               HorizontalOptions="Center"
+                               Margin="5" />
+                        <Label Text="Item Two"
+                               HorizontalOptions="Center"
+                               Margin="5" />
+                        <Label Text="Item Three"
+                               HorizontalOptions="Center"
+                               Margin="5" />
+                    </StackLayout>
+
+                    <Label Text="Drawer Content"
+                           VerticalOptions="End"
+                           HorizontalOptions="Center" 
+                           Margin="10"/>
+                </Grid>
+            </Grid>
+        </telerikPrimitives:RadSideDrawer.DrawerContent>
+
+        <!-- The MainContent -->
+        <telerikPrimitives:RadSideDrawer.MainContent>
+            <Grid BackgroundColor="Gray">
+                <Label Text="Main Content"
+                       TextColor="White"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center" />
+            </Grid>
+        </telerikPrimitives:RadSideDrawer.MainContent>
+    </telerikPrimitives:RadSideDrawer>
+</ContentPage>
