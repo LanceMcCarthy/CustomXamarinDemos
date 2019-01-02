@@ -8,6 +8,7 @@ Readme Quick-Links
 - [RangeSelectionTest Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#rangeselectiontest) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/RangeSelectionTest))
 - [TelerikThemeEditor](https://github.com/LanceMcCarthy/CustomXamarinDemos#TelerikThemeEditor) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/TelerikThemeEditor))
 - [Workouts](https://github.com/LanceMcCarthy/CustomXamarinDemos#Workouts) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/Workouts))
+- [Android Call Detector](https://github.com/LanceMcCarthy/CustomXamarinDemos#AndroidCallDetector) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/CallDetector))
 
 ## RealTimeFiltering
 
@@ -57,5 +58,9 @@ An application that lets you set colors of Telerik brushes and create custom the
 
 ## Workouts
 
-An application with RadDataGrid
+An application with RadDataGrid and AutoCompleteView that filters the DataGrid in real time.
+
+## AndroidCallDetector
+
+A Xamarin.Forms Android application that uses Android P (SDK 28) telephony features via Platform Effect and DependencyService to detect incoming phone calls.
 
