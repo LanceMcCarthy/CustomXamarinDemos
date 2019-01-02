@@ -9,6 +9,7 @@ Readme Quick-Links
 - [Telerik Theme Editor](https://github.com/LanceMcCarthy/CustomXamarinDemos#TelerikThemeEditor) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/TelerikThemeEditor))
 - [Workouts](https://github.com/LanceMcCarthy/CustomXamarinDemos#Workouts) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/Workouts))
 - [Drawer Dismiss Effect](https://github.com/LanceMcCarthy/CustomXamarinDemos#DrawerDismissEffect) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/DrawerDismissEffect))
+- [Android Call Detector](https://github.com/LanceMcCarthy/CustomXamarinDemos#AndroidCallDetector) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/CallDetector))
 
 ## RealTimeFiltering
 
@@ -58,7 +59,11 @@ An application that lets you set colors of Telerik brushes and create custom the
 
 ## Workouts
 
-An application with RadDataGrid
+An application with RadDataGrid and AutoCompleteView that filters the DataGrid in real time.
+
+## AndroidCallDetector
+
+A Xamarin.Forms Android application that uses Android P (SDK 28) telephony features via Platform Effect and DependencyService to detect incoming phone calls.
 
 ## DrawerDismissEffect
 

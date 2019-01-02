@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallDetector.Android", "CallDetector\Android\CallDetector.Android.csproj", "{712A05EA-B292-4F70-830F-3C95BBFB5D28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallDetector.Portable", "CallDetector\Portable\CallDetector.Portable.csproj", "{B6A17359-4119-4518-AD54-6BC5D24FD4F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{712A05EA-B292-4F70-830F-3C95BBFB5D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{712A05EA-B292-4F70-830F-3C95BBFB5D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{712A05EA-B292-4F70-830F-3C95BBFB5D28}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{712A05EA-B292-4F70-830F-3C95BBFB5D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{712A05EA-B292-4F70-830F-3C95BBFB5D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{712A05EA-B292-4F70-830F-3C95BBFB5D28}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B6A17359-4119-4518-AD54-6BC5D24FD4F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A17359-4119-4518-AD54-6BC5D24FD4F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A17359-4119-4518-AD54-6BC5D24FD4F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A17359-4119-4518-AD54-6BC5D24FD4F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CEE463B-FBF8-4154-A63C-50DE0CA73140}
+	EndGlobalSection
+EndGlobal

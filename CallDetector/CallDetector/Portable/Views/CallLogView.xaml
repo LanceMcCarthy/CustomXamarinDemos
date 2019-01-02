@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:telerikListView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             xmlns:telerikCommands="clr-namespace:Telerik.XamarinForms.DataControls.ListView.Commands;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:helpers="clr-namespace:CallDetector.Portable.Helpers;assembly=CallDetector.Portable"
+             xmlns:models="clr-namespace:CallDetector.Portable.Models;assembly=CallDetector.Portable"
+             x:Class="CallDetector.Portable.Views.CallLogView"
+             Padding="40,20">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <telerikDataControls:RadListView ItemsSource="{Binding AvailableAttachments}"
+                                         Style="{StaticResource AttachmentListViewStyle}">
+            <telerikDataControls:RadListView.Commands>
+                <telerikCommands:ListViewUserCommand Id="ItemTap"
+                                                     Command="{Binding AddAttachmentCommand}" />
+            </telerikDataControls:RadListView.Commands>
+            <telerikDataControls:RadListView.ItemTemplate>
+                <DataTemplate>
+                    <telerikListView:ListViewTemplateCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="3*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <telerikPrimitives:RadBorder Style="{StaticResource RoundImageBorderStyle}"
+                                                         Grid.Column="0">
+
+                                <Image Source="{helpers:ImageResource Document.png}"
+                                       Style="{StaticResource AttachmentImageStyle}" />
+                            </telerikPrimitives:RadBorder>
+
+                            <Label Text="{Binding FileName}"
+                                   Style="{StaticResource AttachmentFileNameLabelStyle}"
+                                   Grid.Column="1" />
+                        </Grid>
+                    </telerikListView:ListViewTemplateCell>
+                </DataTemplate>
+            </telerikDataControls:RadListView.ItemTemplate>
+        </telerikDataControls:RadListView>
+
+        <telerikInput:RadButton Text="cancel"
+                                Command="{Binding GoToViewCommand}"
+                                CommandParameter="{x:Static models:ViewType.Main}"
+                                Style="{StaticResource ActionButtonStyle}"
+                                Grid.Row="1" />
+    </Grid>
+</ContentView>

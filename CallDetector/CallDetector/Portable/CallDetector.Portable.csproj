@@ -1,0 +1,84 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <DebugType>full</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <DebugType>pdbonly</DebugType>
+    </PropertyGroup>
+    <ItemGroup>
+      <EmbeddedResource Include="Images\Attachment.png" />
+      <EmbeddedResource Include="Images\Document.png" />
+      <EmbeddedResource Include="Images\RemoveAttachment.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="CommonHelpers" Version="1.0.8" />
+        <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+        <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+        <PackageReference Include="SkiaSharp" Version="1.68.0-preview28" />
+        <PackageReference Include="SkiaSharp.Views.Forms " Version="1.68.0-preview28" />
+    </ItemGroup>
+    <ItemGroup>
+        <Reference Include="Telerik.XamarinForms.Chart">
+            <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2018\Binaries\Portable\Telerik.XamarinForms.Chart.dll</HintPath>
+        </Reference>
+        <Reference Include="Telerik.XamarinForms.Common">
+            <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2018\Binaries\Portable\Telerik.XamarinForms.Common.dll</HintPath>
+        </Reference>
+        <Reference Include="Telerik.XamarinForms.DataControls">
+            <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2018\Binaries\Portable\Telerik.XamarinForms.DataControls.dll</HintPath>
+        </Reference>
+        <Reference Include="Telerik.XamarinForms.DataGrid">
+            <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2018\Binaries\Portable\Telerik.XamarinForms.DataGrid.dll</HintPath>
+        </Reference>
+        <Reference Include="Telerik.XamarinForms.Barcode">
+            <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2018\Binaries\Portable\Telerik.XamarinForms.Barcode.dll</HintPath>
+        </Reference>
+        <Reference Include="Telerik.XamarinForms.ConversationalUI">
+            <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2018\Binaries\Portable\Telerik.XamarinForms.ConversationalUI.dll</HintPath>
+        </Reference>
+        <Reference Include="Telerik.XamarinForms.DataVisualization">
+            <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2018\Binaries\Portable\Telerik.XamarinForms.DataVisualization.dll</HintPath>
+        </Reference>
+        <Reference Include="Telerik.XamarinForms.Input">
+            <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2018\Binaries\Portable\Telerik.XamarinForms.Input.dll</HintPath>
+        </Reference>
+        <Reference Include="Telerik.XamarinForms.Primitives">
+            <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2018\Binaries\Portable\Telerik.XamarinForms.Primitives.dll</HintPath>
+        </Reference>
+        <Reference Include="Telerik.XamarinForms.SkiaSharp">
+            <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2018\Binaries\Portable\Telerik.XamarinForms.SkiaSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="Telerik.Documents.SpreadsheetStreaming">
+            <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2018\Binaries\Portable\Telerik.Documents.SpreadsheetStreaming.dll</HintPath>
+        </Reference>
+        <Reference Include="Telerik.Zip">
+            <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2018\Binaries\Portable\Telerik.Zip.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
+            <DependentUpon>*.xaml</DependentUpon>
+        </Compile>
+        <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
+            <DependentUpon>*.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\CallLogView.xaml.cs">
+          <DependentUpon>CallLogView.xaml</DependentUpon>
+        </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Update="Views\AboutView.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Views\CallLogView.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Views\MainView.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+    </ItemGroup>
+</Project>
