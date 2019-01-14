@@ -11,6 +11,7 @@ namespace IconAssetGenerator.Uwp.Models
     public class IconDefinition : BindableBase
     {
         private StorageFile _imageFile;
+        private string _imagePath = "ms-appx:///assets/ImagePlaceholder.png";
         private bool _isGenerating;
 
         /// <summary>
@@ -41,10 +42,10 @@ namespace IconAssetGenerator.Uwp.Models
         /// <summary>
         /// When the asset is generated, this property will be updated. Useful for binding and copy/paste operations
         /// </summary>
-        public StorageFile ImageFile
+        public string ImagePath
         {
-            get => _imageFile;
-            set => SetProperty(ref _imageFile, value);
+            get => _imagePath;
+            set => SetProperty(ref _imagePath, value);
         }
 
         /// <summary>
@@ -61,7 +62,7 @@ namespace IconAssetGenerator.Uwp.Models
         /// </summary>
         /// <param name="originalFile">The source image file</param>
         /// <param name="targetFolder">The target folder to save the icons in</param>
-        public async Task GenerateIconAsync(StorageFile originalFile, StorageFolder targetFolder)
+        public async Task<string> GenerateIconAsync(StorageFile originalFile, StorageFolder targetFolder)
         {
             // File name with size first to allow easier sorting
             var fileName = $"{Width}x{Height} ({Scale}) {Category} {PlatformName}.png";
@@ -92,12 +93,13 @@ namespace IconAssetGenerator.Uwp.Models
                     }
 
                     // Set the IconDefinition's file property
-                    ImageFile = targetFile;
+                    return targetFile.Path;
                 }
             }
             catch(Exception ex)
             {
                 Debug.WriteLine($"Exception generating {fileName} - {ex.Message}");
+                return "";
             }
             finally
             {

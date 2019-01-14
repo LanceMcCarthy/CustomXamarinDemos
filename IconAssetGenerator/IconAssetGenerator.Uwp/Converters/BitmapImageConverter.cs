@@ -17,7 +17,7 @@ namespace IconAssetGenerator.Uwp.Converters
             }
             else
             {
-                bitmapImage.UriSource = new Uri("ms-appx:///assets/WindowsLogo.png");
+                bitmapImage.UriSource = new Uri("ms-appx:///assets/ImagePlaceholder.png");
             }
             
             return bitmapImage;

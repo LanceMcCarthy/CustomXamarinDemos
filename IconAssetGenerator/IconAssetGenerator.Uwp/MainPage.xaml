@@ -46,7 +46,6 @@
                                      Content="{Binding IsBusyMessage}"
                                      IsActive="{Binding IsBusy}"
                                      HorizontalAlignment="Stretch"
-                                     VerticalAlignment="Stretch"
-                                     Grid.ColumnSpan="2" />
+                                     VerticalAlignment="Stretch" />
     </Grid>
 </Page>

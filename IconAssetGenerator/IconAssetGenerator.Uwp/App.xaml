@@ -1,9 +1,8 @@
-﻿<Application
-    x:Class="IconAssetGenerator.Uwp.App"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:IconAssetGenerator.Uwp"
-    xmlns:converters="using:IconAssetGenerator.Uwp.Converters">
+﻿<Application x:Class="IconAssetGenerator.Uwp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:IconAssetGenerator.Uwp"
+             xmlns:converters="using:IconAssetGenerator.Uwp.Converters">
 
     <Application.Resources>
         <converters:BitmapImageConverter x:Key="BitmapImageConverter" />
@@ -39,6 +38,8 @@
                             VerticalAlignment="Center">
                     <TextBlock Text="{Binding PlatformName}" />
                     <TextBlock Text="{Binding Category}" />
+                    <ProgressBar IsIndeterminate="{Binding IsGenerating}"
+                                 Margin="0,5" />
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="{Binding Width}" />
                         <TextBlock Text="x" />
@@ -46,21 +47,13 @@
                     </StackPanel>
                 </StackPanel>
 
-                <Grid Width="{Binding Width}"
-                      Height="{Binding Height}"
-                      Margin="10"
-                      Grid.Row="1">
-                    <Image Source="{Binding ImageFile, Converter={StaticResource BitmapImageConverter}}"
-                           HorizontalAlignment="Center"
-                           VerticalAlignment="Center" />
-                </Grid>
-
-                <ProgressRing IsActive="{Binding IsGenerating}"
-                              Width="100"
-                              Height="100"
-                              HorizontalAlignment="Center"
-                              VerticalAlignment="Center"
-                              Grid.RowSpan="2" />
+                <!--
+                TODO Figure out propchanged bug for why images are not reloading after generating. Is suspect the file save is completing too fast
+                <Image Source="{Binding ImagePath}"
+                       Width="{Binding Width}"
+                       Height="{Binding Height}"
+                       Margin="10"
+                       Grid.Row="1" />-->
             </Grid>
         </DataTemplate>
     </Application.Resources>

@@ -125,10 +125,19 @@ namespace IconAssetGenerator.Uwp.ViewModels
                 {
                     IsBusyMessage = $"Generating {iconDef.PlatformName} icons...";
 
-                    await iconDef.GenerateIconAsync(SourceIconFile, targetFolder);
+                    var filePath = await iconDef.GenerateIconAsync(SourceIconFile, targetFolder);
+
+                    iconDef.ImagePath = filePath;
                 }
 
+
+
                 await new MessageDialog($"Your icons have been generated and saved to {targetFolder.Path}", "Complete!").ShowAsync();
+
+                foreach (var iconDef in IconDefinitions)
+                {
+                    OnPropertyChanged(nameof(iconDef.ImagePath));
+                }
             }
             catch (Exception ex)
             {
