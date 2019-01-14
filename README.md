@@ -1,6 +1,7 @@
 # CustomXamarinDemos
 
 Readme Quick-Links
+- [IconGenerator Helper](https://github.com/LanceMcCarthy/CustomXamarinDemos#IconGenerator) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/IconAssetGenerator))
 - [Real-time Filtering Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#RealTimeFiltering) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/RealTimeFilteringDemos))
 - [Cascading AutoCompleteViews Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#CascadingAutoCompleteViews) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/CascadingAutoCompleteViews))
 - [Custom Series Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#customserieslabels) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/CustomSeriesLabels))
@@ -10,6 +11,25 @@ Readme Quick-Links
 - [Workouts](https://github.com/LanceMcCarthy/CustomXamarinDemos#Workouts) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/Workouts))
 - [Drawer Dismiss Effect](https://github.com/LanceMcCarthy/CustomXamarinDemos#DrawerDismissEffect) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/DrawerDismissEffect))
 - [Android Call Detector](https://github.com/LanceMcCarthy/CustomXamarinDemos#AndroidCallDetector) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/CallDetector))
+
+## IconGenerator
+
+A helper app that lets you quickly generate different icon sizes from a single source image. It is very extensible because you only need to add any custom icon sizes by adding an `IconDefinition` to the **IconDefinitions** collection.
+
+```c#
+// For example, if you needed a 30x30 pixel icon for the taskbar
+IconDefinitions.Add(new IconDefinition
+{
+    PlatformName = "Desktop",
+    Category = "Taskbar",
+    Height = 30,
+    Width = 30
+});
+```
+
+Here's the results when a list of iPhone and iPad assets are loaded as IconDefinitions.
+
+![Generator Results](https://user-images.githubusercontent.com/3520532/51133196-51082400-1802-11e9-9298-de699b23dd49.png)
 
 ## RealTimeFiltering
 
