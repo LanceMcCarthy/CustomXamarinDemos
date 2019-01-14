@@ -56,9 +56,15 @@ namespace IconAssetGenerator.Uwp.Models
             set => SetProperty(ref _isGenerating, value);
         }
 
+        /// <summary>
+        /// Generates the final icon file. 
+        /// </summary>
+        /// <param name="originalFile">The source image file</param>
+        /// <param name="targetFolder">The target folder to save the icons in</param>
         public async Task GenerateIconAsync(StorageFile originalFile, StorageFolder targetFolder)
         {
-            var fileName = $"{PlatformName} {Category} {Scale} ({Width}x{Height}).png";
+            // File name with size first to allow easier sorting
+            var fileName = $"{Width}x{Height} ({Scale}) {Category} {PlatformName}.png";
 
             // Create new file for resized image
             var targetFile = await targetFolder.CreateFileAsync(fileName);
