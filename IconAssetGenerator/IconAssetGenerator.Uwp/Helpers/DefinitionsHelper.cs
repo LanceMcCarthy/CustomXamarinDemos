@@ -8,9 +8,12 @@ namespace IconAssetGenerator.Uwp.Helpers
         static DefinitionsHelper()
         {
             AppleIconDefinitions = GenerateAppleDefinitions();
+            AndroidIconDefinitions = GenerateAndroidDefinitions();
         }
 
         public static IReadOnlyList<IconDefinition> AppleIconDefinitions { get; set; }
+
+        public static IReadOnlyList<IconDefinition> AndroidIconDefinitions { get; set; }
 
         private static IReadOnlyList<IconDefinition> GenerateAppleDefinitions()
         {
@@ -232,6 +235,329 @@ namespace IconAssetGenerator.Uwp.Helpers
                     Width = 58,
                     Height = 58
                 },
+            };
+        }
+
+        private static IReadOnlyList<IconDefinition> GenerateAndroidDefinitions()
+        {
+            return new List<IconDefinition>
+            {
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_launcher",
+                    Scale = "drawable",
+                    Width = 114,
+                    Height = 114
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_menu",
+                    Scale = "drawable",
+                    Width = 114,
+                    Height = 114
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_stat_notify",
+                    Scale = "drawable",
+                    Width = 57,
+                    Height = 57
+                },
+
+                // hdpi
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_launcher",
+                    Scale = "drawable-hdpi",
+                    Width = 114,
+                    Height = 114
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_menu",
+                    Scale = "drawable-hdpi",
+                    Width = 114,
+                    Height = 114
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_stat_notify",
+                    Scale = "drawable-hdpi",
+                    Width = 57,
+                    Height = 57
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_tab",
+                    Scale = "drawable-hdpi-v5",
+                    Width = 57,
+                    Height = 57
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_stat_notify",
+                    Scale = "drawable-hdpi-v9",
+                    Width = 29,
+                    Height = 29
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_menu",
+                    Scale = "drawable-hdpi-v9",
+                    Width = 85,
+                    Height = 85
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_stat_notify",
+                    Scale = "drawable-hdpi-v11",
+                    Width = 43,
+                    Height = 43
+                },
+
+                //ldpi
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_launcher",
+                    Scale = "drawable-ldpi",
+                    Width = 43,
+                    Height = 43
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_menu",
+                    Scale = "drawable-ldpi",
+                    Width = 43,
+                    Height = 43
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_tab",
+                    Scale = "drawable-ldpi",
+                    Width = 29,
+                    Height = 29
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_stat_notify",
+                    Scale = "drawable-ldpi",
+                    Width = 30,
+                    Height = 30
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_tab",
+                    Scale = "drawable-ldpi-v5",
+                    Width = 23,
+                    Height = 23
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_stat_notify",
+                    Scale = "drawable-ldpi-v9",
+                    Width = 29,
+                    Height = 29
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_menu",
+                    Scale = "drawable-ldpi-v9",
+                    Width = 85,
+                    Height = 85
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_menu",
+                    Scale = "drawable-ldpi-v11",
+                    Width = 22,
+                    Height = 22
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_stat_notify",
+                    Scale = "drawable-ldpi-v11",
+                    Width = 22,
+                    Height = 22
+                },
+
+                //mdpi
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_launcher",
+                    Scale = "drawable-mdpi",
+                    Width = 57,
+                    Height = 57
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_menu",
+                    Scale = "drawable-mdpi",
+                    Width = 57,
+                    Height = 57
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_tab",
+                    Scale = "drawable-mdpi",
+                    Width = 38,
+                    Height = 38
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_stat_notify",
+                    Scale = "drawable-mdpi",
+                    Width = 30,
+                    Height = 30
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_tab",
+                    Scale = "drawable-mdpi-v5",
+                    Width = 35,
+                    Height = 35
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_stat_notify",
+                    Scale = "drawable-mdpi-v9",
+                    Width = 19,
+                    Height = 19
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_menu",
+                    Scale = "drawable-mdpi-v9",
+                    Width = 57,
+                    Height = 57
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_menu",
+                    Scale = "drawable-mdpi-v11",
+                    Width = 29,
+                    Height = 29
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_stat_notify",
+                    Scale = "drawable-mdpi-v11",
+                    Width = 29,
+                    Height = 29
+                },
+
+                //xhdpi
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_launcher",
+                    Scale = "drawable-xhdpi",
+                    Width = 114,
+                    Height = 114
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_menu",
+                    Scale = "drawable-xhdpi",
+                    Width = 114,
+                    Height = 114
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "btn_stat_notify",
+                    Scale = "drawable-xhdpi",
+                    Width = 76,
+                    Height = 76
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_stat_notify",
+                    Scale = "drawable-xhdpi",
+                    Width = 59,
+                    Height = 59
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_stat_notify",
+                    Scale = "drawable-xhdpi-v9",
+                    Width = 38,
+                    Height = 38
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_menu",
+                    Scale = "drawable-xhdpi-v9",
+                    Width = 114,
+                    Height = 114
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_menu",
+                    Scale = "drawable-xhdpi-v11",
+                    Width = 57,
+                    Height = 57
+                },
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_stat_notify",
+                    Scale = "drawable-xhdpi-v11",
+                    Width = 57,
+                    Height = 57
+                },
+                
+                //xxhdpi
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_launcher",
+                    Scale = "drawable-xxhdpi",
+                    Width = 170,
+                    Height = 170
+                },
+
+                //xxxhdpi
+                new IconDefinition
+                {
+                    PlatformName = "Android",
+                    Category = "ic_launcher",
+                    Scale = "drawable-xxxhdpi",
+                    Width = 227,
+                    Height = 227
+                }
             };
         }
     }

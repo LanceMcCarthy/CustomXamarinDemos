@@ -20,22 +20,27 @@ namespace IconAssetGenerator.Uwp.ViewModels
 
         public MainViewModel()
         {
-            var appleIcons = DefinitionsHelper.AppleIconDefinitions;
-
-            foreach (var appleIconDefinition in appleIcons)
+            // Apple iOS icon definitions from helper class
+            foreach (var appleIconDefinition in DefinitionsHelper.AppleIconDefinitions)
             {
                 IconDefinitions.Add(appleIconDefinition);
             }
 
-            // TODO Add your Icon definitions to this.IconDefinitions!
-            // For example, if you needed a 30x30 pixel icon for the taskbar
-            IconDefinitions.Add(new IconDefinition
+            // Android icon definitions from helper class
+            foreach (var androidIconDefinition in DefinitionsHelper.AndroidIconDefinitions)
             {
-                PlatformName = "Desktop",
-                Category = "Taskbar",
-                Height = 30,
-                Width = 30
-            });
+                IconDefinitions.Add(androidIconDefinition);
+            }
+
+
+            // TODO Add your Icon definitions to IconDefinitions
+            //IconDefinitions.Add(new IconDefinition
+            //{
+            //    PlatformName = "Desktop",
+            //    Category = "Taskbar",
+            //    Height = 30,
+            //    Width = 30
+            //});
         }
 
         public ObservableCollection<IconDefinition> IconDefinitions
@@ -119,6 +124,7 @@ namespace IconAssetGenerator.Uwp.ViewModels
                 foreach (var iconDef in IconDefinitions)
                 {
                     IsBusyMessage = $"Generating {iconDef.PlatformName} icons...";
+
                     await iconDef.GenerateIconAsync(SourceIconFile, targetFolder);
                 }
 
