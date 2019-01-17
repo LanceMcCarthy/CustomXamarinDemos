@@ -150,7 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Telerik.UI.for.Xamarin">
-      <Version>2018.3.1109.1</Version>
+      <Version>2019.1.116.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Essentials">
       <Version>0.10.0-preview</Version>
