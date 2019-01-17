@@ -54,9 +54,9 @@
       <Version>2018.3.1109.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.4.0.1009999" />
-    <PackageReference Include="SkiaSharp" Version="1.60.3" />
-    <PackageReference Include="SkiaSharp.Views " Version="1.60.3" />
-    <PackageReference Include="SkiaSharp.Views.Forms " Version="1.60.3" />
+    <PackageReference Include="SkiaSharp" Version="1.68.0" />
+    <PackageReference Include="SkiaSharp.Views " Version="1.68.0" />
+    <PackageReference Include="SkiaSharp.Views.Forms " Version="1.68.0" />
     <PackageReference Include="Xamarin.Android.Support.v4" Version="27.0.2.1" />
     <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2.1" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2.1" />
