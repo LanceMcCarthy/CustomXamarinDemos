@@ -1,12 +1,8 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
-using Android.App;
 using Android.Graphics;
 using Plugin.CurrentActivity;
 using RenderImage.Portable.Services;
-using Xamarin.Forms;
-
-// *************** Work in progress *************** //
 
 namespace RenderImage.Android.Services
 {
@@ -18,10 +14,10 @@ namespace RenderImage.Android.Services
             {
                 var rootView = CrossCurrentActivity.Current.Activity.Window.DecorView.RootView;
 
+                // Generate the full screen bitmap
                 using (var bitmap = Bitmap.CreateBitmap(rootView.Width, rootView.Height, Bitmap.Config.Argb8888))
                 {
                     var canvas = new Canvas(bitmap);
-
                     rootView.Draw(canvas);
 
                     using (var stream = new MemoryStream())
@@ -39,23 +35,26 @@ namespace RenderImage.Android.Services
             {
                 var rootView = CrossCurrentActivity.Current.Activity.Window.DecorView.RootView;
 
+                // Generate the full screen bitmap
                 using (var bitmap = Bitmap.CreateBitmap(rootView.Width, rootView.Height, Bitmap.Config.Argb8888))
                 {
                     var canvas = new Canvas(bitmap);
-
                     rootView.Draw(canvas);
 
-                    // TODO Crop isnt working
-                    canvas.ClipRect(new Rect(x, y, x + width, y + height));
-
-                    using (var stream = new MemoryStream())
+                    // Generate the cropped bitmap using the crop rect.
+                    using(var croppedBitmap = Bitmap.CreateBitmap(bitmap, x, y, width, height))
                     {
-                        bitmap.Compress(Bitmap.CompressFormat.Png, 90, stream);
+                        var canvas2 = new Canvas(croppedBitmap);
+                        rootView.Draw(canvas2);
 
-                        return stream.ToArray();
+                        using (var stream = new MemoryStream())
+                        {
+                            croppedBitmap.Compress(Bitmap.CompressFormat.Png, 90, stream);
+                            return stream.ToArray();
+                        }
                     }
                 }
-            });
+            }); 
         }
     }
 }
