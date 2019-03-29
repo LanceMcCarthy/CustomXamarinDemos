@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:RenderImage.Portable"
-             xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
              xmlns:input="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
              x:Class="RenderImage.Portable.MainPage">
 
@@ -48,16 +46,32 @@
 
             <input:RadEntry x:Name="XEntry"
                             WatermarkText="X"
-                            Grid.Column="0" />
+                            Grid.Column="0">
+                <input:RadEntry.BorderStyle>
+                    <input:BorderStyle BorderThickness="2"/>
+                </input:RadEntry.BorderStyle>
+            </input:RadEntry>
             <input:RadEntry x:Name="YEntry"
                             WatermarkText="Y"
-                            Grid.Column="1" />
+                            Grid.Column="1">
+                <input:RadEntry.BorderStyle>
+                    <input:BorderStyle BorderThickness="2" />
+                </input:RadEntry.BorderStyle>
+            </input:RadEntry>
             <input:RadEntry x:Name="WidthEntry"
                             WatermarkText="Width"
-                            Grid.Column="2" />
+                            Grid.Column="2">
+                <input:RadEntry.BorderStyle>
+                    <input:BorderStyle BorderThickness="2" />
+                </input:RadEntry.BorderStyle>
+            </input:RadEntry>
             <input:RadEntry x:Name="HeightEntry"
                             WatermarkText="Height"
-                            Grid.Column="3" />
+                            Grid.Column="3">
+                <input:RadEntry.BorderStyle>
+                    <input:BorderStyle BorderThickness="2" />
+                </input:RadEntry.BorderStyle>
+            </input:RadEntry>
         </Grid>
 
         <Grid x:Name="ResultGrid"
