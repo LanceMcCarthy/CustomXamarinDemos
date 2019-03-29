@@ -8,7 +8,7 @@ namespace RenderImage.Portable
         {
             InitializeComponent();
             
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
@@ -25,5 +25,11 @@ namespace RenderImage.Portable
         {
             // Handle when your app resumes
         }
+    }
+
+    public static class ServiceConstants
+    {
+        public const string ServiceBaseUrl = "http://webapifortelerikdemos.azurewebsites.net/";
+        public const string PdfGeneratorApi = "api/pdfgenerator";
     }
 }
