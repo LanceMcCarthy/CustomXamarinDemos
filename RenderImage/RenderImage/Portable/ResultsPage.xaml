@@ -3,19 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
              x:Class="RenderImage.Portable.ResultsPage">
-    <Grid>
-        <Image x:Name="image"/>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Make PDF"
+                     Clicked="MakePdfMenuItem_OnClicked" />
+    </ContentPage.ToolbarItems>
+    <Grid BackgroundColor="DarkSlateGray">
+        <Image x:Name="image"
+               Margin="20" />
 
-        <primitives:RadBorder x:Name="resultBorder"
-                              BackgroundColor="CadetBlue"
-                              VerticalOptions="End"
-                              HorizontalOptions="Center"
-                              Margin="5">
-            <Label x:Name="ResultsLabel"
-                   TextColor="AntiqueWhite"
-                   LineBreakMode="WordWrap"/>
-        </primitives:RadBorder>
-        
-        <primitives:RadBusyIndicator x:Name="BusyIndicator"/>
+        <primitives:RadBusyIndicator x:Name="BusyIndicator"
+                                     AnimationType="Animation3"
+                                     AnimationContentColor="Blue"
+                                     BackgroundColor="#DDFFFFFF" />
+        <Label x:Name="ErrorLabel"
+               IsVisible="False"
+               TextColor="AntiqueWhite"
+               LineBreakMode="WordWrap"
+               VerticalOptions="End"
+               HorizontalOptions="Center"
+               Margin="10" />
     </Grid>
 </ContentPage>
