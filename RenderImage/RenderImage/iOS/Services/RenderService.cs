@@ -5,44 +5,17 @@ using System.Threading.Tasks;
 using RenderImage.Portable.Services;
 using UIKit;
 
-// *************** Work in progress *************** //
-
 namespace RenderImage.iOS.Services
 {
     public class RenderService : IRenderService
     {
-        public async Task<byte[]> RenderAsync()
+        public Task<byte[]> RenderAsync()
         {
-            var capture = UIScreen.MainScreen.Capture();
-
-            using (var nsData = capture.AsPNG())
+            return Task.Run(() =>
             {
-                var bytes = new byte[nsData.Length];
+                var capture = UIScreen.MainScreen.Capture();
 
-                Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
-
-                return bytes;
-            }
-        }
-
-        public async Task<byte[]> RenderAsync(int x, int y, int width, int height)
-        {
-            var capture = UIScreen.MainScreen.Capture();
-
-            // Option 1
-            //UIGraphics.BeginImageContext(new SizeF(width, height));
-            //UIGraphics.GetCurrentContext().ClipToRect(new RectangleF(0, 0, width, height));
-            //capture.Draw(new RectangleF(-x, -y, width, height));
-            //var modifiedImage = UIGraphics.GetImageFromCurrentImageContext();
-            //UIGraphics.EndImageContext();
-
-            // Option 2
-            // NOTE: Might need to use -x and -y
-            using (var cgImage = capture.CGImage.WithImageInRect(new RectangleF(x, y, width, height)))
-            {
-                var croppedImage = UIImage.FromImage(cgImage);
-
-                using (var nsData = croppedImage.AsPNG())
+                using (var nsData = capture.AsPNG())
                 {
                     var bytes = new byte[nsData.Length];
 
@@ -50,7 +23,65 @@ namespace RenderImage.iOS.Services
 
                     return bytes;
                 }
-            }
+            });
+        }
+
+        public Task<byte[]> RenderAsync(int x, int y, int width, int height)
+        {
+            return Task.Run(() =>
+            {
+                var capture = UIScreen.MainScreen.Capture();
+
+                // Option 1
+                //UIGraphics.BeginImageContext(new SizeF(width, height));
+                //UIGraphics.GetCurrentContext().ClipToRect(new RectangleF(0, 0, width, height));
+                //capture.Draw(new RectangleF(-x, -y, width, height));
+                //var modifiedImage = UIGraphics.GetImageFromCurrentImageContext();
+                //UIGraphics.EndImageContext();
+
+                // Option 2
+                // NOTE: Might need to use -x and -y
+                using (var cgImage = capture.CGImage.WithImageInRect(new RectangleF(x, y, width, height)))
+                {
+                    var croppedImage = UIImage.FromImage(cgImage);
+
+                    using (var nsData = croppedImage.AsPNG())
+                    {
+                        var bytes = new byte[nsData.Length];
+
+                        Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
+
+                        return bytes;
+                    }
+                }
+            });
+        }
+
+        public Task<byte[]> RenderRelativeAsync(int xProportion, int yProportion, int widthProportion, int heightProportion)
+        {
+            return Task.Run(() =>
+            {
+                var capture = UIScreen.MainScreen.Capture();
+
+                var xTrue = capture.CGImage.Width * xProportion / 100;
+                var yTrue = capture.CGImage.Height * yProportion / 100;
+                var widthTrue = capture.CGImage.Width * widthProportion / 100;
+                var heightTrue = capture.CGImage.Height * heightProportion / 100;
+
+                using (var cgImage = capture.CGImage.WithImageInRect(new RectangleF(xTrue, yTrue, widthTrue, heightTrue)))
+                {
+                    var croppedImage = UIImage.FromImage(cgImage);
+
+                    using (var nsData = croppedImage.AsPNG())
+                    {
+                        var bytes = new byte[nsData.Length];
+
+                        Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
+
+                        return bytes;
+                    }
+                }
+            });
         }
     }
 }
