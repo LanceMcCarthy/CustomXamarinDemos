@@ -3,7 +3,16 @@ using System.IO;
 using System.Threading.Tasks;
 using RenderImage.Portable.Models;
 using RenderImage.Portable.Services;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Formats;
+using SixLabors.ImageSharp.Processing;
+using Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export;
+using Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Filters;
+using Telerik.Windows.Documents.Fixed.Model;
+using Telerik.Windows.Documents.Fixed.Model.ColorSpaces;
 using Xamarin.Forms;
+
+using ImageSource = Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource;
 
 namespace RenderImage.Portable
 {
@@ -25,7 +34,7 @@ namespace RenderImage.Portable
             {
                 BusyIndicator.IsVisible = BusyIndicator.IsBusy = true;
 
-                image.Source = ImageSource.FromStream(() => new MemoryStream(_imageBytes));
+                image.Source = Xamarin.Forms.ImageSource.FromStream(() => new MemoryStream(_imageBytes));
             }
             catch(Exception ex)
             {
@@ -40,10 +49,76 @@ namespace RenderImage.Portable
 
         private async void MakePdfMenuItem_OnClicked(object sender, EventArgs e)
         {
-            await GeneratePdfWithImageAsync();
+            await RemotelyGeneratePdfWithImageAsync();
         }
 
-        private async Task GeneratePdfWithImageAsync()
+        private async Task LocallyGeneratePdfWithImageAsync()
+        {
+            try
+            {
+                BusyIndicator.IsVisible = BusyIndicator.IsBusy = true;
+
+                using (var jpegStream = new MemoryStream())
+                {
+                    SixLabors.ImageSharp.Formats.IImageFormat format;
+
+                    // Converting the png byte array to a jpeg-encoded byte array
+                    using (var image = SixLabors.ImageSharp.Image.Load(_imageBytes))
+                    {
+                        // convert to jpeg
+                        image.SaveAsJpeg(jpegStream);
+
+                        var jpegArray = GetByteArray(jpegStream);
+
+                        var document = new RadFixedDocument();
+                        var page = new RadFixedPage();
+
+                        var fixedPageImageSource = new Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource(
+                            jpegArray, 
+                            8, 
+                            image.Width, 
+                            image.Height, 
+                            ColorSpace.RGB, 
+                            new string[] { }, 
+                            new double[] { }, 
+                            false);
+
+                        var pdfImage = new Telerik.Windows.Documents.Fixed.Model.Objects.Image();
+                        pdfImage.ImageSource = fixedPageImageSource;
+
+                        page.Content.Add(pdfImage);
+
+
+                        var exportSettings = new PdfExportSettings();
+                        exportSettings.ImageQuality = ImageQuality.Medium;
+
+                        // TODO Export to PDF file
+                    }
+                }
+
+                //if (pdfBytes != null)
+                //{
+                //    // Navigate to a new page and the PDF in the RadPdfViewer
+                //    await Navigation.PushAsync(new DocumentViewerPage(pdfBytes));
+                //}
+                //else
+                //{
+                //    ErrorLabel.IsVisible = true;
+                //    ErrorLabel.Text = "Error Uploading Content. Try again.";
+                //}
+            }
+            catch (Exception ex)
+            {
+                ErrorLabel.IsVisible = true;
+                ErrorLabel.Text = $"Error: {ex.Message}";
+            }
+            finally
+            {
+                BusyIndicator.IsVisible = BusyIndicator.IsBusy = false;
+            }
+        }
+
+        private async Task RemotelyGeneratePdfWithImageAsync()
         {
             try
             {
@@ -82,6 +157,23 @@ namespace RenderImage.Portable
             finally
             {
                 BusyIndicator.IsVisible = BusyIndicator.IsBusy = false;
+            }
+        }
+
+        public static byte[] GetByteArray(Stream input)
+        {
+            byte[] buffer = new byte[16 * 1024];
+
+            using (var ms = new MemoryStream())
+            {
+                int read;
+
+                while ((read = input.Read(buffer, 0, buffer.Length)) > 0)
+                {
+                    ms.Write(buffer, 0, read);
+                }
+
+                return ms.ToArray();
             }
         }
     }
