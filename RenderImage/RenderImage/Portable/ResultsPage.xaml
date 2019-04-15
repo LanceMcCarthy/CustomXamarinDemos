@@ -29,12 +29,24 @@
                                      AnimationType="Animation3"
                                      AnimationContentColor="Blue"
                                      BackgroundColor="#DDFFFFFF" />
-        <Label x:Name="ErrorLabel"
-               IsVisible="False"
-               TextColor="AntiqueWhite"
-               LineBreakMode="WordWrap"
-               VerticalOptions="End"
-               HorizontalOptions="Center"
-               Margin="10" />
+
+        <primitives:RadPopup.Popup>
+            <primitives:RadPopup x:Name="MessagePopup"
+                                 IsModal="True" 
+                                 Placement="Center"
+                                 OutsideBackgroundColor="#6F000000">
+                <primitives:RadBorder CornerRadius="15" 
+                                      BackgroundColor="Wheat"
+                                      Padding="10">
+                    <StackLayout Spacing="5">
+                        <Label x:Name="ErrorLabel"
+                               LineBreakMode="WordWrap"/>
+                        <Button Text="close"
+                                HorizontalOptions="Center"
+                                Clicked="ClosePopupButton_OnClicked"/>
+                    </StackLayout>
+                </primitives:RadBorder>
+            </primitives:RadPopup>
+        </primitives:RadPopup.Popup>
     </Grid>
 </ContentPage>

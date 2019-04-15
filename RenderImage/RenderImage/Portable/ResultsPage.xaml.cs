@@ -1,12 +1,14 @@
 ﻿using System;
 using System.IO;
 using System.Threading.Tasks;
+using CommonHelpers.Extensions;
 using RenderImage.Portable.Models;
 using RenderImage.Portable.Services;
-using SixLabors.ImageSharp;
+using Telerik.Documents.Primitives;
 using Telerik.Windows.Documents.Fixed.FormatProviders.Pdf;
-using Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export;
 using Telerik.Windows.Documents.Fixed.Model;
+using Telerik.Windows.Documents.Fixed.Model.ColorSpaces;
+using Telerik.Windows.Documents.Fixed.Model.Editing;
 using Xamarin.Forms;
 
 namespace RenderImage.Portable
@@ -14,7 +16,7 @@ namespace RenderImage.Portable
     public partial class ResultsPage : ContentPage
     {
         private readonly byte[] _imageBytes;
-        
+
         public ResultsPage (byte[] imageBytes)
 		{
 			InitializeComponent();
@@ -33,7 +35,7 @@ namespace RenderImage.Portable
             }
             catch(Exception ex)
             {
-                ErrorLabel.IsVisible = true;
+                MessagePopup.IsOpen = true;
                 ErrorLabel.Text = $"Error: {ex.Message}";
             }
             finally
@@ -44,95 +46,113 @@ namespace RenderImage.Portable
 
         private async void LocalGenerationButton_OnClicked(object sender, EventArgs e)
         {
+            BusyIndicator.IsVisible = BusyIndicator.IsBusy = true;
+
             await LocallyGeneratePdfWithImageAsync();
+
+            BusyIndicator.IsVisible = BusyIndicator.IsBusy = false;
         }
 
         private async void RemoteGenerationButton_OnClicked(object sender, EventArgs e)
         {
+            BusyIndicator.IsVisible = BusyIndicator.IsBusy = true;
+
             await RemotelyGeneratePdfWithImageAsync();
+
+            BusyIndicator.IsVisible = BusyIndicator.IsBusy = false;
         }
 
+        /// <summary>
+        /// Generates the PDF document locally and saves it to a file.
+        /// </summary>
+        /// <returns></returns>
         private async Task LocallyGeneratePdfWithImageAsync()
         {
             try
             {
-                BusyIndicator.IsVisible = BusyIndicator.IsBusy = true;
-
-                using (var jpegStream = new MemoryStream())
+                using (var jpegStream = new MemoryStream(_imageBytes))
                 {
-                    SixLabors.ImageSharp.Formats.IImageFormat format;
+                    // Define page dimensions
+                    var pageSize = new Telerik.Documents.Primitives.Size(Telerik.Windows.Documents.Media.Unit.MmToDip(210), Telerik.Windows.Documents.Media.Unit.MmToDip(297));
+                    var pageMargins = new Telerik.Documents.Primitives.Thickness(Telerik.Windows.Documents.Media.Unit.MmToDip(10));
+                    var remainingPageSize = new Telerik.Documents.Primitives.Size(pageSize.Width - pageMargins.Left - pageMargins.Right, pageSize.Height - pageMargins.Top - pageMargins.Bottom);
 
-                    // Converting the png byte array to a jpeg-encoded byte array
-                    using (var image = SixLabors.ImageSharp.Image.Load(_imageBytes))
+                    // Create in memory document
+                    // instantiate the document and add a page
+                    var document = new RadFixedDocument();
+                    var page = document.Pages.AddPage();
+                    page.Size = pageSize;
+
+                    // instantiate an editor, this is what writes all the content to the page
+                    var editor = new FixedContentEditor(page);
+                    editor.GraphicProperties.StrokeThickness = 0;
+                    editor.GraphicProperties.IsStroked = false;
+                    editor.GraphicProperties.FillColor = new RgbColor(255, 255, 255);
+                    editor.DrawRectangle(new Rect(0, 0, pageSize.Width, pageSize.Height));
+                    editor.Position.Translate(pageMargins.Left, pageMargins.Top);
+
+                    var block = new Block();
+                    block.HorizontalAlignment = Telerik.Windows.Documents.Fixed.Model.Editing.Flow.HorizontalAlignment.Center;
+                    block.TextProperties.FontSize = 22;
+
+                    // use the uploaded content for the title
+                    block.InsertText("Generated in Xamarin.Forms!");
+
+                    var blockSize = block.Measure(remainingPageSize);
+                    editor.DrawBlock(block, remainingPageSize);
+
+                    editor.Position.Translate(pageMargins.Left, blockSize.Height + pageMargins.Top + 20);
+
+                    // Create image that can be inserted into document using the jpeg's stream
+                    // !Note - Image is of type Telerik.Windows.Documents.Fixed.Model.Objects.Image
+                    var docImageSource = new Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource(jpegStream);
+
+                    // Draw the image into the document
+                    var imageBlock = new Block();
+                    imageBlock.HorizontalAlignment = Telerik.Windows.Documents.Fixed.Model.Editing.Flow.HorizontalAlignment.Center;
+                    imageBlock.InsertImage(docImageSource);
+                    editor.DrawBlock(imageBlock, remainingPageSize);
+
+                    // Export the document to Pdf
+                    var provider = new PdfFormatProvider();
+
+                    using (var exportStream = new MemoryStream())
                     {
-                        // convert to jpeg
-                        image.SaveAsJpeg(jpegStream);
+                        // Export as PDF file
+                        provider.Export(document, exportStream);
 
-                        var jpegArray = GetByteArray(jpegStream);
+                        // Prepare to show the PDF file in the PDFViewer on the next page
+                        exportStream.Position = 0;
+                        var pdfBytes = GetByteArray(exportStream);
 
-                        var document = new RadFixedDocument();
-                        var page = new RadFixedPage();
-
-                        var fixedPageImageSource = new Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource(jpegStream);
-
-                        var pdfImage = new Telerik.Windows.Documents.Fixed.Model.Objects.Image();
-                        pdfImage.ImageSource = fixedPageImageSource;
-
-                        page.Content.Add(pdfImage);
-
-
-                        var exportSettings = new PdfExportSettings();
-                        exportSettings.ImageQuality = ImageQuality.Medium;
-
-
-                        PdfFormatProvider provider = new PdfFormatProvider();
-
-                        using (Stream output = File.OpenWrite("sample.pdf"))
+                        if (pdfBytes != null)
                         {
-                            provider.Export(document, output);
-
-                            if (output.CanSeek)
-                            {
-                                output.Seek(0, SeekOrigin.Begin);
-                            }
-                            else
-                            {
-                                output.Position = 0;
-                            }
-
-                            var pdfBytes = GetByteArray(output);
-
-                            if (pdfBytes != null)
-                            {
-                                // Navigate to a new page and the PDF in the RadPdfViewer
-                                await Navigation.PushAsync(new DocumentViewerPage(pdfBytes));
-                            }
-                            else
-                            {
-                                ErrorLabel.IsVisible = true;
-                                ErrorLabel.Text = "Error Uploading Content. Try again.";
-                            }
+                            // Navigate to a new page and the PDF in the RadPdfViewer
+                            await Navigation.PushAsync(new DocumentViewerPage(pdfBytes));
+                        }
+                        else
+                        {
+                            MessagePopup.IsOpen = true;
+                            ErrorLabel.Text = "The exported byte array was null. Try again.";
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                ErrorLabel.IsVisible = true;
+                MessagePopup.IsOpen = true;
                 ErrorLabel.Text = $"Error: {ex.Message}";
-            }
-            finally
-            {
-                BusyIndicator.IsVisible = BusyIndicator.IsBusy = false;
             }
         }
 
+        /// <summary>
+        /// Creates the PDF document on the server and returns the PDF file as a byte array
+        /// </summary>
+        /// <returns></returns>
         private async Task RemotelyGeneratePdfWithImageAsync()
         {
             try
             {
-                BusyIndicator.IsVisible = BusyIndicator.IsBusy = true;
-
                 // convert the byte array to a base64 string (you could use a Stream if you prefer to)
                 var base64String = Convert.ToBase64String(_imageBytes);
 
@@ -149,23 +169,21 @@ namespace RenderImage.Portable
                 
                 if (pdfBytes != null)
                 {
+                    await pdfBytes.SaveToLocalFolderAsync("RemoteGenerated.pdf");
+
                     // Navigate to a new page and the PDF in the RadPdfViewer
                     await Navigation.PushAsync(new DocumentViewerPage(pdfBytes));
                 }
                 else
                 {
-                    ErrorLabel.IsVisible = true;
+                    MessagePopup.IsOpen = true;
                     ErrorLabel.Text = "Error Uploading Content. Try again.";
                 }
             }
             catch (Exception ex)
             {
-                ErrorLabel.IsVisible = true;
+                MessagePopup.IsOpen = true;
                 ErrorLabel.Text = $"Error: {ex.Message}";
-            }
-            finally
-            {
-                BusyIndicator.IsVisible = BusyIndicator.IsBusy = false;
             }
         }
 
@@ -184,6 +202,11 @@ namespace RenderImage.Portable
 
                 return ms.ToArray();
             }
+        }
+
+        private void ClosePopupButton_OnClicked(object sender, EventArgs e)
+        {
+            MessagePopup.IsOpen = false;
         }
     }
 }
