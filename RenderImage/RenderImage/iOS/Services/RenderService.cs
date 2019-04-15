@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
+using RenderImage.Portable.Models;
 using RenderImage.Portable.Services;
 using UIKit;
 
@@ -9,13 +10,13 @@ namespace RenderImage.iOS.Services
 {
     public class RenderService : IRenderService
     {
-        public Task<byte[]> RenderAsync(string encodingFormat = "png")
+        public Task<byte[]> RenderAsync(RenderEncodingOptions encodingFormat = RenderEncodingOptions.Png)
         {
             return Task.Run(() =>
             {
                 var capture = UIScreen.MainScreen.Capture();
 
-                if (encodingFormat == "jpeg")
+                if (encodingFormat == RenderEncodingOptions.Jpeg)
                 {
                     using (var nsData = capture.AsJPEG())
                     {
@@ -40,7 +41,7 @@ namespace RenderImage.iOS.Services
             });
         }
 
-        public Task<byte[]> RenderAsync(int x, int y, int width, int height, string encodingFormat = "png")
+        public Task<byte[]> RenderAsync(int x, int y, int width, int height, RenderEncodingOptions encodingFormat = RenderEncodingOptions.Png)
         {
             return Task.Run(() =>
             {
@@ -59,7 +60,7 @@ namespace RenderImage.iOS.Services
                 {
                     var croppedImage = UIImage.FromImage(cgImage);
 
-                    if (encodingFormat == "jpeg")
+                    if (encodingFormat == RenderEncodingOptions.Jpeg)
                     {
                         using (var nsData = croppedImage.AsJPEG())
                         {
@@ -85,7 +86,7 @@ namespace RenderImage.iOS.Services
             });
         }
 
-        public Task<byte[]> RenderRelativeAsync(int xProportion, int yProportion, int widthProportion, int heightProportion, string encodingFormat = "png")
+        public Task<byte[]> RenderRelativeAsync(int xProportion, int yProportion, int widthProportion, int heightProportion, RenderEncodingOptions encodingFormat = RenderEncodingOptions.Png)
         {
             return Task.Run(() =>
             {
@@ -100,7 +101,7 @@ namespace RenderImage.iOS.Services
                 {
                     var croppedImage = UIImage.FromImage(cgImage);
 
-                    if (encodingFormat == "jpeg")
+                    if (encodingFormat == RenderEncodingOptions.Jpeg)
                     {
                         using (var nsData = croppedImage.AsJPEG())
                         {

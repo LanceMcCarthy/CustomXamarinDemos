@@ -1,5 +1,6 @@
 using System;
 using System.Diagnostics;
+using RenderImage.Portable.Models;
 using RenderImage.Portable.Services;
 using Xamarin.Forms;
 
@@ -14,7 +15,7 @@ namespace RenderImage.Portable
 
         private async void RenderAll_OnClicked(object sender, EventArgs e)
         {
-            var imageBytes = await DependencyService.Get<IRenderService>().RenderAsync();
+            var imageBytes = await DependencyService.Get<IRenderService>().RenderAsync(RenderEncodingOptions.Jpeg);
 
             if (imageBytes == null)
             {
@@ -33,7 +34,7 @@ namespace RenderImage.Portable
                 var width = int.Parse(WidthEntry.Text);
                 var height = int.Parse(HeightEntry.Text);
                 
-                var imageBytes = await DependencyService.Get<IRenderService>().RenderAsync(x, y, width, height);
+                var imageBytes = await DependencyService.Get<IRenderService>().RenderAsync(x, y, width, height, RenderEncodingOptions.Jpeg);
                 
                 if (imageBytes == null)
                 {
@@ -64,7 +65,7 @@ namespace RenderImage.Portable
 
                 Debug.WriteLine($"Relative Values -- X: {relativeX}, Y:{relativeY}, Width:{relativeWidth}, Height: {relativeHeight}");
 
-                var imageBytes = await DependencyService.Get<IRenderService>().RenderRelativeAsync(relativeX, relativeY, relativeWidth, relativeHeight);
+                var imageBytes = await DependencyService.Get<IRenderService>().RenderRelativeAsync(relativeX, relativeY, relativeWidth, relativeHeight, RenderEncodingOptions.Jpeg);
 
                 if (imageBytes == null)
                 {

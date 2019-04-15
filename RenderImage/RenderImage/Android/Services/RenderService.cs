@@ -2,13 +2,14 @@
 using System.Threading.Tasks;
 using Android.Graphics;
 using Plugin.CurrentActivity;
+using RenderImage.Portable.Models;
 using RenderImage.Portable.Services;
 
 namespace RenderImage.Android.Services
 {
     public class RenderService : IRenderService
     {
-        public Task<byte[]> RenderAsync(string encodingFormat = "png")
+        public Task<byte[]> RenderAsync(RenderEncodingOptions encodingFormat = RenderEncodingOptions.Png)
         {
             return Task.Run(() =>
             {
@@ -23,7 +24,7 @@ namespace RenderImage.Android.Services
                     using (var stream = new MemoryStream())
                     {
                         bitmap.Compress(
-                            encodingFormat.ToLower() == "jpeg" ? Bitmap.CompressFormat.Jpeg : Bitmap.CompressFormat.Png,
+                            encodingFormat == RenderEncodingOptions.Jpeg ? Bitmap.CompressFormat.Jpeg : Bitmap.CompressFormat.Png,
                             90,
                             stream);
 
@@ -33,7 +34,7 @@ namespace RenderImage.Android.Services
             });
         }
 
-        public Task<byte[]> RenderAsync(int x, int y, int width, int height, string encodingFormat = "png")
+        public Task<byte[]> RenderAsync(int x, int y, int width, int height, RenderEncodingOptions encodingFormat = RenderEncodingOptions.Png)
         {
             return Task.Run(() =>
             {
@@ -54,7 +55,7 @@ namespace RenderImage.Android.Services
                         using (var stream = new MemoryStream())
                         {
                             croppedBitmap.Compress(
-                                encodingFormat.ToLower() == "jpeg" ? Bitmap.CompressFormat.Jpeg : Bitmap.CompressFormat.Png,
+                                encodingFormat == RenderEncodingOptions.Jpeg ? Bitmap.CompressFormat.Jpeg : Bitmap.CompressFormat.Png,
                                 90,
                                 stream);
 
@@ -65,7 +66,7 @@ namespace RenderImage.Android.Services
             }); 
         }
 
-        public Task<byte[]> RenderRelativeAsync(int xProportion, int yProportion, int widthProportion, int heightProportion, string encodingFormat = "png")
+        public Task<byte[]> RenderRelativeAsync(int xProportion, int yProportion, int widthProportion, int heightProportion, RenderEncodingOptions encodingFormat = RenderEncodingOptions.Png)
         {
             return Task.Run(() =>
             {
@@ -91,7 +92,7 @@ namespace RenderImage.Android.Services
                         using (var stream = new MemoryStream())
                         {
                             croppedBitmap.Compress(
-                                encodingFormat.ToLower() == "jpeg" ? Bitmap.CompressFormat.Jpeg : Bitmap.CompressFormat.Png, 
+                                encodingFormat == RenderEncodingOptions.Jpeg ? Bitmap.CompressFormat.Jpeg : Bitmap.CompressFormat.Png, 
                                 90, 
                                 stream);
 
