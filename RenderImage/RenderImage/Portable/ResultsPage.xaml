@@ -2,14 +2,28 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             xmlns:input="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
              x:Class="RenderImage.Portable.ResultsPage">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Make PDF"
-                     Clicked="MakePdfMenuItem_OnClicked" />
-    </ContentPage.ToolbarItems>
+
     <Grid BackgroundColor="DarkSlateGray">
         <Image x:Name="image"
                Margin="20" />
+
+        <StackLayout VerticalOptions="End" Spacing="5">
+            <Label Text="PDF Generation Options"
+                   HorizontalTextAlignment="Center"/>
+            <input:RadButton x:Name="LocalGenerationButton"
+                                    Text="Generate Locally"  
+                                    BorderThickness="2" 
+                                    BorderColor="#4488F6" 
+                                    Clicked="LocalGenerationButton_OnClicked"/>
+
+            <input:RadButton x:Name="RemoteGenerationButton"
+                                    Text="Generate Remotely"  
+                                    BorderThickness="2" 
+                                    BorderColor="#4488F6" 
+                                    Clicked="RemoteGenerationButton_OnClicked"/>
+        </StackLayout>
 
         <primitives:RadBusyIndicator x:Name="BusyIndicator"
                                      AnimationType="Animation3"

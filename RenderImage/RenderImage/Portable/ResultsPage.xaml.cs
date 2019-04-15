@@ -4,15 +4,10 @@ using System.Threading.Tasks;
 using RenderImage.Portable.Models;
 using RenderImage.Portable.Services;
 using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.Formats;
-using SixLabors.ImageSharp.Processing;
+using Telerik.Windows.Documents.Fixed.FormatProviders.Pdf;
 using Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export;
-using Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Filters;
 using Telerik.Windows.Documents.Fixed.Model;
-using Telerik.Windows.Documents.Fixed.Model.ColorSpaces;
 using Xamarin.Forms;
-
-using ImageSource = Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource;
 
 namespace RenderImage.Portable
 {
@@ -47,7 +42,12 @@ namespace RenderImage.Portable
             }
         }
 
-        private async void MakePdfMenuItem_OnClicked(object sender, EventArgs e)
+        private async void LocalGenerationButton_OnClicked(object sender, EventArgs e)
+        {
+            await LocallyGeneratePdfWithImageAsync();
+        }
+
+        private async void RemoteGenerationButton_OnClicked(object sender, EventArgs e)
         {
             await RemotelyGeneratePdfWithImageAsync();
         }
@@ -73,15 +73,7 @@ namespace RenderImage.Portable
                         var document = new RadFixedDocument();
                         var page = new RadFixedPage();
 
-                        var fixedPageImageSource = new Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource(
-                            jpegArray, 
-                            8, 
-                            image.Width, 
-                            image.Height, 
-                            ColorSpace.RGB, 
-                            new string[] { }, 
-                            new double[] { }, 
-                            false);
+                        var fixedPageImageSource = new Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource(jpegStream);
 
                         var pdfImage = new Telerik.Windows.Documents.Fixed.Model.Objects.Image();
                         pdfImage.ImageSource = fixedPageImageSource;
@@ -92,20 +84,37 @@ namespace RenderImage.Portable
                         var exportSettings = new PdfExportSettings();
                         exportSettings.ImageQuality = ImageQuality.Medium;
 
-                        // TODO Export to PDF file
+
+                        PdfFormatProvider provider = new PdfFormatProvider();
+
+                        using (Stream output = File.OpenWrite("sample.pdf"))
+                        {
+                            provider.Export(document, output);
+
+                            if (output.CanSeek)
+                            {
+                                output.Seek(0, SeekOrigin.Begin);
+                            }
+                            else
+                            {
+                                output.Position = 0;
+                            }
+
+                            var pdfBytes = GetByteArray(output);
+
+                            if (pdfBytes != null)
+                            {
+                                // Navigate to a new page and the PDF in the RadPdfViewer
+                                await Navigation.PushAsync(new DocumentViewerPage(pdfBytes));
+                            }
+                            else
+                            {
+                                ErrorLabel.IsVisible = true;
+                                ErrorLabel.Text = "Error Uploading Content. Try again.";
+                            }
+                        }
                     }
                 }
-
-                //if (pdfBytes != null)
-                //{
-                //    // Navigate to a new page and the PDF in the RadPdfViewer
-                //    await Navigation.PushAsync(new DocumentViewerPage(pdfBytes));
-                //}
-                //else
-                //{
-                //    ErrorLabel.IsVisible = true;
-                //    ErrorLabel.Text = "Error Uploading Content. Try again.";
-                //}
             }
             catch (Exception ex)
             {
