@@ -9,24 +9,38 @@ namespace RenderImage.iOS.Services
 {
     public class RenderService : IRenderService
     {
-        public Task<byte[]> RenderAsync()
+        public Task<byte[]> RenderAsync(string encodingFormat = "png")
         {
             return Task.Run(() =>
             {
                 var capture = UIScreen.MainScreen.Capture();
 
-                using (var nsData = capture.AsPNG())
+                if (encodingFormat == "jpeg")
                 {
-                    var bytes = new byte[nsData.Length];
+                    using (var nsData = capture.AsJPEG())
+                    {
+                        var bytes = new byte[nsData.Length];
 
-                    Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
+                        Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
 
-                    return bytes;
+                        return bytes;
+                    }
+                }
+                else
+                {
+                    using (var nsData = capture.AsPNG())
+                    {
+                        var bytes = new byte[nsData.Length];
+
+                        Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
+
+                        return bytes;
+                    }
                 }
             });
         }
 
-        public Task<byte[]> RenderAsync(int x, int y, int width, int height)
+        public Task<byte[]> RenderAsync(int x, int y, int width, int height, string encodingFormat = "png")
         {
             return Task.Run(() =>
             {
@@ -45,19 +59,33 @@ namespace RenderImage.iOS.Services
                 {
                     var croppedImage = UIImage.FromImage(cgImage);
 
-                    using (var nsData = croppedImage.AsPNG())
+                    if (encodingFormat == "jpeg")
                     {
-                        var bytes = new byte[nsData.Length];
+                        using (var nsData = croppedImage.AsJPEG())
+                        {
+                            var bytes = new byte[nsData.Length];
 
-                        Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
+                            Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
 
-                        return bytes;
+                            return bytes;
+                        }
+                    }
+                    else
+                    {
+                        using (var nsData = croppedImage.AsPNG())
+                        {
+                            var bytes = new byte[nsData.Length];
+
+                            Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
+
+                            return bytes;
+                        }
                     }
                 }
             });
         }
 
-        public Task<byte[]> RenderRelativeAsync(int xProportion, int yProportion, int widthProportion, int heightProportion)
+        public Task<byte[]> RenderRelativeAsync(int xProportion, int yProportion, int widthProportion, int heightProportion, string encodingFormat = "png")
         {
             return Task.Run(() =>
             {
@@ -72,13 +100,27 @@ namespace RenderImage.iOS.Services
                 {
                     var croppedImage = UIImage.FromImage(cgImage);
 
-                    using (var nsData = croppedImage.AsPNG())
+                    if (encodingFormat == "jpeg")
                     {
-                        var bytes = new byte[nsData.Length];
+                        using (var nsData = croppedImage.AsJPEG())
+                        {
+                            var bytes = new byte[nsData.Length];
 
-                        Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
+                            Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
 
-                        return bytes;
+                            return bytes;
+                        }
+                    }
+                    else
+                    {
+                        using (var nsData = croppedImage.AsPNG())
+                        {
+                            var bytes = new byte[nsData.Length];
+
+                            Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
+
+                            return bytes;
+                        }
                     }
                 }
             });

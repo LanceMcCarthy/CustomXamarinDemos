@@ -12,7 +12,7 @@ namespace RenderImage.UWP.Services
 {
     public class RenderService : IRenderService
     {
-        public async Task<byte[]> RenderAsync()
+        public async Task<byte[]> RenderAsync(string encodingFormat = "png")
         {
             var rtb = new RenderTargetBitmap();
             await rtb.RenderAsync(Window.Current.Content);
@@ -25,7 +25,9 @@ namespace RenderImage.UWP.Services
 
             using (var stream = await file.OpenAsync(FileAccessMode.ReadWrite))
             {
-                var encoder = await BitmapEncoder.CreateAsync(BitmapEncoder.PngEncoderId, stream);
+                var encoder = await BitmapEncoder.CreateAsync(
+                    encodingFormat.ToLower() == "jpeg" ? BitmapEncoder.JpegEncoderId : BitmapEncoder.PngEncoderId, 
+                    stream);
 
                 encoder.SetPixelData(BitmapPixelFormat.Bgra8,
                     BitmapAlphaMode.Premultiplied,
@@ -43,7 +45,7 @@ namespace RenderImage.UWP.Services
             return buffer.ToArray();
         }
 
-        public async Task<byte[]> RenderAsync(int x, int y, int width, int height)
+        public async Task<byte[]> RenderAsync(int x, int y, int width, int height, string encodingFormat = "png")
         {
             var rtb = new RenderTargetBitmap();
             await rtb.RenderAsync(Window.Current.Content);
@@ -56,7 +58,9 @@ namespace RenderImage.UWP.Services
 
             using (var stream = await file.OpenAsync(FileAccessMode.ReadWrite))
             {
-                var encoder = await BitmapEncoder.CreateAsync(BitmapEncoder.PngEncoderId, stream);
+                var encoder = await BitmapEncoder.CreateAsync(
+                    encodingFormat.ToLower() == "jpeg" ? BitmapEncoder.JpegEncoderId : BitmapEncoder.PngEncoderId,
+                    stream);
 
                 encoder.SetPixelData(BitmapPixelFormat.Bgra8,
                     BitmapAlphaMode.Premultiplied,
@@ -83,7 +87,7 @@ namespace RenderImage.UWP.Services
             return buffer.ToArray();
         }
 
-        public async Task<byte[]> RenderRelativeAsync(int xProportion, int yProportion, int widthProportion, int heightProportion)
+        public async Task<byte[]> RenderRelativeAsync(int xProportion, int yProportion, int widthProportion, int heightProportion, string encodingFormat = "png")
         {
             var rtb = new RenderTargetBitmap();
             await rtb.RenderAsync(Window.Current.Content);
@@ -96,7 +100,9 @@ namespace RenderImage.UWP.Services
 
             using (var stream = await file.OpenAsync(FileAccessMode.ReadWrite))
             {
-                var encoder = await BitmapEncoder.CreateAsync(BitmapEncoder.PngEncoderId, stream);
+                var encoder = await BitmapEncoder.CreateAsync(
+                    encodingFormat.ToLower() == "jpeg" ? BitmapEncoder.JpegEncoderId : BitmapEncoder.PngEncoderId,
+                    stream);
 
                 encoder.SetPixelData(BitmapPixelFormat.Bgra8,
                     BitmapAlphaMode.Premultiplied,

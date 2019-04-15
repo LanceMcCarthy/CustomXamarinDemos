@@ -8,7 +8,7 @@ namespace RenderImage.Android.Services
 {
     public class RenderService : IRenderService
     {
-        public Task<byte[]> RenderAsync()
+        public Task<byte[]> RenderAsync(string encodingFormat = "png")
         {
             return Task.Run(() =>
             {
@@ -22,14 +22,18 @@ namespace RenderImage.Android.Services
 
                     using (var stream = new MemoryStream())
                     {
-                        bitmap.Compress(Bitmap.CompressFormat.Png, 90, stream);
+                        bitmap.Compress(
+                            encodingFormat.ToLower() == "jpeg" ? Bitmap.CompressFormat.Jpeg : Bitmap.CompressFormat.Png,
+                            90,
+                            stream);
+
                         return stream.ToArray();
                     }
                 }
             });
         }
 
-        public Task<byte[]> RenderAsync(int x, int y, int width, int height)
+        public Task<byte[]> RenderAsync(int x, int y, int width, int height, string encodingFormat = "png")
         {
             return Task.Run(() =>
             {
@@ -49,7 +53,11 @@ namespace RenderImage.Android.Services
 
                         using (var stream = new MemoryStream())
                         {
-                            croppedBitmap.Compress(Bitmap.CompressFormat.Png, 90, stream);
+                            croppedBitmap.Compress(
+                                encodingFormat.ToLower() == "jpeg" ? Bitmap.CompressFormat.Jpeg : Bitmap.CompressFormat.Png,
+                                90,
+                                stream);
+
                             return stream.ToArray();
                         }
                     }
@@ -57,7 +65,7 @@ namespace RenderImage.Android.Services
             }); 
         }
 
-        public Task<byte[]> RenderRelativeAsync(int xProportion, int yProportion, int widthProportion, int heightProportion)
+        public Task<byte[]> RenderRelativeAsync(int xProportion, int yProportion, int widthProportion, int heightProportion, string encodingFormat = "png")
         {
             return Task.Run(() =>
             {
@@ -82,7 +90,11 @@ namespace RenderImage.Android.Services
 
                         using (var stream = new MemoryStream())
                         {
-                            croppedBitmap.Compress(Bitmap.CompressFormat.Png, 90, stream);
+                            croppedBitmap.Compress(
+                                encodingFormat.ToLower() == "jpeg" ? Bitmap.CompressFormat.Jpeg : Bitmap.CompressFormat.Png, 
+                                90, 
+                                stream);
+
                             return stream.ToArray();
                         }
                     }
