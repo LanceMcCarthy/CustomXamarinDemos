@@ -4,13 +4,32 @@
              xmlns:pdfViewer="clr-namespace:Telerik.XamarinForms.PdfViewer;assembly=Telerik.XamarinForms.PdfViewer"
              x:Class="RenderImage.Portable.DocumentViewerPage">
 
-    <pdfViewer:RadPdfViewer x:Name="Viewer">
-        <pdfViewer:RadPdfViewer.BusyIndicatorTemplate>
-            <DataTemplate>
-                <Label Text="Loading PDF, please wait..."
-                       VerticalOptions="Center"
-                       HorizontalOptions="Center" />
-            </DataTemplate>
-        </pdfViewer:RadPdfViewer.BusyIndicatorTemplate>
-    </pdfViewer:RadPdfViewer>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <pdfViewer:RadPdfViewerToolbar PdfViewer="{Binding Source={x:Reference Viewer}}">
+            <pdfViewer:ZoomInToolbarItem />
+            <pdfViewer:ZoomOutToolbarItem />
+            <pdfViewer:NavigateToNextPageToolbarItem/>
+            <pdfViewer:NavigateToPreviousPageToolbarItem/>
+            <pdfViewer:NavigateToPageToolbarItem/>
+            <pdfViewer:FitToWidthToolbarItem/>
+            <pdfViewer:ToggleLayoutModeToolbarItem/>
+        </pdfViewer:RadPdfViewerToolbar>
+
+        <pdfViewer:RadPdfViewer x:Name="Viewer" 
+                                Grid.Row="1">
+            <pdfViewer:RadPdfViewer.BusyIndicatorTemplate>
+                <DataTemplate>
+                    <Label Text="Loading PDF, please wait..."
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center" 
+                           Margin="10"/>
+                </DataTemplate>
+            </pdfViewer:RadPdfViewer.BusyIndicatorTemplate>
+        </pdfViewer:RadPdfViewer>
+    </Grid>
 </ContentPage>

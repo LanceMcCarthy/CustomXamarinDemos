@@ -8,20 +8,23 @@ Status:
 
 ## PDF Generation
 
-An additional experimental feature will generate a PDF document with <a href="https://github.com/LanceMcCarthy/TseExamples#uploadingtowebapi" target="_blank">a custom ASP.NET Web API backend</a> and the <a href="http://docs.telerik.com/devtools/document-processing/introduction" target="_blank">Telerik Document Processing Libraries</a>.
+There are two ways to generate a PDF document containing a rendered image:
 
-the image is uploaded to the Web API and added to a PDF document. That PDF is returned as a `byte[]` and displayed in **Xamarin.Forms** using the <a href="https://docs.telerik.com/devtools/xamarin/controls/pdfviewer/pdfviewer-overview" target="_blank">Telerik UI for Xamarin RadPdfViewer</a>.
+* Local - Creates the PDF in memory, inserting the rendered image and creating the document on the device.
+* Remote - Uploads the image and text to a [Custom Web API](https://github.com/LanceMcCarthy/TseExamples#uploadingtowebapi) to create the PDF document, which returns a `byte[]` of the PDF file.
+
+The resulting `byte[]` from either option is passed to the [Telerik UI for Xamarin RadPdfViewer](https://docs.telerik.com/devtools/xamarin/controls/pdfviewer/pdfviewer-overview) for display.
 
 ## Methods
 
-The Render method returns a `byte[]` of an png encoded image and has one overload to set a cropping region.
+The Render method returns a `byte[]` of a **png** or **jpeg** encoded image and has overloads to set a cropping region.
 
-1. `RenderAsync()`: Returns a capture of entire screen
-2. `RenderAsync(int X, int Y, int Width, int Height)`: Returns a capture of a cropped region using absolute position values
-3. `RenderRelativeAsync(int X, int Y, int Width, int Height)`: Renders a capture of a cropped region using proportional position values
+1. `RenderAsync(RenderEncodingOptions encodingFormat)`: Returns a capture of entire screen.
+2. `RenderAsync(int X, int Y, int Width, int Height, RenderEncodingOptions encodingFormat)`: Returns a capture of a cropped region using absolute position values
+3. `RenderRelativeAsync(int X, int Y, int Width, int Height, RenderEncodingOptions encodingFormat)`: Renders a capture of a cropped region using proportional position values
 
 
-Options 2 and 3 give you the ability to crop any section of the screen so that you can get capture of specific content (e.g. Charts, Graphs, Scoreboards, etc).
+Options 2 and 3 give you the ability to crop any section of the screen so that you can get capture of specific content (e.g. Charts, Graphs, Scoreboards, etc). All methods have a default encoding of `RenderEncodingOptions.Png`, but you can choose `RenderEncodingOptions.Jpeg` when needed (i.e. inserting into a PDF).
 
 ## Runtime
 Here's what the operation looks like on UWP, but it works on all three platforms.
