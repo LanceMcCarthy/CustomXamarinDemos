@@ -1,3 +1,6 @@
+using System;
+using System.IO;
+using RenderImage.Portable.Views;
 using Xamarin.Forms;
 
 namespace RenderImage.Portable
@@ -7,29 +10,14 @@ namespace RenderImage.Portable
         public App()
         {
             InitializeComponent();
-            
+
             MainPage = new NavigationPage(new MainPage());
         }
 
-        protected override void OnStart()
-        {
-            // Handle when your app starts
-        }
+        public static string CapturedImageFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "capture_img.bin");
 
-        protected override void OnSleep()
-        {
-            // Handle when your app sleeps
-        }
+        public static string EditedImageFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "edited_img.bin");
 
-        protected override void OnResume()
-        {
-            // Handle when your app resumes
-        }
-    }
-
-    public static class ServiceConstants
-    {
-        public const string ServiceBaseUrl = "http://webapifortelerikdemos.azurewebsites.net/";
-        public const string PdfGeneratorApi = "api/pdfgenerator";
+        public static string PdfFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Exported.pdf");
     }
 }

@@ -92,6 +92,11 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\Fonts\SF-Pro-Text-Medium.otf" />
+    <BundleResource Include="Resources\Fonts\SF-Pro-Text-MediumItalic.otf" />
+    <BundleResource Include="Resources\Fonts\SF-Pro-Text-Regular.otf" />
+    <BundleResource Include="Resources\Fonts\SF-Pro-Text-RegularItalic.otf" />
+    <BundleResource Include="Resources\Fonts\telerikfontexamples.ttf" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
@@ -133,20 +138,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="..\Portable\Images\AbsCrop.png">
-      <Link>Resources\AbsCrop.png</Link>
+    <BundleResource Include="..\Portable\Images\save.png">
+      <Link>Resources\save.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </BundleResource>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="..\Portable\Images\FullCrop.png">
-      <Link>Resources\FullCrop.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </BundleResource>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="..\Portable\Images\PropCrop.png">
-      <Link>Resources\PropCrop.png</Link>
+    <BundleResource Include="..\Portable\Images\export.png">
+      <Link>Resources\export.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </BundleResource>
   </ItemGroup>

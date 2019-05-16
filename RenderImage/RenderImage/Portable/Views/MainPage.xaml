@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:barcode="clr-namespace:Telerik.XamarinForms.Barcode;assembly=Telerik.XamarinForms.Barcode"
+             xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             x:Class="RenderImage.Portable.Views.MainPage"
+             Title="Render Demo">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="render"
+                     Icon="save.png"
+                     Clicked="RenderButton_OnClicked" />
+    </ContentPage.ToolbarItems>
+
+    <Grid Padding="20"
+          BackgroundColor="{StaticResource DarkBackgroundColor}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <primitives:RadBorder BackgroundColor="{StaticResource BoardingPassAccentColor}"
+                              HeightRequest="80"
+                              CornerRadius="6, 6, 0, 0" />
+        <StackLayout Orientation="Horizontal"
+                     Margin="20, 0, 0, 0"
+                     VerticalOptions="Center">
+            <Label Text="SOF"
+                   Style="{StaticResource PassBoxHeaderLabelStyle}" />
+            <Label Text="{StaticResource ArrowIcon}"
+                   FontFamily="{StaticResource IconsFont}"
+                   TextColor="{StaticResource LightTextColor}"
+                   FontSize="22"
+                   Margin="0, 5, 0, 0" />
+            <Label Text="LIS"
+                   Style="{StaticResource PassBoxHeaderLabelStyle}" />
+        </StackLayout>
+
+        <primitives:RadBorder BackgroundColor="{StaticResource LightBackgroundColor}"
+                              Grid.Row="1"
+                              CornerRadius="0, 0, 6, 6" />
+        <Grid Grid.Row="1"
+              Padding="20, 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackLayout HorizontalOptions="End"
+                         Style="{StaticResource DestinationsHeaderContainerStyle}">
+                <Label Text="SOF"
+                       HorizontalOptions="Center"
+                       Style="{StaticResource DestinationsHeaderLabelStyle}" />
+                <Label Text="Sofia,"
+                       HorizontalOptions="Center"
+                       Style="{StaticResource DestinationsBodyLabelStyle}" />
+                <Label Text="Bulgaria"
+                       HorizontalOptions="Center"
+                       Style="{StaticResource DestinationsBodyLabelStyle}" />
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Grid.Column="1"
+                         Spacing="10">
+                <Label Text="{StaticResource AirplaneIcon}"
+                       FontFamily="{StaticResource IconsFont}"
+                       FontSize="40"
+                       HorizontalOptions="Center" />
+                <Label Text="3 hrs 35 min"
+                       HorizontalOptions="Center"
+                       Style="{StaticResource DestinationsBodyLabelStyle}" />
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Start"
+                         Grid.Column="2"
+                         Style="{StaticResource DestinationsHeaderContainerStyle}">
+                <Label Text="LIS"
+                       HorizontalOptions="Center"
+                       Style="{StaticResource DestinationsHeaderLabelStyle}" />
+                <Label Text="Lisbon,"
+                       HorizontalOptions="Center"
+                       Style="{StaticResource DestinationsBodyLabelStyle}" />
+                <Label Text="Portugal"
+                       HorizontalOptions="Center"
+                       Style="{StaticResource DestinationsBodyLabelStyle}" />
+            </StackLayout>
+
+            <BoxView BackgroundColor="{StaticResource DarkBackgroundColor}"
+                     Grid.Row="1"
+                     Grid.ColumnSpan="3"
+                     HeightRequest="2"
+                     Margin="0, 10" />
+
+            <barcode:RadBarcode Grid.Row="2"
+                                Grid.ColumnSpan="3"
+                                WidthRequest="260"
+                                HeightRequest="260"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                Value="Mrs Lara Howard SOF LIS S7 129 12C 06 June 2018 6:30 pm 12 36">
+                <barcode:RadBarcode.Symbology>
+                    <barcode:QRCode SizingMode="Stretch" />
+                </barcode:RadBarcode.Symbology>
+            </barcode:RadBarcode>
+        </Grid>
+    </Grid>
+</ContentPage>

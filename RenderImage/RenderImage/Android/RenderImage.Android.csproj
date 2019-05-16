@@ -73,6 +73,19 @@
     <Compile Include="Services\RenderService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\Fonts\Roboto-Black.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Roboto-BlackItalic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Roboto-Bold.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Roboto-BoldItalic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Roboto-Italic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Roboto-Light.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Roboto-LightItalic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Roboto-Medium.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Roboto-MediumItalic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Roboto-Regular.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Roboto-Thin.ttf" />
+    <AndroidAsset Include="Assets\Fonts\Roboto-ThinItalic.ttf" />
+    <AndroidAsset Include="Assets\Fonts\telerikfontexamples.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
@@ -106,20 +119,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="..\Portable\Images\AbsCrop.png">
-      <Link>Resources\drawable\AbsCrop.png</Link>
+    <AndroidResource Include="..\Portable\Images\save.png">
+      <Link>Resources\drawable\save.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="..\Portable\Images\FullCrop.png">
-      <Link>Resources\drawable\FullCrop.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="..\Portable\Images\PropCrop.png">
-      <Link>Resources\drawable\PropCrop.png</Link>
+    <AndroidResource Include="..\Portable\Images\export.png">
+      <Link>Resources\drawable\export.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
   </ItemGroup>

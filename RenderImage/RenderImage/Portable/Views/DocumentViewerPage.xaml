@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:pdfViewer="clr-namespace:Telerik.XamarinForms.PdfViewer;assembly=Telerik.XamarinForms.PdfViewer"
-             x:Class="RenderImage.Portable.DocumentViewerPage">
+             x:Class="RenderImage.Portable.Views.DocumentViewerPage"
+             Title="PDF Viewer">
 
     <Grid>
         <Grid.RowDefinitions>
