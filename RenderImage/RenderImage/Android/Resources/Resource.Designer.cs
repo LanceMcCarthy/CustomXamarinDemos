@@ -40,8 +40,10 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Animation.design_bottom_sheet_slide_out = global::RenderImage.Android.Resource.Animation.design_bottom_sheet_slide_out;
 			global::Telerik.XamarinForms.Common.Android.Resource.Animation.design_snackbar_in = global::RenderImage.Android.Resource.Animation.design_snackbar_in;
 			global::Telerik.XamarinForms.Common.Android.Resource.Animation.design_snackbar_out = global::RenderImage.Android.Resource.Animation.design_snackbar_out;
-			global::Telerik.XamarinForms.Common.Android.Resource.Animation.tooltip_enter = global::RenderImage.Android.Resource.Animation.tooltip_enter;
-			global::Telerik.XamarinForms.Common.Android.Resource.Animation.tooltip_exit = global::RenderImage.Android.Resource.Animation.tooltip_exit;
+			global::Telerik.XamarinForms.Common.Android.Resource.Animation.EnterFromLeft = global::RenderImage.Android.Resource.Animation.EnterFromLeft;
+			global::Telerik.XamarinForms.Common.Android.Resource.Animation.EnterFromRight = global::RenderImage.Android.Resource.Animation.EnterFromRight;
+			global::Telerik.XamarinForms.Common.Android.Resource.Animation.ExitToLeft = global::RenderImage.Android.Resource.Animation.ExitToLeft;
+			global::Telerik.XamarinForms.Common.Android.Resource.Animation.ExitToRight = global::RenderImage.Android.Resource.Animation.ExitToRight;
 			global::Telerik.XamarinForms.Common.Android.Resource.Animator.design_appbar_state_list_animator = global::RenderImage.Android.Resource.Animator.design_appbar_state_list_animator;
 			global::Telerik.XamarinForms.Common.Android.Resource.Attribute.actionBarDivider = global::RenderImage.Android.Resource.Attribute.actionBarDivider;
 			global::Telerik.XamarinForms.Common.Android.Resource.Attribute.actionBarItemBackground = global::RenderImage.Android.Resource.Attribute.actionBarItemBackground;
@@ -335,6 +337,7 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Attribute.statusBarBackground = global::RenderImage.Android.Resource.Attribute.statusBarBackground;
 			global::Telerik.XamarinForms.Common.Android.Resource.Attribute.statusBarScrim = global::RenderImage.Android.Resource.Attribute.statusBarScrim;
 			global::Telerik.XamarinForms.Common.Android.Resource.Attribute.strokeColor = global::RenderImage.Android.Resource.Attribute.strokeColor;
+			global::Telerik.XamarinForms.Common.Android.Resource.Attribute.strokeWidth = global::RenderImage.Android.Resource.Attribute.strokeWidth;
 			global::Telerik.XamarinForms.Common.Android.Resource.Attribute.subMenuArrow = global::RenderImage.Android.Resource.Attribute.subMenuArrow;
 			global::Telerik.XamarinForms.Common.Android.Resource.Attribute.submitBackground = global::RenderImage.Android.Resource.Attribute.submitBackground;
 			global::Telerik.XamarinForms.Common.Android.Resource.Attribute.subtitle = global::RenderImage.Android.Resource.Attribute.subtitle;
@@ -372,7 +375,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::RenderImage.Android.Resource.Attribute.textAppearanceSearchResultTitle;
 			global::Telerik.XamarinForms.Common.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::RenderImage.Android.Resource.Attribute.textAppearanceSmallPopupMenu;
 			global::Telerik.XamarinForms.Common.Android.Resource.Attribute.textColorAlertDialogListItem = global::RenderImage.Android.Resource.Attribute.textColorAlertDialogListItem;
-			global::Telerik.XamarinForms.Common.Android.Resource.Attribute.textColorError = global::RenderImage.Android.Resource.Attribute.textColorError;
 			global::Telerik.XamarinForms.Common.Android.Resource.Attribute.textColorSearchUrl = global::RenderImage.Android.Resource.Attribute.textColorSearchUrl;
 			global::Telerik.XamarinForms.Common.Android.Resource.Attribute.theme = global::RenderImage.Android.Resource.Attribute.theme;
 			global::Telerik.XamarinForms.Common.Android.Resource.Attribute.thickness = global::RenderImage.Android.Resource.Attribute.thickness;
@@ -419,8 +421,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::RenderImage.Android.Resource.Boolean.abc_action_bar_embed_tabs;
 			global::Telerik.XamarinForms.Common.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::RenderImage.Android.Resource.Boolean.abc_allow_stacked_button_bar;
 			global::Telerik.XamarinForms.Common.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::RenderImage.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::Telerik.XamarinForms.Common.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::RenderImage.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
-			global::Telerik.XamarinForms.Common.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::RenderImage.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
 			global::Telerik.XamarinForms.Common.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::RenderImage.Android.Resource.Color.abc_background_cache_hint_selector_material_dark;
 			global::Telerik.XamarinForms.Common.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::RenderImage.Android.Resource.Color.abc_background_cache_hint_selector_material_light;
 			global::Telerik.XamarinForms.Common.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::RenderImage.Android.Resource.Color.abc_btn_colored_borderless_text_material;
@@ -479,7 +479,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Color.dim_foreground_disabled_material_light = global::RenderImage.Android.Resource.Color.dim_foreground_disabled_material_light;
 			global::Telerik.XamarinForms.Common.Android.Resource.Color.dim_foreground_material_dark = global::RenderImage.Android.Resource.Color.dim_foreground_material_dark;
 			global::Telerik.XamarinForms.Common.Android.Resource.Color.dim_foreground_material_light = global::RenderImage.Android.Resource.Color.dim_foreground_material_light;
-			global::Telerik.XamarinForms.Common.Android.Resource.Color.error_color_material = global::RenderImage.Android.Resource.Color.error_color_material;
 			global::Telerik.XamarinForms.Common.Android.Resource.Color.foreground_material_dark = global::RenderImage.Android.Resource.Color.foreground_material_dark;
 			global::Telerik.XamarinForms.Common.Android.Resource.Color.foreground_material_light = global::RenderImage.Android.Resource.Color.foreground_material_light;
 			global::Telerik.XamarinForms.Common.Android.Resource.Color.highlighted_text_material_dark = global::RenderImage.Android.Resource.Color.highlighted_text_material_dark;
@@ -531,7 +530,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
 			global::Telerik.XamarinForms.Common.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
 			global::Telerik.XamarinForms.Common.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::Telerik.XamarinForms.Common.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::RenderImage.Android.Resource.Dimension.abc_action_bar_progress_bar_size;
 			global::Telerik.XamarinForms.Common.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::RenderImage.Android.Resource.Dimension.abc_action_bar_stacked_max_height;
 			global::Telerik.XamarinForms.Common.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::RenderImage.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
 			global::Telerik.XamarinForms.Common.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
@@ -1030,6 +1028,8 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.beginning = global::RenderImage.Android.Resource.Id.beginning;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.blocking = global::RenderImage.Android.Resource.Id.blocking;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.bottom = global::RenderImage.Android.Resource.Id.bottom;
+			global::Telerik.XamarinForms.Common.Android.Resource.Id.bottomtab_navarea = global::RenderImage.Android.Resource.Id.bottomtab_navarea;
+			global::Telerik.XamarinForms.Common.Android.Resource.Id.bottomtab_tabbar = global::RenderImage.Android.Resource.Id.bottomtab_tabbar;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.buttonPanel = global::RenderImage.Android.Resource.Id.buttonPanel;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.cancel_action = global::RenderImage.Android.Resource.Id.cancel_action;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.center = global::RenderImage.Android.Resource.Id.center;
@@ -1065,6 +1065,8 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.fill_horizontal = global::RenderImage.Android.Resource.Id.fill_horizontal;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.fill_vertical = global::RenderImage.Android.Resource.Id.fill_vertical;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.@fixed = global::RenderImage.Android.Resource.Id.@fixed;
+			global::Telerik.XamarinForms.Common.Android.Resource.Id.flyoutcontent_appbar = global::RenderImage.Android.Resource.Id.flyoutcontent_appbar;
+			global::Telerik.XamarinForms.Common.Android.Resource.Id.flyoutcontent_recycler = global::RenderImage.Android.Resource.Id.flyoutcontent_recycler;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.forever = global::RenderImage.Android.Resource.Id.forever;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.ghost_view = global::RenderImage.Android.Resource.Id.ghost_view;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.home = global::RenderImage.Android.Resource.Id.home;
@@ -1082,6 +1084,10 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.line3 = global::RenderImage.Android.Resource.Id.line3;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.listMode = global::RenderImage.Android.Resource.Id.listMode;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.list_item = global::RenderImage.Android.Resource.Id.list_item;
+			global::Telerik.XamarinForms.Common.Android.Resource.Id.main_appbar = global::RenderImage.Android.Resource.Id.main_appbar;
+			global::Telerik.XamarinForms.Common.Android.Resource.Id.main_scrollview = global::RenderImage.Android.Resource.Id.main_scrollview;
+			global::Telerik.XamarinForms.Common.Android.Resource.Id.main_tablayout = global::RenderImage.Android.Resource.Id.main_tablayout;
+			global::Telerik.XamarinForms.Common.Android.Resource.Id.main_toolbar = global::RenderImage.Android.Resource.Id.main_toolbar;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.masked = global::RenderImage.Android.Resource.Id.masked;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.media_actions = global::RenderImage.Android.Resource.Id.media_actions;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.message = global::RenderImage.Android.Resource.Id.message;
@@ -1150,6 +1156,9 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.search_src_text = global::RenderImage.Android.Resource.Id.search_src_text;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.search_voice_btn = global::RenderImage.Android.Resource.Id.search_voice_btn;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.select_dialog_listview = global::RenderImage.Android.Resource.Id.select_dialog_listview;
+			global::Telerik.XamarinForms.Common.Android.Resource.Id.shellcontent_appbar = global::RenderImage.Android.Resource.Id.shellcontent_appbar;
+			global::Telerik.XamarinForms.Common.Android.Resource.Id.shellcontent_scrollview = global::RenderImage.Android.Resource.Id.shellcontent_scrollview;
+			global::Telerik.XamarinForms.Common.Android.Resource.Id.shellcontent_toolbar = global::RenderImage.Android.Resource.Id.shellcontent_toolbar;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.shortcut = global::RenderImage.Android.Resource.Id.shortcut;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.showCustom = global::RenderImage.Android.Resource.Id.showCustom;
 			global::Telerik.XamarinForms.Common.Android.Resource.Id.showHome = global::RenderImage.Android.Resource.Id.showHome;
@@ -1237,6 +1246,7 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::RenderImage.Android.Resource.Layout.abc_search_dropdown_item_icons_2line;
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.abc_search_view = global::RenderImage.Android.Resource.Layout.abc_search_view;
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.abc_select_dialog_material = global::RenderImage.Android.Resource.Layout.abc_select_dialog_material;
+			global::Telerik.XamarinForms.Common.Android.Resource.Layout.BottomTabLayout = global::RenderImage.Android.Resource.Layout.BottomTabLayout;
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.design_bottom_navigation_item = global::RenderImage.Android.Resource.Layout.design_bottom_navigation_item;
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.design_bottom_sheet_dialog = global::RenderImage.Android.Resource.Layout.design_bottom_sheet_dialog;
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.design_layout_snackbar = global::RenderImage.Android.Resource.Layout.design_layout_snackbar;
@@ -1251,6 +1261,7 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.design_navigation_menu = global::RenderImage.Android.Resource.Layout.design_navigation_menu;
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.design_navigation_menu_item = global::RenderImage.Android.Resource.Layout.design_navigation_menu_item;
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.design_text_input_password_icon = global::RenderImage.Android.Resource.Layout.design_text_input_password_icon;
+			global::Telerik.XamarinForms.Common.Android.Resource.Layout.FlyoutContent = global::RenderImage.Android.Resource.Layout.FlyoutContent;
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.mr_chooser_dialog = global::RenderImage.Android.Resource.Layout.mr_chooser_dialog;
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.mr_chooser_list_item = global::RenderImage.Android.Resource.Layout.mr_chooser_list_item;
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.mr_controller_material_dialog_b = global::RenderImage.Android.Resource.Layout.mr_controller_material_dialog_b;
@@ -1272,11 +1283,12 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.notification_template_media_custom = global::RenderImage.Android.Resource.Layout.notification_template_media_custom;
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.notification_template_part_chronometer = global::RenderImage.Android.Resource.Layout.notification_template_part_chronometer;
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.notification_template_part_time = global::RenderImage.Android.Resource.Layout.notification_template_part_time;
+			global::Telerik.XamarinForms.Common.Android.Resource.Layout.RootLayout = global::RenderImage.Android.Resource.Layout.RootLayout;
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.select_dialog_item_material = global::RenderImage.Android.Resource.Layout.select_dialog_item_material;
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.select_dialog_multichoice_material = global::RenderImage.Android.Resource.Layout.select_dialog_multichoice_material;
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.select_dialog_singlechoice_material = global::RenderImage.Android.Resource.Layout.select_dialog_singlechoice_material;
+			global::Telerik.XamarinForms.Common.Android.Resource.Layout.ShellContent = global::RenderImage.Android.Resource.Layout.ShellContent;
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::RenderImage.Android.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::Telerik.XamarinForms.Common.Android.Resource.Layout.tooltip = global::RenderImage.Android.Resource.Layout.tooltip;
 			global::Telerik.XamarinForms.Common.Android.Resource.Layout.trial_message = global::RenderImage.Android.Resource.Layout.trial_message;
 			global::Telerik.XamarinForms.Common.Android.Resource.String.ApplicationName = global::RenderImage.Android.Resource.String.ApplicationName;
 			global::Telerik.XamarinForms.Common.Android.Resource.String.Hello = global::RenderImage.Android.Resource.String.Hello;
@@ -1425,18 +1437,11 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
-			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
-			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
-			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::RenderImage.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
-			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::RenderImage.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText;
-			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V14_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V14_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V21_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Light;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
-			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V21_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V21_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V22_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V22_Theme_AppCompat;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V22_Theme_AppCompat_Light;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V23_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V23_Theme_AppCompat;
@@ -1444,7 +1449,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V26_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V26_Theme_AppCompat;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V26_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V26_Theme_AppCompat_Light;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
-			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V26_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V26_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V7_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat_Light;
@@ -1510,7 +1514,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Base_Widget_Design_TabLayout = global::RenderImage.Android.Resource.Style.Base_Widget_Design_TabLayout;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.CardView = global::RenderImage.Android.Resource.Style.CardView;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.CardView_Dark = global::RenderImage.Android.Resource.Style.CardView_Dark;
@@ -1520,10 +1523,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::Telerik.XamarinForms.Common.Android.Resource.Style.Platform_V11_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V11_AppCompat;
-			global::Telerik.XamarinForms.Common.Android.Resource.Style.Platform_V11_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V11_AppCompat_Light;
-			global::Telerik.XamarinForms.Common.Android.Resource.Style.Platform_V14_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V14_AppCompat;
-			global::Telerik.XamarinForms.Common.Android.Resource.Style.Platform_V14_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V14_AppCompat_Light;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Platform_V21_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V21_AppCompat;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Platform_V21_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V21_AppCompat_Light;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Platform_V25_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V25_AppCompat;
@@ -1732,7 +1731,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Widget_Design_BottomNavigationView = global::RenderImage.Android.Resource.Style.Widget_Design_BottomNavigationView;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::RenderImage.Android.Resource.Style.Widget_Design_BottomSheet_Modal;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::RenderImage.Android.Resource.Style.Widget_Design_CollapsingToolbar;
-			global::Telerik.XamarinForms.Common.Android.Resource.Style.Widget_Design_CoordinatorLayout = global::RenderImage.Android.Resource.Style.Widget_Design_CoordinatorLayout;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Widget_Design_FloatingActionButton = global::RenderImage.Android.Resource.Style.Widget_Design_FloatingActionButton;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Widget_Design_NavigationView = global::RenderImage.Android.Resource.Style.Widget_Design_NavigationView;
 			global::Telerik.XamarinForms.Common.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::RenderImage.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
@@ -2021,7 +2019,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.Common.Android.Resource.Styleable.DesignTheme = global::RenderImage.Android.Resource.Styleable.DesignTheme;
 			global::Telerik.XamarinForms.Common.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::RenderImage.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
 			global::Telerik.XamarinForms.Common.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::RenderImage.Android.Resource.Styleable.DesignTheme_bottomSheetStyle;
-			global::Telerik.XamarinForms.Common.Android.Resource.Styleable.DesignTheme_textColorError = global::RenderImage.Android.Resource.Styleable.DesignTheme_textColorError;
 			global::Telerik.XamarinForms.Common.Android.Resource.Styleable.DrawerArrowToggle = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle;
 			global::Telerik.XamarinForms.Common.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
 			global::Telerik.XamarinForms.Common.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
@@ -2315,8 +2312,10 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Animation.design_snackbar_out = global::RenderImage.Android.Resource.Animation.design_snackbar_out;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Animation.drawer_slide_in_top = global::RenderImage.Android.Resource.Animation.drawer_slide_in_top;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Animation.drawer_slide_out_top = global::RenderImage.Android.Resource.Animation.drawer_slide_out_top;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Animation.tooltip_enter = global::RenderImage.Android.Resource.Animation.tooltip_enter;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Animation.tooltip_exit = global::RenderImage.Android.Resource.Animation.tooltip_exit;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Animation.EnterFromLeft = global::RenderImage.Android.Resource.Animation.EnterFromLeft;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Animation.EnterFromRight = global::RenderImage.Android.Resource.Animation.EnterFromRight;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Animation.ExitToLeft = global::RenderImage.Android.Resource.Animation.ExitToLeft;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Animation.ExitToRight = global::RenderImage.Android.Resource.Animation.ExitToRight;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Animator.design_appbar_state_list_animator = global::RenderImage.Android.Resource.Animator.design_appbar_state_list_animator;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Attribute.actionBarDivider = global::RenderImage.Android.Resource.Attribute.actionBarDivider;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Attribute.actionBarItemBackground = global::RenderImage.Android.Resource.Attribute.actionBarItemBackground;
@@ -2627,6 +2626,7 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Attribute.statusBarBackground = global::RenderImage.Android.Resource.Attribute.statusBarBackground;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Attribute.statusBarScrim = global::RenderImage.Android.Resource.Attribute.statusBarScrim;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Attribute.strokeColor = global::RenderImage.Android.Resource.Attribute.strokeColor;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Attribute.strokeWidth = global::RenderImage.Android.Resource.Attribute.strokeWidth;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Attribute.subMenuArrow = global::RenderImage.Android.Resource.Attribute.subMenuArrow;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Attribute.submitBackground = global::RenderImage.Android.Resource.Attribute.submitBackground;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Attribute.subtitle = global::RenderImage.Android.Resource.Attribute.subtitle;
@@ -2664,7 +2664,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::RenderImage.Android.Resource.Attribute.textAppearanceSearchResultTitle;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::RenderImage.Android.Resource.Attribute.textAppearanceSmallPopupMenu;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Attribute.textColorAlertDialogListItem = global::RenderImage.Android.Resource.Attribute.textColorAlertDialogListItem;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Attribute.textColorError = global::RenderImage.Android.Resource.Attribute.textColorError;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Attribute.textColorSearchUrl = global::RenderImage.Android.Resource.Attribute.textColorSearchUrl;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Attribute.theme = global::RenderImage.Android.Resource.Attribute.theme;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Attribute.thickness = global::RenderImage.Android.Resource.Attribute.thickness;
@@ -2712,8 +2711,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::RenderImage.Android.Resource.Boolean.abc_action_bar_embed_tabs;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::RenderImage.Android.Resource.Boolean.abc_allow_stacked_button_bar;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::RenderImage.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::RenderImage.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::RenderImage.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::RenderImage.Android.Resource.Color.abc_background_cache_hint_selector_material_dark;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::RenderImage.Android.Resource.Color.abc_background_cache_hint_selector_material_light;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::RenderImage.Android.Resource.Color.abc_btn_colored_borderless_text_material;
@@ -2777,7 +2774,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Color.dim_foreground_disabled_material_light = global::RenderImage.Android.Resource.Color.dim_foreground_disabled_material_light;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Color.dim_foreground_material_dark = global::RenderImage.Android.Resource.Color.dim_foreground_material_dark;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Color.dim_foreground_material_light = global::RenderImage.Android.Resource.Color.dim_foreground_material_light;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Color.error_color_material = global::RenderImage.Android.Resource.Color.error_color_material;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Color.foreground_material_dark = global::RenderImage.Android.Resource.Color.foreground_material_dark;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Color.foreground_material_light = global::RenderImage.Android.Resource.Color.foreground_material_light;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Color.grey_text_color = global::RenderImage.Android.Resource.Color.grey_text_color;
@@ -2851,7 +2847,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::RenderImage.Android.Resource.Dimension.abc_action_bar_progress_bar_size;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::RenderImage.Android.Resource.Dimension.abc_action_bar_stacked_max_height;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::RenderImage.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
@@ -3400,6 +3395,8 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.beginning = global::RenderImage.Android.Resource.Id.beginning;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.blocking = global::RenderImage.Android.Resource.Id.blocking;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.bottom = global::RenderImage.Android.Resource.Id.bottom;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.bottomtab_navarea = global::RenderImage.Android.Resource.Id.bottomtab_navarea;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.bottomtab_tabbar = global::RenderImage.Android.Resource.Id.bottomtab_tabbar;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.buttonPanel = global::RenderImage.Android.Resource.Id.buttonPanel;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.cancel_action = global::RenderImage.Android.Resource.Id.cancel_action;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.center = global::RenderImage.Android.Resource.Id.center;
@@ -3469,6 +3466,8 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.fill_horizontal = global::RenderImage.Android.Resource.Id.fill_horizontal;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.fill_vertical = global::RenderImage.Android.Resource.Id.fill_vertical;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.@fixed = global::RenderImage.Android.Resource.Id.@fixed;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.flyoutcontent_appbar = global::RenderImage.Android.Resource.Id.flyoutcontent_appbar;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.flyoutcontent_recycler = global::RenderImage.Android.Resource.Id.flyoutcontent_recycler;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.forever = global::RenderImage.Android.Resource.Id.forever;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.ghost_view = global::RenderImage.Android.Resource.Id.ghost_view;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.groupHeaderCollapseImage = global::RenderImage.Android.Resource.Id.groupHeaderCollapseImage;
@@ -3493,6 +3492,10 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.line3 = global::RenderImage.Android.Resource.Id.line3;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.listMode = global::RenderImage.Android.Resource.Id.listMode;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.list_item = global::RenderImage.Android.Resource.Id.list_item;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.main_appbar = global::RenderImage.Android.Resource.Id.main_appbar;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.main_scrollview = global::RenderImage.Android.Resource.Id.main_scrollview;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.main_tablayout = global::RenderImage.Android.Resource.Id.main_tablayout;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.main_toolbar = global::RenderImage.Android.Resource.Id.main_toolbar;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.masked = global::RenderImage.Android.Resource.Id.masked;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.media_actions = global::RenderImage.Android.Resource.Id.media_actions;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.message = global::RenderImage.Android.Resource.Id.message;
@@ -3570,6 +3573,9 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.search_voice_btn = global::RenderImage.Android.Resource.Id.search_voice_btn;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.segmented = global::RenderImage.Android.Resource.Id.segmented;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.select_dialog_listview = global::RenderImage.Android.Resource.Id.select_dialog_listview;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.shellcontent_appbar = global::RenderImage.Android.Resource.Id.shellcontent_appbar;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.shellcontent_scrollview = global::RenderImage.Android.Resource.Id.shellcontent_scrollview;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.shellcontent_toolbar = global::RenderImage.Android.Resource.Id.shellcontent_toolbar;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.shortcut = global::RenderImage.Android.Resource.Id.shortcut;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.showCustom = global::RenderImage.Android.Resource.Id.showCustom;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Id.showHome = global::RenderImage.Android.Resource.Id.showHome;
@@ -3665,6 +3671,7 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.abc_search_view = global::RenderImage.Android.Resource.Layout.abc_search_view;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.abc_select_dialog_material = global::RenderImage.Android.Resource.Layout.abc_select_dialog_material;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.androidnativezoomview_scrollbars = global::RenderImage.Android.Resource.Layout.androidnativezoomview_scrollbars;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.BottomTabLayout = global::RenderImage.Android.Resource.Layout.BottomTabLayout;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.calendar_all_day_event_view = global::RenderImage.Android.Resource.Layout.calendar_all_day_event_view;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.calendar_day_event_view = global::RenderImage.Android.Resource.Layout.calendar_day_event_view;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.data_form_autocomplete_editor = global::RenderImage.Android.Resource.Layout.data_form_autocomplete_editor;
@@ -3712,6 +3719,7 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.design_navigation_menu_item = global::RenderImage.Android.Resource.Layout.design_navigation_menu_item;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.design_text_input_password_icon = global::RenderImage.Android.Resource.Layout.design_text_input_password_icon;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.drawer_blur_fade_layer = global::RenderImage.Android.Resource.Layout.drawer_blur_fade_layer;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.FlyoutContent = global::RenderImage.Android.Resource.Layout.FlyoutContent;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.inline_event = global::RenderImage.Android.Resource.Layout.inline_event;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.linear_layout = global::RenderImage.Android.Resource.Layout.linear_layout;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.mr_chooser_dialog = global::RenderImage.Android.Resource.Layout.mr_chooser_dialog;
@@ -3741,10 +3749,12 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.on_demand_automatic = global::RenderImage.Android.Resource.Layout.on_demand_automatic;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.on_demand_manual = global::RenderImage.Android.Resource.Layout.on_demand_manual;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.popup_event = global::RenderImage.Android.Resource.Layout.popup_event;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.RootLayout = global::RenderImage.Android.Resource.Layout.RootLayout;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.scrollview_scrollbars = global::RenderImage.Android.Resource.Layout.scrollview_scrollbars;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.select_dialog_item_material = global::RenderImage.Android.Resource.Layout.select_dialog_item_material;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.select_dialog_multichoice_material = global::RenderImage.Android.Resource.Layout.select_dialog_multichoice_material;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.select_dialog_singlechoice_material = global::RenderImage.Android.Resource.Layout.select_dialog_singlechoice_material;
+			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.ShellContent = global::RenderImage.Android.Resource.Layout.ShellContent;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.simple_empty_content = global::RenderImage.Android.Resource.Layout.simple_empty_content;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.simple_group_header_item = global::RenderImage.Android.Resource.Layout.simple_group_header_item;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.simple_list_item = global::RenderImage.Android.Resource.Layout.simple_list_item;
@@ -3752,7 +3762,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::RenderImage.Android.Resource.Layout.support_simple_spinner_dropdown_item;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.tab_item_view = global::RenderImage.Android.Resource.Layout.tab_item_view;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.table_layout = global::RenderImage.Android.Resource.Layout.table_layout;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.tooltip = global::RenderImage.Android.Resource.Layout.tooltip;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.tooltip_container = global::RenderImage.Android.Resource.Layout.tooltip_container;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Layout.trial_message = global::RenderImage.Android.Resource.Layout.trial_message;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.String.ApplicationName = global::RenderImage.Android.Resource.String.ApplicationName;
@@ -3905,18 +3914,11 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::RenderImage.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::RenderImage.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V14_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V14_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V21_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Light;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V21_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V21_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V22_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V22_Theme_AppCompat;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V22_Theme_AppCompat_Light;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V23_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V23_Theme_AppCompat;
@@ -3924,7 +3926,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V26_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V26_Theme_AppCompat;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V26_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V26_Theme_AppCompat_Light;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V26_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V26_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V7_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat_Light;
@@ -3990,7 +3991,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Base_Widget_Design_TabLayout = global::RenderImage.Android.Resource.Style.Base_Widget_Design_TabLayout;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.CardView = global::RenderImage.Android.Resource.Style.CardView;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.CardView_Dark = global::RenderImage.Android.Resource.Style.CardView_Dark;
@@ -4008,10 +4008,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Platform_V11_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V11_AppCompat;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Platform_V11_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V11_AppCompat_Light;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Platform_V14_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V14_AppCompat;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Platform_V14_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V14_AppCompat_Light;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Platform_V21_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V21_AppCompat;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Platform_V21_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V21_AppCompat_Light;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Platform_V25_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V25_AppCompat;
@@ -4224,7 +4220,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Widget_Design_BottomNavigationView = global::RenderImage.Android.Resource.Style.Widget_Design_BottomNavigationView;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::RenderImage.Android.Resource.Style.Widget_Design_BottomSheet_Modal;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::RenderImage.Android.Resource.Style.Widget_Design_CollapsingToolbar;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Widget_Design_CoordinatorLayout = global::RenderImage.Android.Resource.Style.Widget_Design_CoordinatorLayout;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Widget_Design_FloatingActionButton = global::RenderImage.Android.Resource.Style.Widget_Design_FloatingActionButton;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Widget_Design_NavigationView = global::RenderImage.Android.Resource.Style.Widget_Design_NavigationView;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::RenderImage.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
@@ -4517,7 +4512,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Styleable.DesignTheme = global::RenderImage.Android.Resource.Styleable.DesignTheme;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::RenderImage.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::RenderImage.Android.Resource.Styleable.DesignTheme_bottomSheetStyle;
-			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Styleable.DesignTheme_textColorError = global::RenderImage.Android.Resource.Styleable.DesignTheme_textColorError;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Styleable.DrawerArrowToggle = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
 			global::Telerik.XamarinForms.ConversationalUIRenderer.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
@@ -4832,8 +4826,10 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Animation.design_snackbar_out = global::RenderImage.Android.Resource.Animation.design_snackbar_out;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Animation.drawer_slide_in_top = global::RenderImage.Android.Resource.Animation.drawer_slide_in_top;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Animation.drawer_slide_out_top = global::RenderImage.Android.Resource.Animation.drawer_slide_out_top;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Animation.tooltip_enter = global::RenderImage.Android.Resource.Animation.tooltip_enter;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Animation.tooltip_exit = global::RenderImage.Android.Resource.Animation.tooltip_exit;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Animation.EnterFromLeft = global::RenderImage.Android.Resource.Animation.EnterFromLeft;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Animation.EnterFromRight = global::RenderImage.Android.Resource.Animation.EnterFromRight;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Animation.ExitToLeft = global::RenderImage.Android.Resource.Animation.ExitToLeft;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Animation.ExitToRight = global::RenderImage.Android.Resource.Animation.ExitToRight;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Animator.design_appbar_state_list_animator = global::RenderImage.Android.Resource.Animator.design_appbar_state_list_animator;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Attribute.actionBarDivider = global::RenderImage.Android.Resource.Attribute.actionBarDivider;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Attribute.actionBarItemBackground = global::RenderImage.Android.Resource.Attribute.actionBarItemBackground;
@@ -5133,6 +5129,7 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Attribute.statusBarBackground = global::RenderImage.Android.Resource.Attribute.statusBarBackground;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Attribute.statusBarScrim = global::RenderImage.Android.Resource.Attribute.statusBarScrim;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Attribute.strokeColor = global::RenderImage.Android.Resource.Attribute.strokeColor;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Attribute.strokeWidth = global::RenderImage.Android.Resource.Attribute.strokeWidth;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Attribute.subMenuArrow = global::RenderImage.Android.Resource.Attribute.subMenuArrow;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Attribute.submitBackground = global::RenderImage.Android.Resource.Attribute.submitBackground;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Attribute.subtitle = global::RenderImage.Android.Resource.Attribute.subtitle;
@@ -5170,7 +5167,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::RenderImage.Android.Resource.Attribute.textAppearanceSearchResultTitle;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::RenderImage.Android.Resource.Attribute.textAppearanceSmallPopupMenu;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Attribute.textColorAlertDialogListItem = global::RenderImage.Android.Resource.Attribute.textColorAlertDialogListItem;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Attribute.textColorError = global::RenderImage.Android.Resource.Attribute.textColorError;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Attribute.textColorSearchUrl = global::RenderImage.Android.Resource.Attribute.textColorSearchUrl;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Attribute.theme = global::RenderImage.Android.Resource.Attribute.theme;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Attribute.thickness = global::RenderImage.Android.Resource.Attribute.thickness;
@@ -5217,8 +5213,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::RenderImage.Android.Resource.Boolean.abc_action_bar_embed_tabs;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::RenderImage.Android.Resource.Boolean.abc_allow_stacked_button_bar;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::RenderImage.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::RenderImage.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::RenderImage.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::RenderImage.Android.Resource.Color.abc_background_cache_hint_selector_material_dark;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::RenderImage.Android.Resource.Color.abc_background_cache_hint_selector_material_light;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::RenderImage.Android.Resource.Color.abc_btn_colored_borderless_text_material;
@@ -5278,7 +5272,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Color.dim_foreground_disabled_material_light = global::RenderImage.Android.Resource.Color.dim_foreground_disabled_material_light;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Color.dim_foreground_material_dark = global::RenderImage.Android.Resource.Color.dim_foreground_material_dark;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Color.dim_foreground_material_light = global::RenderImage.Android.Resource.Color.dim_foreground_material_light;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Color.error_color_material = global::RenderImage.Android.Resource.Color.error_color_material;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Color.foreground_material_dark = global::RenderImage.Android.Resource.Color.foreground_material_dark;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Color.foreground_material_light = global::RenderImage.Android.Resource.Color.foreground_material_light;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Color.grey_text_color = global::RenderImage.Android.Resource.Color.grey_text_color;
@@ -5340,7 +5333,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::RenderImage.Android.Resource.Dimension.abc_action_bar_progress_bar_size;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::RenderImage.Android.Resource.Dimension.abc_action_bar_stacked_max_height;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::RenderImage.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
@@ -5852,6 +5844,8 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.beginning = global::RenderImage.Android.Resource.Id.beginning;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.blocking = global::RenderImage.Android.Resource.Id.blocking;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.bottom = global::RenderImage.Android.Resource.Id.bottom;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.bottomtab_navarea = global::RenderImage.Android.Resource.Id.bottomtab_navarea;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.bottomtab_tabbar = global::RenderImage.Android.Resource.Id.bottomtab_tabbar;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.buttonPanel = global::RenderImage.Android.Resource.Id.buttonPanel;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.cancel_action = global::RenderImage.Android.Resource.Id.cancel_action;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.center = global::RenderImage.Android.Resource.Id.center;
@@ -5891,6 +5885,8 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.fill_horizontal = global::RenderImage.Android.Resource.Id.fill_horizontal;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.fill_vertical = global::RenderImage.Android.Resource.Id.fill_vertical;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.@fixed = global::RenderImage.Android.Resource.Id.@fixed;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.flyoutcontent_appbar = global::RenderImage.Android.Resource.Id.flyoutcontent_appbar;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.flyoutcontent_recycler = global::RenderImage.Android.Resource.Id.flyoutcontent_recycler;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.forever = global::RenderImage.Android.Resource.Id.forever;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.ghost_view = global::RenderImage.Android.Resource.Id.ghost_view;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.groupHeaderCollapseImage = global::RenderImage.Android.Resource.Id.groupHeaderCollapseImage;
@@ -5912,6 +5908,10 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.line3 = global::RenderImage.Android.Resource.Id.line3;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.listMode = global::RenderImage.Android.Resource.Id.listMode;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.list_item = global::RenderImage.Android.Resource.Id.list_item;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.main_appbar = global::RenderImage.Android.Resource.Id.main_appbar;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.main_scrollview = global::RenderImage.Android.Resource.Id.main_scrollview;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.main_tablayout = global::RenderImage.Android.Resource.Id.main_tablayout;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.main_toolbar = global::RenderImage.Android.Resource.Id.main_toolbar;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.masked = global::RenderImage.Android.Resource.Id.masked;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.media_actions = global::RenderImage.Android.Resource.Id.media_actions;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.message = global::RenderImage.Android.Resource.Id.message;
@@ -5982,6 +5982,9 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.search_src_text = global::RenderImage.Android.Resource.Id.search_src_text;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.search_voice_btn = global::RenderImage.Android.Resource.Id.search_voice_btn;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.select_dialog_listview = global::RenderImage.Android.Resource.Id.select_dialog_listview;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.shellcontent_appbar = global::RenderImage.Android.Resource.Id.shellcontent_appbar;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.shellcontent_scrollview = global::RenderImage.Android.Resource.Id.shellcontent_scrollview;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.shellcontent_toolbar = global::RenderImage.Android.Resource.Id.shellcontent_toolbar;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.shortcut = global::RenderImage.Android.Resource.Id.shortcut;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.showCustom = global::RenderImage.Android.Resource.Id.showCustom;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Id.showHome = global::RenderImage.Android.Resource.Id.showHome;
@@ -6075,6 +6078,7 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.abc_search_view = global::RenderImage.Android.Resource.Layout.abc_search_view;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.abc_select_dialog_material = global::RenderImage.Android.Resource.Layout.abc_select_dialog_material;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.androidnativezoomview_scrollbars = global::RenderImage.Android.Resource.Layout.androidnativezoomview_scrollbars;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.BottomTabLayout = global::RenderImage.Android.Resource.Layout.BottomTabLayout;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.default_tooltip_content = global::RenderImage.Android.Resource.Layout.default_tooltip_content;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.design_bottom_navigation_item = global::RenderImage.Android.Resource.Layout.design_bottom_navigation_item;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.design_bottom_sheet_dialog = global::RenderImage.Android.Resource.Layout.design_bottom_sheet_dialog;
@@ -6091,6 +6095,7 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.design_navigation_menu_item = global::RenderImage.Android.Resource.Layout.design_navigation_menu_item;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.design_text_input_password_icon = global::RenderImage.Android.Resource.Layout.design_text_input_password_icon;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.drawer_blur_fade_layer = global::RenderImage.Android.Resource.Layout.drawer_blur_fade_layer;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.FlyoutContent = global::RenderImage.Android.Resource.Layout.FlyoutContent;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.mr_chooser_dialog = global::RenderImage.Android.Resource.Layout.mr_chooser_dialog;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.mr_chooser_list_item = global::RenderImage.Android.Resource.Layout.mr_chooser_list_item;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.mr_controller_material_dialog_b = global::RenderImage.Android.Resource.Layout.mr_controller_material_dialog_b;
@@ -6116,16 +6121,17 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.notification_template_part_time = global::RenderImage.Android.Resource.Layout.notification_template_part_time;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.on_demand_automatic = global::RenderImage.Android.Resource.Layout.on_demand_automatic;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.on_demand_manual = global::RenderImage.Android.Resource.Layout.on_demand_manual;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.RootLayout = global::RenderImage.Android.Resource.Layout.RootLayout;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.scrollview_scrollbars = global::RenderImage.Android.Resource.Layout.scrollview_scrollbars;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.select_dialog_item_material = global::RenderImage.Android.Resource.Layout.select_dialog_item_material;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.select_dialog_multichoice_material = global::RenderImage.Android.Resource.Layout.select_dialog_multichoice_material;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.select_dialog_singlechoice_material = global::RenderImage.Android.Resource.Layout.select_dialog_singlechoice_material;
+			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.ShellContent = global::RenderImage.Android.Resource.Layout.ShellContent;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.simple_empty_content = global::RenderImage.Android.Resource.Layout.simple_empty_content;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.simple_group_header_item = global::RenderImage.Android.Resource.Layout.simple_group_header_item;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.simple_list_item = global::RenderImage.Android.Resource.Layout.simple_list_item;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::RenderImage.Android.Resource.Layout.support_simple_spinner_dropdown_item;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.tab_item_view = global::RenderImage.Android.Resource.Layout.tab_item_view;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.tooltip = global::RenderImage.Android.Resource.Layout.tooltip;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.tooltip_container = global::RenderImage.Android.Resource.Layout.tooltip_container;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Layout.trial_message = global::RenderImage.Android.Resource.Layout.trial_message;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.String.ApplicationName = global::RenderImage.Android.Resource.String.ApplicationName;
@@ -6278,18 +6284,11 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::RenderImage.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::RenderImage.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V14_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V14_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V21_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Light;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V21_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V21_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V22_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V22_Theme_AppCompat;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V22_Theme_AppCompat_Light;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V23_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V23_Theme_AppCompat;
@@ -6297,7 +6296,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V26_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V26_Theme_AppCompat;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V26_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V26_Theme_AppCompat_Light;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V26_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V26_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V7_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat_Light;
@@ -6363,7 +6361,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Base_Widget_Design_TabLayout = global::RenderImage.Android.Resource.Style.Base_Widget_Design_TabLayout;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.CardView = global::RenderImage.Android.Resource.Style.CardView;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.CardView_Dark = global::RenderImage.Android.Resource.Style.CardView_Dark;
@@ -6373,10 +6370,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Platform_V11_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V11_AppCompat;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Platform_V11_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V11_AppCompat_Light;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Platform_V14_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V14_AppCompat;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Platform_V14_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V14_AppCompat_Light;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Platform_V21_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V21_AppCompat;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Platform_V21_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V21_AppCompat_Light;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Platform_V25_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V25_AppCompat;
@@ -6587,7 +6580,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Widget_Design_BottomNavigationView = global::RenderImage.Android.Resource.Style.Widget_Design_BottomNavigationView;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::RenderImage.Android.Resource.Style.Widget_Design_BottomSheet_Modal;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::RenderImage.Android.Resource.Style.Widget_Design_CollapsingToolbar;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Widget_Design_CoordinatorLayout = global::RenderImage.Android.Resource.Style.Widget_Design_CoordinatorLayout;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Widget_Design_FloatingActionButton = global::RenderImage.Android.Resource.Style.Widget_Design_FloatingActionButton;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Widget_Design_NavigationView = global::RenderImage.Android.Resource.Style.Widget_Design_NavigationView;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::RenderImage.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
@@ -6876,7 +6868,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Styleable.DesignTheme = global::RenderImage.Android.Resource.Styleable.DesignTheme;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::RenderImage.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::RenderImage.Android.Resource.Styleable.DesignTheme_bottomSheetStyle;
-			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Styleable.DesignTheme_textColorError = global::RenderImage.Android.Resource.Styleable.DesignTheme_textColorError;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Styleable.DrawerArrowToggle = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
@@ -7163,6 +7154,2324 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Styleable.ViewStubCompat_android_id = global::RenderImage.Android.Resource.Styleable.ViewStubCompat_android_id;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::RenderImage.Android.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Telerik.XamarinForms.DataControlsRenderer.Android.Resource.Styleable.ViewStubCompat_android_layout = global::RenderImage.Android.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.abc_fade_in = global::RenderImage.Android.Resource.Animation.abc_fade_in;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.abc_fade_out = global::RenderImage.Android.Resource.Animation.abc_fade_out;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.abc_grow_fade_in_from_bottom = global::RenderImage.Android.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.abc_popup_enter = global::RenderImage.Android.Resource.Animation.abc_popup_enter;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.abc_popup_exit = global::RenderImage.Android.Resource.Animation.abc_popup_exit;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.abc_shrink_fade_out_from_bottom = global::RenderImage.Android.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.abc_slide_in_bottom = global::RenderImage.Android.Resource.Animation.abc_slide_in_bottom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.abc_slide_in_top = global::RenderImage.Android.Resource.Animation.abc_slide_in_top;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.abc_slide_out_bottom = global::RenderImage.Android.Resource.Animation.abc_slide_out_bottom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.abc_slide_out_top = global::RenderImage.Android.Resource.Animation.abc_slide_out_top;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.design_bottom_sheet_slide_in = global::RenderImage.Android.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.design_bottom_sheet_slide_out = global::RenderImage.Android.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.design_snackbar_in = global::RenderImage.Android.Resource.Animation.design_snackbar_in;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.design_snackbar_out = global::RenderImage.Android.Resource.Animation.design_snackbar_out;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.drawer_slide_in_top = global::RenderImage.Android.Resource.Animation.drawer_slide_in_top;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.drawer_slide_out_top = global::RenderImage.Android.Resource.Animation.drawer_slide_out_top;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.EnterFromLeft = global::RenderImage.Android.Resource.Animation.EnterFromLeft;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.EnterFromRight = global::RenderImage.Android.Resource.Animation.EnterFromRight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.ExitToLeft = global::RenderImage.Android.Resource.Animation.ExitToLeft;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animation.ExitToRight = global::RenderImage.Android.Resource.Animation.ExitToRight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Animator.design_appbar_state_list_animator = global::RenderImage.Android.Resource.Animator.design_appbar_state_list_animator;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionBarDivider = global::RenderImage.Android.Resource.Attribute.actionBarDivider;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionBarItemBackground = global::RenderImage.Android.Resource.Attribute.actionBarItemBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionBarPopupTheme = global::RenderImage.Android.Resource.Attribute.actionBarPopupTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionBarSize = global::RenderImage.Android.Resource.Attribute.actionBarSize;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionBarSplitStyle = global::RenderImage.Android.Resource.Attribute.actionBarSplitStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionBarStyle = global::RenderImage.Android.Resource.Attribute.actionBarStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionBarTabBarStyle = global::RenderImage.Android.Resource.Attribute.actionBarTabBarStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionBarTabStyle = global::RenderImage.Android.Resource.Attribute.actionBarTabStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionBarTabTextStyle = global::RenderImage.Android.Resource.Attribute.actionBarTabTextStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionBarTheme = global::RenderImage.Android.Resource.Attribute.actionBarTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionBarWidgetTheme = global::RenderImage.Android.Resource.Attribute.actionBarWidgetTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionButtonStyle = global::RenderImage.Android.Resource.Attribute.actionButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionDropDownStyle = global::RenderImage.Android.Resource.Attribute.actionDropDownStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionLayout = global::RenderImage.Android.Resource.Attribute.actionLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionMenuTextAppearance = global::RenderImage.Android.Resource.Attribute.actionMenuTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionMenuTextColor = global::RenderImage.Android.Resource.Attribute.actionMenuTextColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionModeBackground = global::RenderImage.Android.Resource.Attribute.actionModeBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionModeCloseButtonStyle = global::RenderImage.Android.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionModeCloseDrawable = global::RenderImage.Android.Resource.Attribute.actionModeCloseDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionModeCopyDrawable = global::RenderImage.Android.Resource.Attribute.actionModeCopyDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionModeCutDrawable = global::RenderImage.Android.Resource.Attribute.actionModeCutDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionModeFindDrawable = global::RenderImage.Android.Resource.Attribute.actionModeFindDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionModePasteDrawable = global::RenderImage.Android.Resource.Attribute.actionModePasteDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionModePopupWindowStyle = global::RenderImage.Android.Resource.Attribute.actionModePopupWindowStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionModeSelectAllDrawable = global::RenderImage.Android.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionModeShareDrawable = global::RenderImage.Android.Resource.Attribute.actionModeShareDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionModeSplitBackground = global::RenderImage.Android.Resource.Attribute.actionModeSplitBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionModeStyle = global::RenderImage.Android.Resource.Attribute.actionModeStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionModeWebSearchDrawable = global::RenderImage.Android.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionOverflowButtonStyle = global::RenderImage.Android.Resource.Attribute.actionOverflowButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionOverflowMenuStyle = global::RenderImage.Android.Resource.Attribute.actionOverflowMenuStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionProviderClass = global::RenderImage.Android.Resource.Attribute.actionProviderClass;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.actionViewClass = global::RenderImage.Android.Resource.Attribute.actionViewClass;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.activityChooserViewStyle = global::RenderImage.Android.Resource.Attribute.activityChooserViewStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.alertDialogButtonGroupStyle = global::RenderImage.Android.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.alertDialogCenterButtons = global::RenderImage.Android.Resource.Attribute.alertDialogCenterButtons;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.alertDialogStyle = global::RenderImage.Android.Resource.Attribute.alertDialogStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.alertDialogTheme = global::RenderImage.Android.Resource.Attribute.alertDialogTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.allowStacking = global::RenderImage.Android.Resource.Attribute.allowStacking;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.alpha = global::RenderImage.Android.Resource.Attribute.alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.alphabeticModifiers = global::RenderImage.Android.Resource.Attribute.alphabeticModifiers;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.arrowHeadLength = global::RenderImage.Android.Resource.Attribute.arrowHeadLength;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.arrowShaftLength = global::RenderImage.Android.Resource.Attribute.arrowShaftLength;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.autoCompleteTextViewStyle = global::RenderImage.Android.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.autoSizeMaxTextSize = global::RenderImage.Android.Resource.Attribute.autoSizeMaxTextSize;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.autoSizeMinTextSize = global::RenderImage.Android.Resource.Attribute.autoSizeMinTextSize;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.autoSizePresetSizes = global::RenderImage.Android.Resource.Attribute.autoSizePresetSizes;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.autoSizeStepGranularity = global::RenderImage.Android.Resource.Attribute.autoSizeStepGranularity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.autoSizeTextType = global::RenderImage.Android.Resource.Attribute.autoSizeTextType;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.background = global::RenderImage.Android.Resource.Attribute.background;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.backgroundSplit = global::RenderImage.Android.Resource.Attribute.backgroundSplit;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.backgroundStacked = global::RenderImage.Android.Resource.Attribute.backgroundStacked;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.backgroundTint = global::RenderImage.Android.Resource.Attribute.backgroundTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.backgroundTintMode = global::RenderImage.Android.Resource.Attribute.backgroundTintMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.barLength = global::RenderImage.Android.Resource.Attribute.barLength;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.behavior_autoHide = global::RenderImage.Android.Resource.Attribute.behavior_autoHide;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.behavior_hideable = global::RenderImage.Android.Resource.Attribute.behavior_hideable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.behavior_overlapTop = global::RenderImage.Android.Resource.Attribute.behavior_overlapTop;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.behavior_peekHeight = global::RenderImage.Android.Resource.Attribute.behavior_peekHeight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.behavior_skipCollapsed = global::RenderImage.Android.Resource.Attribute.behavior_skipCollapsed;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.borderWidth = global::RenderImage.Android.Resource.Attribute.borderWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.borderlessButtonStyle = global::RenderImage.Android.Resource.Attribute.borderlessButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.bottomSheetDialogTheme = global::RenderImage.Android.Resource.Attribute.bottomSheetDialogTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.bottomSheetStyle = global::RenderImage.Android.Resource.Attribute.bottomSheetStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.buttonBarButtonStyle = global::RenderImage.Android.Resource.Attribute.buttonBarButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.buttonBarNegativeButtonStyle = global::RenderImage.Android.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.buttonBarNeutralButtonStyle = global::RenderImage.Android.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.buttonBarPositiveButtonStyle = global::RenderImage.Android.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.buttonBarStyle = global::RenderImage.Android.Resource.Attribute.buttonBarStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.buttonGravity = global::RenderImage.Android.Resource.Attribute.buttonGravity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.buttonPanelSideLayout = global::RenderImage.Android.Resource.Attribute.buttonPanelSideLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.buttonStyle = global::RenderImage.Android.Resource.Attribute.buttonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.buttonStyleSmall = global::RenderImage.Android.Resource.Attribute.buttonStyleSmall;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.buttonTint = global::RenderImage.Android.Resource.Attribute.buttonTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.buttonTintMode = global::RenderImage.Android.Resource.Attribute.buttonTintMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.cardBackgroundColor = global::RenderImage.Android.Resource.Attribute.cardBackgroundColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.cardCornerRadius = global::RenderImage.Android.Resource.Attribute.cardCornerRadius;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.cardElevation = global::RenderImage.Android.Resource.Attribute.cardElevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.cardMaxElevation = global::RenderImage.Android.Resource.Attribute.cardMaxElevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.cardPreventCornerOverlap = global::RenderImage.Android.Resource.Attribute.cardPreventCornerOverlap;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.cardUseCompatPadding = global::RenderImage.Android.Resource.Attribute.cardUseCompatPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.checkboxStyle = global::RenderImage.Android.Resource.Attribute.checkboxStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.checkedTextViewStyle = global::RenderImage.Android.Resource.Attribute.checkedTextViewStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.closeIcon = global::RenderImage.Android.Resource.Attribute.closeIcon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.closeItemLayout = global::RenderImage.Android.Resource.Attribute.closeItemLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.collapseContentDescription = global::RenderImage.Android.Resource.Attribute.collapseContentDescription;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.collapseIcon = global::RenderImage.Android.Resource.Attribute.collapseIcon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.collapsedTitleGravity = global::RenderImage.Android.Resource.Attribute.collapsedTitleGravity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.collapsedTitleTextAppearance = global::RenderImage.Android.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.color = global::RenderImage.Android.Resource.Attribute.color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.colorAccent = global::RenderImage.Android.Resource.Attribute.colorAccent;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.colorBackgroundFloating = global::RenderImage.Android.Resource.Attribute.colorBackgroundFloating;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.colorButtonNormal = global::RenderImage.Android.Resource.Attribute.colorButtonNormal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.colorControlActivated = global::RenderImage.Android.Resource.Attribute.colorControlActivated;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.colorControlHighlight = global::RenderImage.Android.Resource.Attribute.colorControlHighlight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.colorControlNormal = global::RenderImage.Android.Resource.Attribute.colorControlNormal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.colorError = global::RenderImage.Android.Resource.Attribute.colorError;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.colorPrimary = global::RenderImage.Android.Resource.Attribute.colorPrimary;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.colorPrimaryDark = global::RenderImage.Android.Resource.Attribute.colorPrimaryDark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.colorSwitchThumbNormal = global::RenderImage.Android.Resource.Attribute.colorSwitchThumbNormal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.commitIcon = global::RenderImage.Android.Resource.Attribute.commitIcon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.contentDescription = global::RenderImage.Android.Resource.Attribute.contentDescription;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.contentInsetEnd = global::RenderImage.Android.Resource.Attribute.contentInsetEnd;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.contentInsetEndWithActions = global::RenderImage.Android.Resource.Attribute.contentInsetEndWithActions;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.contentInsetLeft = global::RenderImage.Android.Resource.Attribute.contentInsetLeft;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.contentInsetRight = global::RenderImage.Android.Resource.Attribute.contentInsetRight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.contentInsetStart = global::RenderImage.Android.Resource.Attribute.contentInsetStart;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.contentInsetStartWithNavigation = global::RenderImage.Android.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.contentPadding = global::RenderImage.Android.Resource.Attribute.contentPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.contentPaddingBottom = global::RenderImage.Android.Resource.Attribute.contentPaddingBottom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.contentPaddingLeft = global::RenderImage.Android.Resource.Attribute.contentPaddingLeft;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.contentPaddingRight = global::RenderImage.Android.Resource.Attribute.contentPaddingRight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.contentPaddingTop = global::RenderImage.Android.Resource.Attribute.contentPaddingTop;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.contentScrim = global::RenderImage.Android.Resource.Attribute.contentScrim;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.controlBackground = global::RenderImage.Android.Resource.Attribute.controlBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.counterEnabled = global::RenderImage.Android.Resource.Attribute.counterEnabled;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.counterMaxLength = global::RenderImage.Android.Resource.Attribute.counterMaxLength;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.counterOverflowTextAppearance = global::RenderImage.Android.Resource.Attribute.counterOverflowTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.counterTextAppearance = global::RenderImage.Android.Resource.Attribute.counterTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.customNavigationLayout = global::RenderImage.Android.Resource.Attribute.customNavigationLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.defaultQueryHint = global::RenderImage.Android.Resource.Attribute.defaultQueryHint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.dialogPreferredPadding = global::RenderImage.Android.Resource.Attribute.dialogPreferredPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.dialogTheme = global::RenderImage.Android.Resource.Attribute.dialogTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.displayOptions = global::RenderImage.Android.Resource.Attribute.displayOptions;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.divider = global::RenderImage.Android.Resource.Attribute.divider;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.dividerHorizontal = global::RenderImage.Android.Resource.Attribute.dividerHorizontal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.dividerPadding = global::RenderImage.Android.Resource.Attribute.dividerPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.dividerVertical = global::RenderImage.Android.Resource.Attribute.dividerVertical;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.drawableSize = global::RenderImage.Android.Resource.Attribute.drawableSize;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.drawerArrowStyle = global::RenderImage.Android.Resource.Attribute.drawerArrowStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.dropDownListViewStyle = global::RenderImage.Android.Resource.Attribute.dropDownListViewStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.dropdownListPreferredItemHeight = global::RenderImage.Android.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.editTextBackground = global::RenderImage.Android.Resource.Attribute.editTextBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.editTextColor = global::RenderImage.Android.Resource.Attribute.editTextColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.editTextStyle = global::RenderImage.Android.Resource.Attribute.editTextStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.elevation = global::RenderImage.Android.Resource.Attribute.elevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.errorEnabled = global::RenderImage.Android.Resource.Attribute.errorEnabled;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.errorTextAppearance = global::RenderImage.Android.Resource.Attribute.errorTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.expandActivityOverflowButtonDrawable = global::RenderImage.Android.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.expanded = global::RenderImage.Android.Resource.Attribute.expanded;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.expandedTitleGravity = global::RenderImage.Android.Resource.Attribute.expandedTitleGravity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.expandedTitleMargin = global::RenderImage.Android.Resource.Attribute.expandedTitleMargin;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.expandedTitleMarginBottom = global::RenderImage.Android.Resource.Attribute.expandedTitleMarginBottom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.expandedTitleMarginEnd = global::RenderImage.Android.Resource.Attribute.expandedTitleMarginEnd;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.expandedTitleMarginStart = global::RenderImage.Android.Resource.Attribute.expandedTitleMarginStart;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.expandedTitleMarginTop = global::RenderImage.Android.Resource.Attribute.expandedTitleMarginTop;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.expandedTitleTextAppearance = global::RenderImage.Android.Resource.Attribute.expandedTitleTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.externalRouteEnabledDrawable = global::RenderImage.Android.Resource.Attribute.externalRouteEnabledDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.fabSize = global::RenderImage.Android.Resource.Attribute.fabSize;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.fastScrollEnabled = global::RenderImage.Android.Resource.Attribute.fastScrollEnabled;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::RenderImage.Android.Resource.Attribute.fastScrollHorizontalThumbDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::RenderImage.Android.Resource.Attribute.fastScrollHorizontalTrackDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.fastScrollVerticalThumbDrawable = global::RenderImage.Android.Resource.Attribute.fastScrollVerticalThumbDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.fastScrollVerticalTrackDrawable = global::RenderImage.Android.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.fillColor = global::RenderImage.Android.Resource.Attribute.fillColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.fillViewport = global::RenderImage.Android.Resource.Attribute.fillViewport;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.font = global::RenderImage.Android.Resource.Attribute.font;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.fontFamily = global::RenderImage.Android.Resource.Attribute.fontFamily;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.fontProviderAuthority = global::RenderImage.Android.Resource.Attribute.fontProviderAuthority;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.fontProviderCerts = global::RenderImage.Android.Resource.Attribute.fontProviderCerts;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.fontProviderFetchStrategy = global::RenderImage.Android.Resource.Attribute.fontProviderFetchStrategy;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.fontProviderFetchTimeout = global::RenderImage.Android.Resource.Attribute.fontProviderFetchTimeout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.fontProviderPackage = global::RenderImage.Android.Resource.Attribute.fontProviderPackage;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.fontProviderQuery = global::RenderImage.Android.Resource.Attribute.fontProviderQuery;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.fontStyle = global::RenderImage.Android.Resource.Attribute.fontStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.fontWeight = global::RenderImage.Android.Resource.Attribute.fontWeight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.foregroundInsidePadding = global::RenderImage.Android.Resource.Attribute.foregroundInsidePadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.gapBetweenBars = global::RenderImage.Android.Resource.Attribute.gapBetweenBars;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.goIcon = global::RenderImage.Android.Resource.Attribute.goIcon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.headerLayout = global::RenderImage.Android.Resource.Attribute.headerLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.height = global::RenderImage.Android.Resource.Attribute.height;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.hideOnContentScroll = global::RenderImage.Android.Resource.Attribute.hideOnContentScroll;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.hintAnimationEnabled = global::RenderImage.Android.Resource.Attribute.hintAnimationEnabled;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.hintEnabled = global::RenderImage.Android.Resource.Attribute.hintEnabled;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.hintTextAppearance = global::RenderImage.Android.Resource.Attribute.hintTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.homeAsUpIndicator = global::RenderImage.Android.Resource.Attribute.homeAsUpIndicator;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.homeLayout = global::RenderImage.Android.Resource.Attribute.homeLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.icon = global::RenderImage.Android.Resource.Attribute.icon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.iconTint = global::RenderImage.Android.Resource.Attribute.iconTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.iconTintMode = global::RenderImage.Android.Resource.Attribute.iconTintMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.iconifiedByDefault = global::RenderImage.Android.Resource.Attribute.iconifiedByDefault;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.imageButtonStyle = global::RenderImage.Android.Resource.Attribute.imageButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.indeterminateProgressStyle = global::RenderImage.Android.Resource.Attribute.indeterminateProgressStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.initialActivityCount = global::RenderImage.Android.Resource.Attribute.initialActivityCount;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.insetForeground = global::RenderImage.Android.Resource.Attribute.insetForeground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.isLightTheme = global::RenderImage.Android.Resource.Attribute.isLightTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.itemBackground = global::RenderImage.Android.Resource.Attribute.itemBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.itemIconTint = global::RenderImage.Android.Resource.Attribute.itemIconTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.itemPadding = global::RenderImage.Android.Resource.Attribute.itemPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.itemTextAppearance = global::RenderImage.Android.Resource.Attribute.itemTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.itemTextColor = global::RenderImage.Android.Resource.Attribute.itemTextColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.keylines = global::RenderImage.Android.Resource.Attribute.keylines;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.layout = global::RenderImage.Android.Resource.Attribute.layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.layoutManager = global::RenderImage.Android.Resource.Attribute.layoutManager;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.layout_anchor = global::RenderImage.Android.Resource.Attribute.layout_anchor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.layout_anchorGravity = global::RenderImage.Android.Resource.Attribute.layout_anchorGravity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.layout_behavior = global::RenderImage.Android.Resource.Attribute.layout_behavior;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.layout_collapseMode = global::RenderImage.Android.Resource.Attribute.layout_collapseMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.layout_collapseParallaxMultiplier = global::RenderImage.Android.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.layout_dodgeInsetEdges = global::RenderImage.Android.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.layout_insetEdge = global::RenderImage.Android.Resource.Attribute.layout_insetEdge;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.layout_keyline = global::RenderImage.Android.Resource.Attribute.layout_keyline;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.layout_scrollFlags = global::RenderImage.Android.Resource.Attribute.layout_scrollFlags;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.layout_scrollInterpolator = global::RenderImage.Android.Resource.Attribute.layout_scrollInterpolator;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.listChoiceBackgroundIndicator = global::RenderImage.Android.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.listDividerAlertDialog = global::RenderImage.Android.Resource.Attribute.listDividerAlertDialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.listItemLayout = global::RenderImage.Android.Resource.Attribute.listItemLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.listLayout = global::RenderImage.Android.Resource.Attribute.listLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.listMenuViewStyle = global::RenderImage.Android.Resource.Attribute.listMenuViewStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.listPopupWindowStyle = global::RenderImage.Android.Resource.Attribute.listPopupWindowStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.listPreferredItemHeight = global::RenderImage.Android.Resource.Attribute.listPreferredItemHeight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.listPreferredItemHeightLarge = global::RenderImage.Android.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.listPreferredItemHeightSmall = global::RenderImage.Android.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.listPreferredItemPaddingLeft = global::RenderImage.Android.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.listPreferredItemPaddingRight = global::RenderImage.Android.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.logo = global::RenderImage.Android.Resource.Attribute.logo;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.logoDescription = global::RenderImage.Android.Resource.Attribute.logoDescription;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.maxActionInlineWidth = global::RenderImage.Android.Resource.Attribute.maxActionInlineWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.maxButtonHeight = global::RenderImage.Android.Resource.Attribute.maxButtonHeight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.measureWithLargestChild = global::RenderImage.Android.Resource.Attribute.measureWithLargestChild;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.mediaRouteAudioTrackDrawable = global::RenderImage.Android.Resource.Attribute.mediaRouteAudioTrackDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.mediaRouteButtonStyle = global::RenderImage.Android.Resource.Attribute.mediaRouteButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.mediaRouteButtonTint = global::RenderImage.Android.Resource.Attribute.mediaRouteButtonTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.mediaRouteCloseDrawable = global::RenderImage.Android.Resource.Attribute.mediaRouteCloseDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.mediaRouteControlPanelThemeOverlay = global::RenderImage.Android.Resource.Attribute.mediaRouteControlPanelThemeOverlay;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.mediaRouteDefaultIconDrawable = global::RenderImage.Android.Resource.Attribute.mediaRouteDefaultIconDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.mediaRoutePauseDrawable = global::RenderImage.Android.Resource.Attribute.mediaRoutePauseDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.mediaRoutePlayDrawable = global::RenderImage.Android.Resource.Attribute.mediaRoutePlayDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::RenderImage.Android.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::RenderImage.Android.Resource.Attribute.mediaRouteSpeakerIconDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.mediaRouteStopDrawable = global::RenderImage.Android.Resource.Attribute.mediaRouteStopDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.mediaRouteTheme = global::RenderImage.Android.Resource.Attribute.mediaRouteTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.mediaRouteTvIconDrawable = global::RenderImage.Android.Resource.Attribute.mediaRouteTvIconDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.menu = global::RenderImage.Android.Resource.Attribute.menu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.multiChoiceItemLayout = global::RenderImage.Android.Resource.Attribute.multiChoiceItemLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.navigationContentDescription = global::RenderImage.Android.Resource.Attribute.navigationContentDescription;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.navigationIcon = global::RenderImage.Android.Resource.Attribute.navigationIcon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.navigationMode = global::RenderImage.Android.Resource.Attribute.navigationMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.numericModifiers = global::RenderImage.Android.Resource.Attribute.numericModifiers;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.overlapAnchor = global::RenderImage.Android.Resource.Attribute.overlapAnchor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.paddingBottomNoButtons = global::RenderImage.Android.Resource.Attribute.paddingBottomNoButtons;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.paddingEnd = global::RenderImage.Android.Resource.Attribute.paddingEnd;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.paddingStart = global::RenderImage.Android.Resource.Attribute.paddingStart;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.paddingTopNoTitle = global::RenderImage.Android.Resource.Attribute.paddingTopNoTitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.panelBackground = global::RenderImage.Android.Resource.Attribute.panelBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.panelMenuListTheme = global::RenderImage.Android.Resource.Attribute.panelMenuListTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.panelMenuListWidth = global::RenderImage.Android.Resource.Attribute.panelMenuListWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.passwordToggleContentDescription = global::RenderImage.Android.Resource.Attribute.passwordToggleContentDescription;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.passwordToggleDrawable = global::RenderImage.Android.Resource.Attribute.passwordToggleDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.passwordToggleEnabled = global::RenderImage.Android.Resource.Attribute.passwordToggleEnabled;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.passwordToggleTint = global::RenderImage.Android.Resource.Attribute.passwordToggleTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.passwordToggleTintMode = global::RenderImage.Android.Resource.Attribute.passwordToggleTintMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.pointerFill = global::RenderImage.Android.Resource.Attribute.pointerFill;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.pointerMargin = global::RenderImage.Android.Resource.Attribute.pointerMargin;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.pointerSize = global::RenderImage.Android.Resource.Attribute.pointerSize;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.popupMenuStyle = global::RenderImage.Android.Resource.Attribute.popupMenuStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.popupTheme = global::RenderImage.Android.Resource.Attribute.popupTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.popupWindowStyle = global::RenderImage.Android.Resource.Attribute.popupWindowStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.preserveIconSpacing = global::RenderImage.Android.Resource.Attribute.preserveIconSpacing;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.pressedTranslationZ = global::RenderImage.Android.Resource.Attribute.pressedTranslationZ;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.progressBarPadding = global::RenderImage.Android.Resource.Attribute.progressBarPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.progressBarStyle = global::RenderImage.Android.Resource.Attribute.progressBarStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.queryBackground = global::RenderImage.Android.Resource.Attribute.queryBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.queryHint = global::RenderImage.Android.Resource.Attribute.queryHint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.radScrollViewStyle = global::RenderImage.Android.Resource.Attribute.radScrollViewStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.radioButtonStyle = global::RenderImage.Android.Resource.Attribute.radioButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.ratingBarStyle = global::RenderImage.Android.Resource.Attribute.ratingBarStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.ratingBarStyleIndicator = global::RenderImage.Android.Resource.Attribute.ratingBarStyleIndicator;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.ratingBarStyleSmall = global::RenderImage.Android.Resource.Attribute.ratingBarStyleSmall;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.reverseLayout = global::RenderImage.Android.Resource.Attribute.reverseLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.rippleColor = global::RenderImage.Android.Resource.Attribute.rippleColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.scrimAnimationDuration = global::RenderImage.Android.Resource.Attribute.scrimAnimationDuration;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.scrimVisibleHeightTrigger = global::RenderImage.Android.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.scrollMode = global::RenderImage.Android.Resource.Attribute.scrollMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.searchHintIcon = global::RenderImage.Android.Resource.Attribute.searchHintIcon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.searchIcon = global::RenderImage.Android.Resource.Attribute.searchIcon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.searchViewStyle = global::RenderImage.Android.Resource.Attribute.searchViewStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.seekBarStyle = global::RenderImage.Android.Resource.Attribute.seekBarStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.selectableItemBackground = global::RenderImage.Android.Resource.Attribute.selectableItemBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.selectableItemBackgroundBorderless = global::RenderImage.Android.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.showAsAction = global::RenderImage.Android.Resource.Attribute.showAsAction;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.showDividers = global::RenderImage.Android.Resource.Attribute.showDividers;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.showText = global::RenderImage.Android.Resource.Attribute.showText;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.showTitle = global::RenderImage.Android.Resource.Attribute.showTitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.singleChoiceItemLayout = global::RenderImage.Android.Resource.Attribute.singleChoiceItemLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.spanCount = global::RenderImage.Android.Resource.Attribute.spanCount;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.spinBars = global::RenderImage.Android.Resource.Attribute.spinBars;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.spinnerDropDownItemStyle = global::RenderImage.Android.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.spinnerStyle = global::RenderImage.Android.Resource.Attribute.spinnerStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.splitTrack = global::RenderImage.Android.Resource.Attribute.splitTrack;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.srcCompat = global::RenderImage.Android.Resource.Attribute.srcCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.stackFromEnd = global::RenderImage.Android.Resource.Attribute.stackFromEnd;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.state_above_anchor = global::RenderImage.Android.Resource.Attribute.state_above_anchor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.state_collapsed = global::RenderImage.Android.Resource.Attribute.state_collapsed;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.state_collapsible = global::RenderImage.Android.Resource.Attribute.state_collapsible;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.statusBarBackground = global::RenderImage.Android.Resource.Attribute.statusBarBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.statusBarScrim = global::RenderImage.Android.Resource.Attribute.statusBarScrim;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.strokeColor = global::RenderImage.Android.Resource.Attribute.strokeColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.strokeWidth = global::RenderImage.Android.Resource.Attribute.strokeWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.subMenuArrow = global::RenderImage.Android.Resource.Attribute.subMenuArrow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.submitBackground = global::RenderImage.Android.Resource.Attribute.submitBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.subtitle = global::RenderImage.Android.Resource.Attribute.subtitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.subtitleTextAppearance = global::RenderImage.Android.Resource.Attribute.subtitleTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.subtitleTextColor = global::RenderImage.Android.Resource.Attribute.subtitleTextColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.subtitleTextStyle = global::RenderImage.Android.Resource.Attribute.subtitleTextStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.suggestionRowLayout = global::RenderImage.Android.Resource.Attribute.suggestionRowLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.switchMinWidth = global::RenderImage.Android.Resource.Attribute.switchMinWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.switchPadding = global::RenderImage.Android.Resource.Attribute.switchPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.switchStyle = global::RenderImage.Android.Resource.Attribute.switchStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.switchTextAppearance = global::RenderImage.Android.Resource.Attribute.switchTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tabBackground = global::RenderImage.Android.Resource.Attribute.tabBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tabContentStart = global::RenderImage.Android.Resource.Attribute.tabContentStart;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tabGravity = global::RenderImage.Android.Resource.Attribute.tabGravity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tabIndicatorColor = global::RenderImage.Android.Resource.Attribute.tabIndicatorColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tabIndicatorHeight = global::RenderImage.Android.Resource.Attribute.tabIndicatorHeight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tabMaxWidth = global::RenderImage.Android.Resource.Attribute.tabMaxWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tabMinWidth = global::RenderImage.Android.Resource.Attribute.tabMinWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tabMode = global::RenderImage.Android.Resource.Attribute.tabMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tabPadding = global::RenderImage.Android.Resource.Attribute.tabPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tabPaddingBottom = global::RenderImage.Android.Resource.Attribute.tabPaddingBottom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tabPaddingEnd = global::RenderImage.Android.Resource.Attribute.tabPaddingEnd;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tabPaddingStart = global::RenderImage.Android.Resource.Attribute.tabPaddingStart;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tabPaddingTop = global::RenderImage.Android.Resource.Attribute.tabPaddingTop;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tabSelectedTextColor = global::RenderImage.Android.Resource.Attribute.tabSelectedTextColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tabTextAppearance = global::RenderImage.Android.Resource.Attribute.tabTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tabTextColor = global::RenderImage.Android.Resource.Attribute.tabTextColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.textAllCaps = global::RenderImage.Android.Resource.Attribute.textAllCaps;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.textAppearanceLargePopupMenu = global::RenderImage.Android.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.textAppearanceListItem = global::RenderImage.Android.Resource.Attribute.textAppearanceListItem;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.textAppearanceListItemSecondary = global::RenderImage.Android.Resource.Attribute.textAppearanceListItemSecondary;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.textAppearanceListItemSmall = global::RenderImage.Android.Resource.Attribute.textAppearanceListItemSmall;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.textAppearancePopupMenuHeader = global::RenderImage.Android.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.textAppearanceSearchResultSubtitle = global::RenderImage.Android.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.textAppearanceSearchResultTitle = global::RenderImage.Android.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.textAppearanceSmallPopupMenu = global::RenderImage.Android.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.textColorAlertDialogListItem = global::RenderImage.Android.Resource.Attribute.textColorAlertDialogListItem;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.textColorSearchUrl = global::RenderImage.Android.Resource.Attribute.textColorSearchUrl;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.theme = global::RenderImage.Android.Resource.Attribute.theme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.thickness = global::RenderImage.Android.Resource.Attribute.thickness;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.thumbTextPadding = global::RenderImage.Android.Resource.Attribute.thumbTextPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.thumbTint = global::RenderImage.Android.Resource.Attribute.thumbTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.thumbTintMode = global::RenderImage.Android.Resource.Attribute.thumbTintMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tickMark = global::RenderImage.Android.Resource.Attribute.tickMark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tickMarkTint = global::RenderImage.Android.Resource.Attribute.tickMarkTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tickMarkTintMode = global::RenderImage.Android.Resource.Attribute.tickMarkTintMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tint = global::RenderImage.Android.Resource.Attribute.tint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tintMode = global::RenderImage.Android.Resource.Attribute.tintMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.title = global::RenderImage.Android.Resource.Attribute.title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.titleEnabled = global::RenderImage.Android.Resource.Attribute.titleEnabled;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.titleMargin = global::RenderImage.Android.Resource.Attribute.titleMargin;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.titleMarginBottom = global::RenderImage.Android.Resource.Attribute.titleMarginBottom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.titleMarginEnd = global::RenderImage.Android.Resource.Attribute.titleMarginEnd;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.titleMarginStart = global::RenderImage.Android.Resource.Attribute.titleMarginStart;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.titleMarginTop = global::RenderImage.Android.Resource.Attribute.titleMarginTop;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.titleMargins = global::RenderImage.Android.Resource.Attribute.titleMargins;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.titleTextAppearance = global::RenderImage.Android.Resource.Attribute.titleTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.titleTextColor = global::RenderImage.Android.Resource.Attribute.titleTextColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.titleTextStyle = global::RenderImage.Android.Resource.Attribute.titleTextStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.toolbarId = global::RenderImage.Android.Resource.Attribute.toolbarId;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.toolbarNavigationButtonStyle = global::RenderImage.Android.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.toolbarStyle = global::RenderImage.Android.Resource.Attribute.toolbarStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tooltipForegroundColor = global::RenderImage.Android.Resource.Attribute.tooltipForegroundColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tooltipFrameBackground = global::RenderImage.Android.Resource.Attribute.tooltipFrameBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.tooltipText = global::RenderImage.Android.Resource.Attribute.tooltipText;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.track = global::RenderImage.Android.Resource.Attribute.track;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.trackTint = global::RenderImage.Android.Resource.Attribute.trackTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.trackTintMode = global::RenderImage.Android.Resource.Attribute.trackTintMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.useCompatPadding = global::RenderImage.Android.Resource.Attribute.useCompatPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.voiceIcon = global::RenderImage.Android.Resource.Attribute.voiceIcon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.windowActionBar = global::RenderImage.Android.Resource.Attribute.windowActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.windowActionBarOverlay = global::RenderImage.Android.Resource.Attribute.windowActionBarOverlay;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.windowActionModeOverlay = global::RenderImage.Android.Resource.Attribute.windowActionModeOverlay;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.windowFixedHeightMajor = global::RenderImage.Android.Resource.Attribute.windowFixedHeightMajor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.windowFixedHeightMinor = global::RenderImage.Android.Resource.Attribute.windowFixedHeightMinor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.windowFixedWidthMajor = global::RenderImage.Android.Resource.Attribute.windowFixedWidthMajor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.windowFixedWidthMinor = global::RenderImage.Android.Resource.Attribute.windowFixedWidthMinor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.windowMinWidthMajor = global::RenderImage.Android.Resource.Attribute.windowMinWidthMajor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.windowMinWidthMinor = global::RenderImage.Android.Resource.Attribute.windowMinWidthMinor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Attribute.windowNoTitle = global::RenderImage.Android.Resource.Attribute.windowNoTitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Boolean.abc_action_bar_embed_tabs = global::RenderImage.Android.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Boolean.abc_allow_stacked_button_bar = global::RenderImage.Android.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::RenderImage.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_background_cache_hint_selector_material_dark = global::RenderImage.Android.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_background_cache_hint_selector_material_light = global::RenderImage.Android.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_btn_colored_borderless_text_material = global::RenderImage.Android.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_btn_colored_text_material = global::RenderImage.Android.Resource.Color.abc_btn_colored_text_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_color_highlight_material = global::RenderImage.Android.Resource.Color.abc_color_highlight_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_hint_foreground_material_dark = global::RenderImage.Android.Resource.Color.abc_hint_foreground_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_hint_foreground_material_light = global::RenderImage.Android.Resource.Color.abc_hint_foreground_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_input_method_navigation_guard = global::RenderImage.Android.Resource.Color.abc_input_method_navigation_guard;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_primary_text_disable_only_material_dark = global::RenderImage.Android.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_primary_text_disable_only_material_light = global::RenderImage.Android.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_primary_text_material_dark = global::RenderImage.Android.Resource.Color.abc_primary_text_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_primary_text_material_light = global::RenderImage.Android.Resource.Color.abc_primary_text_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_search_url_text = global::RenderImage.Android.Resource.Color.abc_search_url_text;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_search_url_text_normal = global::RenderImage.Android.Resource.Color.abc_search_url_text_normal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_search_url_text_pressed = global::RenderImage.Android.Resource.Color.abc_search_url_text_pressed;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_search_url_text_selected = global::RenderImage.Android.Resource.Color.abc_search_url_text_selected;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_secondary_text_material_dark = global::RenderImage.Android.Resource.Color.abc_secondary_text_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_secondary_text_material_light = global::RenderImage.Android.Resource.Color.abc_secondary_text_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_tint_btn_checkable = global::RenderImage.Android.Resource.Color.abc_tint_btn_checkable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_tint_default = global::RenderImage.Android.Resource.Color.abc_tint_default;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_tint_edittext = global::RenderImage.Android.Resource.Color.abc_tint_edittext;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_tint_seek_thumb = global::RenderImage.Android.Resource.Color.abc_tint_seek_thumb;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_tint_spinner = global::RenderImage.Android.Resource.Color.abc_tint_spinner;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.abc_tint_switch_track = global::RenderImage.Android.Resource.Color.abc_tint_switch_track;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.accent_material_dark = global::RenderImage.Android.Resource.Color.accent_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.accent_material_light = global::RenderImage.Android.Resource.Color.accent_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.background_floating_material_dark = global::RenderImage.Android.Resource.Color.background_floating_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.background_floating_material_light = global::RenderImage.Android.Resource.Color.background_floating_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.background_material_dark = global::RenderImage.Android.Resource.Color.background_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.background_material_light = global::RenderImage.Android.Resource.Color.background_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.black = global::RenderImage.Android.Resource.Color.black;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.bright_foreground_disabled_material_dark = global::RenderImage.Android.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.bright_foreground_disabled_material_light = global::RenderImage.Android.Resource.Color.bright_foreground_disabled_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.bright_foreground_inverse_material_dark = global::RenderImage.Android.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.bright_foreground_inverse_material_light = global::RenderImage.Android.Resource.Color.bright_foreground_inverse_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.bright_foreground_material_dark = global::RenderImage.Android.Resource.Color.bright_foreground_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.bright_foreground_material_light = global::RenderImage.Android.Resource.Color.bright_foreground_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.button_material_dark = global::RenderImage.Android.Resource.Color.button_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.button_material_light = global::RenderImage.Android.Resource.Color.button_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.cardview_dark_background = global::RenderImage.Android.Resource.Color.cardview_dark_background;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.cardview_light_background = global::RenderImage.Android.Resource.Color.cardview_light_background;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.cardview_shadow_end_color = global::RenderImage.Android.Resource.Color.cardview_shadow_end_color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.cardview_shadow_start_color = global::RenderImage.Android.Resource.Color.cardview_shadow_start_color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.dark_grey_text_color = global::RenderImage.Android.Resource.Color.dark_grey_text_color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.design_bottom_navigation_shadow_color = global::RenderImage.Android.Resource.Color.design_bottom_navigation_shadow_color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.design_error = global::RenderImage.Android.Resource.Color.design_error;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.design_fab_shadow_end_color = global::RenderImage.Android.Resource.Color.design_fab_shadow_end_color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.design_fab_shadow_mid_color = global::RenderImage.Android.Resource.Color.design_fab_shadow_mid_color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.design_fab_shadow_start_color = global::RenderImage.Android.Resource.Color.design_fab_shadow_start_color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.design_fab_stroke_end_inner_color = global::RenderImage.Android.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.design_fab_stroke_end_outer_color = global::RenderImage.Android.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.design_fab_stroke_top_inner_color = global::RenderImage.Android.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.design_fab_stroke_top_outer_color = global::RenderImage.Android.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.design_snackbar_background_color = global::RenderImage.Android.Resource.Color.design_snackbar_background_color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.design_tint_password_toggle = global::RenderImage.Android.Resource.Color.design_tint_password_toggle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.dim_foreground_disabled_material_dark = global::RenderImage.Android.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.dim_foreground_disabled_material_light = global::RenderImage.Android.Resource.Color.dim_foreground_disabled_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.dim_foreground_material_dark = global::RenderImage.Android.Resource.Color.dim_foreground_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.dim_foreground_material_light = global::RenderImage.Android.Resource.Color.dim_foreground_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.foreground_material_dark = global::RenderImage.Android.Resource.Color.foreground_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.foreground_material_light = global::RenderImage.Android.Resource.Color.foreground_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.grey_text_color = global::RenderImage.Android.Resource.Color.grey_text_color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.highlighted_text_material_dark = global::RenderImage.Android.Resource.Color.highlighted_text_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.highlighted_text_material_light = global::RenderImage.Android.Resource.Color.highlighted_text_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.light_grey = global::RenderImage.Android.Resource.Color.light_grey;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.material_blue_grey_800 = global::RenderImage.Android.Resource.Color.material_blue_grey_800;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.material_blue_grey_900 = global::RenderImage.Android.Resource.Color.material_blue_grey_900;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.material_blue_grey_950 = global::RenderImage.Android.Resource.Color.material_blue_grey_950;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.material_deep_teal_200 = global::RenderImage.Android.Resource.Color.material_deep_teal_200;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.material_deep_teal_500 = global::RenderImage.Android.Resource.Color.material_deep_teal_500;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.material_grey_100 = global::RenderImage.Android.Resource.Color.material_grey_100;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.material_grey_300 = global::RenderImage.Android.Resource.Color.material_grey_300;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.material_grey_50 = global::RenderImage.Android.Resource.Color.material_grey_50;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.material_grey_600 = global::RenderImage.Android.Resource.Color.material_grey_600;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.material_grey_800 = global::RenderImage.Android.Resource.Color.material_grey_800;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.material_grey_850 = global::RenderImage.Android.Resource.Color.material_grey_850;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.material_grey_900 = global::RenderImage.Android.Resource.Color.material_grey_900;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.notification_action_color_filter = global::RenderImage.Android.Resource.Color.notification_action_color_filter;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.notification_icon_bg_color = global::RenderImage.Android.Resource.Color.notification_icon_bg_color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.notification_material_background_media_default_color = global::RenderImage.Android.Resource.Color.notification_material_background_media_default_color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.primary_dark_material_dark = global::RenderImage.Android.Resource.Color.primary_dark_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.primary_dark_material_light = global::RenderImage.Android.Resource.Color.primary_dark_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.primary_material_dark = global::RenderImage.Android.Resource.Color.primary_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.primary_material_light = global::RenderImage.Android.Resource.Color.primary_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.primary_text_default_material_dark = global::RenderImage.Android.Resource.Color.primary_text_default_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.primary_text_default_material_light = global::RenderImage.Android.Resource.Color.primary_text_default_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.primary_text_disabled_material_dark = global::RenderImage.Android.Resource.Color.primary_text_disabled_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.primary_text_disabled_material_light = global::RenderImage.Android.Resource.Color.primary_text_disabled_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.ripple_material_dark = global::RenderImage.Android.Resource.Color.ripple_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.ripple_material_light = global::RenderImage.Android.Resource.Color.ripple_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.secondary_text_default_material_dark = global::RenderImage.Android.Resource.Color.secondary_text_default_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.secondary_text_default_material_light = global::RenderImage.Android.Resource.Color.secondary_text_default_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.secondary_text_disabled_material_dark = global::RenderImage.Android.Resource.Color.secondary_text_disabled_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.secondary_text_disabled_material_light = global::RenderImage.Android.Resource.Color.secondary_text_disabled_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.switch_thumb_disabled_material_dark = global::RenderImage.Android.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.switch_thumb_disabled_material_light = global::RenderImage.Android.Resource.Color.switch_thumb_disabled_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.switch_thumb_material_dark = global::RenderImage.Android.Resource.Color.switch_thumb_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.switch_thumb_material_light = global::RenderImage.Android.Resource.Color.switch_thumb_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.switch_thumb_normal_material_dark = global::RenderImage.Android.Resource.Color.switch_thumb_normal_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.switch_thumb_normal_material_light = global::RenderImage.Android.Resource.Color.switch_thumb_normal_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.tooltip_background_dark = global::RenderImage.Android.Resource.Color.tooltip_background_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.tooltip_background_light = global::RenderImage.Android.Resource.Color.tooltip_background_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Color.white = global::RenderImage.Android.Resource.Color.white;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_action_bar_content_inset_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::RenderImage.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_action_bar_default_height_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_action_bar_default_padding_end_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_action_bar_default_padding_start_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_action_bar_elevation_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_action_bar_stacked_max_height = global::RenderImage.Android.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::RenderImage.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_action_button_min_height_material = global::RenderImage.Android.Resource.Dimension.abc_action_button_min_height_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_action_button_min_width_material = global::RenderImage.Android.Resource.Dimension.abc_action_button_min_width_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_action_button_min_width_overflow_material = global::RenderImage.Android.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_alert_dialog_button_bar_height = global::RenderImage.Android.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_button_inset_horizontal_material = global::RenderImage.Android.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_button_inset_vertical_material = global::RenderImage.Android.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_button_padding_horizontal_material = global::RenderImage.Android.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_button_padding_vertical_material = global::RenderImage.Android.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::RenderImage.Android.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_config_prefDialogWidth = global::RenderImage.Android.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_control_corner_material = global::RenderImage.Android.Resource.Dimension.abc_control_corner_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_control_inset_material = global::RenderImage.Android.Resource.Dimension.abc_control_inset_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_control_padding_material = global::RenderImage.Android.Resource.Dimension.abc_control_padding_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_dialog_fixed_height_major = global::RenderImage.Android.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_dialog_fixed_height_minor = global::RenderImage.Android.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_dialog_fixed_width_major = global::RenderImage.Android.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_dialog_fixed_width_minor = global::RenderImage.Android.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::RenderImage.Android.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::RenderImage.Android.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_dialog_min_width_major = global::RenderImage.Android.Resource.Dimension.abc_dialog_min_width_major;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_dialog_min_width_minor = global::RenderImage.Android.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_dialog_padding_material = global::RenderImage.Android.Resource.Dimension.abc_dialog_padding_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_dialog_padding_top_material = global::RenderImage.Android.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_dialog_title_divider_material = global::RenderImage.Android.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_disabled_alpha_material_dark = global::RenderImage.Android.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_disabled_alpha_material_light = global::RenderImage.Android.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_dropdownitem_icon_width = global::RenderImage.Android.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_dropdownitem_text_padding_left = global::RenderImage.Android.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_dropdownitem_text_padding_right = global::RenderImage.Android.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_edit_text_inset_bottom_material = global::RenderImage.Android.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::RenderImage.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_edit_text_inset_top_material = global::RenderImage.Android.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_floating_window_z = global::RenderImage.Android.Resource.Dimension.abc_floating_window_z;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_list_item_padding_horizontal_material = global::RenderImage.Android.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_panel_menu_list_width = global::RenderImage.Android.Resource.Dimension.abc_panel_menu_list_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_progress_bar_height_material = global::RenderImage.Android.Resource.Dimension.abc_progress_bar_height_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_search_view_preferred_height = global::RenderImage.Android.Resource.Dimension.abc_search_view_preferred_height;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_search_view_preferred_width = global::RenderImage.Android.Resource.Dimension.abc_search_view_preferred_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_seekbar_track_background_height_material = global::RenderImage.Android.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_seekbar_track_progress_height_material = global::RenderImage.Android.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_select_dialog_padding_start_material = global::RenderImage.Android.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_switch_padding = global::RenderImage.Android.Resource.Dimension.abc_switch_padding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_body_1_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_body_1_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_body_2_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_body_2_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_button_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_button_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_caption_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_caption_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_display_1_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_display_1_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_display_2_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_display_2_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_display_3_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_display_3_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_display_4_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_display_4_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_headline_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_headline_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_large_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_large_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_medium_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_medium_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_menu_header_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_menu_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_menu_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_small_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_small_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_subhead_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_subhead_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::RenderImage.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_title_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_title_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.abc_text_size_title_material_toolbar = global::RenderImage.Android.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.cardview_compat_inset_shadow = global::RenderImage.Android.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.cardview_default_elevation = global::RenderImage.Android.Resource.Dimension.cardview_default_elevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.cardview_default_radius = global::RenderImage.Android.Resource.Dimension.cardview_default_radius;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.compat_button_inset_horizontal_material = global::RenderImage.Android.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.compat_button_inset_vertical_material = global::RenderImage.Android.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.compat_button_padding_horizontal_material = global::RenderImage.Android.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.compat_button_padding_vertical_material = global::RenderImage.Android.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.compat_control_corner_material = global::RenderImage.Android.Resource.Dimension.compat_control_corner_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_appbar_elevation = global::RenderImage.Android.Resource.Dimension.design_appbar_elevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_bottom_navigation_active_text_size = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_bottom_navigation_elevation = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_elevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_bottom_navigation_height = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_height;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_bottom_navigation_item_max_width = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_bottom_navigation_item_min_width = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_bottom_navigation_margin = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_margin;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_bottom_navigation_shadow_height = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_bottom_navigation_text_size = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_text_size;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_bottom_sheet_modal_elevation = global::RenderImage.Android.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_bottom_sheet_peek_height_min = global::RenderImage.Android.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_fab_border_width = global::RenderImage.Android.Resource.Dimension.design_fab_border_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_fab_elevation = global::RenderImage.Android.Resource.Dimension.design_fab_elevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_fab_image_size = global::RenderImage.Android.Resource.Dimension.design_fab_image_size;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_fab_size_mini = global::RenderImage.Android.Resource.Dimension.design_fab_size_mini;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_fab_size_normal = global::RenderImage.Android.Resource.Dimension.design_fab_size_normal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_fab_translation_z_pressed = global::RenderImage.Android.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_navigation_elevation = global::RenderImage.Android.Resource.Dimension.design_navigation_elevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_navigation_icon_padding = global::RenderImage.Android.Resource.Dimension.design_navigation_icon_padding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_navigation_icon_size = global::RenderImage.Android.Resource.Dimension.design_navigation_icon_size;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_navigation_max_width = global::RenderImage.Android.Resource.Dimension.design_navigation_max_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_navigation_padding_bottom = global::RenderImage.Android.Resource.Dimension.design_navigation_padding_bottom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_navigation_separator_vertical_padding = global::RenderImage.Android.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_snackbar_action_inline_max_width = global::RenderImage.Android.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_snackbar_background_corner_radius = global::RenderImage.Android.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_snackbar_elevation = global::RenderImage.Android.Resource.Dimension.design_snackbar_elevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::RenderImage.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_snackbar_max_width = global::RenderImage.Android.Resource.Dimension.design_snackbar_max_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_snackbar_min_width = global::RenderImage.Android.Resource.Dimension.design_snackbar_min_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_snackbar_padding_horizontal = global::RenderImage.Android.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_snackbar_padding_vertical = global::RenderImage.Android.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::RenderImage.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_snackbar_text_size = global::RenderImage.Android.Resource.Dimension.design_snackbar_text_size;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_tab_max_width = global::RenderImage.Android.Resource.Dimension.design_tab_max_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_tab_scrollable_min_width = global::RenderImage.Android.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_tab_text_size = global::RenderImage.Android.Resource.Dimension.design_tab_text_size;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.design_tab_text_size_2line = global::RenderImage.Android.Resource.Dimension.design_tab_text_size_2line;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.disabled_alpha_material_dark = global::RenderImage.Android.Resource.Dimension.disabled_alpha_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.disabled_alpha_material_light = global::RenderImage.Android.Resource.Dimension.disabled_alpha_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.fastscroll_default_thickness = global::RenderImage.Android.Resource.Dimension.fastscroll_default_thickness;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.fastscroll_margin = global::RenderImage.Android.Resource.Dimension.fastscroll_margin;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.fastscroll_minimum_range = global::RenderImage.Android.Resource.Dimension.fastscroll_minimum_range;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.highlight_alpha_material_colored = global::RenderImage.Android.Resource.Dimension.highlight_alpha_material_colored;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.highlight_alpha_material_dark = global::RenderImage.Android.Resource.Dimension.highlight_alpha_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.highlight_alpha_material_light = global::RenderImage.Android.Resource.Dimension.highlight_alpha_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.hint_alpha_material_dark = global::RenderImage.Android.Resource.Dimension.hint_alpha_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.hint_alpha_material_light = global::RenderImage.Android.Resource.Dimension.hint_alpha_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.hint_pressed_alpha_material_dark = global::RenderImage.Android.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.hint_pressed_alpha_material_light = global::RenderImage.Android.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::RenderImage.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::RenderImage.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::RenderImage.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.legend_stroke_width = global::RenderImage.Android.Resource.Dimension.legend_stroke_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.mr_controller_volume_group_list_item_height = global::RenderImage.Android.Resource.Dimension.mr_controller_volume_group_list_item_height;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::RenderImage.Android.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.mr_controller_volume_group_list_max_height = global::RenderImage.Android.Resource.Dimension.mr_controller_volume_group_list_max_height;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::RenderImage.Android.Resource.Dimension.mr_controller_volume_group_list_padding_top;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.mr_dialog_fixed_width_major = global::RenderImage.Android.Resource.Dimension.mr_dialog_fixed_width_major;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.mr_dialog_fixed_width_minor = global::RenderImage.Android.Resource.Dimension.mr_dialog_fixed_width_minor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.notification_action_icon_size = global::RenderImage.Android.Resource.Dimension.notification_action_icon_size;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.notification_action_text_size = global::RenderImage.Android.Resource.Dimension.notification_action_text_size;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.notification_big_circle_margin = global::RenderImage.Android.Resource.Dimension.notification_big_circle_margin;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.notification_content_margin_start = global::RenderImage.Android.Resource.Dimension.notification_content_margin_start;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.notification_large_icon_height = global::RenderImage.Android.Resource.Dimension.notification_large_icon_height;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.notification_large_icon_width = global::RenderImage.Android.Resource.Dimension.notification_large_icon_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.notification_main_column_padding_top = global::RenderImage.Android.Resource.Dimension.notification_main_column_padding_top;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.notification_media_narrow_margin = global::RenderImage.Android.Resource.Dimension.notification_media_narrow_margin;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.notification_right_icon_size = global::RenderImage.Android.Resource.Dimension.notification_right_icon_size;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.notification_right_side_padding_top = global::RenderImage.Android.Resource.Dimension.notification_right_side_padding_top;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.notification_small_icon_background_padding = global::RenderImage.Android.Resource.Dimension.notification_small_icon_background_padding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.notification_small_icon_size_as_large = global::RenderImage.Android.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.notification_subtext_size = global::RenderImage.Android.Resource.Dimension.notification_subtext_size;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.notification_top_pad = global::RenderImage.Android.Resource.Dimension.notification_top_pad;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.notification_top_pad_large_text = global::RenderImage.Android.Resource.Dimension.notification_top_pad_large_text;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.tooltip_corner_radius = global::RenderImage.Android.Resource.Dimension.tooltip_corner_radius;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.tooltip_horizontal_padding = global::RenderImage.Android.Resource.Dimension.tooltip_horizontal_padding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.tooltip_margin = global::RenderImage.Android.Resource.Dimension.tooltip_margin;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::RenderImage.Android.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.tooltip_precise_anchor_threshold = global::RenderImage.Android.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.tooltip_vertical_padding = global::RenderImage.Android.Resource.Dimension.tooltip_vertical_padding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.tooltip_y_offset_non_touch = global::RenderImage.Android.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Dimension.tooltip_y_offset_touch = global::RenderImage.Android.Resource.Dimension.tooltip_y_offset_touch;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_action_bar_item_background_material = global::RenderImage.Android.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_btn_borderless_material = global::RenderImage.Android.Resource.Drawable.abc_btn_borderless_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_btn_check_material = global::RenderImage.Android.Resource.Drawable.abc_btn_check_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::RenderImage.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::RenderImage.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_btn_colored_material = global::RenderImage.Android.Resource.Drawable.abc_btn_colored_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_btn_default_mtrl_shape = global::RenderImage.Android.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_btn_radio_material = global::RenderImage.Android.Resource.Drawable.abc_btn_radio_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::RenderImage.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::RenderImage.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::RenderImage.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::RenderImage.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_cab_background_internal_bg = global::RenderImage.Android.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_cab_background_top_material = global::RenderImage.Android.Resource.Drawable.abc_cab_background_top_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_control_background_material = global::RenderImage.Android.Resource.Drawable.abc_control_background_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_dialog_material_background = global::RenderImage.Android.Resource.Drawable.abc_dialog_material_background;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_edit_text_material = global::RenderImage.Android.Resource.Drawable.abc_edit_text_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_ab_back_material = global::RenderImage.Android.Resource.Drawable.abc_ic_ab_back_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::RenderImage.Android.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_clear_material = global::RenderImage.Android.Resource.Drawable.abc_ic_clear_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_go_search_api_material = global::RenderImage.Android.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::RenderImage.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_menu_overflow_material = global::RenderImage.Android.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::RenderImage.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_search_api_material = global::RenderImage.Android.Resource.Drawable.abc_ic_search_api_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_star_black_16dp = global::RenderImage.Android.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_star_black_36dp = global::RenderImage.Android.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_star_black_48dp = global::RenderImage.Android.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_star_half_black_16dp = global::RenderImage.Android.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_star_half_black_36dp = global::RenderImage.Android.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_star_half_black_48dp = global::RenderImage.Android.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ic_voice_search_api_material = global::RenderImage.Android.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_item_background_holo_dark = global::RenderImage.Android.Resource.Drawable.abc_item_background_holo_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_item_background_holo_light = global::RenderImage.Android.Resource.Drawable.abc_item_background_holo_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_list_divider_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_list_focused_holo = global::RenderImage.Android.Resource.Drawable.abc_list_focused_holo;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_list_longpressed_holo = global::RenderImage.Android.Resource.Drawable.abc_list_longpressed_holo;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_list_pressed_holo_dark = global::RenderImage.Android.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_list_pressed_holo_light = global::RenderImage.Android.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::RenderImage.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::RenderImage.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::RenderImage.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_list_selector_disabled_holo_light = global::RenderImage.Android.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_list_selector_holo_dark = global::RenderImage.Android.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_list_selector_holo_light = global::RenderImage.Android.Resource.Drawable.abc_list_selector_holo_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::RenderImage.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_popup_background_mtrl_mult = global::RenderImage.Android.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ratingbar_indicator_material = global::RenderImage.Android.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ratingbar_material = global::RenderImage.Android.Resource.Drawable.abc_ratingbar_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_ratingbar_small_material = global::RenderImage.Android.Resource.Drawable.abc_ratingbar_small_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::RenderImage.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::RenderImage.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_seekbar_thumb_material = global::RenderImage.Android.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_seekbar_tick_mark_material = global::RenderImage.Android.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_seekbar_track_material = global::RenderImage.Android.Resource.Drawable.abc_seekbar_track_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::RenderImage.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_spinner_textfield_background_material = global::RenderImage.Android.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_switch_thumb_material = global::RenderImage.Android.Resource.Drawable.abc_switch_thumb_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_switch_track_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_tab_indicator_material = global::RenderImage.Android.Resource.Drawable.abc_tab_indicator_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_text_cursor_material = global::RenderImage.Android.Resource.Drawable.abc_text_cursor_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::RenderImage.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::RenderImage.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::RenderImage.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::RenderImage.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::RenderImage.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::RenderImage.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_textfield_search_material = global::RenderImage.Android.Resource.Drawable.abc_textfield_search_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.abc_vector_test = global::RenderImage.Android.Resource.Drawable.abc_vector_test;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.avd_hide_password = global::RenderImage.Android.Resource.Drawable.avd_hide_password;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.avd_hide_password_1 = global::RenderImage.Android.Resource.Drawable.avd_hide_password_1;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.avd_hide_password_2 = global::RenderImage.Android.Resource.Drawable.avd_hide_password_2;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.avd_hide_password_3 = global::RenderImage.Android.Resource.Drawable.avd_hide_password_3;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.avd_show_password = global::RenderImage.Android.Resource.Drawable.avd_show_password;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.avd_show_password_1 = global::RenderImage.Android.Resource.Drawable.avd_show_password_1;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.avd_show_password_2 = global::RenderImage.Android.Resource.Drawable.avd_show_password_2;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.avd_show_password_3 = global::RenderImage.Android.Resource.Drawable.avd_show_password_3;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.design_bottom_navigation_item_background = global::RenderImage.Android.Resource.Drawable.design_bottom_navigation_item_background;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.design_fab_background = global::RenderImage.Android.Resource.Drawable.design_fab_background;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.design_ic_visibility = global::RenderImage.Android.Resource.Drawable.design_ic_visibility;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.design_ic_visibility_off = global::RenderImage.Android.Resource.Drawable.design_ic_visibility_off;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.design_password_eye = global::RenderImage.Android.Resource.Drawable.design_password_eye;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.design_snackbar_background = global::RenderImage.Android.Resource.Drawable.design_snackbar_background;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.hamburger = global::RenderImage.Android.Resource.Drawable.hamburger;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.hmb = global::RenderImage.Android.Resource.Drawable.hmb;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_audiotrack_dark = global::RenderImage.Android.Resource.Drawable.ic_audiotrack_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_audiotrack_light = global::RenderImage.Android.Resource.Drawable.ic_audiotrack_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_dialog_close_dark = global::RenderImage.Android.Resource.Drawable.ic_dialog_close_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_dialog_close_light = global::RenderImage.Android.Resource.Drawable.ic_dialog_close_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_collapse_00 = global::RenderImage.Android.Resource.Drawable.ic_group_collapse_00;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_collapse_01 = global::RenderImage.Android.Resource.Drawable.ic_group_collapse_01;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_collapse_02 = global::RenderImage.Android.Resource.Drawable.ic_group_collapse_02;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_collapse_03 = global::RenderImage.Android.Resource.Drawable.ic_group_collapse_03;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_collapse_04 = global::RenderImage.Android.Resource.Drawable.ic_group_collapse_04;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_collapse_05 = global::RenderImage.Android.Resource.Drawable.ic_group_collapse_05;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_collapse_06 = global::RenderImage.Android.Resource.Drawable.ic_group_collapse_06;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_collapse_07 = global::RenderImage.Android.Resource.Drawable.ic_group_collapse_07;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_collapse_08 = global::RenderImage.Android.Resource.Drawable.ic_group_collapse_08;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_collapse_09 = global::RenderImage.Android.Resource.Drawable.ic_group_collapse_09;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_collapse_10 = global::RenderImage.Android.Resource.Drawable.ic_group_collapse_10;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_collapse_11 = global::RenderImage.Android.Resource.Drawable.ic_group_collapse_11;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_collapse_12 = global::RenderImage.Android.Resource.Drawable.ic_group_collapse_12;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_collapse_13 = global::RenderImage.Android.Resource.Drawable.ic_group_collapse_13;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_collapse_14 = global::RenderImage.Android.Resource.Drawable.ic_group_collapse_14;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_collapse_15 = global::RenderImage.Android.Resource.Drawable.ic_group_collapse_15;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_expand_00 = global::RenderImage.Android.Resource.Drawable.ic_group_expand_00;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_expand_01 = global::RenderImage.Android.Resource.Drawable.ic_group_expand_01;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_expand_02 = global::RenderImage.Android.Resource.Drawable.ic_group_expand_02;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_expand_03 = global::RenderImage.Android.Resource.Drawable.ic_group_expand_03;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_expand_04 = global::RenderImage.Android.Resource.Drawable.ic_group_expand_04;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_expand_05 = global::RenderImage.Android.Resource.Drawable.ic_group_expand_05;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_expand_06 = global::RenderImage.Android.Resource.Drawable.ic_group_expand_06;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_expand_07 = global::RenderImage.Android.Resource.Drawable.ic_group_expand_07;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_expand_08 = global::RenderImage.Android.Resource.Drawable.ic_group_expand_08;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_expand_09 = global::RenderImage.Android.Resource.Drawable.ic_group_expand_09;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_expand_10 = global::RenderImage.Android.Resource.Drawable.ic_group_expand_10;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_expand_11 = global::RenderImage.Android.Resource.Drawable.ic_group_expand_11;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_expand_12 = global::RenderImage.Android.Resource.Drawable.ic_group_expand_12;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_expand_13 = global::RenderImage.Android.Resource.Drawable.ic_group_expand_13;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_expand_14 = global::RenderImage.Android.Resource.Drawable.ic_group_expand_14;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_group_expand_15 = global::RenderImage.Android.Resource.Drawable.ic_group_expand_15;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_media_pause_dark = global::RenderImage.Android.Resource.Drawable.ic_media_pause_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_media_pause_light = global::RenderImage.Android.Resource.Drawable.ic_media_pause_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_media_play_dark = global::RenderImage.Android.Resource.Drawable.ic_media_play_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_media_play_light = global::RenderImage.Android.Resource.Drawable.ic_media_play_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_media_stop_dark = global::RenderImage.Android.Resource.Drawable.ic_media_stop_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_media_stop_light = global::RenderImage.Android.Resource.Drawable.ic_media_stop_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_00_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_00_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_00_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_00_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_01_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_01_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_01_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_01_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_02_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_02_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_02_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_02_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_03_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_03_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_03_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_03_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_04_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_04_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_04_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_04_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_05_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_05_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_05_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_05_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_06_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_06_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_06_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_06_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_07_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_07_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_07_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_07_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_08_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_08_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_08_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_08_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_09_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_09_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_09_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_09_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_10_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_10_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_10_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_10_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_11_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_11_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_11_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_11_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_12_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_12_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_12_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_12_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_13_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_13_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_13_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_13_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_14_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_14_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_14_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_14_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_15_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_15_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_15_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_15_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_16_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_16_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_16_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_16_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_17_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_17_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_17_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_17_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_18_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_18_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_18_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_18_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_19_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_19_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_19_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_19_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_20_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_20_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_20_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_20_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_21_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_21_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_21_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_21_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_22_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_22_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_22_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_22_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_23_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_23_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_23_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_23_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_24_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_24_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_24_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_24_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_25_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_25_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_25_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_25_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_26_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_26_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_26_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_26_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_27_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_27_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_27_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_27_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_28_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_28_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_28_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_28_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_29_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_29_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_29_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_29_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_30_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_30_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connected_30_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connected_30_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_00_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_00_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_00_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_00_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_01_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_01_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_01_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_01_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_02_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_02_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_02_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_02_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_03_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_03_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_03_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_03_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_04_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_04_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_04_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_04_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_05_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_05_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_05_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_05_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_06_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_06_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_06_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_06_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_07_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_07_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_07_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_07_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_08_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_08_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_08_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_08_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_09_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_09_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_09_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_09_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_10_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_10_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_10_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_10_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_11_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_11_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_11_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_11_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_12_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_12_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_12_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_12_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_13_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_13_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_13_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_13_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_14_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_14_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_14_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_14_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_15_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_15_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_15_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_15_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_16_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_16_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_16_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_16_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_17_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_17_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_17_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_17_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_18_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_18_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_18_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_18_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_19_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_19_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_19_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_19_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_20_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_20_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_20_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_20_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_21_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_21_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_21_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_21_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_22_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_22_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_22_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_22_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_23_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_23_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_23_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_23_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_24_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_24_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_24_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_24_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_25_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_25_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_25_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_25_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_26_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_26_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_26_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_26_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_27_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_27_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_27_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_27_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_28_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_28_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_28_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_28_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_29_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_29_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_29_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_29_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_30_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_30_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_connecting_30_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_connecting_30_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_disabled_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_disabled_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_disabled_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_disabled_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_disconnected_dark = global::RenderImage.Android.Resource.Drawable.ic_mr_button_disconnected_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_disconnected_light = global::RenderImage.Android.Resource.Drawable.ic_mr_button_disconnected_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_mr_button_grey = global::RenderImage.Android.Resource.Drawable.ic_mr_button_grey;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_vol_type_speaker_dark = global::RenderImage.Android.Resource.Drawable.ic_vol_type_speaker_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_vol_type_speaker_group_dark = global::RenderImage.Android.Resource.Drawable.ic_vol_type_speaker_group_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_vol_type_speaker_group_light = global::RenderImage.Android.Resource.Drawable.ic_vol_type_speaker_group_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_vol_type_speaker_light = global::RenderImage.Android.Resource.Drawable.ic_vol_type_speaker_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_vol_type_tv_dark = global::RenderImage.Android.Resource.Drawable.ic_vol_type_tv_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.ic_vol_type_tv_light = global::RenderImage.Android.Resource.Drawable.ic_vol_type_tv_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_button_connected_dark = global::RenderImage.Android.Resource.Drawable.mr_button_connected_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_button_connected_light = global::RenderImage.Android.Resource.Drawable.mr_button_connected_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_button_connecting_dark = global::RenderImage.Android.Resource.Drawable.mr_button_connecting_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_button_connecting_light = global::RenderImage.Android.Resource.Drawable.mr_button_connecting_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_button_dark = global::RenderImage.Android.Resource.Drawable.mr_button_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_button_light = global::RenderImage.Android.Resource.Drawable.mr_button_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_dialog_close_dark = global::RenderImage.Android.Resource.Drawable.mr_dialog_close_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_dialog_close_light = global::RenderImage.Android.Resource.Drawable.mr_dialog_close_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_dialog_material_background_dark = global::RenderImage.Android.Resource.Drawable.mr_dialog_material_background_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_dialog_material_background_light = global::RenderImage.Android.Resource.Drawable.mr_dialog_material_background_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_group_collapse = global::RenderImage.Android.Resource.Drawable.mr_group_collapse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_group_expand = global::RenderImage.Android.Resource.Drawable.mr_group_expand;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_media_pause_dark = global::RenderImage.Android.Resource.Drawable.mr_media_pause_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_media_pause_light = global::RenderImage.Android.Resource.Drawable.mr_media_pause_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_media_play_dark = global::RenderImage.Android.Resource.Drawable.mr_media_play_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_media_play_light = global::RenderImage.Android.Resource.Drawable.mr_media_play_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_media_stop_dark = global::RenderImage.Android.Resource.Drawable.mr_media_stop_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_media_stop_light = global::RenderImage.Android.Resource.Drawable.mr_media_stop_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_vol_type_audiotrack_dark = global::RenderImage.Android.Resource.Drawable.mr_vol_type_audiotrack_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.mr_vol_type_audiotrack_light = global::RenderImage.Android.Resource.Drawable.mr_vol_type_audiotrack_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.navigation_empty_icon = global::RenderImage.Android.Resource.Drawable.navigation_empty_icon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.notification_action_background = global::RenderImage.Android.Resource.Drawable.notification_action_background;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.notification_bg = global::RenderImage.Android.Resource.Drawable.notification_bg;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.notification_bg_low = global::RenderImage.Android.Resource.Drawable.notification_bg_low;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.notification_bg_low_normal = global::RenderImage.Android.Resource.Drawable.notification_bg_low_normal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.notification_bg_low_pressed = global::RenderImage.Android.Resource.Drawable.notification_bg_low_pressed;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.notification_bg_normal = global::RenderImage.Android.Resource.Drawable.notification_bg_normal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.notification_bg_normal_pressed = global::RenderImage.Android.Resource.Drawable.notification_bg_normal_pressed;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.notification_icon_background = global::RenderImage.Android.Resource.Drawable.notification_icon_background;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.notification_template_icon_bg = global::RenderImage.Android.Resource.Drawable.notification_template_icon_bg;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.notification_template_icon_low_bg = global::RenderImage.Android.Resource.Drawable.notification_template_icon_low_bg;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.notification_tile_bg = global::RenderImage.Android.Resource.Drawable.notification_tile_bg;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.notify_panel_notification_icon_bg = global::RenderImage.Android.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.tab_view_popup_background = global::RenderImage.Android.Resource.Drawable.tab_view_popup_background;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.tooltip_frame_dark = global::RenderImage.Android.Resource.Drawable.tooltip_frame_dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Drawable.tooltip_frame_light = global::RenderImage.Android.Resource.Drawable.tooltip_frame_light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.ALT = global::RenderImage.Android.Resource.Id.ALT;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.CTRL = global::RenderImage.Android.Resource.Id.CTRL;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.FUNCTION = global::RenderImage.Android.Resource.Id.FUNCTION;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.META = global::RenderImage.Android.Resource.Id.META;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.SHIFT = global::RenderImage.Android.Resource.Id.SHIFT;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.SYM = global::RenderImage.Android.Resource.Id.SYM;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action0 = global::RenderImage.Android.Resource.Id.action0;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action_bar = global::RenderImage.Android.Resource.Id.action_bar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action_bar_activity_content = global::RenderImage.Android.Resource.Id.action_bar_activity_content;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action_bar_container = global::RenderImage.Android.Resource.Id.action_bar_container;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action_bar_root = global::RenderImage.Android.Resource.Id.action_bar_root;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action_bar_spinner = global::RenderImage.Android.Resource.Id.action_bar_spinner;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action_bar_subtitle = global::RenderImage.Android.Resource.Id.action_bar_subtitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action_bar_title = global::RenderImage.Android.Resource.Id.action_bar_title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action_container = global::RenderImage.Android.Resource.Id.action_container;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action_context_bar = global::RenderImage.Android.Resource.Id.action_context_bar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action_divider = global::RenderImage.Android.Resource.Id.action_divider;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action_image = global::RenderImage.Android.Resource.Id.action_image;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action_menu_divider = global::RenderImage.Android.Resource.Id.action_menu_divider;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action_menu_presenter = global::RenderImage.Android.Resource.Id.action_menu_presenter;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action_mode_bar = global::RenderImage.Android.Resource.Id.action_mode_bar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action_mode_bar_stub = global::RenderImage.Android.Resource.Id.action_mode_bar_stub;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action_mode_close_button = global::RenderImage.Android.Resource.Id.action_mode_close_button;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.action_text = global::RenderImage.Android.Resource.Id.action_text;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.actions = global::RenderImage.Android.Resource.Id.actions;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.activity_chooser_view_content = global::RenderImage.Android.Resource.Id.activity_chooser_view_content;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.add = global::RenderImage.Android.Resource.Id.add;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.alertTitle = global::RenderImage.Android.Resource.Id.alertTitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.all = global::RenderImage.Android.Resource.Id.all;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.always = global::RenderImage.Android.Resource.Id.always;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.async = global::RenderImage.Android.Resource.Id.async;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.auto = global::RenderImage.Android.Resource.Id.auto;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.beginning = global::RenderImage.Android.Resource.Id.beginning;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.blocking = global::RenderImage.Android.Resource.Id.blocking;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.bottom = global::RenderImage.Android.Resource.Id.bottom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.bottomtab_navarea = global::RenderImage.Android.Resource.Id.bottomtab_navarea;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.bottomtab_tabbar = global::RenderImage.Android.Resource.Id.bottomtab_tabbar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.buttonPanel = global::RenderImage.Android.Resource.Id.buttonPanel;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.cancel_action = global::RenderImage.Android.Resource.Id.cancel_action;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.center = global::RenderImage.Android.Resource.Id.center;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.center_horizontal = global::RenderImage.Android.Resource.Id.center_horizontal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.center_vertical = global::RenderImage.Android.Resource.Id.center_vertical;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.chart_data_point_content_container = global::RenderImage.Android.Resource.Id.chart_data_point_content_container;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.chart_tooltip_category = global::RenderImage.Android.Resource.Id.chart_tooltip_category;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.chart_tooltip_pointer = global::RenderImage.Android.Resource.Id.chart_tooltip_pointer;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.chart_tooltip_value = global::RenderImage.Android.Resource.Id.chart_tooltip_value;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.checkbox = global::RenderImage.Android.Resource.Id.checkbox;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.chronometer = global::RenderImage.Android.Resource.Id.chronometer;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.clip_horizontal = global::RenderImage.Android.Resource.Id.clip_horizontal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.clip_vertical = global::RenderImage.Android.Resource.Id.clip_vertical;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.collapseActionView = global::RenderImage.Android.Resource.Id.collapseActionView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.container = global::RenderImage.Android.Resource.Id.container;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.contentPanel = global::RenderImage.Android.Resource.Id.contentPanel;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.coordinator = global::RenderImage.Android.Resource.Id.coordinator;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.custom = global::RenderImage.Android.Resource.Id.custom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.customPanel = global::RenderImage.Android.Resource.Id.customPanel;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.decor_content_parent = global::RenderImage.Android.Resource.Id.decor_content_parent;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.default_activity_button = global::RenderImage.Android.Resource.Id.default_activity_button;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.design_bottom_sheet = global::RenderImage.Android.Resource.Id.design_bottom_sheet;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.design_menu_item_action_area = global::RenderImage.Android.Resource.Id.design_menu_item_action_area;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.design_menu_item_action_area_stub = global::RenderImage.Android.Resource.Id.design_menu_item_action_area_stub;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.design_menu_item_text = global::RenderImage.Android.Resource.Id.design_menu_item_text;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.design_navigation_view = global::RenderImage.Android.Resource.Id.design_navigation_view;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.disableHome = global::RenderImage.Android.Resource.Id.disableHome;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.edit_query = global::RenderImage.Android.Resource.Id.edit_query;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.end = global::RenderImage.Android.Resource.Id.end;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.end_padder = global::RenderImage.Android.Resource.Id.end_padder;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.enterAlways = global::RenderImage.Android.Resource.Id.enterAlways;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.enterAlwaysCollapsed = global::RenderImage.Android.Resource.Id.enterAlwaysCollapsed;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.exitUntilCollapsed = global::RenderImage.Android.Resource.Id.exitUntilCollapsed;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.expand_activities_button = global::RenderImage.Android.Resource.Id.expand_activities_button;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.expanded_menu = global::RenderImage.Android.Resource.Id.expanded_menu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.fill = global::RenderImage.Android.Resource.Id.fill;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.fill_horizontal = global::RenderImage.Android.Resource.Id.fill_horizontal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.fill_vertical = global::RenderImage.Android.Resource.Id.fill_vertical;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.@fixed = global::RenderImage.Android.Resource.Id.@fixed;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.flyoutcontent_appbar = global::RenderImage.Android.Resource.Id.flyoutcontent_appbar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.flyoutcontent_recycler = global::RenderImage.Android.Resource.Id.flyoutcontent_recycler;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.forever = global::RenderImage.Android.Resource.Id.forever;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.ghost_view = global::RenderImage.Android.Resource.Id.ghost_view;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.home = global::RenderImage.Android.Resource.Id.home;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.homeAsUp = global::RenderImage.Android.Resource.Id.homeAsUp;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.horizontal = global::RenderImage.Android.Resource.Id.horizontal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.icon = global::RenderImage.Android.Resource.Id.icon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.icon_group = global::RenderImage.Android.Resource.Id.icon_group;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.ifRoom = global::RenderImage.Android.Resource.Id.ifRoom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.image = global::RenderImage.Android.Resource.Id.image;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.imageView = global::RenderImage.Android.Resource.Id.imageView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.info = global::RenderImage.Android.Resource.Id.info;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.italic = global::RenderImage.Android.Resource.Id.italic;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.item_touch_helper_previous_elevation = global::RenderImage.Android.Resource.Id.item_touch_helper_previous_elevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.largeLabel = global::RenderImage.Android.Resource.Id.largeLabel;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.left = global::RenderImage.Android.Resource.Id.left;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.line1 = global::RenderImage.Android.Resource.Id.line1;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.line3 = global::RenderImage.Android.Resource.Id.line3;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.listMode = global::RenderImage.Android.Resource.Id.listMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.list_item = global::RenderImage.Android.Resource.Id.list_item;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.main_appbar = global::RenderImage.Android.Resource.Id.main_appbar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.main_scrollview = global::RenderImage.Android.Resource.Id.main_scrollview;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.main_tablayout = global::RenderImage.Android.Resource.Id.main_tablayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.main_toolbar = global::RenderImage.Android.Resource.Id.main_toolbar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.masked = global::RenderImage.Android.Resource.Id.masked;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.media_actions = global::RenderImage.Android.Resource.Id.media_actions;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.message = global::RenderImage.Android.Resource.Id.message;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.middle = global::RenderImage.Android.Resource.Id.middle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mini = global::RenderImage.Android.Resource.Id.mini;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_art = global::RenderImage.Android.Resource.Id.mr_art;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_chooser_list = global::RenderImage.Android.Resource.Id.mr_chooser_list;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_chooser_route_desc = global::RenderImage.Android.Resource.Id.mr_chooser_route_desc;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_chooser_route_icon = global::RenderImage.Android.Resource.Id.mr_chooser_route_icon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_chooser_route_name = global::RenderImage.Android.Resource.Id.mr_chooser_route_name;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_chooser_title = global::RenderImage.Android.Resource.Id.mr_chooser_title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_close = global::RenderImage.Android.Resource.Id.mr_close;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_control_divider = global::RenderImage.Android.Resource.Id.mr_control_divider;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_control_playback_ctrl = global::RenderImage.Android.Resource.Id.mr_control_playback_ctrl;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_control_subtitle = global::RenderImage.Android.Resource.Id.mr_control_subtitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_control_title = global::RenderImage.Android.Resource.Id.mr_control_title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_control_title_container = global::RenderImage.Android.Resource.Id.mr_control_title_container;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_custom_control = global::RenderImage.Android.Resource.Id.mr_custom_control;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_default_control = global::RenderImage.Android.Resource.Id.mr_default_control;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_dialog_area = global::RenderImage.Android.Resource.Id.mr_dialog_area;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_expandable_area = global::RenderImage.Android.Resource.Id.mr_expandable_area;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_group_expand_collapse = global::RenderImage.Android.Resource.Id.mr_group_expand_collapse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_media_main_control = global::RenderImage.Android.Resource.Id.mr_media_main_control;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_name = global::RenderImage.Android.Resource.Id.mr_name;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_playback_control = global::RenderImage.Android.Resource.Id.mr_playback_control;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_title_bar = global::RenderImage.Android.Resource.Id.mr_title_bar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_volume_control = global::RenderImage.Android.Resource.Id.mr_volume_control;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_volume_group_list = global::RenderImage.Android.Resource.Id.mr_volume_group_list;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_volume_item_icon = global::RenderImage.Android.Resource.Id.mr_volume_item_icon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.mr_volume_slider = global::RenderImage.Android.Resource.Id.mr_volume_slider;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.multiply = global::RenderImage.Android.Resource.Id.multiply;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.navItemsLayout = global::RenderImage.Android.Resource.Id.navItemsLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.navigationItemText = global::RenderImage.Android.Resource.Id.navigationItemText;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.navigation_header_container = global::RenderImage.Android.Resource.Id.navigation_header_container;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.never = global::RenderImage.Android.Resource.Id.never;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.none = global::RenderImage.Android.Resource.Id.none;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.normal = global::RenderImage.Android.Resource.Id.normal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.notification_background = global::RenderImage.Android.Resource.Id.notification_background;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.notification_main_column = global::RenderImage.Android.Resource.Id.notification_main_column;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.notification_main_column_container = global::RenderImage.Android.Resource.Id.notification_main_column_container;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.parallax = global::RenderImage.Android.Resource.Id.parallax;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.parentPanel = global::RenderImage.Android.Resource.Id.parentPanel;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.parent_matrix = global::RenderImage.Android.Resource.Id.parent_matrix;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.pin = global::RenderImage.Android.Resource.Id.pin;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.progress_circular = global::RenderImage.Android.Resource.Id.progress_circular;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.progress_horizontal = global::RenderImage.Android.Resource.Id.progress_horizontal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.radio = global::RenderImage.Android.Resource.Id.radio;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.right = global::RenderImage.Android.Resource.Id.right;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.right_icon = global::RenderImage.Android.Resource.Id.right_icon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.right_side = global::RenderImage.Android.Resource.Id.right_side;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.save_image_matrix = global::RenderImage.Android.Resource.Id.save_image_matrix;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.save_non_transition_alpha = global::RenderImage.Android.Resource.Id.save_non_transition_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.save_scale_type = global::RenderImage.Android.Resource.Id.save_scale_type;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.screen = global::RenderImage.Android.Resource.Id.screen;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.scroll = global::RenderImage.Android.Resource.Id.scroll;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.scrollIndicatorDown = global::RenderImage.Android.Resource.Id.scrollIndicatorDown;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.scrollIndicatorUp = global::RenderImage.Android.Resource.Id.scrollIndicatorUp;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.scrollView = global::RenderImage.Android.Resource.Id.scrollView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.scrollable = global::RenderImage.Android.Resource.Id.scrollable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.search_badge = global::RenderImage.Android.Resource.Id.search_badge;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.search_bar = global::RenderImage.Android.Resource.Id.search_bar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.search_button = global::RenderImage.Android.Resource.Id.search_button;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.search_close_btn = global::RenderImage.Android.Resource.Id.search_close_btn;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.search_edit_frame = global::RenderImage.Android.Resource.Id.search_edit_frame;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.search_go_btn = global::RenderImage.Android.Resource.Id.search_go_btn;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.search_mag_icon = global::RenderImage.Android.Resource.Id.search_mag_icon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.search_plate = global::RenderImage.Android.Resource.Id.search_plate;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.search_src_text = global::RenderImage.Android.Resource.Id.search_src_text;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.search_voice_btn = global::RenderImage.Android.Resource.Id.search_voice_btn;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.select_dialog_listview = global::RenderImage.Android.Resource.Id.select_dialog_listview;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.shellcontent_appbar = global::RenderImage.Android.Resource.Id.shellcontent_appbar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.shellcontent_scrollview = global::RenderImage.Android.Resource.Id.shellcontent_scrollview;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.shellcontent_toolbar = global::RenderImage.Android.Resource.Id.shellcontent_toolbar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.shortcut = global::RenderImage.Android.Resource.Id.shortcut;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.showCustom = global::RenderImage.Android.Resource.Id.showCustom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.showHome = global::RenderImage.Android.Resource.Id.showHome;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.showTitle = global::RenderImage.Android.Resource.Id.showTitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.smallLabel = global::RenderImage.Android.Resource.Id.smallLabel;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.snackbar_action = global::RenderImage.Android.Resource.Id.snackbar_action;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.snackbar_text = global::RenderImage.Android.Resource.Id.snackbar_text;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.snap = global::RenderImage.Android.Resource.Id.snap;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.spacer = global::RenderImage.Android.Resource.Id.spacer;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.split_action_bar = global::RenderImage.Android.Resource.Id.split_action_bar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.src_atop = global::RenderImage.Android.Resource.Id.src_atop;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.src_in = global::RenderImage.Android.Resource.Id.src_in;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.src_over = global::RenderImage.Android.Resource.Id.src_over;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.start = global::RenderImage.Android.Resource.Id.start;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.status_bar_latest_event_content = global::RenderImage.Android.Resource.Id.status_bar_latest_event_content;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.submenuarrow = global::RenderImage.Android.Resource.Id.submenuarrow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.submit_area = global::RenderImage.Android.Resource.Id.submit_area;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.tabItemImageView = global::RenderImage.Android.Resource.Id.tabItemImageView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.tabItemTextView = global::RenderImage.Android.Resource.Id.tabItemTextView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.tabMode = global::RenderImage.Android.Resource.Id.tabMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.tag_transition_group = global::RenderImage.Android.Resource.Id.tag_transition_group;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.text = global::RenderImage.Android.Resource.Id.text;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.text2 = global::RenderImage.Android.Resource.Id.text2;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.textSpacerNoButtons = global::RenderImage.Android.Resource.Id.textSpacerNoButtons;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.textSpacerNoTitle = global::RenderImage.Android.Resource.Id.textSpacerNoTitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.text_input_password_toggle = global::RenderImage.Android.Resource.Id.text_input_password_toggle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.textinput_counter = global::RenderImage.Android.Resource.Id.textinput_counter;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.textinput_error = global::RenderImage.Android.Resource.Id.textinput_error;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.time = global::RenderImage.Android.Resource.Id.time;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.title = global::RenderImage.Android.Resource.Id.title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.titleDividerNoCustom = global::RenderImage.Android.Resource.Id.titleDividerNoCustom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.title_template = global::RenderImage.Android.Resource.Id.title_template;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.tooltip_content_container = global::RenderImage.Android.Resource.Id.tooltip_content_container;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.top = global::RenderImage.Android.Resource.Id.top;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.topPanel = global::RenderImage.Android.Resource.Id.topPanel;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.touch_outside = global::RenderImage.Android.Resource.Id.touch_outside;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.transition_current_scene = global::RenderImage.Android.Resource.Id.transition_current_scene;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.transition_layout_save = global::RenderImage.Android.Resource.Id.transition_layout_save;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.transition_position = global::RenderImage.Android.Resource.Id.transition_position;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.transition_scene_layoutid_cache = global::RenderImage.Android.Resource.Id.transition_scene_layoutid_cache;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.transition_transform = global::RenderImage.Android.Resource.Id.transition_transform;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.uniform = global::RenderImage.Android.Resource.Id.uniform;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.up = global::RenderImage.Android.Resource.Id.up;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.useLogo = global::RenderImage.Android.Resource.Id.useLogo;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.vertical = global::RenderImage.Android.Resource.Id.vertical;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.view_offset_helper = global::RenderImage.Android.Resource.Id.view_offset_helper;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.visible = global::RenderImage.Android.Resource.Id.visible;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.volume_item_container = global::RenderImage.Android.Resource.Id.volume_item_container;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.withText = global::RenderImage.Android.Resource.Id.withText;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Id.wrap_content = global::RenderImage.Android.Resource.Id.wrap_content;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Integer.abc_config_activityDefaultDur = global::RenderImage.Android.Resource.Integer.abc_config_activityDefaultDur;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Integer.abc_config_activityShortDur = global::RenderImage.Android.Resource.Integer.abc_config_activityShortDur;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Integer.app_bar_elevation_anim_duration = global::RenderImage.Android.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Integer.bottom_sheet_slide_duration = global::RenderImage.Android.Resource.Integer.bottom_sheet_slide_duration;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Integer.cancel_button_image_alpha = global::RenderImage.Android.Resource.Integer.cancel_button_image_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Integer.config_tooltipAnimTime = global::RenderImage.Android.Resource.Integer.config_tooltipAnimTime;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Integer.design_snackbar_text_max_lines = global::RenderImage.Android.Resource.Integer.design_snackbar_text_max_lines;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Integer.hide_password_duration = global::RenderImage.Android.Resource.Integer.hide_password_duration;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::RenderImage.Android.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::RenderImage.Android.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::RenderImage.Android.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Integer.show_password_duration = global::RenderImage.Android.Resource.Integer.show_password_duration;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Integer.status_bar_notification_info_maxnum = global::RenderImage.Android.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Interpolator.mr_fast_out_slow_in = global::RenderImage.Android.Resource.Interpolator.mr_fast_out_slow_in;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Interpolator.mr_linear_out_slow_in = global::RenderImage.Android.Resource.Interpolator.mr_linear_out_slow_in;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_action_bar_title_item = global::RenderImage.Android.Resource.Layout.abc_action_bar_title_item;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_action_bar_up_container = global::RenderImage.Android.Resource.Layout.abc_action_bar_up_container;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_action_menu_item_layout = global::RenderImage.Android.Resource.Layout.abc_action_menu_item_layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_action_menu_layout = global::RenderImage.Android.Resource.Layout.abc_action_menu_layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_action_mode_bar = global::RenderImage.Android.Resource.Layout.abc_action_mode_bar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_action_mode_close_item_material = global::RenderImage.Android.Resource.Layout.abc_action_mode_close_item_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_activity_chooser_view = global::RenderImage.Android.Resource.Layout.abc_activity_chooser_view;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_activity_chooser_view_list_item = global::RenderImage.Android.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_alert_dialog_button_bar_material = global::RenderImage.Android.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_alert_dialog_material = global::RenderImage.Android.Resource.Layout.abc_alert_dialog_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_alert_dialog_title_material = global::RenderImage.Android.Resource.Layout.abc_alert_dialog_title_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_dialog_title_material = global::RenderImage.Android.Resource.Layout.abc_dialog_title_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_expanded_menu_layout = global::RenderImage.Android.Resource.Layout.abc_expanded_menu_layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_list_menu_item_checkbox = global::RenderImage.Android.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_list_menu_item_icon = global::RenderImage.Android.Resource.Layout.abc_list_menu_item_icon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_list_menu_item_layout = global::RenderImage.Android.Resource.Layout.abc_list_menu_item_layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_list_menu_item_radio = global::RenderImage.Android.Resource.Layout.abc_list_menu_item_radio;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_popup_menu_header_item_layout = global::RenderImage.Android.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_popup_menu_item_layout = global::RenderImage.Android.Resource.Layout.abc_popup_menu_item_layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_screen_content_include = global::RenderImage.Android.Resource.Layout.abc_screen_content_include;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_screen_simple = global::RenderImage.Android.Resource.Layout.abc_screen_simple;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_screen_simple_overlay_action_mode = global::RenderImage.Android.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_screen_toolbar = global::RenderImage.Android.Resource.Layout.abc_screen_toolbar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_search_dropdown_item_icons_2line = global::RenderImage.Android.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_search_view = global::RenderImage.Android.Resource.Layout.abc_search_view;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.abc_select_dialog_material = global::RenderImage.Android.Resource.Layout.abc_select_dialog_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.androidnativezoomview_scrollbars = global::RenderImage.Android.Resource.Layout.androidnativezoomview_scrollbars;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.BottomTabLayout = global::RenderImage.Android.Resource.Layout.BottomTabLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.default_tooltip_content = global::RenderImage.Android.Resource.Layout.default_tooltip_content;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.design_bottom_navigation_item = global::RenderImage.Android.Resource.Layout.design_bottom_navigation_item;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.design_bottom_sheet_dialog = global::RenderImage.Android.Resource.Layout.design_bottom_sheet_dialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.design_layout_snackbar = global::RenderImage.Android.Resource.Layout.design_layout_snackbar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.design_layout_snackbar_include = global::RenderImage.Android.Resource.Layout.design_layout_snackbar_include;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.design_layout_tab_icon = global::RenderImage.Android.Resource.Layout.design_layout_tab_icon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.design_layout_tab_text = global::RenderImage.Android.Resource.Layout.design_layout_tab_text;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.design_menu_item_action_area = global::RenderImage.Android.Resource.Layout.design_menu_item_action_area;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.design_navigation_item = global::RenderImage.Android.Resource.Layout.design_navigation_item;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.design_navigation_item_header = global::RenderImage.Android.Resource.Layout.design_navigation_item_header;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.design_navigation_item_separator = global::RenderImage.Android.Resource.Layout.design_navigation_item_separator;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.design_navigation_item_subheader = global::RenderImage.Android.Resource.Layout.design_navigation_item_subheader;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.design_navigation_menu = global::RenderImage.Android.Resource.Layout.design_navigation_menu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.design_navigation_menu_item = global::RenderImage.Android.Resource.Layout.design_navigation_menu_item;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.design_text_input_password_icon = global::RenderImage.Android.Resource.Layout.design_text_input_password_icon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.drawer_blur_fade_layer = global::RenderImage.Android.Resource.Layout.drawer_blur_fade_layer;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.FlyoutContent = global::RenderImage.Android.Resource.Layout.FlyoutContent;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.mr_chooser_dialog = global::RenderImage.Android.Resource.Layout.mr_chooser_dialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.mr_chooser_list_item = global::RenderImage.Android.Resource.Layout.mr_chooser_list_item;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.mr_controller_material_dialog_b = global::RenderImage.Android.Resource.Layout.mr_controller_material_dialog_b;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.mr_controller_volume_item = global::RenderImage.Android.Resource.Layout.mr_controller_volume_item;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.mr_playback_control = global::RenderImage.Android.Resource.Layout.mr_playback_control;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.mr_volume_control = global::RenderImage.Android.Resource.Layout.mr_volume_control;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.navigation_drawer_content = global::RenderImage.Android.Resource.Layout.navigation_drawer_content;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.navigation_item_view = global::RenderImage.Android.Resource.Layout.navigation_item_view;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.notification_action = global::RenderImage.Android.Resource.Layout.notification_action;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.notification_action_tombstone = global::RenderImage.Android.Resource.Layout.notification_action_tombstone;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.notification_media_action = global::RenderImage.Android.Resource.Layout.notification_media_action;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.notification_media_cancel_action = global::RenderImage.Android.Resource.Layout.notification_media_cancel_action;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.notification_template_big_media = global::RenderImage.Android.Resource.Layout.notification_template_big_media;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.notification_template_big_media_custom = global::RenderImage.Android.Resource.Layout.notification_template_big_media_custom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.notification_template_big_media_narrow = global::RenderImage.Android.Resource.Layout.notification_template_big_media_narrow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.notification_template_big_media_narrow_custom = global::RenderImage.Android.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.notification_template_custom_big = global::RenderImage.Android.Resource.Layout.notification_template_custom_big;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.notification_template_icon_group = global::RenderImage.Android.Resource.Layout.notification_template_icon_group;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.notification_template_lines_media = global::RenderImage.Android.Resource.Layout.notification_template_lines_media;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.notification_template_media = global::RenderImage.Android.Resource.Layout.notification_template_media;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.notification_template_media_custom = global::RenderImage.Android.Resource.Layout.notification_template_media_custom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.notification_template_part_chronometer = global::RenderImage.Android.Resource.Layout.notification_template_part_chronometer;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.notification_template_part_time = global::RenderImage.Android.Resource.Layout.notification_template_part_time;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.RootLayout = global::RenderImage.Android.Resource.Layout.RootLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.scrollview_scrollbars = global::RenderImage.Android.Resource.Layout.scrollview_scrollbars;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.select_dialog_item_material = global::RenderImage.Android.Resource.Layout.select_dialog_item_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.select_dialog_multichoice_material = global::RenderImage.Android.Resource.Layout.select_dialog_multichoice_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.select_dialog_singlechoice_material = global::RenderImage.Android.Resource.Layout.select_dialog_singlechoice_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.ShellContent = global::RenderImage.Android.Resource.Layout.ShellContent;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.support_simple_spinner_dropdown_item = global::RenderImage.Android.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.tab_item_view = global::RenderImage.Android.Resource.Layout.tab_item_view;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.tooltip_container = global::RenderImage.Android.Resource.Layout.tooltip_container;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Layout.trial_message = global::RenderImage.Android.Resource.Layout.trial_message;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.ApplicationName = global::RenderImage.Android.Resource.String.ApplicationName;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.Hello = global::RenderImage.Android.Resource.String.Hello;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_action_bar_home_description = global::RenderImage.Android.Resource.String.abc_action_bar_home_description;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_action_bar_up_description = global::RenderImage.Android.Resource.String.abc_action_bar_up_description;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_action_menu_overflow_description = global::RenderImage.Android.Resource.String.abc_action_menu_overflow_description;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_action_mode_done = global::RenderImage.Android.Resource.String.abc_action_mode_done;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_activity_chooser_view_see_all = global::RenderImage.Android.Resource.String.abc_activity_chooser_view_see_all;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_activitychooserview_choose_application = global::RenderImage.Android.Resource.String.abc_activitychooserview_choose_application;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_capital_off = global::RenderImage.Android.Resource.String.abc_capital_off;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_capital_on = global::RenderImage.Android.Resource.String.abc_capital_on;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_font_family_body_1_material = global::RenderImage.Android.Resource.String.abc_font_family_body_1_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_font_family_body_2_material = global::RenderImage.Android.Resource.String.abc_font_family_body_2_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_font_family_button_material = global::RenderImage.Android.Resource.String.abc_font_family_button_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_font_family_caption_material = global::RenderImage.Android.Resource.String.abc_font_family_caption_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_font_family_display_1_material = global::RenderImage.Android.Resource.String.abc_font_family_display_1_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_font_family_display_2_material = global::RenderImage.Android.Resource.String.abc_font_family_display_2_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_font_family_display_3_material = global::RenderImage.Android.Resource.String.abc_font_family_display_3_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_font_family_display_4_material = global::RenderImage.Android.Resource.String.abc_font_family_display_4_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_font_family_headline_material = global::RenderImage.Android.Resource.String.abc_font_family_headline_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_font_family_menu_material = global::RenderImage.Android.Resource.String.abc_font_family_menu_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_font_family_subhead_material = global::RenderImage.Android.Resource.String.abc_font_family_subhead_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_font_family_title_material = global::RenderImage.Android.Resource.String.abc_font_family_title_material;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_search_hint = global::RenderImage.Android.Resource.String.abc_search_hint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_searchview_description_clear = global::RenderImage.Android.Resource.String.abc_searchview_description_clear;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_searchview_description_query = global::RenderImage.Android.Resource.String.abc_searchview_description_query;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_searchview_description_search = global::RenderImage.Android.Resource.String.abc_searchview_description_search;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_searchview_description_submit = global::RenderImage.Android.Resource.String.abc_searchview_description_submit;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_searchview_description_voice = global::RenderImage.Android.Resource.String.abc_searchview_description_voice;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_shareactionprovider_share_with = global::RenderImage.Android.Resource.String.abc_shareactionprovider_share_with;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_shareactionprovider_share_with_application = global::RenderImage.Android.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.abc_toolbar_collapse_description = global::RenderImage.Android.Resource.String.abc_toolbar_collapse_description;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.app_name = global::RenderImage.Android.Resource.String.app_name;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.appbar_scrolling_view_behavior = global::RenderImage.Android.Resource.String.appbar_scrolling_view_behavior;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.bottom_sheet_behavior = global::RenderImage.Android.Resource.String.bottom_sheet_behavior;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.character_counter_pattern = global::RenderImage.Android.Resource.String.character_counter_pattern;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.hello = global::RenderImage.Android.Resource.String.hello;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_button_content_description = global::RenderImage.Android.Resource.String.mr_button_content_description;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_cast_button_connected = global::RenderImage.Android.Resource.String.mr_cast_button_connected;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_cast_button_connecting = global::RenderImage.Android.Resource.String.mr_cast_button_connecting;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_cast_button_disconnected = global::RenderImage.Android.Resource.String.mr_cast_button_disconnected;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_chooser_searching = global::RenderImage.Android.Resource.String.mr_chooser_searching;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_chooser_title = global::RenderImage.Android.Resource.String.mr_chooser_title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_controller_album_art = global::RenderImage.Android.Resource.String.mr_controller_album_art;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_controller_casting_screen = global::RenderImage.Android.Resource.String.mr_controller_casting_screen;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_controller_close_description = global::RenderImage.Android.Resource.String.mr_controller_close_description;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_controller_collapse_group = global::RenderImage.Android.Resource.String.mr_controller_collapse_group;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_controller_disconnect = global::RenderImage.Android.Resource.String.mr_controller_disconnect;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_controller_expand_group = global::RenderImage.Android.Resource.String.mr_controller_expand_group;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_controller_no_info_available = global::RenderImage.Android.Resource.String.mr_controller_no_info_available;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_controller_no_media_selected = global::RenderImage.Android.Resource.String.mr_controller_no_media_selected;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_controller_pause = global::RenderImage.Android.Resource.String.mr_controller_pause;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_controller_play = global::RenderImage.Android.Resource.String.mr_controller_play;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_controller_stop = global::RenderImage.Android.Resource.String.mr_controller_stop;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_controller_stop_casting = global::RenderImage.Android.Resource.String.mr_controller_stop_casting;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_controller_volume_slider = global::RenderImage.Android.Resource.String.mr_controller_volume_slider;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_system_route_name = global::RenderImage.Android.Resource.String.mr_system_route_name;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.mr_user_route_category_name = global::RenderImage.Android.Resource.String.mr_user_route_category_name;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.password_toggle_content_description = global::RenderImage.Android.Resource.String.password_toggle_content_description;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.path_password_eye = global::RenderImage.Android.Resource.String.path_password_eye;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.path_password_eye_mask_strike_through = global::RenderImage.Android.Resource.String.path_password_eye_mask_strike_through;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.path_password_eye_mask_visible = global::RenderImage.Android.Resource.String.path_password_eye_mask_visible;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.path_password_strike_through = global::RenderImage.Android.Resource.String.path_password_strike_through;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.search_menu_title = global::RenderImage.Android.Resource.String.search_menu_title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.status_bar_notification_info_overflow = global::RenderImage.Android.Resource.String.status_bar_notification_info_overflow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.trial_message = global::RenderImage.Android.Resource.String.trial_message;
+			global::Telerik.XamarinForms.ImageEditor.Resource.String.trial_message_caption = global::RenderImage.Android.Resource.String.trial_message_caption;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.AlertDialog_AppCompat = global::RenderImage.Android.Resource.Style.AlertDialog_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.AlertDialog_AppCompat_Light = global::RenderImage.Android.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Animation_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Animation_AppCompat_Dialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Animation_AppCompat_DropDownUp = global::RenderImage.Android.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Animation_AppCompat_Tooltip = global::RenderImage.Android.Resource.Style.Animation_AppCompat_Tooltip;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Animation_Design_BottomSheetDialog = global::RenderImage.Android.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_AlertDialog_AppCompat = global::RenderImage.Android.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_AlertDialog_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Animation_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::RenderImage.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Animation_AppCompat_Tooltip = global::RenderImage.Android.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_CardView = global::RenderImage.Android.Resource.Style.Base_CardView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_DialogWindowTitle_AppCompat = global::RenderImage.Android.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::RenderImage.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Button = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Large = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Small = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Title = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::RenderImage.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::RenderImage.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::RenderImage.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_ThemeOverlay_AppCompat = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V21_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V21_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V22_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V22_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V23_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V23_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V26_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V26_Theme_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V26_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V7_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V7_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::RenderImage.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::RenderImage.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ActionBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ActionButton = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ActionMode = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Button = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Button_Small = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_EditText = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ImageButton = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ListView = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_RatingBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_SearchView = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_SeekBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Spinner = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Base_Widget_Design_TabLayout = global::RenderImage.Android.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.CardView = global::RenderImage.Android.Resource.Style.CardView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.CardView_Dark = global::RenderImage.Android.Resource.Style.CardView_Dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.CardView_Light = global::RenderImage.Android.Resource.Style.CardView_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Platform_AppCompat = global::RenderImage.Android.Resource.Style.Platform_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Platform_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_AppCompat_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Platform_ThemeOverlay_AppCompat = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Platform_V21_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V21_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Platform_V21_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Platform_V25_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V25_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Platform_V25_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V25_AppCompat_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Platform_Widget_AppCompat_Spinner = global::RenderImage.Android.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.RadScrollViewStyle = global::RenderImage.Android.Resource.Style.RadScrollViewStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.RadScrollViewTheme = global::RenderImage.Android.Resource.Style.RadScrollViewTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::RenderImage.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::RenderImage.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::RenderImage.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Body1 = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Body2 = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Button = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Caption = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Display1 = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Display2 = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Display3 = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Display4 = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Headline = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Large = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Medium = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Menu = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Small = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Subhead = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Title = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Tooltip = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Compat_Notification = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Compat_Notification_Info = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Compat_Notification_Media = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Compat_Notification_Time = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Compat_Notification_Title = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::RenderImage.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Design_Counter = global::RenderImage.Android.Resource.Style.TextAppearance_Design_Counter;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Design_Counter_Overflow = global::RenderImage.Android.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Design_Error = global::RenderImage.Android.Resource.Style.TextAppearance_Design_Error;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Design_Hint = global::RenderImage.Android.Resource.Style.TextAppearance_Design_Hint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Design_Snackbar_Message = global::RenderImage.Android.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Design_Tab = global::RenderImage.Android.Resource.Style.TextAppearance_Design_Tab;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_MediaRouter_PrimaryText = global::RenderImage.Android.Resource.Style.TextAppearance_MediaRouter_PrimaryText;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_MediaRouter_SecondaryText = global::RenderImage.Android.Resource.Style.TextAppearance_MediaRouter_SecondaryText;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_MediaRouter_Title = global::RenderImage.Android.Resource.Style.TextAppearance_MediaRouter_Title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::RenderImage.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::RenderImage.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::RenderImage.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat = global::RenderImage.Android.Resource.Style.Theme_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_CompactMenu = global::RenderImage.Android.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_DayNight = global::RenderImage.Android.Resource.Style.Theme_AppCompat_DayNight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::RenderImage.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::RenderImage.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::RenderImage.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::RenderImage.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::RenderImage.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::RenderImage.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Dialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_Dialog_Alert = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::RenderImage.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_AppCompat_NoActionBar = global::RenderImage.Android.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_Design = global::RenderImage.Android.Resource.Style.Theme_Design;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_Design_BottomSheetDialog = global::RenderImage.Android.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_Design_Light = global::RenderImage.Android.Resource.Style.Theme_Design_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::RenderImage.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_Design_Light_NoActionBar = global::RenderImage.Android.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_Design_NoActionBar = global::RenderImage.Android.Resource.Style.Theme_Design_NoActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_MediaRouter = global::RenderImage.Android.Resource.Style.Theme_MediaRouter;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_MediaRouter_Light = global::RenderImage.Android.Resource.Style.Theme_MediaRouter_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::RenderImage.Android.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Theme_MediaRouter_LightControlPanel = global::RenderImage.Android.Resource.Style.Theme_MediaRouter_LightControlPanel;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.ThemeOverlay_AppCompat = global::RenderImage.Android.Resource.Style.ThemeOverlay_AppCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::RenderImage.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.ThemeOverlay_AppCompat_Dark = global::RenderImage.Android.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::RenderImage.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::RenderImage.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.ThemeOverlay_AppCompat_Light = global::RenderImage.Android.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::RenderImage.Android.Resource.Style.ThemeOverlay_MediaRouter_Dark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.ThemeOverlay_MediaRouter_Light = global::RenderImage.Android.Resource.Style.ThemeOverlay_MediaRouter_Light;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ActionBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ActionButton = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ActionMode = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ActivityChooserView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Button = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Button;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Button_Borderless = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Button_Colored = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Button_Small = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ButtonBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::RenderImage.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::RenderImage.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::RenderImage.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::RenderImage.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::RenderImage.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_EditText = global::RenderImage.Android.Resource.Style.Widget_AppCompat_EditText;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ImageButton = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_ActionBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_ActionButton = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_SearchView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ListMenuView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ListPopupWindow = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ListView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ListView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ListView_DropDown = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ListView_Menu = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_PopupMenu = global::RenderImage.Android.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::RenderImage.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_PopupWindow = global::RenderImage.Android.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ProgressBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_RatingBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::RenderImage.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_RatingBar_Small = global::RenderImage.Android.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_SearchView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_SearchView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_SeekBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::RenderImage.Android.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Spinner = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Spinner;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::RenderImage.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_Compat_NotificationActionContainer = global::RenderImage.Android.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_Compat_NotificationActionText = global::RenderImage.Android.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Widget_Design_AppBarLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_Design_BottomNavigationView = global::RenderImage.Android.Resource.Style.Widget_Design_BottomNavigationView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_Design_BottomSheet_Modal = global::RenderImage.Android.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_Design_CollapsingToolbar = global::RenderImage.Android.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_Design_FloatingActionButton = global::RenderImage.Android.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_Design_NavigationView = global::RenderImage.Android.Resource.Style.Widget_Design_NavigationView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::RenderImage.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_Design_Snackbar = global::RenderImage.Android.Resource.Style.Widget_Design_Snackbar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_Design_TabLayout = global::RenderImage.Android.Resource.Style.Widget_Design_TabLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_Design_TextInputLayout = global::RenderImage.Android.Resource.Style.Widget_Design_TextInputLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::RenderImage.Android.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::RenderImage.Android.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar = global::RenderImage.Android.Resource.Styleable.ActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_background = global::RenderImage.Android.Resource.Styleable.ActionBar_background;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_backgroundSplit = global::RenderImage.Android.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_backgroundStacked = global::RenderImage.Android.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_contentInsetEnd = global::RenderImage.Android.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::RenderImage.Android.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_contentInsetLeft = global::RenderImage.Android.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_contentInsetRight = global::RenderImage.Android.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_contentInsetStart = global::RenderImage.Android.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::RenderImage.Android.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_customNavigationLayout = global::RenderImage.Android.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_displayOptions = global::RenderImage.Android.Resource.Styleable.ActionBar_displayOptions;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_divider = global::RenderImage.Android.Resource.Styleable.ActionBar_divider;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_elevation = global::RenderImage.Android.Resource.Styleable.ActionBar_elevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_height = global::RenderImage.Android.Resource.Styleable.ActionBar_height;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_hideOnContentScroll = global::RenderImage.Android.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_homeAsUpIndicator = global::RenderImage.Android.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_homeLayout = global::RenderImage.Android.Resource.Styleable.ActionBar_homeLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_icon = global::RenderImage.Android.Resource.Styleable.ActionBar_icon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::RenderImage.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_itemPadding = global::RenderImage.Android.Resource.Styleable.ActionBar_itemPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_logo = global::RenderImage.Android.Resource.Styleable.ActionBar_logo;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_navigationMode = global::RenderImage.Android.Resource.Styleable.ActionBar_navigationMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_popupTheme = global::RenderImage.Android.Resource.Styleable.ActionBar_popupTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_progressBarPadding = global::RenderImage.Android.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_progressBarStyle = global::RenderImage.Android.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_subtitle = global::RenderImage.Android.Resource.Styleable.ActionBar_subtitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_subtitleTextStyle = global::RenderImage.Android.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_title = global::RenderImage.Android.Resource.Styleable.ActionBar_title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBar_titleTextStyle = global::RenderImage.Android.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBarLayout = global::RenderImage.Android.Resource.Styleable.ActionBarLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::RenderImage.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionMenuItemView = global::RenderImage.Android.Resource.Styleable.ActionMenuItemView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionMenuItemView_android_minWidth = global::RenderImage.Android.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionMenuView = global::RenderImage.Android.Resource.Styleable.ActionMenuView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionMode = global::RenderImage.Android.Resource.Styleable.ActionMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionMode_background = global::RenderImage.Android.Resource.Styleable.ActionMode_background;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionMode_backgroundSplit = global::RenderImage.Android.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionMode_closeItemLayout = global::RenderImage.Android.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionMode_height = global::RenderImage.Android.Resource.Styleable.ActionMode_height;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionMode_subtitleTextStyle = global::RenderImage.Android.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActionMode_titleTextStyle = global::RenderImage.Android.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActivityChooserView = global::RenderImage.Android.Resource.Styleable.ActivityChooserView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::RenderImage.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ActivityChooserView_initialActivityCount = global::RenderImage.Android.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AlertDialog = global::RenderImage.Android.Resource.Styleable.AlertDialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AlertDialog_android_layout = global::RenderImage.Android.Resource.Styleable.AlertDialog_android_layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::RenderImage.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AlertDialog_listItemLayout = global::RenderImage.Android.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AlertDialog_listLayout = global::RenderImage.Android.Resource.Styleable.AlertDialog_listLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::RenderImage.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AlertDialog_showTitle = global::RenderImage.Android.Resource.Styleable.AlertDialog_showTitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::RenderImage.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppBarLayout = global::RenderImage.Android.Resource.Styleable.AppBarLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppBarLayout_android_background = global::RenderImage.Android.Resource.Styleable.AppBarLayout_android_background;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::RenderImage.Android.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::RenderImage.Android.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppBarLayout_elevation = global::RenderImage.Android.Resource.Styleable.AppBarLayout_elevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppBarLayout_expanded = global::RenderImage.Android.Resource.Styleable.AppBarLayout_expanded;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppBarLayoutStates = global::RenderImage.Android.Resource.Styleable.AppBarLayoutStates;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::RenderImage.Android.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::RenderImage.Android.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppBarLayout_Layout = global::RenderImage.Android.Resource.Styleable.AppBarLayout_Layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::RenderImage.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::RenderImage.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatImageView = global::RenderImage.Android.Resource.Styleable.AppCompatImageView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatImageView_android_src = global::RenderImage.Android.Resource.Styleable.AppCompatImageView_android_src;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatImageView_srcCompat = global::RenderImage.Android.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatImageView_tint = global::RenderImage.Android.Resource.Styleable.AppCompatImageView_tint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatImageView_tintMode = global::RenderImage.Android.Resource.Styleable.AppCompatImageView_tintMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatSeekBar = global::RenderImage.Android.Resource.Styleable.AppCompatSeekBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatSeekBar_android_thumb = global::RenderImage.Android.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatSeekBar_tickMark = global::RenderImage.Android.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::RenderImage.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::RenderImage.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTextHelper = global::RenderImage.Android.Resource.Styleable.AppCompatTextHelper;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::RenderImage.Android.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::RenderImage.Android.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::RenderImage.Android.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::RenderImage.Android.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::RenderImage.Android.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::RenderImage.Android.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::RenderImage.Android.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTextView = global::RenderImage.Android.Resource.Styleable.AppCompatTextView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTextView_android_textAppearance = global::RenderImage.Android.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::RenderImage.Android.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::RenderImage.Android.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::RenderImage.Android.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::RenderImage.Android.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::RenderImage.Android.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTextView_fontFamily = global::RenderImage.Android.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTextView_textAllCaps = global::RenderImage.Android.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme = global::RenderImage.Android.Resource.Styleable.AppCompatTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionBarDivider = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionBarSize = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionBarStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionBarTheme = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionModeBackground = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionModeStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_buttonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_checkboxStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_colorAccent = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_colorControlActivated = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_colorControlNormal = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_colorError = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorError;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_colorPrimary = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_controlBackground = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_dialogTheme = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_dividerVertical = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_editTextBackground = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_editTextColor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_editTextStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_panelBackground = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_searchViewStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_seekBarStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_spinnerStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_switchStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_toolbarStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_windowActionBar = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.AppCompatTheme_windowNoTitle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.BottomNavigationView = global::RenderImage.Android.Resource.Styleable.BottomNavigationView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.BottomNavigationView_elevation = global::RenderImage.Android.Resource.Styleable.BottomNavigationView_elevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.BottomNavigationView_itemBackground = global::RenderImage.Android.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.BottomNavigationView_itemIconTint = global::RenderImage.Android.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.BottomNavigationView_itemTextColor = global::RenderImage.Android.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.BottomNavigationView_menu = global::RenderImage.Android.Resource.Styleable.BottomNavigationView_menu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.BottomSheetBehavior_Layout = global::RenderImage.Android.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::RenderImage.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::RenderImage.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::RenderImage.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ButtonBarLayout = global::RenderImage.Android.Resource.Styleable.ButtonBarLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ButtonBarLayout_allowStacking = global::RenderImage.Android.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CardView = global::RenderImage.Android.Resource.Styleable.CardView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CardView_android_minHeight = global::RenderImage.Android.Resource.Styleable.CardView_android_minHeight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CardView_android_minWidth = global::RenderImage.Android.Resource.Styleable.CardView_android_minWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CardView_cardBackgroundColor = global::RenderImage.Android.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CardView_cardCornerRadius = global::RenderImage.Android.Resource.Styleable.CardView_cardCornerRadius;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CardView_cardElevation = global::RenderImage.Android.Resource.Styleable.CardView_cardElevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CardView_cardMaxElevation = global::RenderImage.Android.Resource.Styleable.CardView_cardMaxElevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CardView_cardPreventCornerOverlap = global::RenderImage.Android.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CardView_cardUseCompatPadding = global::RenderImage.Android.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CardView_contentPadding = global::RenderImage.Android.Resource.Styleable.CardView_contentPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CardView_contentPaddingBottom = global::RenderImage.Android.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CardView_contentPaddingLeft = global::RenderImage.Android.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CardView_contentPaddingRight = global::RenderImage.Android.Resource.Styleable.CardView_contentPaddingRight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CardView_contentPaddingTop = global::RenderImage.Android.Resource.Styleable.CardView_contentPaddingTop;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_title = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_Layout = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ColorStateListItem = global::RenderImage.Android.Resource.Styleable.ColorStateListItem;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ColorStateListItem_alpha = global::RenderImage.Android.Resource.Styleable.ColorStateListItem_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ColorStateListItem_android_alpha = global::RenderImage.Android.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ColorStateListItem_android_color = global::RenderImage.Android.Resource.Styleable.ColorStateListItem_android_color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CompoundButton = global::RenderImage.Android.Resource.Styleable.CompoundButton;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CompoundButton_android_button = global::RenderImage.Android.Resource.Styleable.CompoundButton_android_button;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CompoundButton_buttonTint = global::RenderImage.Android.Resource.Styleable.CompoundButton_buttonTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CompoundButton_buttonTintMode = global::RenderImage.Android.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CoordinatorLayout = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CoordinatorLayout_keylines = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CoordinatorLayout_Layout = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.DesignTheme = global::RenderImage.Android.Resource.Styleable.DesignTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::RenderImage.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.DesignTheme_bottomSheetStyle = global::RenderImage.Android.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.DrawerArrowToggle = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.DrawerArrowToggle_barLength = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.DrawerArrowToggle_color = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_color;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.DrawerArrowToggle_drawableSize = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.DrawerArrowToggle_spinBars = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.DrawerArrowToggle_thickness = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FloatingActionButton = global::RenderImage.Android.Resource.Styleable.FloatingActionButton;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FloatingActionButton_backgroundTint = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FloatingActionButton_borderWidth = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FloatingActionButton_elevation = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_elevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FloatingActionButton_fabSize = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FloatingActionButton_rippleColor = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FloatingActionButton_useCompatPadding = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FontFamily = global::RenderImage.Android.Resource.Styleable.FontFamily;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FontFamily_fontProviderAuthority = global::RenderImage.Android.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FontFamily_fontProviderCerts = global::RenderImage.Android.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::RenderImage.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::RenderImage.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FontFamily_fontProviderPackage = global::RenderImage.Android.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FontFamily_fontProviderQuery = global::RenderImage.Android.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FontFamilyFont = global::RenderImage.Android.Resource.Styleable.FontFamilyFont;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FontFamilyFont_android_font = global::RenderImage.Android.Resource.Styleable.FontFamilyFont_android_font;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FontFamilyFont_android_fontStyle = global::RenderImage.Android.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FontFamilyFont_android_fontWeight = global::RenderImage.Android.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FontFamilyFont_font = global::RenderImage.Android.Resource.Styleable.FontFamilyFont_font;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FontFamilyFont_fontStyle = global::RenderImage.Android.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.FontFamilyFont_fontWeight = global::RenderImage.Android.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ForegroundLinearLayout = global::RenderImage.Android.Resource.Styleable.ForegroundLinearLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::RenderImage.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::RenderImage.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::RenderImage.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.LinearLayoutCompat = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.LinearLayoutCompat_android_gravity = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.LinearLayoutCompat_android_orientation = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.LinearLayoutCompat_divider = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.LinearLayoutCompat_showDividers = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.LinearLayoutCompat_Layout = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ListPopupWindow = global::RenderImage.Android.Resource.Styleable.ListPopupWindow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::RenderImage.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::RenderImage.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MediaRouteButton = global::RenderImage.Android.Resource.Styleable.MediaRouteButton;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MediaRouteButton_android_minHeight = global::RenderImage.Android.Resource.Styleable.MediaRouteButton_android_minHeight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MediaRouteButton_android_minWidth = global::RenderImage.Android.Resource.Styleable.MediaRouteButton_android_minWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::RenderImage.Android.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MediaRouteButton_mediaRouteButtonTint = global::RenderImage.Android.Resource.Styleable.MediaRouteButton_mediaRouteButtonTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuGroup = global::RenderImage.Android.Resource.Styleable.MenuGroup;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuGroup_android_checkableBehavior = global::RenderImage.Android.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuGroup_android_enabled = global::RenderImage.Android.Resource.Styleable.MenuGroup_android_enabled;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuGroup_android_id = global::RenderImage.Android.Resource.Styleable.MenuGroup_android_id;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuGroup_android_menuCategory = global::RenderImage.Android.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuGroup_android_orderInCategory = global::RenderImage.Android.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuGroup_android_visible = global::RenderImage.Android.Resource.Styleable.MenuGroup_android_visible;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem = global::RenderImage.Android.Resource.Styleable.MenuItem;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_actionLayout = global::RenderImage.Android.Resource.Styleable.MenuItem_actionLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_actionProviderClass = global::RenderImage.Android.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_actionViewClass = global::RenderImage.Android.Resource.Styleable.MenuItem_actionViewClass;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_alphabeticModifiers = global::RenderImage.Android.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::RenderImage.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_android_checkable = global::RenderImage.Android.Resource.Styleable.MenuItem_android_checkable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_android_checked = global::RenderImage.Android.Resource.Styleable.MenuItem_android_checked;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_android_enabled = global::RenderImage.Android.Resource.Styleable.MenuItem_android_enabled;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_android_icon = global::RenderImage.Android.Resource.Styleable.MenuItem_android_icon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_android_id = global::RenderImage.Android.Resource.Styleable.MenuItem_android_id;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_android_menuCategory = global::RenderImage.Android.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_android_numericShortcut = global::RenderImage.Android.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_android_onClick = global::RenderImage.Android.Resource.Styleable.MenuItem_android_onClick;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_android_orderInCategory = global::RenderImage.Android.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_android_title = global::RenderImage.Android.Resource.Styleable.MenuItem_android_title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_android_titleCondensed = global::RenderImage.Android.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_android_visible = global::RenderImage.Android.Resource.Styleable.MenuItem_android_visible;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_contentDescription = global::RenderImage.Android.Resource.Styleable.MenuItem_contentDescription;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_iconTint = global::RenderImage.Android.Resource.Styleable.MenuItem_iconTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_iconTintMode = global::RenderImage.Android.Resource.Styleable.MenuItem_iconTintMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_numericModifiers = global::RenderImage.Android.Resource.Styleable.MenuItem_numericModifiers;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_showAsAction = global::RenderImage.Android.Resource.Styleable.MenuItem_showAsAction;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuItem_tooltipText = global::RenderImage.Android.Resource.Styleable.MenuItem_tooltipText;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuView = global::RenderImage.Android.Resource.Styleable.MenuView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuView_android_headerBackground = global::RenderImage.Android.Resource.Styleable.MenuView_android_headerBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuView_android_horizontalDivider = global::RenderImage.Android.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuView_android_itemBackground = global::RenderImage.Android.Resource.Styleable.MenuView_android_itemBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::RenderImage.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuView_android_itemTextAppearance = global::RenderImage.Android.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuView_android_verticalDivider = global::RenderImage.Android.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuView_android_windowAnimationStyle = global::RenderImage.Android.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuView_preserveIconSpacing = global::RenderImage.Android.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.MenuView_subMenuArrow = global::RenderImage.Android.Resource.Styleable.MenuView_subMenuArrow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.NavigationView = global::RenderImage.Android.Resource.Styleable.NavigationView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.NavigationView_android_background = global::RenderImage.Android.Resource.Styleable.NavigationView_android_background;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::RenderImage.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.NavigationView_android_maxWidth = global::RenderImage.Android.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.NavigationView_elevation = global::RenderImage.Android.Resource.Styleable.NavigationView_elevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.NavigationView_headerLayout = global::RenderImage.Android.Resource.Styleable.NavigationView_headerLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.NavigationView_itemBackground = global::RenderImage.Android.Resource.Styleable.NavigationView_itemBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.NavigationView_itemIconTint = global::RenderImage.Android.Resource.Styleable.NavigationView_itemIconTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.NavigationView_itemTextAppearance = global::RenderImage.Android.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.NavigationView_itemTextColor = global::RenderImage.Android.Resource.Styleable.NavigationView_itemTextColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.NavigationView_menu = global::RenderImage.Android.Resource.Styleable.NavigationView_menu;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.PointerLayout = global::RenderImage.Android.Resource.Styleable.PointerLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.PointerLayout_pointerFill = global::RenderImage.Android.Resource.Styleable.PointerLayout_pointerFill;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.PointerLayout_pointerMargin = global::RenderImage.Android.Resource.Styleable.PointerLayout_pointerMargin;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.PointerLayout_pointerSize = global::RenderImage.Android.Resource.Styleable.PointerLayout_pointerSize;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.PopupWindow = global::RenderImage.Android.Resource.Styleable.PopupWindow;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::RenderImage.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.PopupWindow_android_popupBackground = global::RenderImage.Android.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.PopupWindow_overlapAnchor = global::RenderImage.Android.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.PopupWindowBackgroundState = global::RenderImage.Android.Resource.Styleable.PopupWindowBackgroundState;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::RenderImage.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RadScrollView = global::RenderImage.Android.Resource.Styleable.RadScrollView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RadScrollView_fillViewport = global::RenderImage.Android.Resource.Styleable.RadScrollView_fillViewport;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RadScrollView_scrollMode = global::RenderImage.Android.Resource.Styleable.RadScrollView_scrollMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RadScrollViewTheme = global::RenderImage.Android.Resource.Styleable.RadScrollViewTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RadScrollViewTheme_radScrollViewStyle = global::RenderImage.Android.Resource.Styleable.RadScrollViewTheme_radScrollViewStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RecycleListView = global::RenderImage.Android.Resource.Styleable.RecycleListView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::RenderImage.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::RenderImage.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RecyclerView = global::RenderImage.Android.Resource.Styleable.RecyclerView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RecyclerView_android_descendantFocusability = global::RenderImage.Android.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RecyclerView_android_orientation = global::RenderImage.Android.Resource.Styleable.RecyclerView_android_orientation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RecyclerView_fastScrollEnabled = global::RenderImage.Android.Resource.Styleable.RecyclerView_fastScrollEnabled;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::RenderImage.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::RenderImage.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::RenderImage.Android.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::RenderImage.Android.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RecyclerView_layoutManager = global::RenderImage.Android.Resource.Styleable.RecyclerView_layoutManager;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RecyclerView_reverseLayout = global::RenderImage.Android.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RecyclerView_spanCount = global::RenderImage.Android.Resource.Styleable.RecyclerView_spanCount;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.RecyclerView_stackFromEnd = global::RenderImage.Android.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ScrimInsetsFrameLayout = global::RenderImage.Android.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::RenderImage.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ScrollingViewBehavior_Layout = global::RenderImage.Android.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::RenderImage.Android.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView = global::RenderImage.Android.Resource.Styleable.SearchView;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView_android_focusable = global::RenderImage.Android.Resource.Styleable.SearchView_android_focusable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView_android_imeOptions = global::RenderImage.Android.Resource.Styleable.SearchView_android_imeOptions;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView_android_inputType = global::RenderImage.Android.Resource.Styleable.SearchView_android_inputType;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView_android_maxWidth = global::RenderImage.Android.Resource.Styleable.SearchView_android_maxWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView_closeIcon = global::RenderImage.Android.Resource.Styleable.SearchView_closeIcon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView_commitIcon = global::RenderImage.Android.Resource.Styleable.SearchView_commitIcon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView_defaultQueryHint = global::RenderImage.Android.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView_goIcon = global::RenderImage.Android.Resource.Styleable.SearchView_goIcon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView_iconifiedByDefault = global::RenderImage.Android.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView_layout = global::RenderImage.Android.Resource.Styleable.SearchView_layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView_queryBackground = global::RenderImage.Android.Resource.Styleable.SearchView_queryBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView_queryHint = global::RenderImage.Android.Resource.Styleable.SearchView_queryHint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView_searchHintIcon = global::RenderImage.Android.Resource.Styleable.SearchView_searchHintIcon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView_searchIcon = global::RenderImage.Android.Resource.Styleable.SearchView_searchIcon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView_submitBackground = global::RenderImage.Android.Resource.Styleable.SearchView_submitBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView_suggestionRowLayout = global::RenderImage.Android.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SearchView_voiceIcon = global::RenderImage.Android.Resource.Styleable.SearchView_voiceIcon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SnackbarLayout = global::RenderImage.Android.Resource.Styleable.SnackbarLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SnackbarLayout_android_maxWidth = global::RenderImage.Android.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SnackbarLayout_elevation = global::RenderImage.Android.Resource.Styleable.SnackbarLayout_elevation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::RenderImage.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Spinner = global::RenderImage.Android.Resource.Styleable.Spinner;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Spinner_android_dropDownWidth = global::RenderImage.Android.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Spinner_android_entries = global::RenderImage.Android.Resource.Styleable.Spinner_android_entries;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Spinner_android_popupBackground = global::RenderImage.Android.Resource.Styleable.Spinner_android_popupBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Spinner_android_prompt = global::RenderImage.Android.Resource.Styleable.Spinner_android_prompt;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Spinner_popupTheme = global::RenderImage.Android.Resource.Styleable.Spinner_popupTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SwitchCompat = global::RenderImage.Android.Resource.Styleable.SwitchCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SwitchCompat_android_textOff = global::RenderImage.Android.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SwitchCompat_android_textOn = global::RenderImage.Android.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SwitchCompat_android_thumb = global::RenderImage.Android.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SwitchCompat_showText = global::RenderImage.Android.Resource.Styleable.SwitchCompat_showText;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SwitchCompat_splitTrack = global::RenderImage.Android.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SwitchCompat_switchMinWidth = global::RenderImage.Android.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SwitchCompat_switchPadding = global::RenderImage.Android.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SwitchCompat_switchTextAppearance = global::RenderImage.Android.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SwitchCompat_thumbTextPadding = global::RenderImage.Android.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SwitchCompat_thumbTint = global::RenderImage.Android.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SwitchCompat_thumbTintMode = global::RenderImage.Android.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SwitchCompat_track = global::RenderImage.Android.Resource.Styleable.SwitchCompat_track;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SwitchCompat_trackTint = global::RenderImage.Android.Resource.Styleable.SwitchCompat_trackTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.SwitchCompat_trackTintMode = global::RenderImage.Android.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabItem = global::RenderImage.Android.Resource.Styleable.TabItem;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabItem_android_icon = global::RenderImage.Android.Resource.Styleable.TabItem_android_icon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabItem_android_layout = global::RenderImage.Android.Resource.Styleable.TabItem_android_layout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabItem_android_text = global::RenderImage.Android.Resource.Styleable.TabItem_android_text;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabLayout = global::RenderImage.Android.Resource.Styleable.TabLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabLayout_tabBackground = global::RenderImage.Android.Resource.Styleable.TabLayout_tabBackground;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabLayout_tabContentStart = global::RenderImage.Android.Resource.Styleable.TabLayout_tabContentStart;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabLayout_tabGravity = global::RenderImage.Android.Resource.Styleable.TabLayout_tabGravity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabLayout_tabIndicatorColor = global::RenderImage.Android.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabLayout_tabIndicatorHeight = global::RenderImage.Android.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabLayout_tabMaxWidth = global::RenderImage.Android.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabLayout_tabMinWidth = global::RenderImage.Android.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabLayout_tabMode = global::RenderImage.Android.Resource.Styleable.TabLayout_tabMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabLayout_tabPadding = global::RenderImage.Android.Resource.Styleable.TabLayout_tabPadding;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabLayout_tabPaddingBottom = global::RenderImage.Android.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabLayout_tabPaddingEnd = global::RenderImage.Android.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabLayout_tabPaddingStart = global::RenderImage.Android.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabLayout_tabPaddingTop = global::RenderImage.Android.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabLayout_tabSelectedTextColor = global::RenderImage.Android.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabLayout_tabTextAppearance = global::RenderImage.Android.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TabLayout_tabTextColor = global::RenderImage.Android.Resource.Styleable.TabLayout_tabTextColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextAppearance = global::RenderImage.Android.Resource.Styleable.TextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextAppearance_android_fontFamily = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextAppearance_android_shadowColor = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextAppearance_android_shadowDx = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextAppearance_android_shadowDy = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextAppearance_android_shadowRadius = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextAppearance_android_textColor = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_textColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextAppearance_android_textColorHint = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextAppearance_android_textColorLink = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextAppearance_android_textSize = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_textSize;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextAppearance_android_textStyle = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextAppearance_android_typeface = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_typeface;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextAppearance_fontFamily = global::RenderImage.Android.Resource.Styleable.TextAppearance_fontFamily;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextAppearance_textAllCaps = global::RenderImage.Android.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextInputLayout = global::RenderImage.Android.Resource.Styleable.TextInputLayout;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextInputLayout_android_hint = global::RenderImage.Android.Resource.Styleable.TextInputLayout_android_hint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextInputLayout_android_textColorHint = global::RenderImage.Android.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextInputLayout_counterEnabled = global::RenderImage.Android.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextInputLayout_counterMaxLength = global::RenderImage.Android.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::RenderImage.Android.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextInputLayout_counterTextAppearance = global::RenderImage.Android.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextInputLayout_errorEnabled = global::RenderImage.Android.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextInputLayout_errorTextAppearance = global::RenderImage.Android.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::RenderImage.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextInputLayout_hintEnabled = global::RenderImage.Android.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextInputLayout_hintTextAppearance = global::RenderImage.Android.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::RenderImage.Android.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::RenderImage.Android.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::RenderImage.Android.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextInputLayout_passwordToggleTint = global::RenderImage.Android.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::RenderImage.Android.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar = global::RenderImage.Android.Resource.Styleable.Toolbar;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_android_gravity = global::RenderImage.Android.Resource.Styleable.Toolbar_android_gravity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_android_minHeight = global::RenderImage.Android.Resource.Styleable.Toolbar_android_minHeight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_buttonGravity = global::RenderImage.Android.Resource.Styleable.Toolbar_buttonGravity;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_collapseContentDescription = global::RenderImage.Android.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_collapseIcon = global::RenderImage.Android.Resource.Styleable.Toolbar_collapseIcon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_contentInsetEnd = global::RenderImage.Android.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::RenderImage.Android.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_contentInsetLeft = global::RenderImage.Android.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_contentInsetRight = global::RenderImage.Android.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_contentInsetStart = global::RenderImage.Android.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::RenderImage.Android.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_logo = global::RenderImage.Android.Resource.Styleable.Toolbar_logo;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_logoDescription = global::RenderImage.Android.Resource.Styleable.Toolbar_logoDescription;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_maxButtonHeight = global::RenderImage.Android.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_navigationContentDescription = global::RenderImage.Android.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_navigationIcon = global::RenderImage.Android.Resource.Styleable.Toolbar_navigationIcon;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_popupTheme = global::RenderImage.Android.Resource.Styleable.Toolbar_popupTheme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_subtitle = global::RenderImage.Android.Resource.Styleable.Toolbar_subtitle;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_subtitleTextAppearance = global::RenderImage.Android.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_subtitleTextColor = global::RenderImage.Android.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_title = global::RenderImage.Android.Resource.Styleable.Toolbar_title;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_titleMargin = global::RenderImage.Android.Resource.Styleable.Toolbar_titleMargin;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_titleMarginBottom = global::RenderImage.Android.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_titleMarginEnd = global::RenderImage.Android.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_titleMarginStart = global::RenderImage.Android.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_titleMarginTop = global::RenderImage.Android.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_titleMargins = global::RenderImage.Android.Resource.Styleable.Toolbar_titleMargins;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_titleTextAppearance = global::RenderImage.Android.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.Toolbar_titleTextColor = global::RenderImage.Android.Resource.Styleable.Toolbar_titleTextColor;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.View = global::RenderImage.Android.Resource.Styleable.View;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.View_android_focusable = global::RenderImage.Android.Resource.Styleable.View_android_focusable;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.View_android_theme = global::RenderImage.Android.Resource.Styleable.View_android_theme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.View_paddingEnd = global::RenderImage.Android.Resource.Styleable.View_paddingEnd;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.View_paddingStart = global::RenderImage.Android.Resource.Styleable.View_paddingStart;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.View_theme = global::RenderImage.Android.Resource.Styleable.View_theme;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ViewBackgroundHelper = global::RenderImage.Android.Resource.Styleable.ViewBackgroundHelper;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ViewBackgroundHelper_android_background = global::RenderImage.Android.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::RenderImage.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::RenderImage.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ViewStubCompat = global::RenderImage.Android.Resource.Styleable.ViewStubCompat;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ViewStubCompat_android_id = global::RenderImage.Android.Resource.Styleable.ViewStubCompat_android_id;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ViewStubCompat_android_inflatedId = global::RenderImage.Android.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Telerik.XamarinForms.ImageEditor.Resource.Styleable.ViewStubCompat_android_layout = global::RenderImage.Android.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Animation.abc_fade_in = global::RenderImage.Android.Resource.Animation.abc_fade_in;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Animation.abc_fade_out = global::RenderImage.Android.Resource.Animation.abc_fade_out;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::RenderImage.Android.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -7179,8 +9488,10 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Animation.design_snackbar_out = global::RenderImage.Android.Resource.Animation.design_snackbar_out;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Animation.drawer_slide_in_top = global::RenderImage.Android.Resource.Animation.drawer_slide_in_top;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Animation.drawer_slide_out_top = global::RenderImage.Android.Resource.Animation.drawer_slide_out_top;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Animation.tooltip_enter = global::RenderImage.Android.Resource.Animation.tooltip_enter;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Animation.tooltip_exit = global::RenderImage.Android.Resource.Animation.tooltip_exit;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Animation.EnterFromLeft = global::RenderImage.Android.Resource.Animation.EnterFromLeft;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Animation.EnterFromRight = global::RenderImage.Android.Resource.Animation.EnterFromRight;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Animation.ExitToLeft = global::RenderImage.Android.Resource.Animation.ExitToLeft;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Animation.ExitToRight = global::RenderImage.Android.Resource.Animation.ExitToRight;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Animator.design_appbar_state_list_animator = global::RenderImage.Android.Resource.Animator.design_appbar_state_list_animator;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Attribute.actionBarDivider = global::RenderImage.Android.Resource.Attribute.actionBarDivider;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Attribute.actionBarItemBackground = global::RenderImage.Android.Resource.Attribute.actionBarItemBackground;
@@ -7491,6 +9802,7 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Attribute.statusBarBackground = global::RenderImage.Android.Resource.Attribute.statusBarBackground;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Attribute.statusBarScrim = global::RenderImage.Android.Resource.Attribute.statusBarScrim;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Attribute.strokeColor = global::RenderImage.Android.Resource.Attribute.strokeColor;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Attribute.strokeWidth = global::RenderImage.Android.Resource.Attribute.strokeWidth;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Attribute.subMenuArrow = global::RenderImage.Android.Resource.Attribute.subMenuArrow;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Attribute.submitBackground = global::RenderImage.Android.Resource.Attribute.submitBackground;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Attribute.subtitle = global::RenderImage.Android.Resource.Attribute.subtitle;
@@ -7528,7 +9840,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::RenderImage.Android.Resource.Attribute.textAppearanceSearchResultTitle;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::RenderImage.Android.Resource.Attribute.textAppearanceSmallPopupMenu;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Attribute.textColorAlertDialogListItem = global::RenderImage.Android.Resource.Attribute.textColorAlertDialogListItem;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Attribute.textColorError = global::RenderImage.Android.Resource.Attribute.textColorError;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Attribute.textColorSearchUrl = global::RenderImage.Android.Resource.Attribute.textColorSearchUrl;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Attribute.theme = global::RenderImage.Android.Resource.Attribute.theme;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Attribute.thickness = global::RenderImage.Android.Resource.Attribute.thickness;
@@ -7576,8 +9887,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::RenderImage.Android.Resource.Boolean.abc_action_bar_embed_tabs;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::RenderImage.Android.Resource.Boolean.abc_allow_stacked_button_bar;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::RenderImage.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::RenderImage.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::RenderImage.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::RenderImage.Android.Resource.Color.abc_background_cache_hint_selector_material_dark;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::RenderImage.Android.Resource.Color.abc_background_cache_hint_selector_material_light;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::RenderImage.Android.Resource.Color.abc_btn_colored_borderless_text_material;
@@ -7641,7 +9950,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Color.dim_foreground_disabled_material_light = global::RenderImage.Android.Resource.Color.dim_foreground_disabled_material_light;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Color.dim_foreground_material_dark = global::RenderImage.Android.Resource.Color.dim_foreground_material_dark;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Color.dim_foreground_material_light = global::RenderImage.Android.Resource.Color.dim_foreground_material_light;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Color.error_color_material = global::RenderImage.Android.Resource.Color.error_color_material;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Color.foreground_material_dark = global::RenderImage.Android.Resource.Color.foreground_material_dark;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Color.foreground_material_light = global::RenderImage.Android.Resource.Color.foreground_material_light;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Color.grey_text_color = global::RenderImage.Android.Resource.Color.grey_text_color;
@@ -7715,7 +10023,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::RenderImage.Android.Resource.Dimension.abc_action_bar_progress_bar_size;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::RenderImage.Android.Resource.Dimension.abc_action_bar_stacked_max_height;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::RenderImage.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
@@ -8261,6 +10568,8 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.beginning = global::RenderImage.Android.Resource.Id.beginning;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.blocking = global::RenderImage.Android.Resource.Id.blocking;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.bottom = global::RenderImage.Android.Resource.Id.bottom;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.bottomtab_navarea = global::RenderImage.Android.Resource.Id.bottomtab_navarea;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.bottomtab_tabbar = global::RenderImage.Android.Resource.Id.bottomtab_tabbar;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.buttonPanel = global::RenderImage.Android.Resource.Id.buttonPanel;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.cancel_action = global::RenderImage.Android.Resource.Id.cancel_action;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.center = global::RenderImage.Android.Resource.Id.center;
@@ -8330,6 +10639,8 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.fill_horizontal = global::RenderImage.Android.Resource.Id.fill_horizontal;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.fill_vertical = global::RenderImage.Android.Resource.Id.fill_vertical;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.@fixed = global::RenderImage.Android.Resource.Id.@fixed;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.flyoutcontent_appbar = global::RenderImage.Android.Resource.Id.flyoutcontent_appbar;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.flyoutcontent_recycler = global::RenderImage.Android.Resource.Id.flyoutcontent_recycler;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.forever = global::RenderImage.Android.Resource.Id.forever;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.ghost_view = global::RenderImage.Android.Resource.Id.ghost_view;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.groupHeaderCollapseImage = global::RenderImage.Android.Resource.Id.groupHeaderCollapseImage;
@@ -8354,6 +10665,10 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.line3 = global::RenderImage.Android.Resource.Id.line3;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.listMode = global::RenderImage.Android.Resource.Id.listMode;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.list_item = global::RenderImage.Android.Resource.Id.list_item;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.main_appbar = global::RenderImage.Android.Resource.Id.main_appbar;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.main_scrollview = global::RenderImage.Android.Resource.Id.main_scrollview;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.main_tablayout = global::RenderImage.Android.Resource.Id.main_tablayout;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.main_toolbar = global::RenderImage.Android.Resource.Id.main_toolbar;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.masked = global::RenderImage.Android.Resource.Id.masked;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.media_actions = global::RenderImage.Android.Resource.Id.media_actions;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.message = global::RenderImage.Android.Resource.Id.message;
@@ -8431,6 +10746,9 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.search_voice_btn = global::RenderImage.Android.Resource.Id.search_voice_btn;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.segmented = global::RenderImage.Android.Resource.Id.segmented;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.select_dialog_listview = global::RenderImage.Android.Resource.Id.select_dialog_listview;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.shellcontent_appbar = global::RenderImage.Android.Resource.Id.shellcontent_appbar;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.shellcontent_scrollview = global::RenderImage.Android.Resource.Id.shellcontent_scrollview;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.shellcontent_toolbar = global::RenderImage.Android.Resource.Id.shellcontent_toolbar;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.shortcut = global::RenderImage.Android.Resource.Id.shortcut;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.showCustom = global::RenderImage.Android.Resource.Id.showCustom;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Id.showHome = global::RenderImage.Android.Resource.Id.showHome;
@@ -8526,6 +10844,7 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.abc_search_view = global::RenderImage.Android.Resource.Layout.abc_search_view;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.abc_select_dialog_material = global::RenderImage.Android.Resource.Layout.abc_select_dialog_material;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.androidnativezoomview_scrollbars = global::RenderImage.Android.Resource.Layout.androidnativezoomview_scrollbars;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.BottomTabLayout = global::RenderImage.Android.Resource.Layout.BottomTabLayout;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.calendar_all_day_event_view = global::RenderImage.Android.Resource.Layout.calendar_all_day_event_view;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.calendar_day_event_view = global::RenderImage.Android.Resource.Layout.calendar_day_event_view;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.data_form_autocomplete_editor = global::RenderImage.Android.Resource.Layout.data_form_autocomplete_editor;
@@ -8573,6 +10892,7 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.design_navigation_menu_item = global::RenderImage.Android.Resource.Layout.design_navigation_menu_item;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.design_text_input_password_icon = global::RenderImage.Android.Resource.Layout.design_text_input_password_icon;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.drawer_blur_fade_layer = global::RenderImage.Android.Resource.Layout.drawer_blur_fade_layer;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.FlyoutContent = global::RenderImage.Android.Resource.Layout.FlyoutContent;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.inline_event = global::RenderImage.Android.Resource.Layout.inline_event;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.linear_layout = global::RenderImage.Android.Resource.Layout.linear_layout;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.mr_chooser_dialog = global::RenderImage.Android.Resource.Layout.mr_chooser_dialog;
@@ -8602,10 +10922,12 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.on_demand_automatic = global::RenderImage.Android.Resource.Layout.on_demand_automatic;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.on_demand_manual = global::RenderImage.Android.Resource.Layout.on_demand_manual;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.popup_event = global::RenderImage.Android.Resource.Layout.popup_event;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.RootLayout = global::RenderImage.Android.Resource.Layout.RootLayout;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.scrollview_scrollbars = global::RenderImage.Android.Resource.Layout.scrollview_scrollbars;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.select_dialog_item_material = global::RenderImage.Android.Resource.Layout.select_dialog_item_material;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.select_dialog_multichoice_material = global::RenderImage.Android.Resource.Layout.select_dialog_multichoice_material;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.select_dialog_singlechoice_material = global::RenderImage.Android.Resource.Layout.select_dialog_singlechoice_material;
+			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.ShellContent = global::RenderImage.Android.Resource.Layout.ShellContent;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.simple_empty_content = global::RenderImage.Android.Resource.Layout.simple_empty_content;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.simple_group_header_item = global::RenderImage.Android.Resource.Layout.simple_group_header_item;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.simple_list_item = global::RenderImage.Android.Resource.Layout.simple_list_item;
@@ -8613,7 +10935,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::RenderImage.Android.Resource.Layout.support_simple_spinner_dropdown_item;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.tab_item_view = global::RenderImage.Android.Resource.Layout.tab_item_view;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.table_layout = global::RenderImage.Android.Resource.Layout.table_layout;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.tooltip = global::RenderImage.Android.Resource.Layout.tooltip;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.tooltip_container = global::RenderImage.Android.Resource.Layout.tooltip_container;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Layout.trial_message = global::RenderImage.Android.Resource.Layout.trial_message;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.String.ApplicationName = global::RenderImage.Android.Resource.String.ApplicationName;
@@ -8766,18 +11087,11 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::RenderImage.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::RenderImage.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V14_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V14_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V21_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Light;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V21_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V21_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V22_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V22_Theme_AppCompat;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V22_Theme_AppCompat_Light;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V23_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V23_Theme_AppCompat;
@@ -8785,7 +11099,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V26_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V26_Theme_AppCompat;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V26_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V26_Theme_AppCompat_Light;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V26_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V26_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V7_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat_Light;
@@ -8851,7 +11164,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Base_Widget_Design_TabLayout = global::RenderImage.Android.Resource.Style.Base_Widget_Design_TabLayout;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.CardView = global::RenderImage.Android.Resource.Style.CardView;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.CardView_Dark = global::RenderImage.Android.Resource.Style.CardView_Dark;
@@ -8869,10 +11181,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Platform_V11_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V11_AppCompat;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Platform_V11_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V11_AppCompat_Light;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Platform_V14_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V14_AppCompat;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Platform_V14_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V14_AppCompat_Light;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Platform_V21_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V21_AppCompat;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Platform_V21_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V21_AppCompat_Light;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Platform_V25_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V25_AppCompat;
@@ -9085,7 +11393,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Widget_Design_BottomNavigationView = global::RenderImage.Android.Resource.Style.Widget_Design_BottomNavigationView;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::RenderImage.Android.Resource.Style.Widget_Design_BottomSheet_Modal;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::RenderImage.Android.Resource.Style.Widget_Design_CollapsingToolbar;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Widget_Design_CoordinatorLayout = global::RenderImage.Android.Resource.Style.Widget_Design_CoordinatorLayout;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Widget_Design_FloatingActionButton = global::RenderImage.Android.Resource.Style.Widget_Design_FloatingActionButton;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Widget_Design_NavigationView = global::RenderImage.Android.Resource.Style.Widget_Design_NavigationView;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::RenderImage.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
@@ -9378,7 +11685,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Styleable.DesignTheme = global::RenderImage.Android.Resource.Styleable.DesignTheme;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::RenderImage.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::RenderImage.Android.Resource.Styleable.DesignTheme_bottomSheetStyle;
-			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Styleable.DesignTheme_textColorError = global::RenderImage.Android.Resource.Styleable.DesignTheme_textColorError;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Styleable.DrawerArrowToggle = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
 			global::Telerik.XamarinForms.InputRenderer.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
@@ -9693,8 +11999,10 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Animation.design_snackbar_out = global::RenderImage.Android.Resource.Animation.design_snackbar_out;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Animation.drawer_slide_in_top = global::RenderImage.Android.Resource.Animation.drawer_slide_in_top;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Animation.drawer_slide_out_top = global::RenderImage.Android.Resource.Animation.drawer_slide_out_top;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Animation.tooltip_enter = global::RenderImage.Android.Resource.Animation.tooltip_enter;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Animation.tooltip_exit = global::RenderImage.Android.Resource.Animation.tooltip_exit;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Animation.EnterFromLeft = global::RenderImage.Android.Resource.Animation.EnterFromLeft;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Animation.EnterFromRight = global::RenderImage.Android.Resource.Animation.EnterFromRight;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Animation.ExitToLeft = global::RenderImage.Android.Resource.Animation.ExitToLeft;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Animation.ExitToRight = global::RenderImage.Android.Resource.Animation.ExitToRight;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Animator.design_appbar_state_list_animator = global::RenderImage.Android.Resource.Animator.design_appbar_state_list_animator;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Attribute.actionBarDivider = global::RenderImage.Android.Resource.Attribute.actionBarDivider;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Attribute.actionBarItemBackground = global::RenderImage.Android.Resource.Attribute.actionBarItemBackground;
@@ -9994,6 +12302,7 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Attribute.statusBarBackground = global::RenderImage.Android.Resource.Attribute.statusBarBackground;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Attribute.statusBarScrim = global::RenderImage.Android.Resource.Attribute.statusBarScrim;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Attribute.strokeColor = global::RenderImage.Android.Resource.Attribute.strokeColor;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Attribute.strokeWidth = global::RenderImage.Android.Resource.Attribute.strokeWidth;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Attribute.subMenuArrow = global::RenderImage.Android.Resource.Attribute.subMenuArrow;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Attribute.submitBackground = global::RenderImage.Android.Resource.Attribute.submitBackground;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Attribute.subtitle = global::RenderImage.Android.Resource.Attribute.subtitle;
@@ -10031,7 +12340,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::RenderImage.Android.Resource.Attribute.textAppearanceSearchResultTitle;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::RenderImage.Android.Resource.Attribute.textAppearanceSmallPopupMenu;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Attribute.textColorAlertDialogListItem = global::RenderImage.Android.Resource.Attribute.textColorAlertDialogListItem;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Attribute.textColorError = global::RenderImage.Android.Resource.Attribute.textColorError;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Attribute.textColorSearchUrl = global::RenderImage.Android.Resource.Attribute.textColorSearchUrl;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Attribute.theme = global::RenderImage.Android.Resource.Attribute.theme;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Attribute.thickness = global::RenderImage.Android.Resource.Attribute.thickness;
@@ -10078,8 +12386,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::RenderImage.Android.Resource.Boolean.abc_action_bar_embed_tabs;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::RenderImage.Android.Resource.Boolean.abc_allow_stacked_button_bar;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::RenderImage.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::RenderImage.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::RenderImage.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::RenderImage.Android.Resource.Color.abc_background_cache_hint_selector_material_dark;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::RenderImage.Android.Resource.Color.abc_background_cache_hint_selector_material_light;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::RenderImage.Android.Resource.Color.abc_btn_colored_borderless_text_material;
@@ -10139,7 +12445,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Color.dim_foreground_disabled_material_light = global::RenderImage.Android.Resource.Color.dim_foreground_disabled_material_light;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Color.dim_foreground_material_dark = global::RenderImage.Android.Resource.Color.dim_foreground_material_dark;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Color.dim_foreground_material_light = global::RenderImage.Android.Resource.Color.dim_foreground_material_light;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Color.error_color_material = global::RenderImage.Android.Resource.Color.error_color_material;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Color.foreground_material_dark = global::RenderImage.Android.Resource.Color.foreground_material_dark;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Color.foreground_material_light = global::RenderImage.Android.Resource.Color.foreground_material_light;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Color.grey_text_color = global::RenderImage.Android.Resource.Color.grey_text_color;
@@ -10193,7 +12498,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::RenderImage.Android.Resource.Dimension.abc_action_bar_progress_bar_size;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::RenderImage.Android.Resource.Dimension.abc_action_bar_stacked_max_height;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::RenderImage.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
@@ -10696,6 +13000,8 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.beginning = global::RenderImage.Android.Resource.Id.beginning;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.blocking = global::RenderImage.Android.Resource.Id.blocking;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.bottom = global::RenderImage.Android.Resource.Id.bottom;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.bottomtab_navarea = global::RenderImage.Android.Resource.Id.bottomtab_navarea;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.bottomtab_tabbar = global::RenderImage.Android.Resource.Id.bottomtab_tabbar;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.buttonPanel = global::RenderImage.Android.Resource.Id.buttonPanel;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.cancel_action = global::RenderImage.Android.Resource.Id.cancel_action;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.center = global::RenderImage.Android.Resource.Id.center;
@@ -10735,6 +13041,8 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.fill_horizontal = global::RenderImage.Android.Resource.Id.fill_horizontal;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.fill_vertical = global::RenderImage.Android.Resource.Id.fill_vertical;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.@fixed = global::RenderImage.Android.Resource.Id.@fixed;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.flyoutcontent_appbar = global::RenderImage.Android.Resource.Id.flyoutcontent_appbar;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.flyoutcontent_recycler = global::RenderImage.Android.Resource.Id.flyoutcontent_recycler;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.forever = global::RenderImage.Android.Resource.Id.forever;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.ghost_view = global::RenderImage.Android.Resource.Id.ghost_view;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.home = global::RenderImage.Android.Resource.Id.home;
@@ -10754,6 +13062,10 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.line3 = global::RenderImage.Android.Resource.Id.line3;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.listMode = global::RenderImage.Android.Resource.Id.listMode;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.list_item = global::RenderImage.Android.Resource.Id.list_item;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.main_appbar = global::RenderImage.Android.Resource.Id.main_appbar;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.main_scrollview = global::RenderImage.Android.Resource.Id.main_scrollview;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.main_tablayout = global::RenderImage.Android.Resource.Id.main_tablayout;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.main_toolbar = global::RenderImage.Android.Resource.Id.main_toolbar;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.masked = global::RenderImage.Android.Resource.Id.masked;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.media_actions = global::RenderImage.Android.Resource.Id.media_actions;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.message = global::RenderImage.Android.Resource.Id.message;
@@ -10824,6 +13136,9 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.search_src_text = global::RenderImage.Android.Resource.Id.search_src_text;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.search_voice_btn = global::RenderImage.Android.Resource.Id.search_voice_btn;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.select_dialog_listview = global::RenderImage.Android.Resource.Id.select_dialog_listview;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.shellcontent_appbar = global::RenderImage.Android.Resource.Id.shellcontent_appbar;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.shellcontent_scrollview = global::RenderImage.Android.Resource.Id.shellcontent_scrollview;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.shellcontent_toolbar = global::RenderImage.Android.Resource.Id.shellcontent_toolbar;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.shortcut = global::RenderImage.Android.Resource.Id.shortcut;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.showCustom = global::RenderImage.Android.Resource.Id.showCustom;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Id.showHome = global::RenderImage.Android.Resource.Id.showHome;
@@ -10916,6 +13231,7 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.abc_search_view = global::RenderImage.Android.Resource.Layout.abc_search_view;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.abc_select_dialog_material = global::RenderImage.Android.Resource.Layout.abc_select_dialog_material;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.androidnativezoomview_scrollbars = global::RenderImage.Android.Resource.Layout.androidnativezoomview_scrollbars;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.BottomTabLayout = global::RenderImage.Android.Resource.Layout.BottomTabLayout;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.default_tooltip_content = global::RenderImage.Android.Resource.Layout.default_tooltip_content;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.design_bottom_navigation_item = global::RenderImage.Android.Resource.Layout.design_bottom_navigation_item;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.design_bottom_sheet_dialog = global::RenderImage.Android.Resource.Layout.design_bottom_sheet_dialog;
@@ -10932,6 +13248,7 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.design_navigation_menu_item = global::RenderImage.Android.Resource.Layout.design_navigation_menu_item;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.design_text_input_password_icon = global::RenderImage.Android.Resource.Layout.design_text_input_password_icon;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.drawer_blur_fade_layer = global::RenderImage.Android.Resource.Layout.drawer_blur_fade_layer;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.FlyoutContent = global::RenderImage.Android.Resource.Layout.FlyoutContent;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.mr_chooser_dialog = global::RenderImage.Android.Resource.Layout.mr_chooser_dialog;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.mr_chooser_list_item = global::RenderImage.Android.Resource.Layout.mr_chooser_list_item;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.mr_controller_material_dialog_b = global::RenderImage.Android.Resource.Layout.mr_controller_material_dialog_b;
@@ -10955,13 +13272,14 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.notification_template_media_custom = global::RenderImage.Android.Resource.Layout.notification_template_media_custom;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.notification_template_part_chronometer = global::RenderImage.Android.Resource.Layout.notification_template_part_chronometer;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.notification_template_part_time = global::RenderImage.Android.Resource.Layout.notification_template_part_time;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.RootLayout = global::RenderImage.Android.Resource.Layout.RootLayout;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.scrollview_scrollbars = global::RenderImage.Android.Resource.Layout.scrollview_scrollbars;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.select_dialog_item_material = global::RenderImage.Android.Resource.Layout.select_dialog_item_material;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.select_dialog_multichoice_material = global::RenderImage.Android.Resource.Layout.select_dialog_multichoice_material;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.select_dialog_singlechoice_material = global::RenderImage.Android.Resource.Layout.select_dialog_singlechoice_material;
+			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.ShellContent = global::RenderImage.Android.Resource.Layout.ShellContent;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::RenderImage.Android.Resource.Layout.support_simple_spinner_dropdown_item;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.tab_item_view = global::RenderImage.Android.Resource.Layout.tab_item_view;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.tooltip = global::RenderImage.Android.Resource.Layout.tooltip;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.tooltip_container = global::RenderImage.Android.Resource.Layout.tooltip_container;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Layout.trial_message = global::RenderImage.Android.Resource.Layout.trial_message;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.String.ApplicationName = global::RenderImage.Android.Resource.String.ApplicationName;
@@ -11111,18 +13429,11 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::RenderImage.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::RenderImage.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V14_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V14_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V21_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Light;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V21_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V21_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V22_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V22_Theme_AppCompat;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V22_Theme_AppCompat_Light;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V23_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V23_Theme_AppCompat;
@@ -11130,7 +13441,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V26_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V26_Theme_AppCompat;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V26_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V26_Theme_AppCompat_Light;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V26_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V26_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V7_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat_Light;
@@ -11196,7 +13506,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_Widget_Design_AppBarLayout;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Base_Widget_Design_TabLayout = global::RenderImage.Android.Resource.Style.Base_Widget_Design_TabLayout;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.CardView = global::RenderImage.Android.Resource.Style.CardView;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.CardView_Dark = global::RenderImage.Android.Resource.Style.CardView_Dark;
@@ -11206,10 +13515,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Platform_V11_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V11_AppCompat;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Platform_V11_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V11_AppCompat_Light;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Platform_V14_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V14_AppCompat;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Platform_V14_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V14_AppCompat_Light;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Platform_V21_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V21_AppCompat;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Platform_V21_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V21_AppCompat_Light;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Platform_V25_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V25_AppCompat;
@@ -11420,7 +13725,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Widget_Design_BottomNavigationView = global::RenderImage.Android.Resource.Style.Widget_Design_BottomNavigationView;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::RenderImage.Android.Resource.Style.Widget_Design_BottomSheet_Modal;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::RenderImage.Android.Resource.Style.Widget_Design_CollapsingToolbar;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Widget_Design_CoordinatorLayout = global::RenderImage.Android.Resource.Style.Widget_Design_CoordinatorLayout;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Widget_Design_FloatingActionButton = global::RenderImage.Android.Resource.Style.Widget_Design_FloatingActionButton;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Widget_Design_NavigationView = global::RenderImage.Android.Resource.Style.Widget_Design_NavigationView;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::RenderImage.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
@@ -11709,7 +14013,6 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Styleable.DesignTheme = global::RenderImage.Android.Resource.Styleable.DesignTheme;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::RenderImage.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::RenderImage.Android.Resource.Styleable.DesignTheme_bottomSheetStyle;
-			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Styleable.DesignTheme_textColorError = global::RenderImage.Android.Resource.Styleable.DesignTheme_textColorError;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Styleable.DrawerArrowToggle = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
@@ -11996,7 +14299,1998 @@ namespace RenderImage.Android
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Styleable.ViewStubCompat_android_id = global::RenderImage.Android.Resource.Styleable.ViewStubCompat_android_id;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::RenderImage.Android.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Telerik.XamarinForms.PrimitivesRenderer.Android.Resource.Styleable.ViewStubCompat_android_layout = global::RenderImage.Android.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_in = global::RenderImage.Android.Resource.Animation.abc_fade_in;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_out = global::RenderImage.Android.Resource.Animation.abc_fade_out;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::RenderImage.Android.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_popup_enter = global::RenderImage.Android.Resource.Animation.abc_popup_enter;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_popup_exit = global::RenderImage.Android.Resource.Animation.abc_popup_exit;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_shrink_fade_out_from_bottom = global::RenderImage.Android.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_in_bottom = global::RenderImage.Android.Resource.Animation.abc_slide_in_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_in_top = global::RenderImage.Android.Resource.Animation.abc_slide_in_top;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_out_bottom = global::RenderImage.Android.Resource.Animation.abc_slide_out_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_out_top = global::RenderImage.Android.Resource.Animation.abc_slide_out_top;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_in = global::RenderImage.Android.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_out = global::RenderImage.Android.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_in = global::RenderImage.Android.Resource.Animation.design_snackbar_in;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_out = global::RenderImage.Android.Resource.Animation.design_snackbar_out;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromLeft = global::RenderImage.Android.Resource.Animation.EnterFromLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromRight = global::RenderImage.Android.Resource.Animation.EnterFromRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToLeft = global::RenderImage.Android.Resource.Animation.ExitToLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToRight = global::RenderImage.Android.Resource.Animation.ExitToRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.tooltip_enter = global::RenderImage.Android.Resource.Animation.tooltip_enter;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.tooltip_exit = global::RenderImage.Android.Resource.Animation.tooltip_exit;
+			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_appbar_state_list_animator = global::RenderImage.Android.Resource.Animator.design_appbar_state_list_animator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarDivider = global::RenderImage.Android.Resource.Attribute.actionBarDivider;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarItemBackground = global::RenderImage.Android.Resource.Attribute.actionBarItemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarPopupTheme = global::RenderImage.Android.Resource.Attribute.actionBarPopupTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::RenderImage.Android.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSplitStyle = global::RenderImage.Android.Resource.Attribute.actionBarSplitStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarStyle = global::RenderImage.Android.Resource.Attribute.actionBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarTabBarStyle = global::RenderImage.Android.Resource.Attribute.actionBarTabBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarTabStyle = global::RenderImage.Android.Resource.Attribute.actionBarTabStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarTabTextStyle = global::RenderImage.Android.Resource.Attribute.actionBarTabTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarTheme = global::RenderImage.Android.Resource.Attribute.actionBarTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarWidgetTheme = global::RenderImage.Android.Resource.Attribute.actionBarWidgetTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionButtonStyle = global::RenderImage.Android.Resource.Attribute.actionButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionDropDownStyle = global::RenderImage.Android.Resource.Attribute.actionDropDownStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionLayout = global::RenderImage.Android.Resource.Attribute.actionLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionMenuTextAppearance = global::RenderImage.Android.Resource.Attribute.actionMenuTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionMenuTextColor = global::RenderImage.Android.Resource.Attribute.actionMenuTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeBackground = global::RenderImage.Android.Resource.Attribute.actionModeBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeCloseButtonStyle = global::RenderImage.Android.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeCloseDrawable = global::RenderImage.Android.Resource.Attribute.actionModeCloseDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeCopyDrawable = global::RenderImage.Android.Resource.Attribute.actionModeCopyDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeCutDrawable = global::RenderImage.Android.Resource.Attribute.actionModeCutDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeFindDrawable = global::RenderImage.Android.Resource.Attribute.actionModeFindDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModePasteDrawable = global::RenderImage.Android.Resource.Attribute.actionModePasteDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModePopupWindowStyle = global::RenderImage.Android.Resource.Attribute.actionModePopupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeSelectAllDrawable = global::RenderImage.Android.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeShareDrawable = global::RenderImage.Android.Resource.Attribute.actionModeShareDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeSplitBackground = global::RenderImage.Android.Resource.Attribute.actionModeSplitBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeStyle = global::RenderImage.Android.Resource.Attribute.actionModeStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeWebSearchDrawable = global::RenderImage.Android.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionOverflowButtonStyle = global::RenderImage.Android.Resource.Attribute.actionOverflowButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionOverflowMenuStyle = global::RenderImage.Android.Resource.Attribute.actionOverflowMenuStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionProviderClass = global::RenderImage.Android.Resource.Attribute.actionProviderClass;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionViewClass = global::RenderImage.Android.Resource.Attribute.actionViewClass;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.activityChooserViewStyle = global::RenderImage.Android.Resource.Attribute.activityChooserViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alertDialogButtonGroupStyle = global::RenderImage.Android.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alertDialogCenterButtons = global::RenderImage.Android.Resource.Attribute.alertDialogCenterButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alertDialogStyle = global::RenderImage.Android.Resource.Attribute.alertDialogStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alertDialogTheme = global::RenderImage.Android.Resource.Attribute.alertDialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.allowStacking = global::RenderImage.Android.Resource.Attribute.allowStacking;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alpha = global::RenderImage.Android.Resource.Attribute.alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alphabeticModifiers = global::RenderImage.Android.Resource.Attribute.alphabeticModifiers;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.arrowHeadLength = global::RenderImage.Android.Resource.Attribute.arrowHeadLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.arrowShaftLength = global::RenderImage.Android.Resource.Attribute.arrowShaftLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoCompleteTextViewStyle = global::RenderImage.Android.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizeMaxTextSize = global::RenderImage.Android.Resource.Attribute.autoSizeMaxTextSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizeMinTextSize = global::RenderImage.Android.Resource.Attribute.autoSizeMinTextSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizePresetSizes = global::RenderImage.Android.Resource.Attribute.autoSizePresetSizes;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizeStepGranularity = global::RenderImage.Android.Resource.Attribute.autoSizeStepGranularity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizeTextType = global::RenderImage.Android.Resource.Attribute.autoSizeTextType;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.background = global::RenderImage.Android.Resource.Attribute.background;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.backgroundSplit = global::RenderImage.Android.Resource.Attribute.backgroundSplit;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.backgroundStacked = global::RenderImage.Android.Resource.Attribute.backgroundStacked;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.backgroundTint = global::RenderImage.Android.Resource.Attribute.backgroundTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.backgroundTintMode = global::RenderImage.Android.Resource.Attribute.backgroundTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.barLength = global::RenderImage.Android.Resource.Attribute.barLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_autoHide = global::RenderImage.Android.Resource.Attribute.behavior_autoHide;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_hideable = global::RenderImage.Android.Resource.Attribute.behavior_hideable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_overlapTop = global::RenderImage.Android.Resource.Attribute.behavior_overlapTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_peekHeight = global::RenderImage.Android.Resource.Attribute.behavior_peekHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_skipCollapsed = global::RenderImage.Android.Resource.Attribute.behavior_skipCollapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.borderWidth = global::RenderImage.Android.Resource.Attribute.borderWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.borderlessButtonStyle = global::RenderImage.Android.Resource.Attribute.borderlessButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.bottomSheetDialogTheme = global::RenderImage.Android.Resource.Attribute.bottomSheetDialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.bottomSheetStyle = global::RenderImage.Android.Resource.Attribute.bottomSheetStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarButtonStyle = global::RenderImage.Android.Resource.Attribute.buttonBarButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarNegativeButtonStyle = global::RenderImage.Android.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::RenderImage.Android.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::RenderImage.Android.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarStyle = global::RenderImage.Android.Resource.Attribute.buttonBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonGravity = global::RenderImage.Android.Resource.Attribute.buttonGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonPanelSideLayout = global::RenderImage.Android.Resource.Attribute.buttonPanelSideLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonStyle = global::RenderImage.Android.Resource.Attribute.buttonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonStyleSmall = global::RenderImage.Android.Resource.Attribute.buttonStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonTint = global::RenderImage.Android.Resource.Attribute.buttonTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonTintMode = global::RenderImage.Android.Resource.Attribute.buttonTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardBackgroundColor = global::RenderImage.Android.Resource.Attribute.cardBackgroundColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardCornerRadius = global::RenderImage.Android.Resource.Attribute.cardCornerRadius;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardElevation = global::RenderImage.Android.Resource.Attribute.cardElevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardMaxElevation = global::RenderImage.Android.Resource.Attribute.cardMaxElevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardPreventCornerOverlap = global::RenderImage.Android.Resource.Attribute.cardPreventCornerOverlap;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardUseCompatPadding = global::RenderImage.Android.Resource.Attribute.cardUseCompatPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.checkboxStyle = global::RenderImage.Android.Resource.Attribute.checkboxStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.checkedTextViewStyle = global::RenderImage.Android.Resource.Attribute.checkedTextViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.closeIcon = global::RenderImage.Android.Resource.Attribute.closeIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.closeItemLayout = global::RenderImage.Android.Resource.Attribute.closeItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapseContentDescription = global::RenderImage.Android.Resource.Attribute.collapseContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapseIcon = global::RenderImage.Android.Resource.Attribute.collapseIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapsedTitleGravity = global::RenderImage.Android.Resource.Attribute.collapsedTitleGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapsedTitleTextAppearance = global::RenderImage.Android.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.color = global::RenderImage.Android.Resource.Attribute.color;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorAccent = global::RenderImage.Android.Resource.Attribute.colorAccent;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorBackgroundFloating = global::RenderImage.Android.Resource.Attribute.colorBackgroundFloating;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorButtonNormal = global::RenderImage.Android.Resource.Attribute.colorButtonNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorControlActivated = global::RenderImage.Android.Resource.Attribute.colorControlActivated;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorControlHighlight = global::RenderImage.Android.Resource.Attribute.colorControlHighlight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorControlNormal = global::RenderImage.Android.Resource.Attribute.colorControlNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorError = global::RenderImage.Android.Resource.Attribute.colorError;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorPrimary = global::RenderImage.Android.Resource.Attribute.colorPrimary;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorPrimaryDark = global::RenderImage.Android.Resource.Attribute.colorPrimaryDark;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorSwitchThumbNormal = global::RenderImage.Android.Resource.Attribute.colorSwitchThumbNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.commitIcon = global::RenderImage.Android.Resource.Attribute.commitIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentDescription = global::RenderImage.Android.Resource.Attribute.contentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetEnd = global::RenderImage.Android.Resource.Attribute.contentInsetEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetEndWithActions = global::RenderImage.Android.Resource.Attribute.contentInsetEndWithActions;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetLeft = global::RenderImage.Android.Resource.Attribute.contentInsetLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetRight = global::RenderImage.Android.Resource.Attribute.contentInsetRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetStart = global::RenderImage.Android.Resource.Attribute.contentInsetStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetStartWithNavigation = global::RenderImage.Android.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPadding = global::RenderImage.Android.Resource.Attribute.contentPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPaddingBottom = global::RenderImage.Android.Resource.Attribute.contentPaddingBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPaddingLeft = global::RenderImage.Android.Resource.Attribute.contentPaddingLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPaddingRight = global::RenderImage.Android.Resource.Attribute.contentPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPaddingTop = global::RenderImage.Android.Resource.Attribute.contentPaddingTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentScrim = global::RenderImage.Android.Resource.Attribute.contentScrim;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.controlBackground = global::RenderImage.Android.Resource.Attribute.controlBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.counterEnabled = global::RenderImage.Android.Resource.Attribute.counterEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.counterMaxLength = global::RenderImage.Android.Resource.Attribute.counterMaxLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.counterOverflowTextAppearance = global::RenderImage.Android.Resource.Attribute.counterOverflowTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.counterTextAppearance = global::RenderImage.Android.Resource.Attribute.counterTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.customNavigationLayout = global::RenderImage.Android.Resource.Attribute.customNavigationLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.defaultQueryHint = global::RenderImage.Android.Resource.Attribute.defaultQueryHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dialogPreferredPadding = global::RenderImage.Android.Resource.Attribute.dialogPreferredPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dialogTheme = global::RenderImage.Android.Resource.Attribute.dialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.displayOptions = global::RenderImage.Android.Resource.Attribute.displayOptions;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.divider = global::RenderImage.Android.Resource.Attribute.divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerHorizontal = global::RenderImage.Android.Resource.Attribute.dividerHorizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerPadding = global::RenderImage.Android.Resource.Attribute.dividerPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerVertical = global::RenderImage.Android.Resource.Attribute.dividerVertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableSize = global::RenderImage.Android.Resource.Attribute.drawableSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawerArrowStyle = global::RenderImage.Android.Resource.Attribute.drawerArrowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dropDownListViewStyle = global::RenderImage.Android.Resource.Attribute.dropDownListViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::RenderImage.Android.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.editTextBackground = global::RenderImage.Android.Resource.Attribute.editTextBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.editTextColor = global::RenderImage.Android.Resource.Attribute.editTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.editTextStyle = global::RenderImage.Android.Resource.Attribute.editTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.elevation = global::RenderImage.Android.Resource.Attribute.elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.errorEnabled = global::RenderImage.Android.Resource.Attribute.errorEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.errorTextAppearance = global::RenderImage.Android.Resource.Attribute.errorTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::RenderImage.Android.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expanded = global::RenderImage.Android.Resource.Attribute.expanded;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleGravity = global::RenderImage.Android.Resource.Attribute.expandedTitleGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMargin = global::RenderImage.Android.Resource.Attribute.expandedTitleMargin;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMarginBottom = global::RenderImage.Android.Resource.Attribute.expandedTitleMarginBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMarginEnd = global::RenderImage.Android.Resource.Attribute.expandedTitleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMarginStart = global::RenderImage.Android.Resource.Attribute.expandedTitleMarginStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMarginTop = global::RenderImage.Android.Resource.Attribute.expandedTitleMarginTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleTextAppearance = global::RenderImage.Android.Resource.Attribute.expandedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fabSize = global::RenderImage.Android.Resource.Attribute.fabSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollEnabled = global::RenderImage.Android.Resource.Attribute.fastScrollEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::RenderImage.Android.Resource.Attribute.fastScrollHorizontalThumbDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::RenderImage.Android.Resource.Attribute.fastScrollHorizontalTrackDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollVerticalThumbDrawable = global::RenderImage.Android.Resource.Attribute.fastScrollVerticalThumbDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollVerticalTrackDrawable = global::RenderImage.Android.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.font = global::RenderImage.Android.Resource.Attribute.font;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontFamily = global::RenderImage.Android.Resource.Attribute.fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderAuthority = global::RenderImage.Android.Resource.Attribute.fontProviderAuthority;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderCerts = global::RenderImage.Android.Resource.Attribute.fontProviderCerts;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderFetchStrategy = global::RenderImage.Android.Resource.Attribute.fontProviderFetchStrategy;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderFetchTimeout = global::RenderImage.Android.Resource.Attribute.fontProviderFetchTimeout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderPackage = global::RenderImage.Android.Resource.Attribute.fontProviderPackage;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderQuery = global::RenderImage.Android.Resource.Attribute.fontProviderQuery;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontStyle = global::RenderImage.Android.Resource.Attribute.fontStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontWeight = global::RenderImage.Android.Resource.Attribute.fontWeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.foregroundInsidePadding = global::RenderImage.Android.Resource.Attribute.foregroundInsidePadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.gapBetweenBars = global::RenderImage.Android.Resource.Attribute.gapBetweenBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.goIcon = global::RenderImage.Android.Resource.Attribute.goIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.headerLayout = global::RenderImage.Android.Resource.Attribute.headerLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.height = global::RenderImage.Android.Resource.Attribute.height;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.hideOnContentScroll = global::RenderImage.Android.Resource.Attribute.hideOnContentScroll;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.hintAnimationEnabled = global::RenderImage.Android.Resource.Attribute.hintAnimationEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.hintEnabled = global::RenderImage.Android.Resource.Attribute.hintEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.hintTextAppearance = global::RenderImage.Android.Resource.Attribute.hintTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.homeAsUpIndicator = global::RenderImage.Android.Resource.Attribute.homeAsUpIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.homeLayout = global::RenderImage.Android.Resource.Attribute.homeLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.icon = global::RenderImage.Android.Resource.Attribute.icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconTint = global::RenderImage.Android.Resource.Attribute.iconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconTintMode = global::RenderImage.Android.Resource.Attribute.iconTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconifiedByDefault = global::RenderImage.Android.Resource.Attribute.iconifiedByDefault;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.imageButtonStyle = global::RenderImage.Android.Resource.Attribute.imageButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.indeterminateProgressStyle = global::RenderImage.Android.Resource.Attribute.indeterminateProgressStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.initialActivityCount = global::RenderImage.Android.Resource.Attribute.initialActivityCount;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.insetForeground = global::RenderImage.Android.Resource.Attribute.insetForeground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.isLightTheme = global::RenderImage.Android.Resource.Attribute.isLightTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemBackground = global::RenderImage.Android.Resource.Attribute.itemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemIconTint = global::RenderImage.Android.Resource.Attribute.itemIconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemPadding = global::RenderImage.Android.Resource.Attribute.itemPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemTextAppearance = global::RenderImage.Android.Resource.Attribute.itemTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemTextColor = global::RenderImage.Android.Resource.Attribute.itemTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.keylines = global::RenderImage.Android.Resource.Attribute.keylines;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout = global::RenderImage.Android.Resource.Attribute.layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layoutManager = global::RenderImage.Android.Resource.Attribute.layoutManager;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_anchor = global::RenderImage.Android.Resource.Attribute.layout_anchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_anchorGravity = global::RenderImage.Android.Resource.Attribute.layout_anchorGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_behavior = global::RenderImage.Android.Resource.Attribute.layout_behavior;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_collapseMode = global::RenderImage.Android.Resource.Attribute.layout_collapseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_collapseParallaxMultiplier = global::RenderImage.Android.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_dodgeInsetEdges = global::RenderImage.Android.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_insetEdge = global::RenderImage.Android.Resource.Attribute.layout_insetEdge;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_keyline = global::RenderImage.Android.Resource.Attribute.layout_keyline;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_scrollFlags = global::RenderImage.Android.Resource.Attribute.layout_scrollFlags;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_scrollInterpolator = global::RenderImage.Android.Resource.Attribute.layout_scrollInterpolator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::RenderImage.Android.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listDividerAlertDialog = global::RenderImage.Android.Resource.Attribute.listDividerAlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listItemLayout = global::RenderImage.Android.Resource.Attribute.listItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listLayout = global::RenderImage.Android.Resource.Attribute.listLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listMenuViewStyle = global::RenderImage.Android.Resource.Attribute.listMenuViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPopupWindowStyle = global::RenderImage.Android.Resource.Attribute.listPopupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeight = global::RenderImage.Android.Resource.Attribute.listPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeightLarge = global::RenderImage.Android.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeightSmall = global::RenderImage.Android.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::RenderImage.Android.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingRight = global::RenderImage.Android.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.logo = global::RenderImage.Android.Resource.Attribute.logo;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.logoDescription = global::RenderImage.Android.Resource.Attribute.logoDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.maxActionInlineWidth = global::RenderImage.Android.Resource.Attribute.maxActionInlineWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.maxButtonHeight = global::RenderImage.Android.Resource.Attribute.maxButtonHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.measureWithLargestChild = global::RenderImage.Android.Resource.Attribute.measureWithLargestChild;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.menu = global::RenderImage.Android.Resource.Attribute.menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.multiChoiceItemLayout = global::RenderImage.Android.Resource.Attribute.multiChoiceItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.navigationContentDescription = global::RenderImage.Android.Resource.Attribute.navigationContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.navigationIcon = global::RenderImage.Android.Resource.Attribute.navigationIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.navigationMode = global::RenderImage.Android.Resource.Attribute.navigationMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.numericModifiers = global::RenderImage.Android.Resource.Attribute.numericModifiers;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.overlapAnchor = global::RenderImage.Android.Resource.Attribute.overlapAnchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.paddingBottomNoButtons = global::RenderImage.Android.Resource.Attribute.paddingBottomNoButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.paddingEnd = global::RenderImage.Android.Resource.Attribute.paddingEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.paddingStart = global::RenderImage.Android.Resource.Attribute.paddingStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.paddingTopNoTitle = global::RenderImage.Android.Resource.Attribute.paddingTopNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.panelBackground = global::RenderImage.Android.Resource.Attribute.panelBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.panelMenuListTheme = global::RenderImage.Android.Resource.Attribute.panelMenuListTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.panelMenuListWidth = global::RenderImage.Android.Resource.Attribute.panelMenuListWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleContentDescription = global::RenderImage.Android.Resource.Attribute.passwordToggleContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleDrawable = global::RenderImage.Android.Resource.Attribute.passwordToggleDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleEnabled = global::RenderImage.Android.Resource.Attribute.passwordToggleEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleTint = global::RenderImage.Android.Resource.Attribute.passwordToggleTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleTintMode = global::RenderImage.Android.Resource.Attribute.passwordToggleTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.popupMenuStyle = global::RenderImage.Android.Resource.Attribute.popupMenuStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.popupTheme = global::RenderImage.Android.Resource.Attribute.popupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.popupWindowStyle = global::RenderImage.Android.Resource.Attribute.popupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.preserveIconSpacing = global::RenderImage.Android.Resource.Attribute.preserveIconSpacing;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.pressedTranslationZ = global::RenderImage.Android.Resource.Attribute.pressedTranslationZ;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.progressBarPadding = global::RenderImage.Android.Resource.Attribute.progressBarPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.progressBarStyle = global::RenderImage.Android.Resource.Attribute.progressBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.queryBackground = global::RenderImage.Android.Resource.Attribute.queryBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.queryHint = global::RenderImage.Android.Resource.Attribute.queryHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.radioButtonStyle = global::RenderImage.Android.Resource.Attribute.radioButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyle = global::RenderImage.Android.Resource.Attribute.ratingBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyleIndicator = global::RenderImage.Android.Resource.Attribute.ratingBarStyleIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyleSmall = global::RenderImage.Android.Resource.Attribute.ratingBarStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.reverseLayout = global::RenderImage.Android.Resource.Attribute.reverseLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.rippleColor = global::RenderImage.Android.Resource.Attribute.rippleColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrimAnimationDuration = global::RenderImage.Android.Resource.Attribute.scrimAnimationDuration;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrimVisibleHeightTrigger = global::RenderImage.Android.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchHintIcon = global::RenderImage.Android.Resource.Attribute.searchHintIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchIcon = global::RenderImage.Android.Resource.Attribute.searchIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchViewStyle = global::RenderImage.Android.Resource.Attribute.searchViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.seekBarStyle = global::RenderImage.Android.Resource.Attribute.seekBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.selectableItemBackground = global::RenderImage.Android.Resource.Attribute.selectableItemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::RenderImage.Android.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.showAsAction = global::RenderImage.Android.Resource.Attribute.showAsAction;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.showDividers = global::RenderImage.Android.Resource.Attribute.showDividers;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.showText = global::RenderImage.Android.Resource.Attribute.showText;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.showTitle = global::RenderImage.Android.Resource.Attribute.showTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.singleChoiceItemLayout = global::RenderImage.Android.Resource.Attribute.singleChoiceItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.spanCount = global::RenderImage.Android.Resource.Attribute.spanCount;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.spinBars = global::RenderImage.Android.Resource.Attribute.spinBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.spinnerDropDownItemStyle = global::RenderImage.Android.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.spinnerStyle = global::RenderImage.Android.Resource.Attribute.spinnerStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.splitTrack = global::RenderImage.Android.Resource.Attribute.splitTrack;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.srcCompat = global::RenderImage.Android.Resource.Attribute.srcCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.stackFromEnd = global::RenderImage.Android.Resource.Attribute.stackFromEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.state_above_anchor = global::RenderImage.Android.Resource.Attribute.state_above_anchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.state_collapsed = global::RenderImage.Android.Resource.Attribute.state_collapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.state_collapsible = global::RenderImage.Android.Resource.Attribute.state_collapsible;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.statusBarBackground = global::RenderImage.Android.Resource.Attribute.statusBarBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.statusBarScrim = global::RenderImage.Android.Resource.Attribute.statusBarScrim;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subMenuArrow = global::RenderImage.Android.Resource.Attribute.subMenuArrow;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.submitBackground = global::RenderImage.Android.Resource.Attribute.submitBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subtitle = global::RenderImage.Android.Resource.Attribute.subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subtitleTextAppearance = global::RenderImage.Android.Resource.Attribute.subtitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subtitleTextColor = global::RenderImage.Android.Resource.Attribute.subtitleTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subtitleTextStyle = global::RenderImage.Android.Resource.Attribute.subtitleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.suggestionRowLayout = global::RenderImage.Android.Resource.Attribute.suggestionRowLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.switchMinWidth = global::RenderImage.Android.Resource.Attribute.switchMinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.switchPadding = global::RenderImage.Android.Resource.Attribute.switchPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.switchStyle = global::RenderImage.Android.Resource.Attribute.switchStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.switchTextAppearance = global::RenderImage.Android.Resource.Attribute.switchTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabBackground = global::RenderImage.Android.Resource.Attribute.tabBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabContentStart = global::RenderImage.Android.Resource.Attribute.tabContentStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabGravity = global::RenderImage.Android.Resource.Attribute.tabGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabIndicatorColor = global::RenderImage.Android.Resource.Attribute.tabIndicatorColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabIndicatorHeight = global::RenderImage.Android.Resource.Attribute.tabIndicatorHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabMaxWidth = global::RenderImage.Android.Resource.Attribute.tabMaxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabMinWidth = global::RenderImage.Android.Resource.Attribute.tabMinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabMode = global::RenderImage.Android.Resource.Attribute.tabMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPadding = global::RenderImage.Android.Resource.Attribute.tabPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPaddingBottom = global::RenderImage.Android.Resource.Attribute.tabPaddingBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPaddingEnd = global::RenderImage.Android.Resource.Attribute.tabPaddingEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPaddingStart = global::RenderImage.Android.Resource.Attribute.tabPaddingStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPaddingTop = global::RenderImage.Android.Resource.Attribute.tabPaddingTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabSelectedTextColor = global::RenderImage.Android.Resource.Attribute.tabSelectedTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabTextAppearance = global::RenderImage.Android.Resource.Attribute.tabTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabTextColor = global::RenderImage.Android.Resource.Attribute.tabTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAllCaps = global::RenderImage.Android.Resource.Attribute.textAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceLargePopupMenu = global::RenderImage.Android.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceListItem = global::RenderImage.Android.Resource.Attribute.textAppearanceListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceListItemSecondary = global::RenderImage.Android.Resource.Attribute.textAppearanceListItemSecondary;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceListItemSmall = global::RenderImage.Android.Resource.Attribute.textAppearanceListItemSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearancePopupMenuHeader = global::RenderImage.Android.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceSearchResultSubtitle = global::RenderImage.Android.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::RenderImage.Android.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::RenderImage.Android.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textColorAlertDialogListItem = global::RenderImage.Android.Resource.Attribute.textColorAlertDialogListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textColorError = global::RenderImage.Android.Resource.Attribute.textColorError;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textColorSearchUrl = global::RenderImage.Android.Resource.Attribute.textColorSearchUrl;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.theme = global::RenderImage.Android.Resource.Attribute.theme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thickness = global::RenderImage.Android.Resource.Attribute.thickness;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thumbTextPadding = global::RenderImage.Android.Resource.Attribute.thumbTextPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thumbTint = global::RenderImage.Android.Resource.Attribute.thumbTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thumbTintMode = global::RenderImage.Android.Resource.Attribute.thumbTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tickMark = global::RenderImage.Android.Resource.Attribute.tickMark;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tickMarkTint = global::RenderImage.Android.Resource.Attribute.tickMarkTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tickMarkTintMode = global::RenderImage.Android.Resource.Attribute.tickMarkTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tint = global::RenderImage.Android.Resource.Attribute.tint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tintMode = global::RenderImage.Android.Resource.Attribute.tintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.title = global::RenderImage.Android.Resource.Attribute.title;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleEnabled = global::RenderImage.Android.Resource.Attribute.titleEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMargin = global::RenderImage.Android.Resource.Attribute.titleMargin;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginBottom = global::RenderImage.Android.Resource.Attribute.titleMarginBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginEnd = global::RenderImage.Android.Resource.Attribute.titleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginStart = global::RenderImage.Android.Resource.Attribute.titleMarginStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginTop = global::RenderImage.Android.Resource.Attribute.titleMarginTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMargins = global::RenderImage.Android.Resource.Attribute.titleMargins;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleTextAppearance = global::RenderImage.Android.Resource.Attribute.titleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleTextColor = global::RenderImage.Android.Resource.Attribute.titleTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleTextStyle = global::RenderImage.Android.Resource.Attribute.titleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.toolbarId = global::RenderImage.Android.Resource.Attribute.toolbarId;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.toolbarNavigationButtonStyle = global::RenderImage.Android.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.toolbarStyle = global::RenderImage.Android.Resource.Attribute.toolbarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tooltipForegroundColor = global::RenderImage.Android.Resource.Attribute.tooltipForegroundColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tooltipFrameBackground = global::RenderImage.Android.Resource.Attribute.tooltipFrameBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tooltipText = global::RenderImage.Android.Resource.Attribute.tooltipText;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.track = global::RenderImage.Android.Resource.Attribute.track;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.trackTint = global::RenderImage.Android.Resource.Attribute.trackTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.trackTintMode = global::RenderImage.Android.Resource.Attribute.trackTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.useCompatPadding = global::RenderImage.Android.Resource.Attribute.useCompatPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.voiceIcon = global::RenderImage.Android.Resource.Attribute.voiceIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowActionBar = global::RenderImage.Android.Resource.Attribute.windowActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowActionBarOverlay = global::RenderImage.Android.Resource.Attribute.windowActionBarOverlay;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowActionModeOverlay = global::RenderImage.Android.Resource.Attribute.windowActionModeOverlay;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowFixedHeightMajor = global::RenderImage.Android.Resource.Attribute.windowFixedHeightMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowFixedHeightMinor = global::RenderImage.Android.Resource.Attribute.windowFixedHeightMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowFixedWidthMajor = global::RenderImage.Android.Resource.Attribute.windowFixedWidthMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowFixedWidthMinor = global::RenderImage.Android.Resource.Attribute.windowFixedWidthMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowMinWidthMajor = global::RenderImage.Android.Resource.Attribute.windowMinWidthMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowMinWidthMinor = global::RenderImage.Android.Resource.Attribute.windowMinWidthMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowNoTitle = global::RenderImage.Android.Resource.Attribute.windowNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::RenderImage.Android.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::RenderImage.Android.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::RenderImage.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::RenderImage.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::RenderImage.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::RenderImage.Android.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::RenderImage.Android.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::RenderImage.Android.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_btn_colored_text_material = global::RenderImage.Android.Resource.Color.abc_btn_colored_text_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_color_highlight_material = global::RenderImage.Android.Resource.Color.abc_color_highlight_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_hint_foreground_material_dark = global::RenderImage.Android.Resource.Color.abc_hint_foreground_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_hint_foreground_material_light = global::RenderImage.Android.Resource.Color.abc_hint_foreground_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_input_method_navigation_guard = global::RenderImage.Android.Resource.Color.abc_input_method_navigation_guard;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::RenderImage.Android.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::RenderImage.Android.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_material_dark = global::RenderImage.Android.Resource.Color.abc_primary_text_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_material_light = global::RenderImage.Android.Resource.Color.abc_primary_text_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_search_url_text = global::RenderImage.Android.Resource.Color.abc_search_url_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_search_url_text_normal = global::RenderImage.Android.Resource.Color.abc_search_url_text_normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_search_url_text_pressed = global::RenderImage.Android.Resource.Color.abc_search_url_text_pressed;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_search_url_text_selected = global::RenderImage.Android.Resource.Color.abc_search_url_text_selected;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_secondary_text_material_dark = global::RenderImage.Android.Resource.Color.abc_secondary_text_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_secondary_text_material_light = global::RenderImage.Android.Resource.Color.abc_secondary_text_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_btn_checkable = global::RenderImage.Android.Resource.Color.abc_tint_btn_checkable;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_default = global::RenderImage.Android.Resource.Color.abc_tint_default;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_edittext = global::RenderImage.Android.Resource.Color.abc_tint_edittext;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_seek_thumb = global::RenderImage.Android.Resource.Color.abc_tint_seek_thumb;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_spinner = global::RenderImage.Android.Resource.Color.abc_tint_spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_switch_track = global::RenderImage.Android.Resource.Color.abc_tint_switch_track;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.accent_material_dark = global::RenderImage.Android.Resource.Color.accent_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.accent_material_light = global::RenderImage.Android.Resource.Color.accent_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.background_floating_material_dark = global::RenderImage.Android.Resource.Color.background_floating_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.background_floating_material_light = global::RenderImage.Android.Resource.Color.background_floating_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.background_material_dark = global::RenderImage.Android.Resource.Color.background_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.background_material_light = global::RenderImage.Android.Resource.Color.background_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_disabled_material_dark = global::RenderImage.Android.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_disabled_material_light = global::RenderImage.Android.Resource.Color.bright_foreground_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_inverse_material_dark = global::RenderImage.Android.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_inverse_material_light = global::RenderImage.Android.Resource.Color.bright_foreground_inverse_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_material_dark = global::RenderImage.Android.Resource.Color.bright_foreground_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_material_light = global::RenderImage.Android.Resource.Color.bright_foreground_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.button_material_dark = global::RenderImage.Android.Resource.Color.button_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.button_material_light = global::RenderImage.Android.Resource.Color.button_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.cardview_dark_background = global::RenderImage.Android.Resource.Color.cardview_dark_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.cardview_light_background = global::RenderImage.Android.Resource.Color.cardview_light_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.cardview_shadow_end_color = global::RenderImage.Android.Resource.Color.cardview_shadow_end_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.cardview_shadow_start_color = global::RenderImage.Android.Resource.Color.cardview_shadow_start_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_bottom_navigation_shadow_color = global::RenderImage.Android.Resource.Color.design_bottom_navigation_shadow_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_error = global::RenderImage.Android.Resource.Color.design_error;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_shadow_end_color = global::RenderImage.Android.Resource.Color.design_fab_shadow_end_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_shadow_mid_color = global::RenderImage.Android.Resource.Color.design_fab_shadow_mid_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_shadow_start_color = global::RenderImage.Android.Resource.Color.design_fab_shadow_start_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_end_inner_color = global::RenderImage.Android.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_end_outer_color = global::RenderImage.Android.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_top_inner_color = global::RenderImage.Android.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_top_outer_color = global::RenderImage.Android.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_snackbar_background_color = global::RenderImage.Android.Resource.Color.design_snackbar_background_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_tint_password_toggle = global::RenderImage.Android.Resource.Color.design_tint_password_toggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_disabled_material_dark = global::RenderImage.Android.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_disabled_material_light = global::RenderImage.Android.Resource.Color.dim_foreground_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_material_dark = global::RenderImage.Android.Resource.Color.dim_foreground_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_material_light = global::RenderImage.Android.Resource.Color.dim_foreground_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.error_color_material = global::RenderImage.Android.Resource.Color.error_color_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.foreground_material_dark = global::RenderImage.Android.Resource.Color.foreground_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.foreground_material_light = global::RenderImage.Android.Resource.Color.foreground_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.highlighted_text_material_dark = global::RenderImage.Android.Resource.Color.highlighted_text_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.highlighted_text_material_light = global::RenderImage.Android.Resource.Color.highlighted_text_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_blue_grey_800 = global::RenderImage.Android.Resource.Color.material_blue_grey_800;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_blue_grey_900 = global::RenderImage.Android.Resource.Color.material_blue_grey_900;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_blue_grey_950 = global::RenderImage.Android.Resource.Color.material_blue_grey_950;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_deep_teal_200 = global::RenderImage.Android.Resource.Color.material_deep_teal_200;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_deep_teal_500 = global::RenderImage.Android.Resource.Color.material_deep_teal_500;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_100 = global::RenderImage.Android.Resource.Color.material_grey_100;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_300 = global::RenderImage.Android.Resource.Color.material_grey_300;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_50 = global::RenderImage.Android.Resource.Color.material_grey_50;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_600 = global::RenderImage.Android.Resource.Color.material_grey_600;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_800 = global::RenderImage.Android.Resource.Color.material_grey_800;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_850 = global::RenderImage.Android.Resource.Color.material_grey_850;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_900 = global::RenderImage.Android.Resource.Color.material_grey_900;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.notification_action_color_filter = global::RenderImage.Android.Resource.Color.notification_action_color_filter;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.notification_icon_bg_color = global::RenderImage.Android.Resource.Color.notification_icon_bg_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.notification_material_background_media_default_color = global::RenderImage.Android.Resource.Color.notification_material_background_media_default_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_dark_material_dark = global::RenderImage.Android.Resource.Color.primary_dark_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_dark_material_light = global::RenderImage.Android.Resource.Color.primary_dark_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_material_dark = global::RenderImage.Android.Resource.Color.primary_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_material_light = global::RenderImage.Android.Resource.Color.primary_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_text_default_material_dark = global::RenderImage.Android.Resource.Color.primary_text_default_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_text_default_material_light = global::RenderImage.Android.Resource.Color.primary_text_default_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_text_disabled_material_dark = global::RenderImage.Android.Resource.Color.primary_text_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_text_disabled_material_light = global::RenderImage.Android.Resource.Color.primary_text_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.ripple_material_dark = global::RenderImage.Android.Resource.Color.ripple_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.ripple_material_light = global::RenderImage.Android.Resource.Color.ripple_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.secondary_text_default_material_dark = global::RenderImage.Android.Resource.Color.secondary_text_default_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.secondary_text_default_material_light = global::RenderImage.Android.Resource.Color.secondary_text_default_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.secondary_text_disabled_material_dark = global::RenderImage.Android.Resource.Color.secondary_text_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.secondary_text_disabled_material_light = global::RenderImage.Android.Resource.Color.secondary_text_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_disabled_material_dark = global::RenderImage.Android.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_disabled_material_light = global::RenderImage.Android.Resource.Color.switch_thumb_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_material_dark = global::RenderImage.Android.Resource.Color.switch_thumb_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_material_light = global::RenderImage.Android.Resource.Color.switch_thumb_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_normal_material_dark = global::RenderImage.Android.Resource.Color.switch_thumb_normal_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_normal_material_light = global::RenderImage.Android.Resource.Color.switch_thumb_normal_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.tooltip_background_dark = global::RenderImage.Android.Resource.Color.tooltip_background_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.tooltip_background_light = global::RenderImage.Android.Resource.Color.tooltip_background_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::RenderImage.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_default_height_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_default_padding_end_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_default_padding_start_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_elevation_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::RenderImage.Android.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::RenderImage.Android.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::RenderImage.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::RenderImage.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_button_min_height_material = global::RenderImage.Android.Resource.Dimension.abc_action_button_min_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_button_min_width_material = global::RenderImage.Android.Resource.Dimension.abc_action_button_min_width_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_button_min_width_overflow_material = global::RenderImage.Android.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_alert_dialog_button_bar_height = global::RenderImage.Android.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_button_inset_horizontal_material = global::RenderImage.Android.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_button_inset_vertical_material = global::RenderImage.Android.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_button_padding_horizontal_material = global::RenderImage.Android.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_button_padding_vertical_material = global::RenderImage.Android.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::RenderImage.Android.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_config_prefDialogWidth = global::RenderImage.Android.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_control_corner_material = global::RenderImage.Android.Resource.Dimension.abc_control_corner_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_control_inset_material = global::RenderImage.Android.Resource.Dimension.abc_control_inset_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_control_padding_material = global::RenderImage.Android.Resource.Dimension.abc_control_padding_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_fixed_height_major = global::RenderImage.Android.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_fixed_height_minor = global::RenderImage.Android.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_fixed_width_major = global::RenderImage.Android.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_fixed_width_minor = global::RenderImage.Android.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::RenderImage.Android.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::RenderImage.Android.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_min_width_major = global::RenderImage.Android.Resource.Dimension.abc_dialog_min_width_major;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_min_width_minor = global::RenderImage.Android.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_padding_material = global::RenderImage.Android.Resource.Dimension.abc_dialog_padding_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_padding_top_material = global::RenderImage.Android.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_title_divider_material = global::RenderImage.Android.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_disabled_alpha_material_dark = global::RenderImage.Android.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_disabled_alpha_material_light = global::RenderImage.Android.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dropdownitem_icon_width = global::RenderImage.Android.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dropdownitem_text_padding_left = global::RenderImage.Android.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dropdownitem_text_padding_right = global::RenderImage.Android.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_bottom_material = global::RenderImage.Android.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::RenderImage.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::RenderImage.Android.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_floating_window_z = global::RenderImage.Android.Resource.Dimension.abc_floating_window_z;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::RenderImage.Android.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_panel_menu_list_width = global::RenderImage.Android.Resource.Dimension.abc_panel_menu_list_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_progress_bar_height_material = global::RenderImage.Android.Resource.Dimension.abc_progress_bar_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_search_view_preferred_height = global::RenderImage.Android.Resource.Dimension.abc_search_view_preferred_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_search_view_preferred_width = global::RenderImage.Android.Resource.Dimension.abc_search_view_preferred_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_seekbar_track_background_height_material = global::RenderImage.Android.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_seekbar_track_progress_height_material = global::RenderImage.Android.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_select_dialog_padding_start_material = global::RenderImage.Android.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_switch_padding = global::RenderImage.Android.Resource.Dimension.abc_switch_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_body_1_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_body_1_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_body_2_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_body_2_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_button_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_button_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_caption_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_caption_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_display_1_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_display_1_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_display_2_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_display_2_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_display_3_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_display_3_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_display_4_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_display_4_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_headline_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_headline_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_large_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_large_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_medium_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_medium_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_menu_header_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_menu_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_menu_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_small_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_small_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_subhead_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_subhead_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::RenderImage.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_title_material = global::RenderImage.Android.Resource.Dimension.abc_text_size_title_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_title_material_toolbar = global::RenderImage.Android.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.cardview_compat_inset_shadow = global::RenderImage.Android.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.cardview_default_elevation = global::RenderImage.Android.Resource.Dimension.cardview_default_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.cardview_default_radius = global::RenderImage.Android.Resource.Dimension.cardview_default_radius;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_button_inset_horizontal_material = global::RenderImage.Android.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_button_inset_vertical_material = global::RenderImage.Android.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_button_padding_horizontal_material = global::RenderImage.Android.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_button_padding_vertical_material = global::RenderImage.Android.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_control_corner_material = global::RenderImage.Android.Resource.Dimension.compat_control_corner_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_appbar_elevation = global::RenderImage.Android.Resource.Dimension.design_appbar_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_active_text_size = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_elevation = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_height = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_item_max_width = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_item_min_width = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_margin = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_shadow_height = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_text_size = global::RenderImage.Android.Resource.Dimension.design_bottom_navigation_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_sheet_modal_elevation = global::RenderImage.Android.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_sheet_peek_height_min = global::RenderImage.Android.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_border_width = global::RenderImage.Android.Resource.Dimension.design_fab_border_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_elevation = global::RenderImage.Android.Resource.Dimension.design_fab_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_image_size = global::RenderImage.Android.Resource.Dimension.design_fab_image_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_size_mini = global::RenderImage.Android.Resource.Dimension.design_fab_size_mini;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_size_normal = global::RenderImage.Android.Resource.Dimension.design_fab_size_normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_translation_z_pressed = global::RenderImage.Android.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_elevation = global::RenderImage.Android.Resource.Dimension.design_navigation_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_icon_padding = global::RenderImage.Android.Resource.Dimension.design_navigation_icon_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_icon_size = global::RenderImage.Android.Resource.Dimension.design_navigation_icon_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_max_width = global::RenderImage.Android.Resource.Dimension.design_navigation_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_padding_bottom = global::RenderImage.Android.Resource.Dimension.design_navigation_padding_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_separator_vertical_padding = global::RenderImage.Android.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_action_inline_max_width = global::RenderImage.Android.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_background_corner_radius = global::RenderImage.Android.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_elevation = global::RenderImage.Android.Resource.Dimension.design_snackbar_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::RenderImage.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_max_width = global::RenderImage.Android.Resource.Dimension.design_snackbar_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_min_width = global::RenderImage.Android.Resource.Dimension.design_snackbar_min_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_padding_horizontal = global::RenderImage.Android.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_padding_vertical = global::RenderImage.Android.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::RenderImage.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_text_size = global::RenderImage.Android.Resource.Dimension.design_snackbar_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_tab_max_width = global::RenderImage.Android.Resource.Dimension.design_tab_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_tab_scrollable_min_width = global::RenderImage.Android.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_tab_text_size = global::RenderImage.Android.Resource.Dimension.design_tab_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_tab_text_size_2line = global::RenderImage.Android.Resource.Dimension.design_tab_text_size_2line;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.disabled_alpha_material_dark = global::RenderImage.Android.Resource.Dimension.disabled_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.disabled_alpha_material_light = global::RenderImage.Android.Resource.Dimension.disabled_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.fastscroll_default_thickness = global::RenderImage.Android.Resource.Dimension.fastscroll_default_thickness;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.fastscroll_margin = global::RenderImage.Android.Resource.Dimension.fastscroll_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.fastscroll_minimum_range = global::RenderImage.Android.Resource.Dimension.fastscroll_minimum_range;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.highlight_alpha_material_colored = global::RenderImage.Android.Resource.Dimension.highlight_alpha_material_colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.highlight_alpha_material_dark = global::RenderImage.Android.Resource.Dimension.highlight_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.highlight_alpha_material_light = global::RenderImage.Android.Resource.Dimension.highlight_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.hint_alpha_material_dark = global::RenderImage.Android.Resource.Dimension.hint_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.hint_alpha_material_light = global::RenderImage.Android.Resource.Dimension.hint_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.hint_pressed_alpha_material_dark = global::RenderImage.Android.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.hint_pressed_alpha_material_light = global::RenderImage.Android.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::RenderImage.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::RenderImage.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::RenderImage.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_action_icon_size = global::RenderImage.Android.Resource.Dimension.notification_action_icon_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_action_text_size = global::RenderImage.Android.Resource.Dimension.notification_action_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_big_circle_margin = global::RenderImage.Android.Resource.Dimension.notification_big_circle_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_content_margin_start = global::RenderImage.Android.Resource.Dimension.notification_content_margin_start;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_large_icon_height = global::RenderImage.Android.Resource.Dimension.notification_large_icon_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_large_icon_width = global::RenderImage.Android.Resource.Dimension.notification_large_icon_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_main_column_padding_top = global::RenderImage.Android.Resource.Dimension.notification_main_column_padding_top;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_media_narrow_margin = global::RenderImage.Android.Resource.Dimension.notification_media_narrow_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_right_icon_size = global::RenderImage.Android.Resource.Dimension.notification_right_icon_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_right_side_padding_top = global::RenderImage.Android.Resource.Dimension.notification_right_side_padding_top;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_small_icon_background_padding = global::RenderImage.Android.Resource.Dimension.notification_small_icon_background_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_small_icon_size_as_large = global::RenderImage.Android.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_subtext_size = global::RenderImage.Android.Resource.Dimension.notification_subtext_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_top_pad = global::RenderImage.Android.Resource.Dimension.notification_top_pad;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_top_pad_large_text = global::RenderImage.Android.Resource.Dimension.notification_top_pad_large_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_corner_radius = global::RenderImage.Android.Resource.Dimension.tooltip_corner_radius;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_horizontal_padding = global::RenderImage.Android.Resource.Dimension.tooltip_horizontal_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_margin = global::RenderImage.Android.Resource.Dimension.tooltip_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::RenderImage.Android.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_precise_anchor_threshold = global::RenderImage.Android.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_vertical_padding = global::RenderImage.Android.Resource.Dimension.tooltip_vertical_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_y_offset_non_touch = global::RenderImage.Android.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_y_offset_touch = global::RenderImage.Android.Resource.Dimension.tooltip_y_offset_touch;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_action_bar_item_background_material = global::RenderImage.Android.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_borderless_material = global::RenderImage.Android.Resource.Drawable.abc_btn_borderless_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_material = global::RenderImage.Android.Resource.Drawable.abc_btn_check_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::RenderImage.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::RenderImage.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_colored_material = global::RenderImage.Android.Resource.Drawable.abc_btn_colored_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::RenderImage.Android.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_material = global::RenderImage.Android.Resource.Drawable.abc_btn_radio_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::RenderImage.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::RenderImage.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::RenderImage.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::RenderImage.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_cab_background_internal_bg = global::RenderImage.Android.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_cab_background_top_material = global::RenderImage.Android.Resource.Drawable.abc_cab_background_top_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_control_background_material = global::RenderImage.Android.Resource.Drawable.abc_control_background_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_dialog_material_background = global::RenderImage.Android.Resource.Drawable.abc_dialog_material_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_edit_text_material = global::RenderImage.Android.Resource.Drawable.abc_edit_text_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_ab_back_material = global::RenderImage.Android.Resource.Drawable.abc_ic_ab_back_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::RenderImage.Android.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_clear_material = global::RenderImage.Android.Resource.Drawable.abc_ic_clear_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_go_search_api_material = global::RenderImage.Android.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::RenderImage.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_overflow_material = global::RenderImage.Android.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::RenderImage.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_search_api_material = global::RenderImage.Android.Resource.Drawable.abc_ic_search_api_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_black_16dp = global::RenderImage.Android.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_black_36dp = global::RenderImage.Android.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_black_48dp = global::RenderImage.Android.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_half_black_16dp = global::RenderImage.Android.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_half_black_36dp = global::RenderImage.Android.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_half_black_48dp = global::RenderImage.Android.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_voice_search_api_material = global::RenderImage.Android.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_item_background_holo_dark = global::RenderImage.Android.Resource.Drawable.abc_item_background_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_item_background_holo_light = global::RenderImage.Android.Resource.Drawable.abc_item_background_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_divider_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_focused_holo = global::RenderImage.Android.Resource.Drawable.abc_list_focused_holo;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_longpressed_holo = global::RenderImage.Android.Resource.Drawable.abc_list_longpressed_holo;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_pressed_holo_dark = global::RenderImage.Android.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_pressed_holo_light = global::RenderImage.Android.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::RenderImage.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::RenderImage.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::RenderImage.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_disabled_holo_light = global::RenderImage.Android.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_holo_dark = global::RenderImage.Android.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_holo_light = global::RenderImage.Android.Resource.Drawable.abc_list_selector_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::RenderImage.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_popup_background_mtrl_mult = global::RenderImage.Android.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ratingbar_indicator_material = global::RenderImage.Android.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ratingbar_material = global::RenderImage.Android.Resource.Drawable.abc_ratingbar_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ratingbar_small_material = global::RenderImage.Android.Resource.Drawable.abc_ratingbar_small_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::RenderImage.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::RenderImage.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_seekbar_thumb_material = global::RenderImage.Android.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_seekbar_tick_mark_material = global::RenderImage.Android.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_seekbar_track_material = global::RenderImage.Android.Resource.Drawable.abc_seekbar_track_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::RenderImage.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::RenderImage.Android.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_switch_thumb_material = global::RenderImage.Android.Resource.Drawable.abc_switch_thumb_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_tab_indicator_material = global::RenderImage.Android.Resource.Drawable.abc_tab_indicator_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_cursor_material = global::RenderImage.Android.Resource.Drawable.abc_text_cursor_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::RenderImage.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::RenderImage.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::RenderImage.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::RenderImage.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::RenderImage.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::RenderImage.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::RenderImage.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_material = global::RenderImage.Android.Resource.Drawable.abc_textfield_search_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_vector_test = global::RenderImage.Android.Resource.Drawable.abc_vector_test;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password = global::RenderImage.Android.Resource.Drawable.avd_hide_password;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password_1 = global::RenderImage.Android.Resource.Drawable.avd_hide_password_1;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password_2 = global::RenderImage.Android.Resource.Drawable.avd_hide_password_2;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password_3 = global::RenderImage.Android.Resource.Drawable.avd_hide_password_3;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password = global::RenderImage.Android.Resource.Drawable.avd_show_password;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password_1 = global::RenderImage.Android.Resource.Drawable.avd_show_password_1;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password_2 = global::RenderImage.Android.Resource.Drawable.avd_show_password_2;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password_3 = global::RenderImage.Android.Resource.Drawable.avd_show_password_3;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_bottom_navigation_item_background = global::RenderImage.Android.Resource.Drawable.design_bottom_navigation_item_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_fab_background = global::RenderImage.Android.Resource.Drawable.design_fab_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_ic_visibility = global::RenderImage.Android.Resource.Drawable.design_ic_visibility;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_ic_visibility_off = global::RenderImage.Android.Resource.Drawable.design_ic_visibility_off;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_password_eye = global::RenderImage.Android.Resource.Drawable.design_password_eye;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_snackbar_background = global::RenderImage.Android.Resource.Drawable.design_snackbar_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.navigation_empty_icon = global::RenderImage.Android.Resource.Drawable.navigation_empty_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_action_background = global::RenderImage.Android.Resource.Drawable.notification_action_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg = global::RenderImage.Android.Resource.Drawable.notification_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_low = global::RenderImage.Android.Resource.Drawable.notification_bg_low;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_low_normal = global::RenderImage.Android.Resource.Drawable.notification_bg_low_normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_low_pressed = global::RenderImage.Android.Resource.Drawable.notification_bg_low_pressed;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_normal = global::RenderImage.Android.Resource.Drawable.notification_bg_normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_normal_pressed = global::RenderImage.Android.Resource.Drawable.notification_bg_normal_pressed;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_icon_background = global::RenderImage.Android.Resource.Drawable.notification_icon_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_template_icon_bg = global::RenderImage.Android.Resource.Drawable.notification_template_icon_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_template_icon_low_bg = global::RenderImage.Android.Resource.Drawable.notification_template_icon_low_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_tile_bg = global::RenderImage.Android.Resource.Drawable.notification_tile_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::RenderImage.Android.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.tooltip_frame_dark = global::RenderImage.Android.Resource.Drawable.tooltip_frame_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.tooltip_frame_light = global::RenderImage.Android.Resource.Drawable.tooltip_frame_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.ALT = global::RenderImage.Android.Resource.Id.ALT;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.CTRL = global::RenderImage.Android.Resource.Id.CTRL;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.FUNCTION = global::RenderImage.Android.Resource.Id.FUNCTION;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.META = global::RenderImage.Android.Resource.Id.META;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.SHIFT = global::RenderImage.Android.Resource.Id.SHIFT;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.SYM = global::RenderImage.Android.Resource.Id.SYM;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action0 = global::RenderImage.Android.Resource.Id.action0;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar = global::RenderImage.Android.Resource.Id.action_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_activity_content = global::RenderImage.Android.Resource.Id.action_bar_activity_content;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_container = global::RenderImage.Android.Resource.Id.action_bar_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_root = global::RenderImage.Android.Resource.Id.action_bar_root;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_spinner = global::RenderImage.Android.Resource.Id.action_bar_spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_subtitle = global::RenderImage.Android.Resource.Id.action_bar_subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_title = global::RenderImage.Android.Resource.Id.action_bar_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_container = global::RenderImage.Android.Resource.Id.action_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_context_bar = global::RenderImage.Android.Resource.Id.action_context_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_divider = global::RenderImage.Android.Resource.Id.action_divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_image = global::RenderImage.Android.Resource.Id.action_image;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_menu_divider = global::RenderImage.Android.Resource.Id.action_menu_divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_menu_presenter = global::RenderImage.Android.Resource.Id.action_menu_presenter;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_mode_bar = global::RenderImage.Android.Resource.Id.action_mode_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_mode_bar_stub = global::RenderImage.Android.Resource.Id.action_mode_bar_stub;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_mode_close_button = global::RenderImage.Android.Resource.Id.action_mode_close_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_text = global::RenderImage.Android.Resource.Id.action_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.actions = global::RenderImage.Android.Resource.Id.actions;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.activity_chooser_view_content = global::RenderImage.Android.Resource.Id.activity_chooser_view_content;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.add = global::RenderImage.Android.Resource.Id.add;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.alertTitle = global::RenderImage.Android.Resource.Id.alertTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.all = global::RenderImage.Android.Resource.Id.all;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.always = global::RenderImage.Android.Resource.Id.always;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.async = global::RenderImage.Android.Resource.Id.async;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.auto = global::RenderImage.Android.Resource.Id.auto;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.beginning = global::RenderImage.Android.Resource.Id.beginning;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.blocking = global::RenderImage.Android.Resource.Id.blocking;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.bottom = global::RenderImage.Android.Resource.Id.bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.bottomtab_navarea = global::RenderImage.Android.Resource.Id.bottomtab_navarea;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.bottomtab_tabbar = global::RenderImage.Android.Resource.Id.bottomtab_tabbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.buttonPanel = global::RenderImage.Android.Resource.Id.buttonPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.cancel_action = global::RenderImage.Android.Resource.Id.cancel_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.center = global::RenderImage.Android.Resource.Id.center;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.center_horizontal = global::RenderImage.Android.Resource.Id.center_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.center_vertical = global::RenderImage.Android.Resource.Id.center_vertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.checkbox = global::RenderImage.Android.Resource.Id.checkbox;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.chronometer = global::RenderImage.Android.Resource.Id.chronometer;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.clip_horizontal = global::RenderImage.Android.Resource.Id.clip_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.clip_vertical = global::RenderImage.Android.Resource.Id.clip_vertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.collapseActionView = global::RenderImage.Android.Resource.Id.collapseActionView;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.container = global::RenderImage.Android.Resource.Id.container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.contentPanel = global::RenderImage.Android.Resource.Id.contentPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.coordinator = global::RenderImage.Android.Resource.Id.coordinator;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.custom = global::RenderImage.Android.Resource.Id.custom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.customPanel = global::RenderImage.Android.Resource.Id.customPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.decor_content_parent = global::RenderImage.Android.Resource.Id.decor_content_parent;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.default_activity_button = global::RenderImage.Android.Resource.Id.default_activity_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_bottom_sheet = global::RenderImage.Android.Resource.Id.design_bottom_sheet;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_action_area = global::RenderImage.Android.Resource.Id.design_menu_item_action_area;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_action_area_stub = global::RenderImage.Android.Resource.Id.design_menu_item_action_area_stub;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_text = global::RenderImage.Android.Resource.Id.design_menu_item_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_navigation_view = global::RenderImage.Android.Resource.Id.design_navigation_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.disableHome = global::RenderImage.Android.Resource.Id.disableHome;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.edit_query = global::RenderImage.Android.Resource.Id.edit_query;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.end = global::RenderImage.Android.Resource.Id.end;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.end_padder = global::RenderImage.Android.Resource.Id.end_padder;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.enterAlways = global::RenderImage.Android.Resource.Id.enterAlways;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.enterAlwaysCollapsed = global::RenderImage.Android.Resource.Id.enterAlwaysCollapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.exitUntilCollapsed = global::RenderImage.Android.Resource.Id.exitUntilCollapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.expand_activities_button = global::RenderImage.Android.Resource.Id.expand_activities_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.expanded_menu = global::RenderImage.Android.Resource.Id.expanded_menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.fill = global::RenderImage.Android.Resource.Id.fill;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.fill_horizontal = global::RenderImage.Android.Resource.Id.fill_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.fill_vertical = global::RenderImage.Android.Resource.Id.fill_vertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.@fixed = global::RenderImage.Android.Resource.Id.@fixed;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_appbar = global::RenderImage.Android.Resource.Id.flyoutcontent_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_recycler = global::RenderImage.Android.Resource.Id.flyoutcontent_recycler;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.forever = global::RenderImage.Android.Resource.Id.forever;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.ghost_view = global::RenderImage.Android.Resource.Id.ghost_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.home = global::RenderImage.Android.Resource.Id.home;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.homeAsUp = global::RenderImage.Android.Resource.Id.homeAsUp;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.icon = global::RenderImage.Android.Resource.Id.icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.icon_group = global::RenderImage.Android.Resource.Id.icon_group;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.ifRoom = global::RenderImage.Android.Resource.Id.ifRoom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.image = global::RenderImage.Android.Resource.Id.image;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.info = global::RenderImage.Android.Resource.Id.info;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.italic = global::RenderImage.Android.Resource.Id.italic;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.item_touch_helper_previous_elevation = global::RenderImage.Android.Resource.Id.item_touch_helper_previous_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.largeLabel = global::RenderImage.Android.Resource.Id.largeLabel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.left = global::RenderImage.Android.Resource.Id.left;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.line1 = global::RenderImage.Android.Resource.Id.line1;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.line3 = global::RenderImage.Android.Resource.Id.line3;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.listMode = global::RenderImage.Android.Resource.Id.listMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.list_item = global::RenderImage.Android.Resource.Id.list_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_appbar = global::RenderImage.Android.Resource.Id.main_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_scrollview = global::RenderImage.Android.Resource.Id.main_scrollview;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_tablayout = global::RenderImage.Android.Resource.Id.main_tablayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_toolbar = global::RenderImage.Android.Resource.Id.main_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.masked = global::RenderImage.Android.Resource.Id.masked;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.media_actions = global::RenderImage.Android.Resource.Id.media_actions;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.message = global::RenderImage.Android.Resource.Id.message;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.middle = global::RenderImage.Android.Resource.Id.middle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.mini = global::RenderImage.Android.Resource.Id.mini;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.multiply = global::RenderImage.Android.Resource.Id.multiply;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.navigation_header_container = global::RenderImage.Android.Resource.Id.navigation_header_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.never = global::RenderImage.Android.Resource.Id.never;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.none = global::RenderImage.Android.Resource.Id.none;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.normal = global::RenderImage.Android.Resource.Id.normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_background = global::RenderImage.Android.Resource.Id.notification_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_main_column = global::RenderImage.Android.Resource.Id.notification_main_column;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_main_column_container = global::RenderImage.Android.Resource.Id.notification_main_column_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.parallax = global::RenderImage.Android.Resource.Id.parallax;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.parentPanel = global::RenderImage.Android.Resource.Id.parentPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.parent_matrix = global::RenderImage.Android.Resource.Id.parent_matrix;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.pin = global::RenderImage.Android.Resource.Id.pin;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.progress_circular = global::RenderImage.Android.Resource.Id.progress_circular;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.progress_horizontal = global::RenderImage.Android.Resource.Id.progress_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.radio = global::RenderImage.Android.Resource.Id.radio;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.right = global::RenderImage.Android.Resource.Id.right;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.right_icon = global::RenderImage.Android.Resource.Id.right_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.right_side = global::RenderImage.Android.Resource.Id.right_side;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.save_image_matrix = global::RenderImage.Android.Resource.Id.save_image_matrix;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.save_non_transition_alpha = global::RenderImage.Android.Resource.Id.save_non_transition_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.save_scale_type = global::RenderImage.Android.Resource.Id.save_scale_type;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.screen = global::RenderImage.Android.Resource.Id.screen;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scroll = global::RenderImage.Android.Resource.Id.scroll;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollIndicatorDown = global::RenderImage.Android.Resource.Id.scrollIndicatorDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollIndicatorUp = global::RenderImage.Android.Resource.Id.scrollIndicatorUp;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollView = global::RenderImage.Android.Resource.Id.scrollView;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollable = global::RenderImage.Android.Resource.Id.scrollable;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_badge = global::RenderImage.Android.Resource.Id.search_badge;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_bar = global::RenderImage.Android.Resource.Id.search_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_button = global::RenderImage.Android.Resource.Id.search_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_close_btn = global::RenderImage.Android.Resource.Id.search_close_btn;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_edit_frame = global::RenderImage.Android.Resource.Id.search_edit_frame;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_go_btn = global::RenderImage.Android.Resource.Id.search_go_btn;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_mag_icon = global::RenderImage.Android.Resource.Id.search_mag_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_plate = global::RenderImage.Android.Resource.Id.search_plate;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_src_text = global::RenderImage.Android.Resource.Id.search_src_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_voice_btn = global::RenderImage.Android.Resource.Id.search_voice_btn;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.select_dialog_listview = global::RenderImage.Android.Resource.Id.select_dialog_listview;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_appbar = global::RenderImage.Android.Resource.Id.shellcontent_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_scrollview = global::RenderImage.Android.Resource.Id.shellcontent_scrollview;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_toolbar = global::RenderImage.Android.Resource.Id.shellcontent_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shortcut = global::RenderImage.Android.Resource.Id.shortcut;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.showCustom = global::RenderImage.Android.Resource.Id.showCustom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.showHome = global::RenderImage.Android.Resource.Id.showHome;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.showTitle = global::RenderImage.Android.Resource.Id.showTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.smallLabel = global::RenderImage.Android.Resource.Id.smallLabel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.snackbar_action = global::RenderImage.Android.Resource.Id.snackbar_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.snackbar_text = global::RenderImage.Android.Resource.Id.snackbar_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.snap = global::RenderImage.Android.Resource.Id.snap;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.spacer = global::RenderImage.Android.Resource.Id.spacer;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.split_action_bar = global::RenderImage.Android.Resource.Id.split_action_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.src_atop = global::RenderImage.Android.Resource.Id.src_atop;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.src_in = global::RenderImage.Android.Resource.Id.src_in;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.src_over = global::RenderImage.Android.Resource.Id.src_over;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.start = global::RenderImage.Android.Resource.Id.start;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.status_bar_latest_event_content = global::RenderImage.Android.Resource.Id.status_bar_latest_event_content;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.submenuarrow = global::RenderImage.Android.Resource.Id.submenuarrow;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.submit_area = global::RenderImage.Android.Resource.Id.submit_area;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tabMode = global::RenderImage.Android.Resource.Id.tabMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_transition_group = global::RenderImage.Android.Resource.Id.tag_transition_group;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.text = global::RenderImage.Android.Resource.Id.text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.text2 = global::RenderImage.Android.Resource.Id.text2;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textSpacerNoButtons = global::RenderImage.Android.Resource.Id.textSpacerNoButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textSpacerNoTitle = global::RenderImage.Android.Resource.Id.textSpacerNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.text_input_password_toggle = global::RenderImage.Android.Resource.Id.text_input_password_toggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textinput_counter = global::RenderImage.Android.Resource.Id.textinput_counter;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textinput_error = global::RenderImage.Android.Resource.Id.textinput_error;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.time = global::RenderImage.Android.Resource.Id.time;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.title = global::RenderImage.Android.Resource.Id.title;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.titleDividerNoCustom = global::RenderImage.Android.Resource.Id.titleDividerNoCustom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.title_template = global::RenderImage.Android.Resource.Id.title_template;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.top = global::RenderImage.Android.Resource.Id.top;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.topPanel = global::RenderImage.Android.Resource.Id.topPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.touch_outside = global::RenderImage.Android.Resource.Id.touch_outside;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_current_scene = global::RenderImage.Android.Resource.Id.transition_current_scene;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_layout_save = global::RenderImage.Android.Resource.Id.transition_layout_save;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_position = global::RenderImage.Android.Resource.Id.transition_position;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_scene_layoutid_cache = global::RenderImage.Android.Resource.Id.transition_scene_layoutid_cache;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_transform = global::RenderImage.Android.Resource.Id.transition_transform;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.uniform = global::RenderImage.Android.Resource.Id.uniform;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.up = global::RenderImage.Android.Resource.Id.up;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.useLogo = global::RenderImage.Android.Resource.Id.useLogo;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.view_offset_helper = global::RenderImage.Android.Resource.Id.view_offset_helper;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.visible = global::RenderImage.Android.Resource.Id.visible;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.withText = global::RenderImage.Android.Resource.Id.withText;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.wrap_content = global::RenderImage.Android.Resource.Id.wrap_content;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.abc_config_activityDefaultDur = global::RenderImage.Android.Resource.Integer.abc_config_activityDefaultDur;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.abc_config_activityShortDur = global::RenderImage.Android.Resource.Integer.abc_config_activityShortDur;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.app_bar_elevation_anim_duration = global::RenderImage.Android.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.bottom_sheet_slide_duration = global::RenderImage.Android.Resource.Integer.bottom_sheet_slide_duration;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.cancel_button_image_alpha = global::RenderImage.Android.Resource.Integer.cancel_button_image_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.config_tooltipAnimTime = global::RenderImage.Android.Resource.Integer.config_tooltipAnimTime;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.design_snackbar_text_max_lines = global::RenderImage.Android.Resource.Integer.design_snackbar_text_max_lines;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.hide_password_duration = global::RenderImage.Android.Resource.Integer.hide_password_duration;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.show_password_duration = global::RenderImage.Android.Resource.Integer.show_password_duration;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.status_bar_notification_info_maxnum = global::RenderImage.Android.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_bar_title_item = global::RenderImage.Android.Resource.Layout.abc_action_bar_title_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_bar_up_container = global::RenderImage.Android.Resource.Layout.abc_action_bar_up_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_menu_item_layout = global::RenderImage.Android.Resource.Layout.abc_action_menu_item_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_menu_layout = global::RenderImage.Android.Resource.Layout.abc_action_menu_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_mode_bar = global::RenderImage.Android.Resource.Layout.abc_action_mode_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_mode_close_item_material = global::RenderImage.Android.Resource.Layout.abc_action_mode_close_item_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_activity_chooser_view = global::RenderImage.Android.Resource.Layout.abc_activity_chooser_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_activity_chooser_view_list_item = global::RenderImage.Android.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_alert_dialog_button_bar_material = global::RenderImage.Android.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_alert_dialog_material = global::RenderImage.Android.Resource.Layout.abc_alert_dialog_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_alert_dialog_title_material = global::RenderImage.Android.Resource.Layout.abc_alert_dialog_title_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_dialog_title_material = global::RenderImage.Android.Resource.Layout.abc_dialog_title_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_expanded_menu_layout = global::RenderImage.Android.Resource.Layout.abc_expanded_menu_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_list_menu_item_checkbox = global::RenderImage.Android.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_list_menu_item_icon = global::RenderImage.Android.Resource.Layout.abc_list_menu_item_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_list_menu_item_layout = global::RenderImage.Android.Resource.Layout.abc_list_menu_item_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_list_menu_item_radio = global::RenderImage.Android.Resource.Layout.abc_list_menu_item_radio;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_popup_menu_header_item_layout = global::RenderImage.Android.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_popup_menu_item_layout = global::RenderImage.Android.Resource.Layout.abc_popup_menu_item_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_screen_content_include = global::RenderImage.Android.Resource.Layout.abc_screen_content_include;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_screen_simple = global::RenderImage.Android.Resource.Layout.abc_screen_simple;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_screen_simple_overlay_action_mode = global::RenderImage.Android.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_screen_toolbar = global::RenderImage.Android.Resource.Layout.abc_screen_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::RenderImage.Android.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_search_view = global::RenderImage.Android.Resource.Layout.abc_search_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_select_dialog_material = global::RenderImage.Android.Resource.Layout.abc_select_dialog_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.BottomTabLayout = global::RenderImage.Android.Resource.Layout.BottomTabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_navigation_item = global::RenderImage.Android.Resource.Layout.design_bottom_navigation_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_sheet_dialog = global::RenderImage.Android.Resource.Layout.design_bottom_sheet_dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_snackbar = global::RenderImage.Android.Resource.Layout.design_layout_snackbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_snackbar_include = global::RenderImage.Android.Resource.Layout.design_layout_snackbar_include;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_tab_icon = global::RenderImage.Android.Resource.Layout.design_layout_tab_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_tab_text = global::RenderImage.Android.Resource.Layout.design_layout_tab_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_menu_item_action_area = global::RenderImage.Android.Resource.Layout.design_menu_item_action_area;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item = global::RenderImage.Android.Resource.Layout.design_navigation_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item_header = global::RenderImage.Android.Resource.Layout.design_navigation_item_header;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item_separator = global::RenderImage.Android.Resource.Layout.design_navigation_item_separator;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item_subheader = global::RenderImage.Android.Resource.Layout.design_navigation_item_subheader;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu = global::RenderImage.Android.Resource.Layout.design_navigation_menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu_item = global::RenderImage.Android.Resource.Layout.design_navigation_menu_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_text_input_password_icon = global::RenderImage.Android.Resource.Layout.design_text_input_password_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.FlyoutContent = global::RenderImage.Android.Resource.Layout.FlyoutContent;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_action = global::RenderImage.Android.Resource.Layout.notification_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_action_tombstone = global::RenderImage.Android.Resource.Layout.notification_action_tombstone;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_media_action = global::RenderImage.Android.Resource.Layout.notification_media_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_media_cancel_action = global::RenderImage.Android.Resource.Layout.notification_media_cancel_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_big_media = global::RenderImage.Android.Resource.Layout.notification_template_big_media;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_big_media_custom = global::RenderImage.Android.Resource.Layout.notification_template_big_media_custom;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_big_media_narrow = global::RenderImage.Android.Resource.Layout.notification_template_big_media_narrow;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_big_media_narrow_custom = global::RenderImage.Android.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_custom_big = global::RenderImage.Android.Resource.Layout.notification_template_custom_big;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_icon_group = global::RenderImage.Android.Resource.Layout.notification_template_icon_group;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_lines_media = global::RenderImage.Android.Resource.Layout.notification_template_lines_media;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_media = global::RenderImage.Android.Resource.Layout.notification_template_media;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_media_custom = global::RenderImage.Android.Resource.Layout.notification_template_media_custom;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_part_chronometer = global::RenderImage.Android.Resource.Layout.notification_template_part_chronometer;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_part_time = global::RenderImage.Android.Resource.Layout.notification_template_part_time;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.RootLayout = global::RenderImage.Android.Resource.Layout.RootLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_item_material = global::RenderImage.Android.Resource.Layout.select_dialog_item_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_multichoice_material = global::RenderImage.Android.Resource.Layout.select_dialog_multichoice_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_singlechoice_material = global::RenderImage.Android.Resource.Layout.select_dialog_singlechoice_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.ShellContent = global::RenderImage.Android.Resource.Layout.ShellContent;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::RenderImage.Android.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.tooltip = global::RenderImage.Android.Resource.Layout.tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_home_description = global::RenderImage.Android.Resource.String.abc_action_bar_home_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_up_description = global::RenderImage.Android.Resource.String.abc_action_bar_up_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_menu_overflow_description = global::RenderImage.Android.Resource.String.abc_action_menu_overflow_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_mode_done = global::RenderImage.Android.Resource.String.abc_action_mode_done;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_activity_chooser_view_see_all = global::RenderImage.Android.Resource.String.abc_activity_chooser_view_see_all;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_activitychooserview_choose_application = global::RenderImage.Android.Resource.String.abc_activitychooserview_choose_application;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_capital_off = global::RenderImage.Android.Resource.String.abc_capital_off;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_capital_on = global::RenderImage.Android.Resource.String.abc_capital_on;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_body_1_material = global::RenderImage.Android.Resource.String.abc_font_family_body_1_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_body_2_material = global::RenderImage.Android.Resource.String.abc_font_family_body_2_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_button_material = global::RenderImage.Android.Resource.String.abc_font_family_button_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_caption_material = global::RenderImage.Android.Resource.String.abc_font_family_caption_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_display_1_material = global::RenderImage.Android.Resource.String.abc_font_family_display_1_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_display_2_material = global::RenderImage.Android.Resource.String.abc_font_family_display_2_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_display_3_material = global::RenderImage.Android.Resource.String.abc_font_family_display_3_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_display_4_material = global::RenderImage.Android.Resource.String.abc_font_family_display_4_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_headline_material = global::RenderImage.Android.Resource.String.abc_font_family_headline_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_menu_material = global::RenderImage.Android.Resource.String.abc_font_family_menu_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_subhead_material = global::RenderImage.Android.Resource.String.abc_font_family_subhead_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_title_material = global::RenderImage.Android.Resource.String.abc_font_family_title_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_search_hint = global::RenderImage.Android.Resource.String.abc_search_hint;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_clear = global::RenderImage.Android.Resource.String.abc_searchview_description_clear;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_query = global::RenderImage.Android.Resource.String.abc_searchview_description_query;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_search = global::RenderImage.Android.Resource.String.abc_searchview_description_search;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_submit = global::RenderImage.Android.Resource.String.abc_searchview_description_submit;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_voice = global::RenderImage.Android.Resource.String.abc_searchview_description_voice;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_shareactionprovider_share_with = global::RenderImage.Android.Resource.String.abc_shareactionprovider_share_with;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_shareactionprovider_share_with_application = global::RenderImage.Android.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_toolbar_collapse_description = global::RenderImage.Android.Resource.String.abc_toolbar_collapse_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.appbar_scrolling_view_behavior = global::RenderImage.Android.Resource.String.appbar_scrolling_view_behavior;
+			global::Xamarin.Forms.Platform.Android.Resource.String.bottom_sheet_behavior = global::RenderImage.Android.Resource.String.bottom_sheet_behavior;
+			global::Xamarin.Forms.Platform.Android.Resource.String.character_counter_pattern = global::RenderImage.Android.Resource.String.character_counter_pattern;
+			global::Xamarin.Forms.Platform.Android.Resource.String.password_toggle_content_description = global::RenderImage.Android.Resource.String.password_toggle_content_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye = global::RenderImage.Android.Resource.String.path_password_eye;
+			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye_mask_strike_through = global::RenderImage.Android.Resource.String.path_password_eye_mask_strike_through;
+			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye_mask_visible = global::RenderImage.Android.Resource.String.path_password_eye_mask_visible;
+			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_strike_through = global::RenderImage.Android.Resource.String.path_password_strike_through;
+			global::Xamarin.Forms.Platform.Android.Resource.String.search_menu_title = global::RenderImage.Android.Resource.String.search_menu_title;
+			global::Xamarin.Forms.Platform.Android.Resource.String.status_bar_notification_info_overflow = global::RenderImage.Android.Resource.String.status_bar_notification_info_overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.AlertDialog_AppCompat = global::RenderImage.Android.Resource.Style.AlertDialog_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.AlertDialog_AppCompat_Light = global::RenderImage.Android.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Animation_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Animation_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Animation_AppCompat_DropDownUp = global::RenderImage.Android.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Animation_AppCompat_Tooltip = global::RenderImage.Android.Resource.Style.Animation_AppCompat_Tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Animation_Design_BottomSheetDialog = global::RenderImage.Android.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_AlertDialog_AppCompat = global::RenderImage.Android.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_AlertDialog_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Animation_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::RenderImage.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Animation_AppCompat_Tooltip = global::RenderImage.Android.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_CardView = global::RenderImage.Android.Resource.Style.Base_CardView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::RenderImage.Android.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::RenderImage.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Button = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Large = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Small = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Title = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::RenderImage.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::RenderImage.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::RenderImage.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::RenderImage.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::RenderImage.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::RenderImage.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::RenderImage.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V14_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V14_Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V21_Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V22_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V23_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V23_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V26_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V26_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V26_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V26_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_V26_Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::RenderImage.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::RenderImage.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionButton = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionMode = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_EditText = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ImageButton = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListView = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_RatingBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SeekBar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::RenderImage.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Base_Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_Design_TabLayout = global::RenderImage.Android.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView = global::RenderImage.Android.Resource.Style.CardView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Dark = global::RenderImage.Android.Resource.Style.CardView_Dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Light = global::RenderImage.Android.Resource.Style.CardView_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_AppCompat = global::RenderImage.Android.Resource.Style.Platform_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V11_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V11_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V11_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V11_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V14_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V14_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V14_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V14_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V21_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V21_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V21_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V25_AppCompat = global::RenderImage.Android.Resource.Style.Platform_V25_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V25_AppCompat_Light = global::RenderImage.Android.Resource.Style.Platform_V25_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_Widget_AppCompat_Spinner = global::RenderImage.Android.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::RenderImage.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::RenderImage.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::RenderImage.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::RenderImage.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Button = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Caption = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Display1 = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Display2 = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Display3 = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Display4 = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Headline = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Large = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Medium = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Menu = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Small = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Subhead = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Title = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Tooltip = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::RenderImage.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Info = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Media = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Time = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Title = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::RenderImage.Android.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::RenderImage.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Counter = global::RenderImage.Android.Resource.Style.TextAppearance_Design_Counter;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Counter_Overflow = global::RenderImage.Android.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Error = global::RenderImage.Android.Resource.Style.TextAppearance_Design_Error;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Hint = global::RenderImage.Android.Resource.Style.TextAppearance_Design_Hint;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Snackbar_Message = global::RenderImage.Android.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Tab = global::RenderImage.Android.Resource.Style.TextAppearance_Design_Tab;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::RenderImage.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::RenderImage.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::RenderImage.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat = global::RenderImage.Android.Resource.Style.Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::RenderImage.Android.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight = global::RenderImage.Android.Resource.Style.Theme_AppCompat_DayNight;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::RenderImage.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::RenderImage.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::RenderImage.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::RenderImage.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::RenderImage.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::RenderImage.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::RenderImage.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::RenderImage.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::RenderImage.Android.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design = global::RenderImage.Android.Resource.Style.Theme_Design;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::RenderImage.Android.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light = global::RenderImage.Android.Resource.Style.Theme_Design_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::RenderImage.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::RenderImage.Android.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_NoActionBar = global::RenderImage.Android.Resource.Style.Theme_Design_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat = global::RenderImage.Android.Resource.Style.ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::RenderImage.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::RenderImage.Android.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::RenderImage.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::RenderImage.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::RenderImage.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::RenderImage.Android.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionButton = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionMode = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Small = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::RenderImage.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::RenderImage.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::RenderImage.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::RenderImage.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::RenderImage.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_EditText = global::RenderImage.Android.Resource.Style.Widget_AppCompat_EditText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ImageButton = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionButton = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_SearchView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListMenuView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListPopupWindow = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ListView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListView_DropDown = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListView_Menu = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_PopupMenu = global::RenderImage.Android.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::RenderImage.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_PopupWindow = global::RenderImage.Android.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ProgressBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::RenderImage.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_RatingBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::RenderImage.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_RatingBar_Small = global::RenderImage.Android.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SearchView = global::RenderImage.Android.Resource.Style.Widget_AppCompat_SearchView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SeekBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::RenderImage.Android.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::RenderImage.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Toolbar = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::RenderImage.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Compat_NotificationActionContainer = global::RenderImage.Android.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Compat_NotificationActionText = global::RenderImage.Android.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_AppBarLayout = global::RenderImage.Android.Resource.Style.Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_BottomNavigationView = global::RenderImage.Android.Resource.Style.Widget_Design_BottomNavigationView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::RenderImage.Android.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::RenderImage.Android.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_CoordinatorLayout = global::RenderImage.Android.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_FloatingActionButton = global::RenderImage.Android.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_NavigationView = global::RenderImage.Android.Resource.Style.Widget_Design_NavigationView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::RenderImage.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_Snackbar = global::RenderImage.Android.Resource.Style.Widget_Design_Snackbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_TabLayout = global::RenderImage.Android.Resource.Style.Widget_Design_TabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_TextInputLayout = global::RenderImage.Android.Resource.Style.Widget_Design_TextInputLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar = global::RenderImage.Android.Resource.Styleable.ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_background = global::RenderImage.Android.Resource.Styleable.ActionBar_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_backgroundSplit = global::RenderImage.Android.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_backgroundStacked = global::RenderImage.Android.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetEnd = global::RenderImage.Android.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::RenderImage.Android.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetLeft = global::RenderImage.Android.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetRight = global::RenderImage.Android.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetStart = global::RenderImage.Android.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::RenderImage.Android.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_customNavigationLayout = global::RenderImage.Android.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_displayOptions = global::RenderImage.Android.Resource.Styleable.ActionBar_displayOptions;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_divider = global::RenderImage.Android.Resource.Styleable.ActionBar_divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_elevation = global::RenderImage.Android.Resource.Styleable.ActionBar_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_height = global::RenderImage.Android.Resource.Styleable.ActionBar_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_hideOnContentScroll = global::RenderImage.Android.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_homeAsUpIndicator = global::RenderImage.Android.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_homeLayout = global::RenderImage.Android.Resource.Styleable.ActionBar_homeLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_icon = global::RenderImage.Android.Resource.Styleable.ActionBar_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::RenderImage.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_itemPadding = global::RenderImage.Android.Resource.Styleable.ActionBar_itemPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_logo = global::RenderImage.Android.Resource.Styleable.ActionBar_logo;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_navigationMode = global::RenderImage.Android.Resource.Styleable.ActionBar_navigationMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_popupTheme = global::RenderImage.Android.Resource.Styleable.ActionBar_popupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_progressBarPadding = global::RenderImage.Android.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_progressBarStyle = global::RenderImage.Android.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_subtitle = global::RenderImage.Android.Resource.Styleable.ActionBar_subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::RenderImage.Android.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_title = global::RenderImage.Android.Resource.Styleable.ActionBar_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_titleTextStyle = global::RenderImage.Android.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBarLayout = global::RenderImage.Android.Resource.Styleable.ActionBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::RenderImage.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMenuItemView = global::RenderImage.Android.Resource.Styleable.ActionMenuItemView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::RenderImage.Android.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMenuView = global::RenderImage.Android.Resource.Styleable.ActionMenuView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode = global::RenderImage.Android.Resource.Styleable.ActionMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_background = global::RenderImage.Android.Resource.Styleable.ActionMode_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_backgroundSplit = global::RenderImage.Android.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_closeItemLayout = global::RenderImage.Android.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_height = global::RenderImage.Android.Resource.Styleable.ActionMode_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_subtitleTextStyle = global::RenderImage.Android.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_titleTextStyle = global::RenderImage.Android.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActivityChooserView = global::RenderImage.Android.Resource.Styleable.ActivityChooserView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::RenderImage.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActivityChooserView_initialActivityCount = global::RenderImage.Android.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog = global::RenderImage.Android.Resource.Styleable.AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_android_layout = global::RenderImage.Android.Resource.Styleable.AlertDialog_android_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::RenderImage.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_listItemLayout = global::RenderImage.Android.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_listLayout = global::RenderImage.Android.Resource.Styleable.AlertDialog_listLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::RenderImage.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_showTitle = global::RenderImage.Android.Resource.Styleable.AlertDialog_showTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::RenderImage.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout = global::RenderImage.Android.Resource.Styleable.AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_background = global::RenderImage.Android.Resource.Styleable.AppBarLayout_android_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::RenderImage.Android.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::RenderImage.Android.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_elevation = global::RenderImage.Android.Resource.Styleable.AppBarLayout_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_expanded = global::RenderImage.Android.Resource.Styleable.AppBarLayout_expanded;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayoutStates = global::RenderImage.Android.Resource.Styleable.AppBarLayoutStates;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::RenderImage.Android.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::RenderImage.Android.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_Layout = global::RenderImage.Android.Resource.Styleable.AppBarLayout_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::RenderImage.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::RenderImage.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView = global::RenderImage.Android.Resource.Styleable.AppCompatImageView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_android_src = global::RenderImage.Android.Resource.Styleable.AppCompatImageView_android_src;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::RenderImage.Android.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_tint = global::RenderImage.Android.Resource.Styleable.AppCompatImageView_tint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_tintMode = global::RenderImage.Android.Resource.Styleable.AppCompatImageView_tintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar = global::RenderImage.Android.Resource.Styleable.AppCompatSeekBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_android_thumb = global::RenderImage.Android.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_tickMark = global::RenderImage.Android.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::RenderImage.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::RenderImage.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper = global::RenderImage.Android.Resource.Styleable.AppCompatTextHelper;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::RenderImage.Android.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::RenderImage.Android.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::RenderImage.Android.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::RenderImage.Android.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::RenderImage.Android.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::RenderImage.Android.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::RenderImage.Android.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView = global::RenderImage.Android.Resource.Styleable.AppCompatTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_android_textAppearance = global::RenderImage.Android.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::RenderImage.Android.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::RenderImage.Android.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::RenderImage.Android.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::RenderImage.Android.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::RenderImage.Android.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_fontFamily = global::RenderImage.Android.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::RenderImage.Android.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme = global::RenderImage.Android.Resource.Styleable.AppCompatTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarSize = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarTheme = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeBackground = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_checkboxStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorAccent = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorControlActivated = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorControlNormal = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorError = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorError;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorPrimary = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_controlBackground = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_searchViewStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_seekBarStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_spinnerStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_switchStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_toolbarStyle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowActionBar = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowNoTitle = global::RenderImage.Android.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView = global::RenderImage.Android.Resource.Styleable.BottomNavigationView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_elevation = global::RenderImage.Android.Resource.Styleable.BottomNavigationView_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_itemBackground = global::RenderImage.Android.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_itemIconTint = global::RenderImage.Android.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_itemTextColor = global::RenderImage.Android.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_menu = global::RenderImage.Android.Resource.Styleable.BottomNavigationView_menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomSheetBehavior_Layout = global::RenderImage.Android.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::RenderImage.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::RenderImage.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::RenderImage.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ButtonBarLayout = global::RenderImage.Android.Resource.Styleable.ButtonBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ButtonBarLayout_allowStacking = global::RenderImage.Android.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView = global::RenderImage.Android.Resource.Styleable.CardView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_android_minHeight = global::RenderImage.Android.Resource.Styleable.CardView_android_minHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_android_minWidth = global::RenderImage.Android.Resource.Styleable.CardView_android_minWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardBackgroundColor = global::RenderImage.Android.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardCornerRadius = global::RenderImage.Android.Resource.Styleable.CardView_cardCornerRadius;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardElevation = global::RenderImage.Android.Resource.Styleable.CardView_cardElevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardMaxElevation = global::RenderImage.Android.Resource.Styleable.CardView_cardMaxElevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardPreventCornerOverlap = global::RenderImage.Android.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardUseCompatPadding = global::RenderImage.Android.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPadding = global::RenderImage.Android.Resource.Styleable.CardView_contentPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingBottom = global::RenderImage.Android.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingLeft = global::RenderImage.Android.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingRight = global::RenderImage.Android.Resource.Styleable.CardView_contentPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingTop = global::RenderImage.Android.Resource.Styleable.CardView_contentPaddingTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::RenderImage.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem = global::RenderImage.Android.Resource.Styleable.ColorStateListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem_alpha = global::RenderImage.Android.Resource.Styleable.ColorStateListItem_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem_android_alpha = global::RenderImage.Android.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem_android_color = global::RenderImage.Android.Resource.Styleable.ColorStateListItem_android_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton = global::RenderImage.Android.Resource.Styleable.CompoundButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_android_button = global::RenderImage.Android.Resource.Styleable.CompoundButton_android_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonTint = global::RenderImage.Android.Resource.Styleable.CompoundButton_buttonTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::RenderImage.Android.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_keylines = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::RenderImage.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme = global::RenderImage.Android.Resource.Styleable.DesignTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::RenderImage.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::RenderImage.Android.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme_textColorError = global::RenderImage.Android.Resource.Styleable.DesignTheme_textColorError;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_barLength = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_color = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_drawableSize = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_spinBars = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_thickness = global::RenderImage.Android.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton = global::RenderImage.Android.Resource.Styleable.FloatingActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_elevation = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_fabSize = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_useCompatPadding = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::RenderImage.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily = global::RenderImage.Android.Resource.Styleable.FontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderAuthority = global::RenderImage.Android.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderCerts = global::RenderImage.Android.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::RenderImage.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::RenderImage.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderPackage = global::RenderImage.Android.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderQuery = global::RenderImage.Android.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont = global::RenderImage.Android.Resource.Styleable.FontFamilyFont;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_android_font = global::RenderImage.Android.Resource.Styleable.FontFamilyFont_android_font;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_android_fontStyle = global::RenderImage.Android.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_android_fontWeight = global::RenderImage.Android.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_font = global::RenderImage.Android.Resource.Styleable.FontFamilyFont_font;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_fontStyle = global::RenderImage.Android.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_fontWeight = global::RenderImage.Android.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout = global::RenderImage.Android.Resource.Styleable.ForegroundLinearLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::RenderImage.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::RenderImage.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::RenderImage.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_gravity = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_orientation = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_divider = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::RenderImage.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ListPopupWindow = global::RenderImage.Android.Resource.Styleable.ListPopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::RenderImage.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::RenderImage.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup = global::RenderImage.Android.Resource.Styleable.MenuGroup;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::RenderImage.Android.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_enabled = global::RenderImage.Android.Resource.Styleable.MenuGroup_android_enabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_id = global::RenderImage.Android.Resource.Styleable.MenuGroup_android_id;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_menuCategory = global::RenderImage.Android.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_orderInCategory = global::RenderImage.Android.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_visible = global::RenderImage.Android.Resource.Styleable.MenuGroup_android_visible;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem = global::RenderImage.Android.Resource.Styleable.MenuItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_actionLayout = global::RenderImage.Android.Resource.Styleable.MenuItem_actionLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_actionProviderClass = global::RenderImage.Android.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_actionViewClass = global::RenderImage.Android.Resource.Styleable.MenuItem_actionViewClass;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_alphabeticModifiers = global::RenderImage.Android.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::RenderImage.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_checkable = global::RenderImage.Android.Resource.Styleable.MenuItem_android_checkable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_checked = global::RenderImage.Android.Resource.Styleable.MenuItem_android_checked;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_enabled = global::RenderImage.Android.Resource.Styleable.MenuItem_android_enabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_icon = global::RenderImage.Android.Resource.Styleable.MenuItem_android_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_id = global::RenderImage.Android.Resource.Styleable.MenuItem_android_id;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_menuCategory = global::RenderImage.Android.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_numericShortcut = global::RenderImage.Android.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_onClick = global::RenderImage.Android.Resource.Styleable.MenuItem_android_onClick;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_orderInCategory = global::RenderImage.Android.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_title = global::RenderImage.Android.Resource.Styleable.MenuItem_android_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_titleCondensed = global::RenderImage.Android.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_visible = global::RenderImage.Android.Resource.Styleable.MenuItem_android_visible;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_contentDescription = global::RenderImage.Android.Resource.Styleable.MenuItem_contentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_iconTint = global::RenderImage.Android.Resource.Styleable.MenuItem_iconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_iconTintMode = global::RenderImage.Android.Resource.Styleable.MenuItem_iconTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_numericModifiers = global::RenderImage.Android.Resource.Styleable.MenuItem_numericModifiers;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_showAsAction = global::RenderImage.Android.Resource.Styleable.MenuItem_showAsAction;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_tooltipText = global::RenderImage.Android.Resource.Styleable.MenuItem_tooltipText;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView = global::RenderImage.Android.Resource.Styleable.MenuView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_headerBackground = global::RenderImage.Android.Resource.Styleable.MenuView_android_headerBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_horizontalDivider = global::RenderImage.Android.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_itemBackground = global::RenderImage.Android.Resource.Styleable.MenuView_android_itemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::RenderImage.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_itemTextAppearance = global::RenderImage.Android.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_verticalDivider = global::RenderImage.Android.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_windowAnimationStyle = global::RenderImage.Android.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_preserveIconSpacing = global::RenderImage.Android.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_subMenuArrow = global::RenderImage.Android.Resource.Styleable.MenuView_subMenuArrow;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView = global::RenderImage.Android.Resource.Styleable.NavigationView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_android_background = global::RenderImage.Android.Resource.Styleable.NavigationView_android_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::RenderImage.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_android_maxWidth = global::RenderImage.Android.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_elevation = global::RenderImage.Android.Resource.Styleable.NavigationView_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_headerLayout = global::RenderImage.Android.Resource.Styleable.NavigationView_headerLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_itemBackground = global::RenderImage.Android.Resource.Styleable.NavigationView_itemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_itemIconTint = global::RenderImage.Android.Resource.Styleable.NavigationView_itemIconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_itemTextAppearance = global::RenderImage.Android.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_itemTextColor = global::RenderImage.Android.Resource.Styleable.NavigationView_itemTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_menu = global::RenderImage.Android.Resource.Styleable.NavigationView_menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow = global::RenderImage.Android.Resource.Styleable.PopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::RenderImage.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::RenderImage.Android.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::RenderImage.Android.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindowBackgroundState = global::RenderImage.Android.Resource.Styleable.PopupWindowBackgroundState;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::RenderImage.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView = global::RenderImage.Android.Resource.Styleable.RecycleListView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::RenderImage.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::RenderImage.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView = global::RenderImage.Android.Resource.Styleable.RecyclerView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_android_descendantFocusability = global::RenderImage.Android.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_android_orientation = global::RenderImage.Android.Resource.Styleable.RecyclerView_android_orientation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollEnabled = global::RenderImage.Android.Resource.Styleable.RecyclerView_fastScrollEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::RenderImage.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::RenderImage.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::RenderImage.Android.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::RenderImage.Android.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_layoutManager = global::RenderImage.Android.Resource.Styleable.RecyclerView_layoutManager;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_reverseLayout = global::RenderImage.Android.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_spanCount = global::RenderImage.Android.Resource.Styleable.RecyclerView_spanCount;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_stackFromEnd = global::RenderImage.Android.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrimInsetsFrameLayout = global::RenderImage.Android.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::RenderImage.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrollingViewBehavior_Layout = global::RenderImage.Android.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::RenderImage.Android.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView = global::RenderImage.Android.Resource.Styleable.SearchView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_focusable = global::RenderImage.Android.Resource.Styleable.SearchView_android_focusable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_imeOptions = global::RenderImage.Android.Resource.Styleable.SearchView_android_imeOptions;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_inputType = global::RenderImage.Android.Resource.Styleable.SearchView_android_inputType;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_maxWidth = global::RenderImage.Android.Resource.Styleable.SearchView_android_maxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_closeIcon = global::RenderImage.Android.Resource.Styleable.SearchView_closeIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_commitIcon = global::RenderImage.Android.Resource.Styleable.SearchView_commitIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_defaultQueryHint = global::RenderImage.Android.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_goIcon = global::RenderImage.Android.Resource.Styleable.SearchView_goIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_iconifiedByDefault = global::RenderImage.Android.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_layout = global::RenderImage.Android.Resource.Styleable.SearchView_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_queryBackground = global::RenderImage.Android.Resource.Styleable.SearchView_queryBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_queryHint = global::RenderImage.Android.Resource.Styleable.SearchView_queryHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_searchHintIcon = global::RenderImage.Android.Resource.Styleable.SearchView_searchHintIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_searchIcon = global::RenderImage.Android.Resource.Styleable.SearchView_searchIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_submitBackground = global::RenderImage.Android.Resource.Styleable.SearchView_submitBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::RenderImage.Android.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_voiceIcon = global::RenderImage.Android.Resource.Styleable.SearchView_voiceIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout = global::RenderImage.Android.Resource.Styleable.SnackbarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::RenderImage.Android.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout_elevation = global::RenderImage.Android.Resource.Styleable.SnackbarLayout_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::RenderImage.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner = global::RenderImage.Android.Resource.Styleable.Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::RenderImage.Android.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_entries = global::RenderImage.Android.Resource.Styleable.Spinner_android_entries;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_popupBackground = global::RenderImage.Android.Resource.Styleable.Spinner_android_popupBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_prompt = global::RenderImage.Android.Resource.Styleable.Spinner_android_prompt;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_popupTheme = global::RenderImage.Android.Resource.Styleable.Spinner_popupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat = global::RenderImage.Android.Resource.Styleable.SwitchCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_android_textOff = global::RenderImage.Android.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_android_textOn = global::RenderImage.Android.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_android_thumb = global::RenderImage.Android.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_showText = global::RenderImage.Android.Resource.Styleable.SwitchCompat_showText;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_splitTrack = global::RenderImage.Android.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_switchMinWidth = global::RenderImage.Android.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_switchPadding = global::RenderImage.Android.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_switchTextAppearance = global::RenderImage.Android.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_thumbTextPadding = global::RenderImage.Android.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_thumbTint = global::RenderImage.Android.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_thumbTintMode = global::RenderImage.Android.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_track = global::RenderImage.Android.Resource.Styleable.SwitchCompat_track;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_trackTint = global::RenderImage.Android.Resource.Styleable.SwitchCompat_trackTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_trackTintMode = global::RenderImage.Android.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabItem = global::RenderImage.Android.Resource.Styleable.TabItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabItem_android_icon = global::RenderImage.Android.Resource.Styleable.TabItem_android_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabItem_android_layout = global::RenderImage.Android.Resource.Styleable.TabItem_android_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabItem_android_text = global::RenderImage.Android.Resource.Styleable.TabItem_android_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout = global::RenderImage.Android.Resource.Styleable.TabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabBackground = global::RenderImage.Android.Resource.Styleable.TabLayout_tabBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabContentStart = global::RenderImage.Android.Resource.Styleable.TabLayout_tabContentStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabGravity = global::RenderImage.Android.Resource.Styleable.TabLayout_tabGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabIndicatorColor = global::RenderImage.Android.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabIndicatorHeight = global::RenderImage.Android.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabMaxWidth = global::RenderImage.Android.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabMinWidth = global::RenderImage.Android.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabMode = global::RenderImage.Android.Resource.Styleable.TabLayout_tabMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPadding = global::RenderImage.Android.Resource.Styleable.TabLayout_tabPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPaddingBottom = global::RenderImage.Android.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPaddingEnd = global::RenderImage.Android.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPaddingStart = global::RenderImage.Android.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPaddingTop = global::RenderImage.Android.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabSelectedTextColor = global::RenderImage.Android.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabTextAppearance = global::RenderImage.Android.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabTextColor = global::RenderImage.Android.Resource.Styleable.TabLayout_tabTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance = global::RenderImage.Android.Resource.Styleable.TextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_fontFamily = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_shadowColor = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_shadowDx = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_shadowDy = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_shadowRadius = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColor = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_textColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColorHint = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColorLink = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textSize = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_textSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textStyle = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_typeface = global::RenderImage.Android.Resource.Styleable.TextAppearance_android_typeface;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_fontFamily = global::RenderImage.Android.Resource.Styleable.TextAppearance_fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_textAllCaps = global::RenderImage.Android.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout = global::RenderImage.Android.Resource.Styleable.TextInputLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_android_hint = global::RenderImage.Android.Resource.Styleable.TextInputLayout_android_hint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::RenderImage.Android.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_counterEnabled = global::RenderImage.Android.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_counterMaxLength = global::RenderImage.Android.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::RenderImage.Android.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_counterTextAppearance = global::RenderImage.Android.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_errorEnabled = global::RenderImage.Android.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_errorTextAppearance = global::RenderImage.Android.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::RenderImage.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_hintEnabled = global::RenderImage.Android.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_hintTextAppearance = global::RenderImage.Android.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::RenderImage.Android.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::RenderImage.Android.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::RenderImage.Android.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleTint = global::RenderImage.Android.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::RenderImage.Android.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar = global::RenderImage.Android.Resource.Styleable.Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_android_gravity = global::RenderImage.Android.Resource.Styleable.Toolbar_android_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_android_minHeight = global::RenderImage.Android.Resource.Styleable.Toolbar_android_minHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_buttonGravity = global::RenderImage.Android.Resource.Styleable.Toolbar_buttonGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_collapseContentDescription = global::RenderImage.Android.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_collapseIcon = global::RenderImage.Android.Resource.Styleable.Toolbar_collapseIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetEnd = global::RenderImage.Android.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::RenderImage.Android.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetLeft = global::RenderImage.Android.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetRight = global::RenderImage.Android.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetStart = global::RenderImage.Android.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::RenderImage.Android.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_logo = global::RenderImage.Android.Resource.Styleable.Toolbar_logo;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_logoDescription = global::RenderImage.Android.Resource.Styleable.Toolbar_logoDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::RenderImage.Android.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::RenderImage.Android.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_navigationIcon = global::RenderImage.Android.Resource.Styleable.Toolbar_navigationIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_popupTheme = global::RenderImage.Android.Resource.Styleable.Toolbar_popupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_subtitle = global::RenderImage.Android.Resource.Styleable.Toolbar_subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_subtitleTextAppearance = global::RenderImage.Android.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_subtitleTextColor = global::RenderImage.Android.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_title = global::RenderImage.Android.Resource.Styleable.Toolbar_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMargin = global::RenderImage.Android.Resource.Styleable.Toolbar_titleMargin;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::RenderImage.Android.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::RenderImage.Android.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginStart = global::RenderImage.Android.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginTop = global::RenderImage.Android.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMargins = global::RenderImage.Android.Resource.Styleable.Toolbar_titleMargins;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::RenderImage.Android.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleTextColor = global::RenderImage.Android.Resource.Styleable.Toolbar_titleTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View = global::RenderImage.Android.Resource.Styleable.View;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_android_focusable = global::RenderImage.Android.Resource.Styleable.View_android_focusable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_android_theme = global::RenderImage.Android.Resource.Styleable.View_android_theme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_paddingEnd = global::RenderImage.Android.Resource.Styleable.View_paddingEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_paddingStart = global::RenderImage.Android.Resource.Styleable.View_paddingStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_theme = global::RenderImage.Android.Resource.Styleable.View_theme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper = global::RenderImage.Android.Resource.Styleable.ViewBackgroundHelper;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::RenderImage.Android.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::RenderImage.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::RenderImage.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat = global::RenderImage.Android.Resource.Styleable.ViewStubCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_id = global::RenderImage.Android.Resource.Styleable.ViewStubCompat_android_id;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::RenderImage.Android.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_layout = global::RenderImage.Android.Resource.Styleable.ViewStubCompat_android_layout;
 		}
 		
 		public partial class Animation
@@ -12051,10 +16345,22 @@ namespace RenderImage.Android
 			public const int drawer_slide_out_top = 2131034127;
 			
 			// aapt resource value: 0x7f050010
-			public const int tooltip_enter = 2131034128;
+			public const int EnterFromLeft = 2131034128;
 			
 			// aapt resource value: 0x7f050011
-			public const int tooltip_exit = 2131034129;
+			public const int EnterFromRight = 2131034129;
+			
+			// aapt resource value: 0x7f050012
+			public const int ExitToLeft = 2131034130;
+			
+			// aapt resource value: 0x7f050013
+			public const int ExitToRight = 2131034131;
+			
+			// aapt resource value: 0x7f050014
+			public const int tooltip_enter = 2131034132;
+			
+			// aapt resource value: 0x7f050015
+			public const int tooltip_exit = 2131034133;
 			
 			static Animation()
 			{
@@ -14693,26 +18999,26 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f020057
 			public const int avd_hide_password = 2130837591;
 			
-			// aapt resource value: 0x7f02014e
-			public const int avd_hide_password_1 = 2130837838;
-			
-			// aapt resource value: 0x7f02014f
-			public const int avd_hide_password_2 = 2130837839;
-			
 			// aapt resource value: 0x7f020150
-			public const int avd_hide_password_3 = 2130837840;
+			public const int avd_hide_password_1 = 2130837840;
+			
+			// aapt resource value: 0x7f020151
+			public const int avd_hide_password_2 = 2130837841;
+			
+			// aapt resource value: 0x7f020152
+			public const int avd_hide_password_3 = 2130837842;
 			
 			// aapt resource value: 0x7f020058
 			public const int avd_show_password = 2130837592;
 			
-			// aapt resource value: 0x7f020151
-			public const int avd_show_password_1 = 2130837841;
-			
-			// aapt resource value: 0x7f020152
-			public const int avd_show_password_2 = 2130837842;
-			
 			// aapt resource value: 0x7f020153
-			public const int avd_show_password_3 = 2130837843;
+			public const int avd_show_password_1 = 2130837843;
+			
+			// aapt resource value: 0x7f020154
+			public const int avd_show_password_2 = 2130837844;
+			
+			// aapt resource value: 0x7f020155
+			public const int avd_show_password_3 = 2130837845;
 			
 			// aapt resource value: 0x7f020059
 			public const int data_form_invalid_background = 2130837593;
@@ -14754,700 +19060,706 @@ namespace RenderImage.Android
 			public const int events_popup_bg = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int gingerbread_background = 2130837606;
+			public const int export = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int hamburger = 2130837607;
+			public const int gingerbread_background = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int hmb = 2130837608;
+			public const int hamburger = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int ic_audiotrack_dark = 2130837609;
+			public const int hmb = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int ic_audiotrack_light = 2130837610;
+			public const int ic_audiotrack_dark = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int ic_clear = 2130837611;
+			public const int ic_audiotrack_light = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int ic_collapse = 2130837612;
+			public const int ic_clear = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int ic_collapse_dataform_group = 2130837613;
+			public const int ic_collapse = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int ic_dialog_close_dark = 2130837614;
+			public const int ic_collapse_dataform_group = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int ic_dialog_close_light = 2130837615;
+			public const int ic_dialog_close_dark = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int ic_expand = 2130837616;
+			public const int ic_dialog_close_light = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int ic_expand_dataform_group = 2130837617;
+			public const int ic_expand = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int ic_group_collapse_00 = 2130837618;
+			public const int ic_expand_dataform_group = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int ic_group_collapse_01 = 2130837619;
+			public const int ic_group_collapse_00 = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int ic_group_collapse_02 = 2130837620;
+			public const int ic_group_collapse_01 = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int ic_group_collapse_03 = 2130837621;
+			public const int ic_group_collapse_02 = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_group_collapse_04 = 2130837622;
+			public const int ic_group_collapse_03 = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_group_collapse_05 = 2130837623;
+			public const int ic_group_collapse_04 = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_group_collapse_06 = 2130837624;
+			public const int ic_group_collapse_05 = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_group_collapse_07 = 2130837625;
+			public const int ic_group_collapse_06 = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_group_collapse_08 = 2130837626;
+			public const int ic_group_collapse_07 = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_group_collapse_09 = 2130837627;
+			public const int ic_group_collapse_08 = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_group_collapse_10 = 2130837628;
+			public const int ic_group_collapse_09 = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_group_collapse_11 = 2130837629;
+			public const int ic_group_collapse_10 = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_group_collapse_12 = 2130837630;
+			public const int ic_group_collapse_11 = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_group_collapse_13 = 2130837631;
+			public const int ic_group_collapse_12 = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_group_collapse_14 = 2130837632;
+			public const int ic_group_collapse_13 = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_group_collapse_15 = 2130837633;
+			public const int ic_group_collapse_14 = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_group_expand_00 = 2130837634;
+			public const int ic_group_collapse_15 = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_group_expand_01 = 2130837635;
+			public const int ic_group_expand_00 = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_group_expand_02 = 2130837636;
+			public const int ic_group_expand_01 = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_group_expand_03 = 2130837637;
+			public const int ic_group_expand_02 = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_group_expand_04 = 2130837638;
+			public const int ic_group_expand_03 = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_group_expand_05 = 2130837639;
+			public const int ic_group_expand_04 = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_group_expand_06 = 2130837640;
+			public const int ic_group_expand_05 = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_group_expand_07 = 2130837641;
+			public const int ic_group_expand_06 = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_group_expand_08 = 2130837642;
+			public const int ic_group_expand_07 = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_group_expand_09 = 2130837643;
+			public const int ic_group_expand_08 = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_group_expand_10 = 2130837644;
+			public const int ic_group_expand_09 = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_group_expand_11 = 2130837645;
+			public const int ic_group_expand_10 = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_group_expand_12 = 2130837646;
+			public const int ic_group_expand_11 = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_group_expand_13 = 2130837647;
+			public const int ic_group_expand_12 = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_group_expand_14 = 2130837648;
+			public const int ic_group_expand_13 = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_group_expand_15 = 2130837649;
+			public const int ic_group_expand_14 = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_media_pause_dark = 2130837650;
+			public const int ic_group_expand_15 = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_media_pause_light = 2130837651;
+			public const int ic_media_pause_dark = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_media_play_dark = 2130837652;
+			public const int ic_media_pause_light = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_media_play_light = 2130837653;
+			public const int ic_media_play_dark = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_media_stop_dark = 2130837654;
+			public const int ic_media_play_light = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ic_media_stop_light = 2130837655;
+			public const int ic_media_stop_dark = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int ic_mr_button_connected_00_dark = 2130837656;
+			public const int ic_media_stop_light = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int ic_mr_button_connected_00_light = 2130837657;
+			public const int ic_mr_button_connected_00_dark = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int ic_mr_button_connected_01_dark = 2130837658;
+			public const int ic_mr_button_connected_00_light = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int ic_mr_button_connected_01_light = 2130837659;
+			public const int ic_mr_button_connected_01_dark = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int ic_mr_button_connected_02_dark = 2130837660;
+			public const int ic_mr_button_connected_01_light = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int ic_mr_button_connected_02_light = 2130837661;
+			public const int ic_mr_button_connected_02_dark = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int ic_mr_button_connected_03_dark = 2130837662;
+			public const int ic_mr_button_connected_02_light = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int ic_mr_button_connected_03_light = 2130837663;
+			public const int ic_mr_button_connected_03_dark = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int ic_mr_button_connected_04_dark = 2130837664;
+			public const int ic_mr_button_connected_03_light = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int ic_mr_button_connected_04_light = 2130837665;
+			public const int ic_mr_button_connected_04_dark = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int ic_mr_button_connected_05_dark = 2130837666;
+			public const int ic_mr_button_connected_04_light = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int ic_mr_button_connected_05_light = 2130837667;
+			public const int ic_mr_button_connected_05_dark = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int ic_mr_button_connected_06_dark = 2130837668;
+			public const int ic_mr_button_connected_05_light = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int ic_mr_button_connected_06_light = 2130837669;
+			public const int ic_mr_button_connected_06_dark = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int ic_mr_button_connected_07_dark = 2130837670;
+			public const int ic_mr_button_connected_06_light = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int ic_mr_button_connected_07_light = 2130837671;
+			public const int ic_mr_button_connected_07_dark = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int ic_mr_button_connected_08_dark = 2130837672;
+			public const int ic_mr_button_connected_07_light = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int ic_mr_button_connected_08_light = 2130837673;
+			public const int ic_mr_button_connected_08_dark = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int ic_mr_button_connected_09_dark = 2130837674;
+			public const int ic_mr_button_connected_08_light = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int ic_mr_button_connected_09_light = 2130837675;
+			public const int ic_mr_button_connected_09_dark = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int ic_mr_button_connected_10_dark = 2130837676;
+			public const int ic_mr_button_connected_09_light = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int ic_mr_button_connected_10_light = 2130837677;
+			public const int ic_mr_button_connected_10_dark = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int ic_mr_button_connected_11_dark = 2130837678;
+			public const int ic_mr_button_connected_10_light = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int ic_mr_button_connected_11_light = 2130837679;
+			public const int ic_mr_button_connected_11_dark = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int ic_mr_button_connected_12_dark = 2130837680;
+			public const int ic_mr_button_connected_11_light = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int ic_mr_button_connected_12_light = 2130837681;
+			public const int ic_mr_button_connected_12_dark = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int ic_mr_button_connected_13_dark = 2130837682;
+			public const int ic_mr_button_connected_12_light = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int ic_mr_button_connected_13_light = 2130837683;
+			public const int ic_mr_button_connected_13_dark = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int ic_mr_button_connected_14_dark = 2130837684;
+			public const int ic_mr_button_connected_13_light = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int ic_mr_button_connected_14_light = 2130837685;
+			public const int ic_mr_button_connected_14_dark = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int ic_mr_button_connected_15_dark = 2130837686;
+			public const int ic_mr_button_connected_14_light = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int ic_mr_button_connected_15_light = 2130837687;
+			public const int ic_mr_button_connected_15_dark = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int ic_mr_button_connected_16_dark = 2130837688;
+			public const int ic_mr_button_connected_15_light = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int ic_mr_button_connected_16_light = 2130837689;
+			public const int ic_mr_button_connected_16_dark = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int ic_mr_button_connected_17_dark = 2130837690;
+			public const int ic_mr_button_connected_16_light = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int ic_mr_button_connected_17_light = 2130837691;
+			public const int ic_mr_button_connected_17_dark = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int ic_mr_button_connected_18_dark = 2130837692;
+			public const int ic_mr_button_connected_17_light = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int ic_mr_button_connected_18_light = 2130837693;
+			public const int ic_mr_button_connected_18_dark = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int ic_mr_button_connected_19_dark = 2130837694;
+			public const int ic_mr_button_connected_18_light = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int ic_mr_button_connected_19_light = 2130837695;
+			public const int ic_mr_button_connected_19_dark = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int ic_mr_button_connected_20_dark = 2130837696;
+			public const int ic_mr_button_connected_19_light = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int ic_mr_button_connected_20_light = 2130837697;
+			public const int ic_mr_button_connected_20_dark = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int ic_mr_button_connected_21_dark = 2130837698;
+			public const int ic_mr_button_connected_20_light = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int ic_mr_button_connected_21_light = 2130837699;
+			public const int ic_mr_button_connected_21_dark = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int ic_mr_button_connected_22_dark = 2130837700;
+			public const int ic_mr_button_connected_21_light = 2130837700;
 			
 			// aapt resource value: 0x7f0200c5
-			public const int ic_mr_button_connected_22_light = 2130837701;
+			public const int ic_mr_button_connected_22_dark = 2130837701;
 			
 			// aapt resource value: 0x7f0200c6
-			public const int ic_mr_button_connected_23_dark = 2130837702;
+			public const int ic_mr_button_connected_22_light = 2130837702;
 			
 			// aapt resource value: 0x7f0200c7
-			public const int ic_mr_button_connected_23_light = 2130837703;
+			public const int ic_mr_button_connected_23_dark = 2130837703;
 			
 			// aapt resource value: 0x7f0200c8
-			public const int ic_mr_button_connected_24_dark = 2130837704;
+			public const int ic_mr_button_connected_23_light = 2130837704;
 			
 			// aapt resource value: 0x7f0200c9
-			public const int ic_mr_button_connected_24_light = 2130837705;
+			public const int ic_mr_button_connected_24_dark = 2130837705;
 			
 			// aapt resource value: 0x7f0200ca
-			public const int ic_mr_button_connected_25_dark = 2130837706;
+			public const int ic_mr_button_connected_24_light = 2130837706;
 			
 			// aapt resource value: 0x7f0200cb
-			public const int ic_mr_button_connected_25_light = 2130837707;
+			public const int ic_mr_button_connected_25_dark = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int ic_mr_button_connected_26_dark = 2130837708;
+			public const int ic_mr_button_connected_25_light = 2130837708;
 			
 			// aapt resource value: 0x7f0200cd
-			public const int ic_mr_button_connected_26_light = 2130837709;
+			public const int ic_mr_button_connected_26_dark = 2130837709;
 			
 			// aapt resource value: 0x7f0200ce
-			public const int ic_mr_button_connected_27_dark = 2130837710;
+			public const int ic_mr_button_connected_26_light = 2130837710;
 			
 			// aapt resource value: 0x7f0200cf
-			public const int ic_mr_button_connected_27_light = 2130837711;
+			public const int ic_mr_button_connected_27_dark = 2130837711;
 			
 			// aapt resource value: 0x7f0200d0
-			public const int ic_mr_button_connected_28_dark = 2130837712;
+			public const int ic_mr_button_connected_27_light = 2130837712;
 			
 			// aapt resource value: 0x7f0200d1
-			public const int ic_mr_button_connected_28_light = 2130837713;
+			public const int ic_mr_button_connected_28_dark = 2130837713;
 			
 			// aapt resource value: 0x7f0200d2
-			public const int ic_mr_button_connected_29_dark = 2130837714;
+			public const int ic_mr_button_connected_28_light = 2130837714;
 			
 			// aapt resource value: 0x7f0200d3
-			public const int ic_mr_button_connected_29_light = 2130837715;
+			public const int ic_mr_button_connected_29_dark = 2130837715;
 			
 			// aapt resource value: 0x7f0200d4
-			public const int ic_mr_button_connected_30_dark = 2130837716;
+			public const int ic_mr_button_connected_29_light = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int ic_mr_button_connected_30_light = 2130837717;
+			public const int ic_mr_button_connected_30_dark = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int ic_mr_button_connecting_00_dark = 2130837718;
+			public const int ic_mr_button_connected_30_light = 2130837718;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int ic_mr_button_connecting_00_light = 2130837719;
+			public const int ic_mr_button_connecting_00_dark = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int ic_mr_button_connecting_01_dark = 2130837720;
+			public const int ic_mr_button_connecting_00_light = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int ic_mr_button_connecting_01_light = 2130837721;
+			public const int ic_mr_button_connecting_01_dark = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int ic_mr_button_connecting_02_dark = 2130837722;
+			public const int ic_mr_button_connecting_01_light = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int ic_mr_button_connecting_02_light = 2130837723;
+			public const int ic_mr_button_connecting_02_dark = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int ic_mr_button_connecting_03_dark = 2130837724;
+			public const int ic_mr_button_connecting_02_light = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int ic_mr_button_connecting_03_light = 2130837725;
+			public const int ic_mr_button_connecting_03_dark = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int ic_mr_button_connecting_04_dark = 2130837726;
+			public const int ic_mr_button_connecting_03_light = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int ic_mr_button_connecting_04_light = 2130837727;
+			public const int ic_mr_button_connecting_04_dark = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int ic_mr_button_connecting_05_dark = 2130837728;
+			public const int ic_mr_button_connecting_04_light = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int ic_mr_button_connecting_05_light = 2130837729;
+			public const int ic_mr_button_connecting_05_dark = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int ic_mr_button_connecting_06_dark = 2130837730;
+			public const int ic_mr_button_connecting_05_light = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int ic_mr_button_connecting_06_light = 2130837731;
+			public const int ic_mr_button_connecting_06_dark = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int ic_mr_button_connecting_07_dark = 2130837732;
+			public const int ic_mr_button_connecting_06_light = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int ic_mr_button_connecting_07_light = 2130837733;
+			public const int ic_mr_button_connecting_07_dark = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int ic_mr_button_connecting_08_dark = 2130837734;
+			public const int ic_mr_button_connecting_07_light = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int ic_mr_button_connecting_08_light = 2130837735;
+			public const int ic_mr_button_connecting_08_dark = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int ic_mr_button_connecting_09_dark = 2130837736;
+			public const int ic_mr_button_connecting_08_light = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int ic_mr_button_connecting_09_light = 2130837737;
+			public const int ic_mr_button_connecting_09_dark = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int ic_mr_button_connecting_10_dark = 2130837738;
+			public const int ic_mr_button_connecting_09_light = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int ic_mr_button_connecting_10_light = 2130837739;
+			public const int ic_mr_button_connecting_10_dark = 2130837739;
 			
 			// aapt resource value: 0x7f0200ec
-			public const int ic_mr_button_connecting_11_dark = 2130837740;
+			public const int ic_mr_button_connecting_10_light = 2130837740;
 			
 			// aapt resource value: 0x7f0200ed
-			public const int ic_mr_button_connecting_11_light = 2130837741;
+			public const int ic_mr_button_connecting_11_dark = 2130837741;
 			
 			// aapt resource value: 0x7f0200ee
-			public const int ic_mr_button_connecting_12_dark = 2130837742;
+			public const int ic_mr_button_connecting_11_light = 2130837742;
 			
 			// aapt resource value: 0x7f0200ef
-			public const int ic_mr_button_connecting_12_light = 2130837743;
+			public const int ic_mr_button_connecting_12_dark = 2130837743;
 			
 			// aapt resource value: 0x7f0200f0
-			public const int ic_mr_button_connecting_13_dark = 2130837744;
+			public const int ic_mr_button_connecting_12_light = 2130837744;
 			
 			// aapt resource value: 0x7f0200f1
-			public const int ic_mr_button_connecting_13_light = 2130837745;
+			public const int ic_mr_button_connecting_13_dark = 2130837745;
 			
 			// aapt resource value: 0x7f0200f2
-			public const int ic_mr_button_connecting_14_dark = 2130837746;
+			public const int ic_mr_button_connecting_13_light = 2130837746;
 			
 			// aapt resource value: 0x7f0200f3
-			public const int ic_mr_button_connecting_14_light = 2130837747;
+			public const int ic_mr_button_connecting_14_dark = 2130837747;
 			
 			// aapt resource value: 0x7f0200f4
-			public const int ic_mr_button_connecting_15_dark = 2130837748;
+			public const int ic_mr_button_connecting_14_light = 2130837748;
 			
 			// aapt resource value: 0x7f0200f5
-			public const int ic_mr_button_connecting_15_light = 2130837749;
+			public const int ic_mr_button_connecting_15_dark = 2130837749;
 			
 			// aapt resource value: 0x7f0200f6
-			public const int ic_mr_button_connecting_16_dark = 2130837750;
+			public const int ic_mr_button_connecting_15_light = 2130837750;
 			
 			// aapt resource value: 0x7f0200f7
-			public const int ic_mr_button_connecting_16_light = 2130837751;
+			public const int ic_mr_button_connecting_16_dark = 2130837751;
 			
 			// aapt resource value: 0x7f0200f8
-			public const int ic_mr_button_connecting_17_dark = 2130837752;
+			public const int ic_mr_button_connecting_16_light = 2130837752;
 			
 			// aapt resource value: 0x7f0200f9
-			public const int ic_mr_button_connecting_17_light = 2130837753;
+			public const int ic_mr_button_connecting_17_dark = 2130837753;
 			
 			// aapt resource value: 0x7f0200fa
-			public const int ic_mr_button_connecting_18_dark = 2130837754;
+			public const int ic_mr_button_connecting_17_light = 2130837754;
 			
 			// aapt resource value: 0x7f0200fb
-			public const int ic_mr_button_connecting_18_light = 2130837755;
+			public const int ic_mr_button_connecting_18_dark = 2130837755;
 			
 			// aapt resource value: 0x7f0200fc
-			public const int ic_mr_button_connecting_19_dark = 2130837756;
+			public const int ic_mr_button_connecting_18_light = 2130837756;
 			
 			// aapt resource value: 0x7f0200fd
-			public const int ic_mr_button_connecting_19_light = 2130837757;
+			public const int ic_mr_button_connecting_19_dark = 2130837757;
 			
 			// aapt resource value: 0x7f0200fe
-			public const int ic_mr_button_connecting_20_dark = 2130837758;
+			public const int ic_mr_button_connecting_19_light = 2130837758;
 			
 			// aapt resource value: 0x7f0200ff
-			public const int ic_mr_button_connecting_20_light = 2130837759;
+			public const int ic_mr_button_connecting_20_dark = 2130837759;
 			
 			// aapt resource value: 0x7f020100
-			public const int ic_mr_button_connecting_21_dark = 2130837760;
+			public const int ic_mr_button_connecting_20_light = 2130837760;
 			
 			// aapt resource value: 0x7f020101
-			public const int ic_mr_button_connecting_21_light = 2130837761;
+			public const int ic_mr_button_connecting_21_dark = 2130837761;
 			
 			// aapt resource value: 0x7f020102
-			public const int ic_mr_button_connecting_22_dark = 2130837762;
+			public const int ic_mr_button_connecting_21_light = 2130837762;
 			
 			// aapt resource value: 0x7f020103
-			public const int ic_mr_button_connecting_22_light = 2130837763;
+			public const int ic_mr_button_connecting_22_dark = 2130837763;
 			
 			// aapt resource value: 0x7f020104
-			public const int ic_mr_button_connecting_23_dark = 2130837764;
+			public const int ic_mr_button_connecting_22_light = 2130837764;
 			
 			// aapt resource value: 0x7f020105
-			public const int ic_mr_button_connecting_23_light = 2130837765;
+			public const int ic_mr_button_connecting_23_dark = 2130837765;
 			
 			// aapt resource value: 0x7f020106
-			public const int ic_mr_button_connecting_24_dark = 2130837766;
+			public const int ic_mr_button_connecting_23_light = 2130837766;
 			
 			// aapt resource value: 0x7f020107
-			public const int ic_mr_button_connecting_24_light = 2130837767;
+			public const int ic_mr_button_connecting_24_dark = 2130837767;
 			
 			// aapt resource value: 0x7f020108
-			public const int ic_mr_button_connecting_25_dark = 2130837768;
+			public const int ic_mr_button_connecting_24_light = 2130837768;
 			
 			// aapt resource value: 0x7f020109
-			public const int ic_mr_button_connecting_25_light = 2130837769;
+			public const int ic_mr_button_connecting_25_dark = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
-			public const int ic_mr_button_connecting_26_dark = 2130837770;
+			public const int ic_mr_button_connecting_25_light = 2130837770;
 			
 			// aapt resource value: 0x7f02010b
-			public const int ic_mr_button_connecting_26_light = 2130837771;
+			public const int ic_mr_button_connecting_26_dark = 2130837771;
 			
 			// aapt resource value: 0x7f02010c
-			public const int ic_mr_button_connecting_27_dark = 2130837772;
+			public const int ic_mr_button_connecting_26_light = 2130837772;
 			
 			// aapt resource value: 0x7f02010d
-			public const int ic_mr_button_connecting_27_light = 2130837773;
+			public const int ic_mr_button_connecting_27_dark = 2130837773;
 			
 			// aapt resource value: 0x7f02010e
-			public const int ic_mr_button_connecting_28_dark = 2130837774;
+			public const int ic_mr_button_connecting_27_light = 2130837774;
 			
 			// aapt resource value: 0x7f02010f
-			public const int ic_mr_button_connecting_28_light = 2130837775;
+			public const int ic_mr_button_connecting_28_dark = 2130837775;
 			
 			// aapt resource value: 0x7f020110
-			public const int ic_mr_button_connecting_29_dark = 2130837776;
+			public const int ic_mr_button_connecting_28_light = 2130837776;
 			
 			// aapt resource value: 0x7f020111
-			public const int ic_mr_button_connecting_29_light = 2130837777;
+			public const int ic_mr_button_connecting_29_dark = 2130837777;
 			
 			// aapt resource value: 0x7f020112
-			public const int ic_mr_button_connecting_30_dark = 2130837778;
+			public const int ic_mr_button_connecting_29_light = 2130837778;
 			
 			// aapt resource value: 0x7f020113
-			public const int ic_mr_button_connecting_30_light = 2130837779;
+			public const int ic_mr_button_connecting_30_dark = 2130837779;
 			
 			// aapt resource value: 0x7f020114
-			public const int ic_mr_button_disabled_dark = 2130837780;
+			public const int ic_mr_button_connecting_30_light = 2130837780;
 			
 			// aapt resource value: 0x7f020115
-			public const int ic_mr_button_disabled_light = 2130837781;
+			public const int ic_mr_button_disabled_dark = 2130837781;
 			
 			// aapt resource value: 0x7f020116
-			public const int ic_mr_button_disconnected_dark = 2130837782;
+			public const int ic_mr_button_disabled_light = 2130837782;
 			
 			// aapt resource value: 0x7f020117
-			public const int ic_mr_button_disconnected_light = 2130837783;
+			public const int ic_mr_button_disconnected_dark = 2130837783;
 			
 			// aapt resource value: 0x7f020118
-			public const int ic_mr_button_grey = 2130837784;
+			public const int ic_mr_button_disconnected_light = 2130837784;
 			
 			// aapt resource value: 0x7f020119
-			public const int ic_token_remove = 2130837785;
+			public const int ic_mr_button_grey = 2130837785;
 			
 			// aapt resource value: 0x7f02011a
-			public const int ic_token_remove_pressed = 2130837786;
+			public const int ic_token_remove = 2130837786;
 			
 			// aapt resource value: 0x7f02011b
-			public const int ic_vol_type_speaker_dark = 2130837787;
+			public const int ic_token_remove_pressed = 2130837787;
 			
 			// aapt resource value: 0x7f02011c
-			public const int ic_vol_type_speaker_group_dark = 2130837788;
+			public const int ic_vol_type_speaker_dark = 2130837788;
 			
 			// aapt resource value: 0x7f02011d
-			public const int ic_vol_type_speaker_group_light = 2130837789;
+			public const int ic_vol_type_speaker_group_dark = 2130837789;
 			
 			// aapt resource value: 0x7f02011e
-			public const int ic_vol_type_speaker_light = 2130837790;
+			public const int ic_vol_type_speaker_group_light = 2130837790;
 			
 			// aapt resource value: 0x7f02011f
-			public const int ic_vol_type_tv_dark = 2130837791;
+			public const int ic_vol_type_speaker_light = 2130837791;
 			
 			// aapt resource value: 0x7f020120
-			public const int ic_vol_type_tv_light = 2130837792;
+			public const int ic_vol_type_tv_dark = 2130837792;
 			
 			// aapt resource value: 0x7f020121
-			public const int icon = 2130837793;
+			public const int ic_vol_type_tv_light = 2130837793;
 			
 			// aapt resource value: 0x7f020122
-			public const int mr_button_connected_dark = 2130837794;
+			public const int icon = 2130837794;
 			
 			// aapt resource value: 0x7f020123
-			public const int mr_button_connected_light = 2130837795;
+			public const int mr_button_connected_dark = 2130837795;
 			
 			// aapt resource value: 0x7f020124
-			public const int mr_button_connecting_dark = 2130837796;
+			public const int mr_button_connected_light = 2130837796;
 			
 			// aapt resource value: 0x7f020125
-			public const int mr_button_connecting_light = 2130837797;
+			public const int mr_button_connecting_dark = 2130837797;
 			
 			// aapt resource value: 0x7f020126
-			public const int mr_button_dark = 2130837798;
+			public const int mr_button_connecting_light = 2130837798;
 			
 			// aapt resource value: 0x7f020127
-			public const int mr_button_light = 2130837799;
+			public const int mr_button_dark = 2130837799;
 			
 			// aapt resource value: 0x7f020128
-			public const int mr_dialog_close_dark = 2130837800;
+			public const int mr_button_light = 2130837800;
 			
 			// aapt resource value: 0x7f020129
-			public const int mr_dialog_close_light = 2130837801;
+			public const int mr_dialog_close_dark = 2130837801;
 			
 			// aapt resource value: 0x7f02012a
-			public const int mr_dialog_material_background_dark = 2130837802;
+			public const int mr_dialog_close_light = 2130837802;
 			
 			// aapt resource value: 0x7f02012b
-			public const int mr_dialog_material_background_light = 2130837803;
+			public const int mr_dialog_material_background_dark = 2130837803;
 			
 			// aapt resource value: 0x7f02012c
-			public const int mr_group_collapse = 2130837804;
+			public const int mr_dialog_material_background_light = 2130837804;
 			
 			// aapt resource value: 0x7f02012d
-			public const int mr_group_expand = 2130837805;
+			public const int mr_group_collapse = 2130837805;
 			
 			// aapt resource value: 0x7f02012e
-			public const int mr_media_pause_dark = 2130837806;
+			public const int mr_group_expand = 2130837806;
 			
 			// aapt resource value: 0x7f02012f
-			public const int mr_media_pause_light = 2130837807;
+			public const int mr_media_pause_dark = 2130837807;
 			
 			// aapt resource value: 0x7f020130
-			public const int mr_media_play_dark = 2130837808;
+			public const int mr_media_pause_light = 2130837808;
 			
 			// aapt resource value: 0x7f020131
-			public const int mr_media_play_light = 2130837809;
+			public const int mr_media_play_dark = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int mr_media_stop_dark = 2130837810;
+			public const int mr_media_play_light = 2130837810;
 			
 			// aapt resource value: 0x7f020133
-			public const int mr_media_stop_light = 2130837811;
+			public const int mr_media_stop_dark = 2130837811;
 			
 			// aapt resource value: 0x7f020134
-			public const int mr_vol_type_audiotrack_dark = 2130837812;
+			public const int mr_media_stop_light = 2130837812;
 			
 			// aapt resource value: 0x7f020135
-			public const int mr_vol_type_audiotrack_light = 2130837813;
+			public const int mr_vol_type_audiotrack_dark = 2130837813;
 			
 			// aapt resource value: 0x7f020136
-			public const int navigation_empty_icon = 2130837814;
+			public const int mr_vol_type_audiotrack_light = 2130837814;
 			
 			// aapt resource value: 0x7f020137
-			public const int notification_action_background = 2130837815;
+			public const int navigation_empty_icon = 2130837815;
 			
 			// aapt resource value: 0x7f020138
-			public const int notification_bg = 2130837816;
+			public const int notification_action_background = 2130837816;
 			
 			// aapt resource value: 0x7f020139
-			public const int notification_bg_low = 2130837817;
+			public const int notification_bg = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int notification_bg_low_normal = 2130837818;
+			public const int notification_bg_low = 2130837818;
 			
 			// aapt resource value: 0x7f02013b
-			public const int notification_bg_low_pressed = 2130837819;
+			public const int notification_bg_low_normal = 2130837819;
 			
 			// aapt resource value: 0x7f02013c
-			public const int notification_bg_normal = 2130837820;
+			public const int notification_bg_low_pressed = 2130837820;
 			
 			// aapt resource value: 0x7f02013d
-			public const int notification_bg_normal_pressed = 2130837821;
+			public const int notification_bg_normal = 2130837821;
 			
 			// aapt resource value: 0x7f02013e
-			public const int notification_icon_background = 2130837822;
-			
-			// aapt resource value: 0x7f02014c
-			public const int notification_template_icon_bg = 2130837836;
-			
-			// aapt resource value: 0x7f02014d
-			public const int notification_template_icon_low_bg = 2130837837;
+			public const int notification_bg_normal_pressed = 2130837822;
 			
 			// aapt resource value: 0x7f02013f
-			public const int notification_tile_bg = 2130837823;
+			public const int notification_icon_background = 2130837823;
+			
+			// aapt resource value: 0x7f02014e
+			public const int notification_template_icon_bg = 2130837838;
+			
+			// aapt resource value: 0x7f02014f
+			public const int notification_template_icon_low_bg = 2130837839;
 			
 			// aapt resource value: 0x7f020140
-			public const int notify_panel_notification_icon_bg = 2130837824;
+			public const int notification_tile_bg = 2130837824;
 			
 			// aapt resource value: 0x7f020141
-			public const int pressable_item_background = 2130837825;
+			public const int notify_panel_notification_icon_bg = 2130837825;
 			
 			// aapt resource value: 0x7f020142
-			public const int selectable_item_background = 2130837826;
+			public const int pressable_item_background = 2130837826;
 			
 			// aapt resource value: 0x7f020143
-			public const int shade_bottom = 2130837827;
+			public const int save = 2130837827;
 			
 			// aapt resource value: 0x7f020144
-			public const int shade_corner = 2130837828;
+			public const int selectable_item_background = 2130837828;
 			
 			// aapt resource value: 0x7f020145
-			public const int shade_right = 2130837829;
+			public const int shade_bottom = 2130837829;
 			
 			// aapt resource value: 0x7f020146
-			public const int tab_view_popup_background = 2130837830;
+			public const int shade_corner = 2130837830;
 			
 			// aapt resource value: 0x7f020147
-			public const int TelerikChatAuthor = 2130837831;
+			public const int shade_right = 2130837831;
 			
 			// aapt resource value: 0x7f020148
-			public const int TelerikSendMessage = 2130837832;
+			public const int tab_view_popup_background = 2130837832;
 			
 			// aapt resource value: 0x7f020149
-			public const int TelerikTypingAuthors = 2130837833;
+			public const int TelerikChatAuthor = 2130837833;
 			
 			// aapt resource value: 0x7f02014a
-			public const int tooltip_frame_dark = 2130837834;
+			public const int TelerikSendMessage = 2130837834;
 			
 			// aapt resource value: 0x7f02014b
-			public const int tooltip_frame_light = 2130837835;
+			public const int TelerikTypingAuthors = 2130837835;
+			
+			// aapt resource value: 0x7f02014c
+			public const int tooltip_frame_dark = 2130837836;
+			
+			// aapt resource value: 0x7f02014d
+			public const int tooltip_frame_light = 2130837837;
 			
 			static Drawable()
 			{
@@ -15582,8 +19894,8 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0061
 			public const int Year = 2131361889;
 			
-			// aapt resource value: 0x7f0a010f
-			public const int action0 = 2131362063;
+			// aapt resource value: 0x7f0a0113
+			public const int action0 = 2131362067;
 			
 			// aapt resource value: 0x7f0a00a1
 			public const int action_bar = 2131361953;
@@ -15606,17 +19918,17 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0080
 			public const int action_bar_title = 2131361920;
 			
-			// aapt resource value: 0x7f0a010c
-			public const int action_container = 2131362060;
+			// aapt resource value: 0x7f0a0110
+			public const int action_container = 2131362064;
 			
 			// aapt resource value: 0x7f0a00a2
 			public const int action_context_bar = 2131361954;
 			
-			// aapt resource value: 0x7f0a0113
-			public const int action_divider = 2131362067;
+			// aapt resource value: 0x7f0a0117
+			public const int action_divider = 2131362071;
 			
-			// aapt resource value: 0x7f0a010d
-			public const int action_image = 2131362061;
+			// aapt resource value: 0x7f0a0111
+			public const int action_image = 2131362065;
 			
 			// aapt resource value: 0x7f0a0003
 			public const int action_menu_divider = 2131361795;
@@ -15633,11 +19945,11 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0082
 			public const int action_mode_close_button = 2131361922;
 			
-			// aapt resource value: 0x7f0a010e
-			public const int action_text = 2131362062;
+			// aapt resource value: 0x7f0a0112
+			public const int action_text = 2131362066;
 			
-			// aapt resource value: 0x7f0a011c
-			public const int actions = 2131362076;
+			// aapt resource value: 0x7f0a0120
+			public const int actions = 2131362080;
 			
 			// aapt resource value: 0x7f0a0083
 			public const int activity_chooser_view_content = 2131361923;
@@ -15654,8 +19966,8 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0038
 			public const int always = 2131361848;
 			
-			// aapt resource value: 0x7f0a00d7
-			public const int areaText = 2131362007;
+			// aapt resource value: 0x7f0a00d9
+			public const int areaText = 2131362009;
 			
 			// aapt resource value: 0x7f0a0056
 			public const int async = 2131361878;
@@ -15672,11 +19984,17 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a003d
 			public const int bottom = 2131361853;
 			
+			// aapt resource value: 0x7f0a00b0
+			public const int bottomtab_navarea = 2131361968;
+			
+			// aapt resource value: 0x7f0a00b1
+			public const int bottomtab_tabbar = 2131361969;
+			
 			// aapt resource value: 0x7f0a0089
 			public const int buttonPanel = 2131361929;
 			
-			// aapt resource value: 0x7f0a0110
-			public const int cancel_action = 2131362064;
+			// aapt resource value: 0x7f0a0114
+			public const int cancel_action = 2131362068;
 			
 			// aapt resource value: 0x7f0a0045
 			public const int center = 2131361861;
@@ -15687,32 +20005,32 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0047
 			public const int center_vertical = 2131361863;
 			
-			// aapt resource value: 0x7f0a0134
-			public const int chart_data_point_content_container = 2131362100;
+			// aapt resource value: 0x7f0a013f
+			public const int chart_data_point_content_container = 2131362111;
 			
-			// aapt resource value: 0x7f0a0125
-			public const int chart_layout_root = 2131362085;
+			// aapt resource value: 0x7f0a0129
+			public const int chart_layout_root = 2131362089;
 			
-			// aapt resource value: 0x7f0a00cf
-			public const int chart_tooltip_category = 2131361999;
+			// aapt resource value: 0x7f0a00d1
+			public const int chart_tooltip_category = 2131362001;
 			
-			// aapt resource value: 0x7f0a0133
-			public const int chart_tooltip_pointer = 2131362099;
+			// aapt resource value: 0x7f0a013e
+			public const int chart_tooltip_pointer = 2131362110;
 			
-			// aapt resource value: 0x7f0a00d0
-			public const int chart_tooltip_value = 2131362000;
-			
-			// aapt resource value: 0x7f0a00d8
-			public const int chart_trackball_category = 2131362008;
+			// aapt resource value: 0x7f0a00d2
+			public const int chart_tooltip_value = 2131362002;
 			
 			// aapt resource value: 0x7f0a00da
-			public const int chart_trackball_value = 2131362010;
+			public const int chart_trackball_category = 2131362010;
+			
+			// aapt resource value: 0x7f0a00dc
+			public const int chart_trackball_value = 2131362012;
 			
 			// aapt resource value: 0x7f0a0099
 			public const int checkbox = 2131361945;
 			
-			// aapt resource value: 0x7f0a0118
-			public const int chronometer = 2131362072;
+			// aapt resource value: 0x7f0a011c
+			public const int chronometer = 2131362076;
 			
 			// aapt resource value: 0x7f0a004e
 			public const int clip_horizontal = 2131361870;
@@ -15720,20 +20038,20 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a004f
 			public const int clip_vertical = 2131361871;
 			
-			// aapt resource value: 0x7f0a00d3
-			public const int closeText = 2131362003;
+			// aapt resource value: 0x7f0a00d5
+			public const int closeText = 2131362005;
 			
 			// aapt resource value: 0x7f0a0039
 			public const int collapseActionView = 2131361849;
 			
-			// aapt resource value: 0x7f0a00dd
-			public const int container = 2131362013;
+			// aapt resource value: 0x7f0a00df
+			public const int container = 2131362015;
 			
 			// aapt resource value: 0x7f0a008c
 			public const int contentPanel = 2131361932;
 			
-			// aapt resource value: 0x7f0a00de
-			public const int coordinator = 2131362014;
+			// aapt resource value: 0x7f0a00e0
+			public const int coordinator = 2131362016;
 			
 			// aapt resource value: 0x7f0a0093
 			public const int custom = 2131361939;
@@ -15741,89 +20059,89 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0092
 			public const int customPanel = 2131361938;
 			
-			// aapt resource value: 0x7f0a00b2
-			public const int data_form_autocomplete_editor = 2131361970;
-			
-			// aapt resource value: 0x7f0a00b3
-			public const int data_form_checkbox_editor = 2131361971;
-			
 			// aapt resource value: 0x7f0a00b4
-			public const int data_form_date_editor = 2131361972;
+			public const int data_form_autocomplete_editor = 2131361972;
 			
 			// aapt resource value: 0x7f0a00b5
-			public const int data_form_decimal_editor = 2131361973;
-			
-			// aapt resource value: 0x7f0a00bd
-			public const int data_form_editor_container = 2131361981;
-			
-			// aapt resource value: 0x7f0a00b8
-			public const int data_form_editor_group_container = 2131361976;
-			
-			// aapt resource value: 0x7f0a00ba
-			public const int data_form_editor_image = 2131361978;
-			
-			// aapt resource value: 0x7f0a00c0
-			public const int data_form_expandable_group_expand_button = 2131361984;
-			
-			// aapt resource value: 0x7f0a00b7
-			public const int data_form_group_header = 2131361975;
+			public const int data_form_checkbox_editor = 2131361973;
 			
 			// aapt resource value: 0x7f0a00b6
-			public const int data_form_group_header_container = 2131361974;
+			public const int data_form_date_editor = 2131361974;
 			
-			// aapt resource value: 0x7f0a00bb
-			public const int data_form_header_container = 2131361979;
-			
-			// aapt resource value: 0x7f0a00c1
-			public const int data_form_integer_editor = 2131361985;
-			
-			// aapt resource value: 0x7f0a00c2
-			public const int data_form_list_editor = 2131361986;
-			
-			// aapt resource value: 0x7f0a00c3
-			public const int data_form_number_picker_editor = 2131361987;
-			
-			// aapt resource value: 0x7f0a00c4
-			public const int data_form_rad_autocomplete_editor = 2131361988;
-			
-			// aapt resource value: 0x7f0a00c5
-			public const int data_form_radio_group = 2131361989;
-			
-			// aapt resource value: 0x7f0a00c6
-			public const int data_form_root_layout = 2131361990;
-			
-			// aapt resource value: 0x7f0a00c7
-			public const int data_form_seekbar_editor = 2131361991;
-			
-			// aapt resource value: 0x7f0a00c8
-			public const int data_form_spinner_editor = 2131361992;
-			
-			// aapt resource value: 0x7f0a00c9
-			public const int data_form_switch_editor = 2131361993;
-			
-			// aapt resource value: 0x7f0a00ca
-			public const int data_form_text_editor = 2131361994;
-			
-			// aapt resource value: 0x7f0a00cb
-			public const int data_form_text_viewer = 2131361995;
-			
-			// aapt resource value: 0x7f0a00b9
-			public const int data_form_text_viewer_header = 2131361977;
-			
-			// aapt resource value: 0x7f0a00cc
-			public const int data_form_time_editor = 2131361996;
-			
-			// aapt resource value: 0x7f0a00cd
-			public const int data_form_toggle_editor = 2131361997;
-			
-			// aapt resource value: 0x7f0a00be
-			public const int data_form_validation_container = 2131361982;
-			
-			// aapt resource value: 0x7f0a00bc
-			public const int data_form_validation_icon = 2131361980;
+			// aapt resource value: 0x7f0a00b7
+			public const int data_form_decimal_editor = 2131361975;
 			
 			// aapt resource value: 0x7f0a00bf
-			public const int data_form_validation_message_view = 2131361983;
+			public const int data_form_editor_container = 2131361983;
+			
+			// aapt resource value: 0x7f0a00ba
+			public const int data_form_editor_group_container = 2131361978;
+			
+			// aapt resource value: 0x7f0a00bc
+			public const int data_form_editor_image = 2131361980;
+			
+			// aapt resource value: 0x7f0a00c2
+			public const int data_form_expandable_group_expand_button = 2131361986;
+			
+			// aapt resource value: 0x7f0a00b9
+			public const int data_form_group_header = 2131361977;
+			
+			// aapt resource value: 0x7f0a00b8
+			public const int data_form_group_header_container = 2131361976;
+			
+			// aapt resource value: 0x7f0a00bd
+			public const int data_form_header_container = 2131361981;
+			
+			// aapt resource value: 0x7f0a00c3
+			public const int data_form_integer_editor = 2131361987;
+			
+			// aapt resource value: 0x7f0a00c4
+			public const int data_form_list_editor = 2131361988;
+			
+			// aapt resource value: 0x7f0a00c5
+			public const int data_form_number_picker_editor = 2131361989;
+			
+			// aapt resource value: 0x7f0a00c6
+			public const int data_form_rad_autocomplete_editor = 2131361990;
+			
+			// aapt resource value: 0x7f0a00c7
+			public const int data_form_radio_group = 2131361991;
+			
+			// aapt resource value: 0x7f0a00c8
+			public const int data_form_root_layout = 2131361992;
+			
+			// aapt resource value: 0x7f0a00c9
+			public const int data_form_seekbar_editor = 2131361993;
+			
+			// aapt resource value: 0x7f0a00ca
+			public const int data_form_spinner_editor = 2131361994;
+			
+			// aapt resource value: 0x7f0a00cb
+			public const int data_form_switch_editor = 2131361995;
+			
+			// aapt resource value: 0x7f0a00cc
+			public const int data_form_text_editor = 2131361996;
+			
+			// aapt resource value: 0x7f0a00cd
+			public const int data_form_text_viewer = 2131361997;
+			
+			// aapt resource value: 0x7f0a00bb
+			public const int data_form_text_viewer_header = 2131361979;
+			
+			// aapt resource value: 0x7f0a00ce
+			public const int data_form_time_editor = 2131361998;
+			
+			// aapt resource value: 0x7f0a00cf
+			public const int data_form_toggle_editor = 2131361999;
+			
+			// aapt resource value: 0x7f0a00c0
+			public const int data_form_validation_container = 2131361984;
+			
+			// aapt resource value: 0x7f0a00be
+			public const int data_form_validation_icon = 2131361982;
+			
+			// aapt resource value: 0x7f0a00c1
+			public const int data_form_validation_message_view = 2131361985;
 			
 			// aapt resource value: 0x7f0a009f
 			public const int decor_content_parent = 2131361951;
@@ -15831,20 +20149,20 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0086
 			public const int default_activity_button = 2131361926;
 			
-			// aapt resource value: 0x7f0a00e0
-			public const int design_bottom_sheet = 2131362016;
+			// aapt resource value: 0x7f0a00e2
+			public const int design_bottom_sheet = 2131362018;
+			
+			// aapt resource value: 0x7f0a00e9
+			public const int design_menu_item_action_area = 2131362025;
+			
+			// aapt resource value: 0x7f0a00e8
+			public const int design_menu_item_action_area_stub = 2131362024;
 			
 			// aapt resource value: 0x7f0a00e7
-			public const int design_menu_item_action_area = 2131362023;
+			public const int design_menu_item_text = 2131362023;
 			
 			// aapt resource value: 0x7f0a00e6
-			public const int design_menu_item_action_area_stub = 2131362022;
-			
-			// aapt resource value: 0x7f0a00e5
-			public const int design_menu_item_text = 2131362021;
-			
-			// aapt resource value: 0x7f0a00e4
-			public const int design_navigation_view = 2131362020;
+			public const int design_navigation_view = 2131362022;
 			
 			// aapt resource value: 0x7f0a0020
 			public const int disableHome = 2131361824;
@@ -15852,14 +20170,14 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a00a3
 			public const int edit_query = 2131361955;
 			
-			// aapt resource value: 0x7f0a0126
-			public const int emptyContent = 2131362086;
+			// aapt resource value: 0x7f0a012a
+			public const int emptyContent = 2131362090;
 			
 			// aapt resource value: 0x7f0a0030
 			public const int end = 2131361840;
 			
-			// aapt resource value: 0x7f0a011e
-			public const int end_padder = 2131362078;
+			// aapt resource value: 0x7f0a0122
+			public const int end_padder = 2131362082;
 			
 			// aapt resource value: 0x7f0a003f
 			public const int enterAlways = 2131361855;
@@ -15867,11 +20185,11 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0040
 			public const int enterAlwaysCollapsed = 2131361856;
 			
-			// aapt resource value: 0x7f0a00b1
-			public const int event_details = 2131361969;
+			// aapt resource value: 0x7f0a00b3
+			public const int event_details = 2131361971;
 			
-			// aapt resource value: 0x7f0a00b0
-			public const int event_title = 2131361968;
+			// aapt resource value: 0x7f0a00b2
+			public const int event_title = 2131361970;
 			
 			// aapt resource value: 0x7f0a0041
 			public const int exitUntilCollapsed = 2131361857;
@@ -15894,20 +20212,26 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0054
 			public const int @fixed = 2131361876;
 			
+			// aapt resource value: 0x7f0a00ec
+			public const int flyoutcontent_appbar = 2131362028;
+			
+			// aapt resource value: 0x7f0a00ed
+			public const int flyoutcontent_recycler = 2131362029;
+			
 			// aapt resource value: 0x7f0a0058
 			public const int forever = 2131361880;
 			
 			// aapt resource value: 0x7f0a000a
 			public const int ghost_view = 2131361802;
 			
-			// aapt resource value: 0x7f0a0129
-			public const int groupHeaderCollapseImage = 2131362089;
+			// aapt resource value: 0x7f0a0134
+			public const int groupHeaderCollapseImage = 2131362100;
 			
-			// aapt resource value: 0x7f0a012a
-			public const int groupHeaderText = 2131362090;
+			// aapt resource value: 0x7f0a0135
+			public const int groupHeaderText = 2131362101;
 			
-			// aapt resource value: 0x7f0a00d1
-			public const int highText = 2131362001;
+			// aapt resource value: 0x7f0a00d3
+			public const int highText = 2131362003;
 			
 			// aapt resource value: 0x7f0a0005
 			public const int home = 2131361797;
@@ -15921,8 +20245,8 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0088
 			public const int icon = 2131361928;
 			
-			// aapt resource value: 0x7f0a011d
-			public const int icon_group = 2131362077;
+			// aapt resource value: 0x7f0a0121
+			public const int icon_group = 2131362081;
 			
 			// aapt resource value: 0x7f0a003a
 			public const int ifRoom = 2131361850;
@@ -15930,20 +20254,20 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0085
 			public const int image = 2131361925;
 			
-			// aapt resource value: 0x7f0a00e9
-			public const int imageView = 2131362025;
-			
-			// aapt resource value: 0x7f0a0119
-			public const int info = 2131362073;
-			
 			// aapt resource value: 0x7f0a00eb
-			public const int inline_event_end = 2131362027;
+			public const int imageView = 2131362027;
 			
-			// aapt resource value: 0x7f0a00ea
-			public const int inline_event_start = 2131362026;
+			// aapt resource value: 0x7f0a011d
+			public const int info = 2131362077;
 			
-			// aapt resource value: 0x7f0a00ec
-			public const int inline_event_title = 2131362028;
+			// aapt resource value: 0x7f0a00ef
+			public const int inline_event_end = 2131362031;
+			
+			// aapt resource value: 0x7f0a00ee
+			public const int inline_event_start = 2131362030;
+			
+			// aapt resource value: 0x7f0a00f0
+			public const int inline_event_title = 2131362032;
 			
 			// aapt resource value: 0x7f0a0059
 			public const int italic = 2131361881;
@@ -15951,20 +20275,20 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0000
 			public const int item_touch_helper_previous_elevation = 2131361792;
 			
-			// aapt resource value: 0x7f0a00dc
-			public const int largeLabel = 2131362012;
+			// aapt resource value: 0x7f0a00de
+			public const int largeLabel = 2131362014;
 			
 			// aapt resource value: 0x7f0a0049
 			public const int left = 2131361865;
 			
-			// aapt resource value: 0x7f0a00ed
-			public const int legendItemIconView = 2131362029;
+			// aapt resource value: 0x7f0a00f1
+			public const int legendItemIconView = 2131362033;
 			
-			// aapt resource value: 0x7f0a00ee
-			public const int legendItemTitleView = 2131362030;
+			// aapt resource value: 0x7f0a00f2
+			public const int legendItemTitleView = 2131362034;
 			
-			// aapt resource value: 0x7f0a0128
-			public const int legendRecyclerView = 2131362088;
+			// aapt resource value: 0x7f0a012c
+			public const int legendRecyclerView = 2131362092;
 			
 			// aapt resource value: 0x7f0a0017
 			public const int line1 = 2131361815;
@@ -15978,17 +20302,29 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0087
 			public const int list_item = 2131361927;
 			
-			// aapt resource value: 0x7f0a00d4
-			public const int lowText = 2131362004;
+			// aapt resource value: 0x7f0a00d6
+			public const int lowText = 2131362006;
 			
-			// aapt resource value: 0x7f0a0136
-			public const int masked = 2131362102;
+			// aapt resource value: 0x7f0a012d
+			public const int main_appbar = 2131362093;
 			
-			// aapt resource value: 0x7f0a0112
-			public const int media_actions = 2131362066;
+			// aapt resource value: 0x7f0a0130
+			public const int main_scrollview = 2131362096;
 			
-			// aapt resource value: 0x7f0a0132
-			public const int message = 2131362098;
+			// aapt resource value: 0x7f0a012f
+			public const int main_tablayout = 2131362095;
+			
+			// aapt resource value: 0x7f0a012e
+			public const int main_toolbar = 2131362094;
+			
+			// aapt resource value: 0x7f0a0141
+			public const int masked = 2131362113;
+			
+			// aapt resource value: 0x7f0a0116
+			public const int media_actions = 2131362070;
+			
+			// aapt resource value: 0x7f0a013d
+			public const int message = 2131362109;
 			
 			// aapt resource value: 0x7f0a0031
 			public const int middle = 2131361841;
@@ -15996,95 +20332,95 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0053
 			public const int mini = 2131361875;
 			
-			// aapt resource value: 0x7f0a00fc
-			public const int mr_art = 2131362044;
-			
-			// aapt resource value: 0x7f0a00f1
-			public const int mr_chooser_list = 2131362033;
-			
-			// aapt resource value: 0x7f0a00f4
-			public const int mr_chooser_route_desc = 2131362036;
-			
-			// aapt resource value: 0x7f0a00f2
-			public const int mr_chooser_route_icon = 2131362034;
-			
-			// aapt resource value: 0x7f0a00f3
-			public const int mr_chooser_route_name = 2131362035;
-			
-			// aapt resource value: 0x7f0a00f0
-			public const int mr_chooser_title = 2131362032;
-			
-			// aapt resource value: 0x7f0a00f9
-			public const int mr_close = 2131362041;
-			
-			// aapt resource value: 0x7f0a00ff
-			public const int mr_control_divider = 2131362047;
-			
-			// aapt resource value: 0x7f0a0105
-			public const int mr_control_playback_ctrl = 2131362053;
-			
-			// aapt resource value: 0x7f0a0108
-			public const int mr_control_subtitle = 2131362056;
-			
-			// aapt resource value: 0x7f0a0107
-			public const int mr_control_title = 2131362055;
-			
-			// aapt resource value: 0x7f0a0106
-			public const int mr_control_title_container = 2131362054;
-			
-			// aapt resource value: 0x7f0a00fa
-			public const int mr_custom_control = 2131362042;
-			
-			// aapt resource value: 0x7f0a00fb
-			public const int mr_default_control = 2131362043;
-			
-			// aapt resource value: 0x7f0a00f6
-			public const int mr_dialog_area = 2131362038;
+			// aapt resource value: 0x7f0a0100
+			public const int mr_art = 2131362048;
 			
 			// aapt resource value: 0x7f0a00f5
-			public const int mr_expandable_area = 2131362037;
-			
-			// aapt resource value: 0x7f0a0109
-			public const int mr_group_expand_collapse = 2131362057;
-			
-			// aapt resource value: 0x7f0a00fd
-			public const int mr_media_main_control = 2131362045;
+			public const int mr_chooser_list = 2131362037;
 			
 			// aapt resource value: 0x7f0a00f8
-			public const int mr_name = 2131362040;
+			public const int mr_chooser_route_desc = 2131362040;
 			
-			// aapt resource value: 0x7f0a00fe
-			public const int mr_playback_control = 2131362046;
+			// aapt resource value: 0x7f0a00f6
+			public const int mr_chooser_route_icon = 2131362038;
 			
 			// aapt resource value: 0x7f0a00f7
-			public const int mr_title_bar = 2131362039;
+			public const int mr_chooser_route_name = 2131362039;
 			
-			// aapt resource value: 0x7f0a0100
-			public const int mr_volume_control = 2131362048;
+			// aapt resource value: 0x7f0a00f4
+			public const int mr_chooser_title = 2131362036;
 			
-			// aapt resource value: 0x7f0a0101
-			public const int mr_volume_group_list = 2131362049;
+			// aapt resource value: 0x7f0a00fd
+			public const int mr_close = 2131362045;
 			
 			// aapt resource value: 0x7f0a0103
-			public const int mr_volume_item_icon = 2131362051;
+			public const int mr_control_divider = 2131362051;
+			
+			// aapt resource value: 0x7f0a0109
+			public const int mr_control_playback_ctrl = 2131362057;
+			
+			// aapt resource value: 0x7f0a010c
+			public const int mr_control_subtitle = 2131362060;
+			
+			// aapt resource value: 0x7f0a010b
+			public const int mr_control_title = 2131362059;
+			
+			// aapt resource value: 0x7f0a010a
+			public const int mr_control_title_container = 2131362058;
+			
+			// aapt resource value: 0x7f0a00fe
+			public const int mr_custom_control = 2131362046;
+			
+			// aapt resource value: 0x7f0a00ff
+			public const int mr_default_control = 2131362047;
+			
+			// aapt resource value: 0x7f0a00fa
+			public const int mr_dialog_area = 2131362042;
+			
+			// aapt resource value: 0x7f0a00f9
+			public const int mr_expandable_area = 2131362041;
+			
+			// aapt resource value: 0x7f0a010d
+			public const int mr_group_expand_collapse = 2131362061;
+			
+			// aapt resource value: 0x7f0a0101
+			public const int mr_media_main_control = 2131362049;
+			
+			// aapt resource value: 0x7f0a00fc
+			public const int mr_name = 2131362044;
+			
+			// aapt resource value: 0x7f0a0102
+			public const int mr_playback_control = 2131362050;
+			
+			// aapt resource value: 0x7f0a00fb
+			public const int mr_title_bar = 2131362043;
 			
 			// aapt resource value: 0x7f0a0104
-			public const int mr_volume_slider = 2131362052;
+			public const int mr_volume_control = 2131362052;
+			
+			// aapt resource value: 0x7f0a0105
+			public const int mr_volume_group_list = 2131362053;
+			
+			// aapt resource value: 0x7f0a0107
+			public const int mr_volume_item_icon = 2131362055;
+			
+			// aapt resource value: 0x7f0a0108
+			public const int mr_volume_slider = 2131362056;
 			
 			// aapt resource value: 0x7f0a0028
 			public const int multiply = 2131361832;
 			
-			// aapt resource value: 0x7f0a00ef
-			public const int myButton = 2131362031;
+			// aapt resource value: 0x7f0a00f3
+			public const int myButton = 2131362035;
 			
-			// aapt resource value: 0x7f0a010a
-			public const int navItemsLayout = 2131362058;
+			// aapt resource value: 0x7f0a010e
+			public const int navItemsLayout = 2131362062;
 			
-			// aapt resource value: 0x7f0a010b
-			public const int navigationItemText = 2131362059;
+			// aapt resource value: 0x7f0a010f
+			public const int navigationItemText = 2131362063;
 			
-			// aapt resource value: 0x7f0a00e3
-			public const int navigation_header_container = 2131362019;
+			// aapt resource value: 0x7f0a00e5
+			public const int navigation_header_container = 2131362021;
 			
 			// aapt resource value: 0x7f0a003b
 			public const int never = 2131361851;
@@ -16095,29 +20431,29 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a001e
 			public const int normal = 2131361822;
 			
-			// aapt resource value: 0x7f0a011b
-			public const int notification_background = 2131362075;
-			
-			// aapt resource value: 0x7f0a0115
-			public const int notification_main_column = 2131362069;
-			
-			// aapt resource value: 0x7f0a0114
-			public const int notification_main_column_container = 2131362068;
-			
-			// aapt resource value: 0x7f0a0120
-			public const int number_picker_minus = 2131362080;
-			
-			// aapt resource value: 0x7f0a0122
-			public const int number_picker_plus = 2131362082;
-			
 			// aapt resource value: 0x7f0a011f
-			public const int number_picker_root = 2131362079;
+			public const int notification_background = 2131362079;
 			
-			// aapt resource value: 0x7f0a0121
-			public const int number_picker_view = 2131362081;
+			// aapt resource value: 0x7f0a0119
+			public const int notification_main_column = 2131362073;
 			
-			// aapt resource value: 0x7f0a00d2
-			public const int openText = 2131362002;
+			// aapt resource value: 0x7f0a0118
+			public const int notification_main_column_container = 2131362072;
+			
+			// aapt resource value: 0x7f0a0124
+			public const int number_picker_minus = 2131362084;
+			
+			// aapt resource value: 0x7f0a0126
+			public const int number_picker_plus = 2131362086;
+			
+			// aapt resource value: 0x7f0a0123
+			public const int number_picker_root = 2131362083;
+			
+			// aapt resource value: 0x7f0a0125
+			public const int number_picker_view = 2131362085;
+			
+			// aapt resource value: 0x7f0a00d4
+			public const int openText = 2131362004;
 			
 			// aapt resource value: 0x7f0a004c
 			public const int parallax = 2131361868;
@@ -16131,11 +20467,11 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a004d
 			public const int pin = 2131361869;
 			
-			// aapt resource value: 0x7f0a0123
-			public const int popup_event_time = 2131362083;
+			// aapt resource value: 0x7f0a0127
+			public const int popup_event_time = 2131362087;
 			
-			// aapt resource value: 0x7f0a0124
-			public const int popup_event_title = 2131362084;
+			// aapt resource value: 0x7f0a0128
+			public const int popup_event_title = 2131362088;
 			
 			// aapt resource value: 0x7f0a0006
 			public const int progress_circular = 2131361798;
@@ -16146,17 +20482,17 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0065
 			public const int radio = 2131361893;
 			
-			// aapt resource value: 0x7f0a0127
-			public const int renderSurface = 2131362087;
+			// aapt resource value: 0x7f0a012b
+			public const int renderSurface = 2131362091;
 			
 			// aapt resource value: 0x7f0a004a
 			public const int right = 2131361866;
 			
-			// aapt resource value: 0x7f0a011a
-			public const int right_icon = 2131362074;
+			// aapt resource value: 0x7f0a011e
+			public const int right_icon = 2131362078;
 			
-			// aapt resource value: 0x7f0a0116
-			public const int right_side = 2131362070;
+			// aapt resource value: 0x7f0a011a
+			public const int right_side = 2131362074;
 			
 			// aapt resource value: 0x7f0a000c
 			public const int save_image_matrix = 2131361804;
@@ -16221,6 +20557,15 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a00af
 			public const int select_dialog_listview = 2131361967;
 			
+			// aapt resource value: 0x7f0a0131
+			public const int shellcontent_appbar = 2131362097;
+			
+			// aapt resource value: 0x7f0a0133
+			public const int shellcontent_scrollview = 2131362099;
+			
+			// aapt resource value: 0x7f0a0132
+			public const int shellcontent_toolbar = 2131362098;
+			
 			// aapt resource value: 0x7f0a009a
 			public const int shortcut = 2131361946;
 			
@@ -16233,17 +20578,17 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0025
 			public const int showTitle = 2131361829;
 			
-			// aapt resource value: 0x7f0a0130
-			public const int sliding_tabs = 2131362096;
+			// aapt resource value: 0x7f0a013b
+			public const int sliding_tabs = 2131362107;
 			
-			// aapt resource value: 0x7f0a00db
-			public const int smallLabel = 2131362011;
+			// aapt resource value: 0x7f0a00dd
+			public const int smallLabel = 2131362013;
 			
-			// aapt resource value: 0x7f0a00e2
-			public const int snackbar_action = 2131362018;
+			// aapt resource value: 0x7f0a00e4
+			public const int snackbar_action = 2131362020;
 			
-			// aapt resource value: 0x7f0a00e1
-			public const int snackbar_text = 2131362017;
+			// aapt resource value: 0x7f0a00e3
+			public const int snackbar_text = 2131362019;
 			
 			// aapt resource value: 0x7f0a0043
 			public const int snap = 2131361859;
@@ -16266,8 +20611,8 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a004b
 			public const int start = 2131361867;
 			
-			// aapt resource value: 0x7f0a0111
-			public const int status_bar_latest_event_content = 2131362065;
+			// aapt resource value: 0x7f0a0115
+			public const int status_bar_latest_event_content = 2131362069;
 			
 			// aapt resource value: 0x7f0a009b
 			public const int submenuarrow = 2131361947;
@@ -16275,17 +20620,17 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a00ac
 			public const int submit_area = 2131361964;
 			
-			// aapt resource value: 0x7f0a012c
-			public const int suggestion_img = 2131362092;
+			// aapt resource value: 0x7f0a0137
+			public const int suggestion_img = 2131362103;
 			
-			// aapt resource value: 0x7f0a012d
-			public const int suggestion_text = 2131362093;
+			// aapt resource value: 0x7f0a0138
+			public const int suggestion_text = 2131362104;
 			
-			// aapt resource value: 0x7f0a012f
-			public const int tabItemImageView = 2131362095;
+			// aapt resource value: 0x7f0a013a
+			public const int tabItemImageView = 2131362106;
 			
-			// aapt resource value: 0x7f0a012e
-			public const int tabItemTextView = 2131362094;
+			// aapt resource value: 0x7f0a0139
+			public const int tabItemTextView = 2131362105;
 			
 			// aapt resource value: 0x7f0a001f
 			public const int tabMode = 2131361823;
@@ -16296,8 +20641,8 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a001a
 			public const int text = 2131361818;
 			
-			// aapt resource value: 0x7f0a012b
-			public const int text1 = 2131362091;
+			// aapt resource value: 0x7f0a0136
+			public const int text1 = 2131362102;
 			
 			// aapt resource value: 0x7f0a001b
 			public const int text2 = 2131361819;
@@ -16308,8 +20653,8 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a008f
 			public const int textSpacerNoTitle = 2131361935;
 			
-			// aapt resource value: 0x7f0a00e8
-			public const int text_input_password_toggle = 2131362024;
+			// aapt resource value: 0x7f0a00ea
+			public const int text_input_password_toggle = 2131362026;
 			
 			// aapt resource value: 0x7f0a0014
 			public const int textinput_counter = 2131361812;
@@ -16317,8 +20662,8 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0015
 			public const int textinput_error = 2131361813;
 			
-			// aapt resource value: 0x7f0a0117
-			public const int time = 2131362071;
+			// aapt resource value: 0x7f0a011b
+			public const int time = 2131362075;
 			
 			// aapt resource value: 0x7f0a001c
 			public const int title = 2131361820;
@@ -16329,11 +20674,11 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0095
 			public const int title_template = 2131361941;
 			
-			// aapt resource value: 0x7f0a0131
-			public const int toolbar = 2131362097;
+			// aapt resource value: 0x7f0a013c
+			public const int toolbar = 2131362108;
 			
-			// aapt resource value: 0x7f0a00ce
-			public const int tooltip_content_container = 2131361998;
+			// aapt resource value: 0x7f0a00d0
+			public const int tooltip_content_container = 2131362000;
 			
 			// aapt resource value: 0x7f0a003e
 			public const int top = 2131361854;
@@ -16341,11 +20686,11 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0094
 			public const int topPanel = 2131361940;
 			
-			// aapt resource value: 0x7f0a00df
-			public const int touch_outside = 2131362015;
+			// aapt resource value: 0x7f0a00e1
+			public const int touch_outside = 2131362017;
 			
-			// aapt resource value: 0x7f0a00d9
-			public const int trackball_points_list = 2131362009;
+			// aapt resource value: 0x7f0a00db
+			public const int trackball_points_list = 2131362011;
 			
 			// aapt resource value: 0x7f0a000f
 			public const int transition_current_scene = 2131361807;
@@ -16377,11 +20722,11 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a0016
 			public const int view_offset_helper = 2131361814;
 			
-			// aapt resource value: 0x7f0a0135
-			public const int visible = 2131362101;
+			// aapt resource value: 0x7f0a0140
+			public const int visible = 2131362112;
 			
-			// aapt resource value: 0x7f0a0102
-			public const int volume_item_container = 2131362050;
+			// aapt resource value: 0x7f0a0106
+			public const int volume_item_container = 2131362054;
 			
 			// aapt resource value: 0x7f0a003c
 			public const int withText = 2131361852;
@@ -16389,11 +20734,11 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0a002e
 			public const int wrap_content = 2131361838;
 			
-			// aapt resource value: 0x7f0a00d5
-			public const int xText = 2131362005;
+			// aapt resource value: 0x7f0a00d7
+			public const int xText = 2131362007;
 			
-			// aapt resource value: 0x7f0a00d6
-			public const int yText = 2131362006;
+			// aapt resource value: 0x7f0a00d8
+			public const int yText = 2131362008;
 			
 			static Id()
 			{
@@ -16561,316 +20906,328 @@ namespace RenderImage.Android
 			public const int androidnativezoomview_scrollbars = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int calendar_all_day_event_view = 2130968603;
+			public const int BottomTabLayout = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int calendar_day_event_view = 2130968604;
+			public const int calendar_all_day_event_view = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int data_form_autocomplete_editor = 2130968605;
+			public const int calendar_day_event_view = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int data_form_checkbox_editor = 2130968606;
+			public const int data_form_autocomplete_editor = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int data_form_date_editor = 2130968607;
+			public const int data_form_checkbox_editor = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int data_form_decimal_editor = 2130968608;
+			public const int data_form_date_editor = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int data_form_default_group_layout = 2130968609;
+			public const int data_form_decimal_editor = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int data_form_editor_header_layout_1 = 2130968610;
+			public const int data_form_default_group_layout = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int data_form_editor_header_layout_2 = 2130968611;
+			public const int data_form_editor_header_layout_1 = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int data_form_editor_layout_1 = 2130968612;
+			public const int data_form_editor_header_layout_2 = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int data_form_editor_layout_2 = 2130968613;
+			public const int data_form_editor_layout_1 = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int data_form_editor_validation_layout_1 = 2130968614;
+			public const int data_form_editor_layout_2 = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int data_form_expandable_group_layout = 2130968615;
+			public const int data_form_editor_validation_layout_1 = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int data_form_group_layout = 2130968616;
+			public const int data_form_expandable_group_layout = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int data_form_integer_editor = 2130968617;
+			public const int data_form_group_layout = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int data_form_linear_layout = 2130968618;
+			public const int data_form_integer_editor = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int data_form_list_editor = 2130968619;
+			public const int data_form_linear_layout = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int data_form_list_editor_item = 2130968620;
+			public const int data_form_list_editor = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int data_form_number_picker = 2130968621;
+			public const int data_form_list_editor_item = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int data_form_rad_autocomplete_editor = 2130968622;
+			public const int data_form_number_picker = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int data_form_radio_group_editor = 2130968623;
+			public const int data_form_rad_autocomplete_editor = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int data_form_root_layout = 2130968624;
+			public const int data_form_radio_group_editor = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int data_form_seek_bar_editor = 2130968625;
+			public const int data_form_root_layout = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int data_form_segmented_editor = 2130968626;
+			public const int data_form_seek_bar_editor = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int data_form_spinner_editor = 2130968627;
+			public const int data_form_segmented_editor = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int data_form_spinner_item = 2130968628;
+			public const int data_form_spinner_editor = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int data_form_switch_editor = 2130968629;
+			public const int data_form_spinner_item = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int data_form_text_editor = 2130968630;
+			public const int data_form_switch_editor = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int data_form_text_viewer = 2130968631;
+			public const int data_form_text_editor = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int data_form_time_editor = 2130968632;
+			public const int data_form_text_viewer = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int data_form_toggle_button_editor = 2130968633;
+			public const int data_form_time_editor = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int default_tooltip_content = 2130968634;
+			public const int data_form_toggle_button_editor = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int default_tooltip_ohlc_content = 2130968635;
+			public const int default_tooltip_content = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int default_tooltip_scatter_bubble_content = 2130968636;
+			public const int default_tooltip_ohlc_content = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int default_tooltip_scatter_content = 2130968637;
+			public const int default_tooltip_scatter_bubble_content = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int default_trackball_content = 2130968638;
+			public const int default_tooltip_scatter_content = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int default_trackball_item_content = 2130968639;
+			public const int default_trackball_content = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int design_bottom_navigation_item = 2130968640;
+			public const int default_trackball_item_content = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int design_bottom_sheet_dialog = 2130968641;
+			public const int design_bottom_navigation_item = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int design_layout_snackbar = 2130968642;
+			public const int design_bottom_sheet_dialog = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int design_layout_snackbar_include = 2130968643;
+			public const int design_layout_snackbar = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int design_layout_tab_icon = 2130968644;
+			public const int design_layout_snackbar_include = 2130968644;
 			
 			// aapt resource value: 0x7f040045
-			public const int design_layout_tab_text = 2130968645;
+			public const int design_layout_tab_icon = 2130968645;
 			
 			// aapt resource value: 0x7f040046
-			public const int design_menu_item_action_area = 2130968646;
+			public const int design_layout_tab_text = 2130968646;
 			
 			// aapt resource value: 0x7f040047
-			public const int design_navigation_item = 2130968647;
+			public const int design_menu_item_action_area = 2130968647;
 			
 			// aapt resource value: 0x7f040048
-			public const int design_navigation_item_header = 2130968648;
+			public const int design_navigation_item = 2130968648;
 			
 			// aapt resource value: 0x7f040049
-			public const int design_navigation_item_separator = 2130968649;
+			public const int design_navigation_item_header = 2130968649;
 			
 			// aapt resource value: 0x7f04004a
-			public const int design_navigation_item_subheader = 2130968650;
+			public const int design_navigation_item_separator = 2130968650;
 			
 			// aapt resource value: 0x7f04004b
-			public const int design_navigation_menu = 2130968651;
+			public const int design_navigation_item_subheader = 2130968651;
 			
 			// aapt resource value: 0x7f04004c
-			public const int design_navigation_menu_item = 2130968652;
+			public const int design_navigation_menu = 2130968652;
 			
 			// aapt resource value: 0x7f04004d
-			public const int design_text_input_password_icon = 2130968653;
+			public const int design_navigation_menu_item = 2130968653;
 			
 			// aapt resource value: 0x7f04004e
-			public const int drawer_blur_fade_layer = 2130968654;
+			public const int design_text_input_password_icon = 2130968654;
 			
 			// aapt resource value: 0x7f04004f
-			public const int inline_event = 2130968655;
+			public const int drawer_blur_fade_layer = 2130968655;
 			
 			// aapt resource value: 0x7f040050
-			public const int legend_item_view = 2130968656;
+			public const int FlyoutContent = 2130968656;
 			
 			// aapt resource value: 0x7f040051
-			public const int linear_layout = 2130968657;
+			public const int inline_event = 2130968657;
 			
 			// aapt resource value: 0x7f040052
-			public const int Main = 2130968658;
+			public const int legend_item_view = 2130968658;
 			
 			// aapt resource value: 0x7f040053
-			public const int mr_chooser_dialog = 2130968659;
+			public const int linear_layout = 2130968659;
 			
 			// aapt resource value: 0x7f040054
-			public const int mr_chooser_list_item = 2130968660;
+			public const int Main = 2130968660;
 			
 			// aapt resource value: 0x7f040055
-			public const int mr_controller_material_dialog_b = 2130968661;
+			public const int mr_chooser_dialog = 2130968661;
 			
 			// aapt resource value: 0x7f040056
-			public const int mr_controller_volume_item = 2130968662;
+			public const int mr_chooser_list_item = 2130968662;
 			
 			// aapt resource value: 0x7f040057
-			public const int mr_playback_control = 2130968663;
+			public const int mr_controller_material_dialog_b = 2130968663;
 			
 			// aapt resource value: 0x7f040058
-			public const int mr_volume_control = 2130968664;
+			public const int mr_controller_volume_item = 2130968664;
 			
 			// aapt resource value: 0x7f040059
-			public const int navigation_drawer_content = 2130968665;
+			public const int mr_playback_control = 2130968665;
 			
 			// aapt resource value: 0x7f04005a
-			public const int navigation_item_view = 2130968666;
+			public const int mr_volume_control = 2130968666;
 			
 			// aapt resource value: 0x7f04005b
-			public const int notification_action = 2130968667;
+			public const int navigation_drawer_content = 2130968667;
 			
 			// aapt resource value: 0x7f04005c
-			public const int notification_action_tombstone = 2130968668;
+			public const int navigation_item_view = 2130968668;
 			
 			// aapt resource value: 0x7f04005d
-			public const int notification_media_action = 2130968669;
+			public const int notification_action = 2130968669;
 			
 			// aapt resource value: 0x7f04005e
-			public const int notification_media_cancel_action = 2130968670;
+			public const int notification_action_tombstone = 2130968670;
 			
 			// aapt resource value: 0x7f04005f
-			public const int notification_template_big_media = 2130968671;
+			public const int notification_media_action = 2130968671;
 			
 			// aapt resource value: 0x7f040060
-			public const int notification_template_big_media_custom = 2130968672;
+			public const int notification_media_cancel_action = 2130968672;
 			
 			// aapt resource value: 0x7f040061
-			public const int notification_template_big_media_narrow = 2130968673;
+			public const int notification_template_big_media = 2130968673;
 			
 			// aapt resource value: 0x7f040062
-			public const int notification_template_big_media_narrow_custom = 2130968674;
+			public const int notification_template_big_media_custom = 2130968674;
 			
 			// aapt resource value: 0x7f040063
-			public const int notification_template_custom_big = 2130968675;
+			public const int notification_template_big_media_narrow = 2130968675;
 			
 			// aapt resource value: 0x7f040064
-			public const int notification_template_icon_group = 2130968676;
+			public const int notification_template_big_media_narrow_custom = 2130968676;
 			
 			// aapt resource value: 0x7f040065
-			public const int notification_template_lines_media = 2130968677;
+			public const int notification_template_custom_big = 2130968677;
 			
 			// aapt resource value: 0x7f040066
-			public const int notification_template_media = 2130968678;
+			public const int notification_template_icon_group = 2130968678;
 			
 			// aapt resource value: 0x7f040067
-			public const int notification_template_media_custom = 2130968679;
+			public const int notification_template_lines_media = 2130968679;
 			
 			// aapt resource value: 0x7f040068
-			public const int notification_template_part_chronometer = 2130968680;
+			public const int notification_template_media = 2130968680;
 			
 			// aapt resource value: 0x7f040069
-			public const int notification_template_part_time = 2130968681;
+			public const int notification_template_media_custom = 2130968681;
 			
 			// aapt resource value: 0x7f04006a
-			public const int number_picker = 2130968682;
+			public const int notification_template_part_chronometer = 2130968682;
 			
 			// aapt resource value: 0x7f04006b
-			public const int ohlc_trackball_item_content = 2130968683;
+			public const int notification_template_part_time = 2130968683;
 			
 			// aapt resource value: 0x7f04006c
-			public const int on_demand_automatic = 2130968684;
+			public const int number_picker = 2130968684;
 			
 			// aapt resource value: 0x7f04006d
-			public const int on_demand_manual = 2130968685;
+			public const int ohlc_trackball_item_content = 2130968685;
 			
 			// aapt resource value: 0x7f04006e
-			public const int popup_event = 2130968686;
+			public const int on_demand_automatic = 2130968686;
 			
 			// aapt resource value: 0x7f04006f
-			public const int radchartbase = 2130968687;
+			public const int on_demand_manual = 2130968687;
 			
 			// aapt resource value: 0x7f040070
-			public const int radlegendcontrol = 2130968688;
+			public const int popup_event = 2130968688;
 			
 			// aapt resource value: 0x7f040071
-			public const int range_trackball_item_content = 2130968689;
+			public const int radchartbase = 2130968689;
 			
 			// aapt resource value: 0x7f040072
-			public const int scrollview_scrollbars = 2130968690;
+			public const int radlegendcontrol = 2130968690;
 			
 			// aapt resource value: 0x7f040073
-			public const int select_dialog_item_material = 2130968691;
+			public const int range_trackball_item_content = 2130968691;
 			
 			// aapt resource value: 0x7f040074
-			public const int select_dialog_multichoice_material = 2130968692;
+			public const int RootLayout = 2130968692;
 			
 			// aapt resource value: 0x7f040075
-			public const int select_dialog_singlechoice_material = 2130968693;
+			public const int scrollview_scrollbars = 2130968693;
 			
 			// aapt resource value: 0x7f040076
-			public const int simple_empty_content = 2130968694;
+			public const int select_dialog_item_material = 2130968694;
 			
 			// aapt resource value: 0x7f040077
-			public const int simple_group_header_item = 2130968695;
+			public const int select_dialog_multichoice_material = 2130968695;
 			
 			// aapt resource value: 0x7f040078
-			public const int simple_list_item = 2130968696;
+			public const int select_dialog_singlechoice_material = 2130968696;
 			
 			// aapt resource value: 0x7f040079
-			public const int suggestion_item_layout = 2130968697;
+			public const int ShellContent = 2130968697;
 			
 			// aapt resource value: 0x7f04007a
-			public const int support_simple_spinner_dropdown_item = 2130968698;
+			public const int simple_empty_content = 2130968698;
 			
 			// aapt resource value: 0x7f04007b
-			public const int tab_item_view = 2130968699;
+			public const int simple_group_header_item = 2130968699;
 			
 			// aapt resource value: 0x7f04007c
-			public const int Tabbar = 2130968700;
+			public const int simple_list_item = 2130968700;
 			
 			// aapt resource value: 0x7f04007d
-			public const int table_layout = 2130968701;
+			public const int suggestion_item_layout = 2130968701;
 			
 			// aapt resource value: 0x7f04007e
-			public const int Toolbar = 2130968702;
+			public const int support_simple_spinner_dropdown_item = 2130968702;
 			
 			// aapt resource value: 0x7f04007f
-			public const int tooltip = 2130968703;
+			public const int tab_item_view = 2130968703;
 			
 			// aapt resource value: 0x7f040080
-			public const int tooltip_container = 2130968704;
+			public const int Tabbar = 2130968704;
 			
 			// aapt resource value: 0x7f040081
-			public const int trackball_container = 2130968705;
+			public const int table_layout = 2130968705;
 			
 			// aapt resource value: 0x7f040082
-			public const int trial_message = 2130968706;
+			public const int Toolbar = 2130968706;
+			
+			// aapt resource value: 0x7f040083
+			public const int tooltip = 2130968707;
+			
+			// aapt resource value: 0x7f040084
+			public const int tooltip_container = 2130968708;
+			
+			// aapt resource value: 0x7f040085
+			public const int trackball_container = 2130968709;
+			
+			// aapt resource value: 0x7f040086
+			public const int trial_message = 2130968710;
 			
 			static Layout()
 			{
@@ -16994,8 +21351,8 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0b0025
 			public const int abc_toolbar_collapse_description = 2131427365;
 			
-			// aapt resource value: 0x7f0b0044
-			public const int app_name = 2131427396;
+			// aapt resource value: 0x7f0b003f
+			public const int app_name = 2131427391;
 			
 			// aapt resource value: 0x7f0b0033
 			public const int appbar_scrolling_view_behavior = 2131427379;
@@ -17006,11 +21363,11 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0b0035
 			public const int character_counter_pattern = 2131427381;
 			
-			// aapt resource value: 0x7f0b0043
-			public const int hello = 2131427395;
-			
 			// aapt resource value: 0x7f0b003e
-			public const int list_view_default_empty_content = 2131427390;
+			public const int hello = 2131427390;
+			
+			// aapt resource value: 0x7f0b0040
+			public const int list_view_default_empty_content = 2131427392;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int mr_button_content_description = 2131427328;
@@ -17075,11 +21432,11 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0b0014
 			public const int mr_user_route_category_name = 2131427348;
 			
-			// aapt resource value: 0x7f0b003f
-			public const int on_demand_manual_button_busy = 2131427391;
+			// aapt resource value: 0x7f0b0041
+			public const int on_demand_manual_button_busy = 2131427393;
 			
-			// aapt resource value: 0x7f0b0040
-			public const int on_demand_manual_button_idle = 2131427392;
+			// aapt resource value: 0x7f0b0042
+			public const int on_demand_manual_button_idle = 2131427394;
 			
 			// aapt resource value: 0x7f0b0036
 			public const int password_toggle_content_description = 2131427382;
@@ -17102,11 +21459,11 @@ namespace RenderImage.Android
 			// aapt resource value: 0x7f0b003b
 			public const int status_bar_notification_info_overflow = 2131427387;
 			
-			// aapt resource value: 0x7f0b0041
-			public const int trial_message = 2131427393;
+			// aapt resource value: 0x7f0b0043
+			public const int trial_message = 2131427395;
 			
-			// aapt resource value: 0x7f0b0042
-			public const int trial_message_caption = 2131427394;
+			// aapt resource value: 0x7f0b0044
+			public const int trial_message_caption = 2131427396;
 			
 			static String()
 			{

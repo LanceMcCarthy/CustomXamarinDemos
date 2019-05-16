@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:input="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             x:Class="RenderImage.Portable.Theme">
+
+    <Color x:Key="HeaderBackgroundsColor">#4A4E52</Color>
+    <Color x:Key="DarkBackgroundColor">#F5F6F7</Color>
+    <Color x:Key="LightBackgroundColor">White</Color>
+    <Color x:Key="TextColor">#4A4E52</Color>
+    <Color x:Key="LightTextColor">White</Color>
+    <Color x:Key="BoardingPassAccentColor">#3A6BC7</Color>
+
+    <x:String x:Key="AirplaneIcon">&#xE81C;</x:String>
+    <x:String x:Key="ArrowIcon">&#xE820;</x:String>
+
+    <OnPlatform x:TypeArguments="x:String"
+                x:Key="IconsFont">
+        <On Platform="iOS">telerikfontexamples</On>
+        <On Platform="Android">Fonts/telerikfontexamples.ttf#telerikfontexamples</On>
+        <On Platform="UWP">/Assets/Fonts/telerikfontexamples.ttf#telerikfontexamples</On>
+    </OnPlatform>
+
+    <OnPlatform x:TypeArguments="x:String"
+                x:Key="RegularFont">
+        <On Platform="iOS">SFProText-Regular</On>
+        <On Platform="Android">Fonts/Roboto-Regular.ttf#Roboto</On>
+        <On Platform="UWP">/Assets/Fonts/segoeui.ttf#Segoe UI</On>
+    </OnPlatform>
+
+    <OnPlatform x:TypeArguments="x:String"
+                x:Key="MediumFont">
+        <On Platform="iOS">SFProText-Medium</On>
+        <On Platform="Android">Fonts/Roboto-Medium.ttf#Roboto</On>
+        <On Platform="UWP">/Assets/Fonts/segoeuib.ttf#Segoe UI</On>
+    </OnPlatform>
+
+    <Style x:Key="ActionButtonStyle"
+           TargetType="input:RadButton">
+        <Setter Property="BorderColor"
+                Value="SteelBlue" />
+        <Setter Property="BackgroundColor"
+                Value="AliceBlue" />
+        <Setter Property="TextColor"
+                Value="SteelBlue" />
+        <Setter Property="HorizontalOptions"
+                Value="Center" />
+        <Setter Property="VerticalOptions"
+                Value="End" />
+        <Setter Property="Margin"
+                Value="10" />
+        <Setter Property="Padding"
+                Value="5" />
+        <Setter Property="CornerRadius"
+                Value="25" />
+        <Setter Property="BorderWidth"
+                Value="2" />
+    </Style>
+
+    <Style TargetType="Label"
+           x:Key="HeaderLabelStyle">
+        <Setter Property="FontSize"
+                Value="18" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource MediumFont}" />
+        <Setter Property="TextColor"
+                Value="{StaticResource TextColor}" />
+        <Setter Property="Margin"
+                Value="0, 10, 0, 0" />
+    </Style>
+
+    <Style TargetType="Label"
+           x:Key="BodyLabelStyle">
+        <Setter Property="FontSize"
+                Value="14" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource RegularFont}" />
+        <Setter Property="TextColor"
+                Value="{StaticResource TextColor}" />
+    </Style>
+
+    
+
+    <Style TargetType="Label"
+           x:Key="PassBoxHeaderLabelStyle">
+        <Setter Property="TextColor"
+                Value="{StaticResource LightTextColor}" />
+        <Setter Property="Margin"
+                Value="0" />
+        <Setter Property="FontSize"
+                Value="24" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource MediumFont}" />
+    </Style>
+
+    <Style BasedOn="{StaticResource HeaderLabelStyle}"
+           TargetType="Label"
+           x:Key="DestinationsHeaderLabelStyle">
+        <Setter Property="TextColor"
+                Value="{StaticResource BoardingPassAccentColor}" />
+        <Setter Property="FontSize"
+                Value="36" />
+    </Style>
+
+    <Style BasedOn="{StaticResource BodyLabelStyle}"
+           TargetType="Label"
+           x:Key="DestinationsBodyLabelStyle">
+        <Setter Property="Margin"
+                Value="0, -10, 0, 0" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource MediumFont}" />
+    </Style>
+
+    <Style TargetType="StackLayout"
+           x:Key="DestinationsHeaderContainerStyle">
+        <Setter Property="Margin"
+                Value="0, 20, 0, 20" />
+    </Style>
+
+    <Style TargetType="Label"
+           x:Key="PassBoxPropertyNameLabelStyle"
+           BasedOn="{StaticResource BodyLabelStyle}">
+        <Setter Property="TextColor"
+                Value="{StaticResource BoardingPassAccentColor}" />
+        <Setter Property="Margin"
+                Value="0, 30, 0, 0" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource MediumFont}" />
+    </Style>
+
+    <Style TargetType="Label"
+           x:Key="PassBoxPropertyValueLabelStyle"
+           BasedOn="{StaticResource BodyLabelStyle}">
+        <Setter Property="FontSize"
+                Value="18" />
+        <Setter Property="FontFamily"
+                Value="{StaticResource MediumFont}" />
+    </Style>
+
+
+</ResourceDictionary>

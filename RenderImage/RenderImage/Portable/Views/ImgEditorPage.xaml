@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:telerikImageEditor="clr-namespace:Telerik.XamarinForms.ImageEditor;assembly=Telerik.XamarinForms.ImageEditor"
+             xmlns:portable="clr-namespace:RenderImage.Portable;assembly=RenderImage.Portable"
+             x:Class="RenderImage.Portable.Views.ImgEditorPage"
+             Title="Editor">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="save"
+                     Icon="save.png" 
+                     Clicked="SaveButton_OnClicked"/>
+    </ContentPage.ToolbarItems>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        
+        <telerikImageEditor:RadImageEditor x:Name="imageEditor">
+            <telerikImageEditor:RadImageEditor.Source>
+                <FileImageSource File="{x:Static portable:App.CapturedImageFilePath}" />
+            </telerikImageEditor:RadImageEditor.Source>
+        </telerikImageEditor:RadImageEditor>
+
+        <telerikImageEditor:RadImageEditorToolbar ImageEditor="{x:Reference imageEditor}"
+                                                  Grid.Row="1" />
+
+    </Grid>
+</ContentPage>

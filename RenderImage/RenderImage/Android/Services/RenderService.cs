@@ -2,13 +2,14 @@
 using System.Threading.Tasks;
 using Android.Graphics;
 using Plugin.CurrentActivity;
+using RenderImage.Portable.Models;
 using RenderImage.Portable.Services;
 
 namespace RenderImage.Android.Services
 {
     public class RenderService : IRenderService
     {
-        public Task<byte[]> RenderAsync()
+        public Task<byte[]> RenderAsync(RenderEncodingOptions encodingFormat = RenderEncodingOptions.Png)
         {
             return Task.Run(() =>
             {
@@ -22,14 +23,18 @@ namespace RenderImage.Android.Services
 
                     using (var stream = new MemoryStream())
                     {
-                        bitmap.Compress(Bitmap.CompressFormat.Png, 90, stream);
+                        bitmap.Compress(
+                            encodingFormat == RenderEncodingOptions.Jpeg ? Bitmap.CompressFormat.Jpeg : Bitmap.CompressFormat.Png,
+                            90,
+                            stream);
+
                         return stream.ToArray();
                     }
                 }
             });
         }
 
-        public Task<byte[]> RenderAsync(int x, int y, int width, int height)
+        public Task<byte[]> RenderAsync(int x, int y, int width, int height, RenderEncodingOptions encodingFormat = RenderEncodingOptions.Png)
         {
             return Task.Run(() =>
             {
@@ -49,7 +54,11 @@ namespace RenderImage.Android.Services
 
                         using (var stream = new MemoryStream())
                         {
-                            croppedBitmap.Compress(Bitmap.CompressFormat.Png, 90, stream);
+                            croppedBitmap.Compress(
+                                encodingFormat == RenderEncodingOptions.Jpeg ? Bitmap.CompressFormat.Jpeg : Bitmap.CompressFormat.Png,
+                                90,
+                                stream);
+
                             return stream.ToArray();
                         }
                     }
@@ -57,7 +66,7 @@ namespace RenderImage.Android.Services
             }); 
         }
 
-        public Task<byte[]> RenderRelativeAsync(int xProportion, int yProportion, int widthProportion, int heightProportion)
+        public Task<byte[]> RenderRelativeAsync(int xProportion, int yProportion, int widthProportion, int heightProportion, RenderEncodingOptions encodingFormat = RenderEncodingOptions.Png)
         {
             return Task.Run(() =>
             {
@@ -82,7 +91,11 @@ namespace RenderImage.Android.Services
 
                         using (var stream = new MemoryStream())
                         {
-                            croppedBitmap.Compress(Bitmap.CompressFormat.Png, 90, stream);
+                            croppedBitmap.Compress(
+                                encodingFormat == RenderEncodingOptions.Jpeg ? Bitmap.CompressFormat.Jpeg : Bitmap.CompressFormat.Png, 
+                                90, 
+                                stream);
+
                             return stream.ToArray();
                         }
                     }

@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using RenderImage.Portable.Models;
 
 namespace RenderImage.Portable.Services
 {
@@ -7,8 +8,9 @@ namespace RenderImage.Portable.Services
         /// <summary>
         /// Will render the entire display as an image byte[].
         /// </summary>
+        /// <param name="encodingFormat">Can be set to 'jpeg', but defaults to 'png'</param>
         /// <returns>Image byte array</returns>
-        Task<byte[]> RenderAsync();
+        Task<byte[]> RenderAsync(RenderEncodingOptions encodingFormat = RenderEncodingOptions.Png);
 
         /// <summary>
         /// Renders cropped area using absolute pixel position
@@ -18,8 +20,9 @@ namespace RenderImage.Portable.Services
         /// <param name="y">Top</param>
         /// <param name="width">Width</param>
         /// <param name="height">Height</param>
+        /// <param name="encodingFormat">Can be set to 'jpeg', but defaults to 'png'</param>
         /// <returns>Image byte array</returns>
-        Task<byte[]> RenderAsync(int x, int y, int width, int height);
+        Task<byte[]> RenderAsync(int x, int y, int width, int height, RenderEncodingOptions encodingFormat = RenderEncodingOptions.Png);
 
         /// <summary>
         /// Renders cropped area using proportional percentage values.
@@ -30,7 +33,8 @@ namespace RenderImage.Portable.Services
         /// <param name="yProportion">Top</param>
         /// <param name="widthProportion">Width</param>
         /// <param name="heightProportion">Height</param>
+        /// <param name="encodingFormat">Can be set to 'jpeg', but defaults to 'png'</param>
         /// <returns>Image byte array</returns>
-        Task<byte[]> RenderRelativeAsync(int xProportion, int yProportion, int widthProportion, int heightProportion);
+        Task<byte[]> RenderRelativeAsync(int xProportion, int yProportion, int widthProportion, int heightProportion, RenderEncodingOptions encodingFormat = RenderEncodingOptions.Png);
     }
 }

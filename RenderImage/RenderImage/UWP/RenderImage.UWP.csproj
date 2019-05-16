@@ -102,21 +102,30 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="..\Portable\Images\export.png">
+      <Link>export.png</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Portable\Images\save.png">
+      <Link>save.png</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Fonts\segoeui.ttf" />
+    <Content Include="Assets\Fonts\segoeuib.ttf" />
+    <Content Include="Assets\Fonts\segoeuii.ttf" />
+    <Content Include="Assets\Fonts\segoeuil.ttf" />
+    <Content Include="Assets\Fonts\segoeuisl.ttf" />
+    <Content Include="Assets\Fonts\segoeuiz.ttf" />
+    <Content Include="Assets\Fonts\seguibl.ttf" />
+    <Content Include="Assets\Fonts\seguibli.ttf" />
+    <Content Include="Assets\Fonts\seguili.ttf" />
+    <Content Include="Assets\Fonts\seguisb.ttf" />
+    <Content Include="Assets\Fonts\seguisbi.ttf" />
+    <Content Include="Assets\Fonts\seguisli.ttf" />
+    <Content Include="Assets\Fonts\telerikfontexamples.ttf" />
     <None Include="Windows_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\Portable\Images\FullCrop.png">
-      <Link>FullCrop.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Portable\Images\AbsCrop.png">
-      <Link>AbsCrop.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Portable\Images\PropCrop.png">
-      <Link>PropCrop.png</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-100.png" />
     <Content Include="Assets\LockScreenLogo.scale-125.png" />
@@ -162,9 +171,9 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Telerik.UI.for.Xamarin">
-      <Version>2019.1.318.1</Version>
+      <Version>2019.2.513.1</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1039999" />
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.344457" />
     <PackageReference Include="SkiaSharp" Version="1.68.0" />
     <PackageReference Include="SkiaSharp.Views " Version="1.68.0" />
     <PackageReference Include="SkiaSharp.Views.Forms " Version="1.68.0" />
