@@ -55,6 +55,9 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe">
+      <Version>4.5.2</Version>
+    </PackageReference>
     <PackageReference Include="Telerik.UI.for.Xamarin">
       <Version>2019.2.619.1</Version>
     </PackageReference>

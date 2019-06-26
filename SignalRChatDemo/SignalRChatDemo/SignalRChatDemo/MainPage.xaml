@@ -3,14 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:conversationalUi="clr-namespace:Telerik.XamarinForms.ConversationalUI;assembly=Telerik.XamarinForms.ConversationalUI"
+             xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
              mc:Ignorable="d"
-             x:Class="SignalRChatDemo.MainPage">
+             x:Class="SignalRChatDemo.MainPage"
+             x:Name="Page">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="StatusLabel"
+               Text="{Binding BindingContext.service.ConnectionState, Source={x:Reference Page}}"/>
+
+        <conversationalUi:RadChat x:Name="ChatControl"
+                                  Grid.Row="1" />
+
+        <primitives:RadBusyIndicator x:Name="BusyIndicator" 
+                                     Grid.Row="1"/>
+    </Grid>
 
 </ContentPage>
