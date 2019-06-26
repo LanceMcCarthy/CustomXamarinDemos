@@ -1,6 +1,7 @@
 # CustomXamarinDemos
 
 Readme Quick-Links
+- [SignalR and ConversationalUI](https://github.com/LanceMcCarthy/CustomXamarinDemos#SignalR%20and%20ConversationalUI) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/SignalRChatDemo))
 - [IconGenerator Helper](https://github.com/LanceMcCarthy/CustomXamarinDemos#IconGenerator) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/IconAssetGenerator))
 - [Real-time Filtering Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#RealTimeFiltering) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/RealTimeFilteringDemos))
 - [Cascading AutoCompleteViews Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#CascadingAutoCompleteViews) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/CascadingAutoCompleteViews))
@@ -11,6 +12,12 @@ Readme Quick-Links
 - [Workouts](https://github.com/LanceMcCarthy/CustomXamarinDemos#Workouts) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/Workouts))
 - [Drawer Dismiss Effect](https://github.com/LanceMcCarthy/CustomXamarinDemos#DrawerDismissEffect) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/DrawerDismissEffect))
 - [Android Call Detector](https://github.com/LanceMcCarthy/CustomXamarinDemos#AndroidCallDetector) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/CallDetector))
+
+## SignalR and ConversationalUI
+
+A demo that showcases the use of **SignalR** with the UI for Xamarin `RadChat` control. The source code includes the SignalR Hub project (ASP.NET Core 2.2 application)!
+
+![SignalR Demo](https://user-images.githubusercontent.com/3520532/60218868-a1b68b00-983e-11e9-8bec-9d6c934e90b5.png)
 
 ## IconGenerator
 
