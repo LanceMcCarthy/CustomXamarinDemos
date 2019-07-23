@@ -15,14 +15,27 @@ namespace CustomSeriesLabels.UWP.Effects
             {
                 if (Control is RadCartesianChart nativeChart)
                 {
-                    var series = nativeChart.Series.FirstOrDefault() as SplineAreaSeries;
+                    foreach (var series in nativeChart.Series)
+                    {
+                        series.LabelDefinitions.Clear();
 
-                    var labelDefinition = new ChartSeriesLabelDefinition();
+                        var labelDefinition = new ChartSeriesLabelDefinition();
 
-                    // Note: This DataTemplate is defined in the UWP project's App.xaml
-                    labelDefinition.Template = App.Current.Resources["CustomChartLabelTemplate"] as Windows.UI.Xaml.DataTemplate;
+                        if (series is SplineAreaSeries)
+                        {
+                            // Note: The DataTemplates must be defined in the UWP project's App.xaml file, not Xamarin.Forms App.xaml
+                            labelDefinition.Template = App.Current.Resources["HorizontalLabelTemplate"] as Windows.UI.Xaml.DataTemplate;
+                            
+                        }
 
-                    series.LabelDefinitions.Add(labelDefinition);
+                        if (series is BarSeries)
+                        {
+                            // Note: The DataTemplates must be defined in the UWP project's App.xaml file, not Xamarin.Forms App.xaml
+                            labelDefinition.Template = App.Current.Resources["VerticalLabelTemplate"] as Windows.UI.Xaml.DataTemplate;
+                        }
+
+                        series.LabelDefinitions.Add(labelDefinition);
+                    }
                 }
             }
         }

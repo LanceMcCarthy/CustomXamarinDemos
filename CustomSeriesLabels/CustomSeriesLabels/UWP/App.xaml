@@ -1,18 +1,33 @@
-﻿<Application
-    x:Class="CustomSeriesLabels.UWP.App"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:CustomSeriesLabels.UWP"
-    RequestedTheme="Light">
+﻿<Application x:Class="CustomSeriesLabels.UWP.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:CustomSeriesLabels.UWP"
+             RequestedTheme="Light">
 
     <Application.Resources>
-        <DataTemplate x:Key="CustomChartLabelTemplate">
+        <DataTemplate x:Key="HorizontalLabelTemplate">
             <Grid Background="Red">
                 <TextBlock Text="{Binding DataItem.Value}"
                            Foreground="White"
                            Margin="5" />
             </Grid>
         </DataTemplate>
-    </Application.Resources>
 
+        <DataTemplate x:Key="VerticalLabelTemplate">
+            <Grid Background="DarkSlateGray"
+                  Padding="5"
+                  RenderTransformOrigin="0.5,0.5">
+                <Grid.RenderTransform>
+                    <RotateTransform CenterX="0.5"
+                                     CenterY="0.5"
+                                     Angle="90" />
+                </Grid.RenderTransform>
+                <TextBlock Text="{Binding DataItem.Value}"
+                           Foreground="White"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Margin="5" />
+            </Grid>
+        </DataTemplate>
+    </Application.Resources>
 </Application>

@@ -12,10 +12,24 @@
     </ContentPage.BindingContext>
 
     <Grid>
+        <Grid.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS"
+                    Value="5,20,5,10" />
+                <On Platform="Android"
+                    Value="10" />
+                <On Platform="UWP"
+                    Value="10" />
+            </OnPlatform>
+        </Grid.Padding>
+
         <telerikChart:RadCartesianChart>
+            <!-- Xamarin.Forms Effect -->
             <telerikChart:RadCartesianChart.Effects>
                 <effects:CustomLabelEffect />
             </telerikChart:RadCartesianChart.Effects>
+
+            <!--Axes -->
             <telerikChart:RadCartesianChart.HorizontalAxis>
                 <telerikChart:CategoricalAxis ShowLabels="True" />
             </telerikChart:RadCartesianChart.HorizontalAxis>
@@ -23,8 +37,9 @@
                 <telerikChart:NumericalAxis ShowLabels="True" />
             </telerikChart:RadCartesianChart.VerticalAxis>
 
+            <!-- Series -->
             <telerikChart:RadCartesianChart.Series>
-                <telerikChart:SplineAreaSeries ItemsSource="{Binding CategoricalData}"
+                <telerikChart:SplineAreaSeries ItemsSource="{Binding SplineAreaSeriesData}"
                                                ShowLabels="True">
                     <telerikChart:SplineAreaSeries.ValueBinding>
                         <telerikChart:PropertyNameDataPointBinding PropertyName="Value" />
@@ -33,9 +48,22 @@
                         <telerikChart:PropertyNameDataPointBinding PropertyName="Category" />
                     </telerikChart:SplineAreaSeries.CategoryBinding>
                     <telerikChart:SplineAreaSeries.LabelBinding>
-                        <telerikChart:PropertyNameDataPointBinding PropertyName="Label" />
+                        <telerikChart:PropertyNameDataPointBinding PropertyName="Category" />
                     </telerikChart:SplineAreaSeries.LabelBinding>
                 </telerikChart:SplineAreaSeries>
+
+                <telerikChart:BarSeries ItemsSource="{Binding BarSeriesData}"
+                                        ShowLabels="True">
+                    <telerikChart:BarSeries.ValueBinding>
+                        <telerikChart:PropertyNameDataPointBinding PropertyName="Value" />
+                    </telerikChart:BarSeries.ValueBinding>
+                    <telerikChart:BarSeries.CategoryBinding>
+                        <telerikChart:PropertyNameDataPointBinding PropertyName="Category" />
+                    </telerikChart:BarSeries.CategoryBinding>
+                    <telerikChart:BarSeries.LabelBinding>
+                        <telerikChart:PropertyNameDataPointBinding PropertyName="Category" />
+                    </telerikChart:BarSeries.LabelBinding>
+                </telerikChart:BarSeries>
             </telerikChart:RadCartesianChart.Series>
         </telerikChart:RadCartesianChart>
     </Grid>

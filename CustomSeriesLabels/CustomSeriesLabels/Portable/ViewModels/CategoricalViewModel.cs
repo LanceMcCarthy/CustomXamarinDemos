@@ -1,20 +1,32 @@
 ﻿using System.Collections.ObjectModel;
+using CommonHelpers.Common;
 using CustomSeriesLabels.Portable.Models;
 
 namespace CustomSeriesLabels.Portable.ViewModels
 {
-    public class CategoricalViewModel
+    public class CategoricalViewModel : ViewModelBase
     {
-        public CategoricalViewModel() { }
-
-        public ObservableCollection<CategoricalData> CategoricalData { get; set; } = new ObservableCollection<CategoricalData>
+        public CategoricalViewModel()
         {
-            new CategoricalData { Category = "One", Label = "Item 1", Value = 1.1},
-            new CategoricalData { Category = "Two", Label = "Item 2", Value = 1.5 },
-            new CategoricalData { Category = "Three", Label = "Item 3", Value = 1.2 },
-            new CategoricalData { Category = "Four", Label = "Item 4", Value = 1.4 },
-            new CategoricalData { Category = "Five", Label = "Item 5", Value = 1.8 },
-            new CategoricalData { Category = "Six", Label = "Item 6", Value = 1.0 }
-        };
+            SplineAreaSeriesData = new ObservableCollection<CategoricalData>
+            {
+                new CategoricalData { Category = "One", Value = 6},
+                new CategoricalData { Category = "Two", Value = 7 },
+                new CategoricalData { Category = "Three", Value = 5 },
+                new CategoricalData { Category = "Four", Value = 7 },
+                new CategoricalData { Category = "Five", Value = 6 },
+            };
+
+            BarSeriesData = new ObservableCollection<CategoricalData>();
+
+            foreach (var item in SplineAreaSeriesData)
+            {
+                BarSeriesData.Add(new CategoricalData { Category = item.Category, Value = item.Value - 2});
+            }
+        }
+
+        public ObservableCollection<CategoricalData> SplineAreaSeriesData { get; set; }
+
+        public ObservableCollection<CategoricalData> BarSeriesData { get; set; }
     }
 }
