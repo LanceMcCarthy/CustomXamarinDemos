@@ -12,6 +12,7 @@ Readme Quick-Links
 - [Workouts](https://github.com/LanceMcCarthy/CustomXamarinDemos#Workouts) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/Workouts))
 - [Drawer Dismiss Effect](https://github.com/LanceMcCarthy/CustomXamarinDemos#DrawerDismissEffect) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/DrawerDismissEffect))
 - [Android Call Detector](https://github.com/LanceMcCarthy/CustomXamarinDemos#AndroidCallDetector) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/CallDetector))
+- ReportViewer Control ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/XFReportViewerDemo))
 
 ## SignalR and ConversationalUI
 
