@@ -150,13 +150,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Telerik.UI.for.Xamarin">
-      <Version>2018.3.1109.1</Version>
+      <Version>2019.3.1119.1</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
-    <PackageReference Include="SkiaSharp" Version="1.60.3" />
-    <PackageReference Include="SkiaSharp.Views " Version="1.60.3" />
-    <PackageReference Include="SkiaSharp.Views.Forms " Version="1.60.3" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.9" />
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
+    <PackageReference Include="SkiaSharp" Version="1.68.1" />
+    <PackageReference Include="SkiaSharp.Views " Version="1.68.1" />
+    <PackageReference Include="SkiaSharp.Views.Forms " Version="1.68.1" />
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.9" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Portable\RangeSelectionTest.Portable.csproj">
