@@ -1,17 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
              xmlns:local="clr-namespace:CustomSeriesLabels.Portable"
              xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
              xmlns:effects="clr-namespace:CustomSeriesLabels.Portable.Effects"
              xmlns:viewModels="clr-namespace:CustomSeriesLabels.Portable.ViewModels;assembly=CustomSeriesLabels.Portable"
              x:Class="CustomSeriesLabels.Portable.MainPage">
 
-    <ContentPage.BindingContext>
-        <viewModels:CategoricalViewModel />
-    </ContentPage.BindingContext>
+    <d:ContentPage.BindingContext>
+        <viewModels:MainViewModel />
+    </d:ContentPage.BindingContext>
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
         <Grid.Padding>
             <OnPlatform x:TypeArguments="Thickness">
                 <On Platform="iOS"
@@ -23,7 +30,7 @@
             </OnPlatform>
         </Grid.Padding>
 
-        <telerikChart:RadCartesianChart>
+        <telerikChart:RadCartesianChart Grid.Row="0">
             <!-- Xamarin.Forms Effect -->
             <telerikChart:RadCartesianChart.Effects>
                 <effects:CustomLabelEffect />
@@ -64,6 +71,30 @@
                         <telerikChart:PropertyNameDataPointBinding PropertyName="Category" />
                     </telerikChart:BarSeries.LabelBinding>
                 </telerikChart:BarSeries>
+            </telerikChart:RadCartesianChart.Series>
+        </telerikChart:RadCartesianChart>
+
+        <telerikChart:RadCartesianChart x:Name="ScatterChart"
+                                        Grid.Row="1">
+            <telerikChart:RadCartesianChart.Effects>
+                <effects:CustomLabelEffect />
+            </telerikChart:RadCartesianChart.Effects>
+            <telerikChart:RadCartesianChart.HorizontalAxis>
+                <telerikChart:NumericalAxis ShowLabels="False" />
+            </telerikChart:RadCartesianChart.HorizontalAxis>
+            <telerikChart:RadCartesianChart.VerticalAxis>
+                <telerikChart:NumericalAxis ShowLabels="False" />
+            </telerikChart:RadCartesianChart.VerticalAxis>
+            <telerikChart:RadCartesianChart.Series>
+                <telerikChart:ScatterLineSeries ItemsSource="{Binding ScatterSeriesData}"
+                                                ShowLabels="False">
+                    <telerikChart:ScatterLineSeries.XValueBinding>
+                        <telerikChart:PropertyNameDataPointBinding PropertyName="PointX" />
+                    </telerikChart:ScatterLineSeries.XValueBinding>
+                    <telerikChart:ScatterLineSeries.YValueBinding>
+                        <telerikChart:PropertyNameDataPointBinding PropertyName="PointY" />
+                    </telerikChart:ScatterLineSeries.YValueBinding>
+                </telerikChart:ScatterLineSeries>
             </telerikChart:RadCartesianChart.Series>
         </telerikChart:RadCartesianChart>
     </Grid>

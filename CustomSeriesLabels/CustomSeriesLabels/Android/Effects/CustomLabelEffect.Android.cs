@@ -1,5 +1,6 @@
 ﻿using Com.Telerik.Widget.Chart.Visualization.CartesianChart;
 using Com.Telerik.Widget.Chart.Visualization.CartesianChart.Series.Categorical;
+using Com.Telerik.Widget.Chart.Visualization.CartesianChart.Series.Scatter;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using Color = Android.Graphics.Color; // Disambiguate .NET or Xamarin.Forms Color
@@ -35,6 +36,11 @@ namespace CustomSeriesLabels.Android.Effects
                         barSeries.LabelTextColor = Color.White;
 
                         barSeries.LabelRenderer = new MyVerticalLabelRenderer(barSeries);
+                    }
+
+                    if (nativeChart.Series.Get(i) is ScatterLineSeries scatterLineSeries)
+                    {
+                        scatterLineSeries.DataPointRenderer = new MyScatterPointRenderer(scatterLineSeries);
                     }
                 }
             }
