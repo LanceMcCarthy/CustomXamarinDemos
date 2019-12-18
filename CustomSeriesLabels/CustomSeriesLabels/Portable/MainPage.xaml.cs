@@ -1,3 +1,4 @@
+using CustomSeriesLabels.Portable.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,6 +10,7 @@ namespace CustomSeriesLabels.Portable
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = new MainViewModel();
         }
     }
 }
