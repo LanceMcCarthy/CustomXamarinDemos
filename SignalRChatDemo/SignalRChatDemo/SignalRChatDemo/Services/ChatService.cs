@@ -10,7 +10,9 @@ namespace SignalRChatDemo.Services
     {
         private readonly HubConnection connection;
         public delegate void MessageReceived(string username, string message);
+        public delegate void TypersReceived(string username, bool isTyping);
         public event MessageReceived OnMessageReceived;
+        public event TypersReceived OnTypersUpdated;
 
         public ChatService(string url)
         {
@@ -30,11 +32,21 @@ namespace SignalRChatDemo.Services
             {
                 OnMessageReceived?.Invoke(username, text);
             });
+
+            connection.On<string, bool>("ReceiveTyper", (username, isTyping) =>
+            {
+                OnTypersUpdated?.Invoke(username, isTyping);
+            });
         }
 
         public async Task SendMessageAsync(string username, string text)
         {
             await connection.InvokeAsync("SendMessage", username, text);
+        }
+
+        public async Task SendTyperAsync(string username, bool isTyping)
+        {
+            await connection.InvokeAsync("SendTyper", username, isTyping);
         }
 
         public Task StartAsync()

@@ -7,7 +7,13 @@
              xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
              mc:Ignorable="d"
              x:Class="SignalRChatDemo.MainPage"
+             xmlns:common="clr-namespace:Telerik.XamarinForms.Common;assembly=Telerik.XamarinForms.Common"
+             xmlns:input="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
              x:Name="Page">
+
+    <ContentPage.Resources>
+        <conversationalUi:ChatListViewMarginConverter x:Key="ChatListViewMarginConverter" />
+    </ContentPage.Resources>
 
     <Grid>
         <Grid.RowDefinitions>
@@ -19,7 +25,65 @@
                Text="{Binding BindingContext.service.ConnectionState, Source={x:Reference Page}}"/>
 
         <conversationalUi:RadChat x:Name="ChatControl"
-                                  Grid.Row="1" />
+                                  Grid.Row="1">
+            <conversationalUi:RadChat.ControlTemplate>
+                <ControlTemplate>
+
+                    <Grid input:KeyboardHelper.IsTranslationTarget="True"
+                          RowSpacing="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <conversationalUi:ChatListView common:StyleManager.InheritedStyleClass="{TemplateBinding ActualStyleClass}"
+                                                       AutoScrollMode="{TemplateBinding AutoScrollMode}"
+                                                       ScrollMediator="{TemplateBinding ActualScrollMediator}"
+                                                       Margin="{Binding Height, Source={x:Reference PickerContainer}, Converter={StaticResource ChatListViewMarginConverter}}"
+                                                       ItemTemplate="{TemplateBinding ItemTemplateSelector}"
+                                                       ItemsSource="{TemplateBinding Items}"
+                                                       AutomationProperties.Name="ChatListView" />
+                        <common:RadContentView common:StyleManager.InheritedStyleClass="{TemplateBinding ActualStyleClass}"
+                                               Grid.Row="1"
+                                               Content="{TemplateBinding TypingIndicator}" />
+                        <common:RadContentView common:StyleManager.InheritedStyleClass="{TemplateBinding ActualStyleClass}"
+                                               x:Name="PickerContainer"
+                                               VerticalOptions="End"
+                                               Content="{TemplateBinding Picker}" />
+                        <Grid Grid.Row="2"
+                              BackgroundColor="{TemplateBinding InputAreaBackgroundColor}"
+                              Padding="5, 0, 0, 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <conversationalUi:ChatEntry common:StyleManager.InheritedStyleClass="{TemplateBinding ActualStyleClass}"
+                                                        Text="{TemplateBinding Message, Mode=TwoWay}"
+                                                        BackgroundColor="Transparent"
+                                                        VerticalOptions="Center"
+                                                        CompletedCommand="{TemplateBinding ActualSendMessageCommand}"
+                                                        FocusMediator="{TemplateBinding FocusMediator}"
+                                                        input:KeyboardHelper.IsTranslationSource="True" 
+                                                        TextChanged="RadEntry_OnTextChanged"/>
+
+                            <input:RadButton common:StyleManager.InheritedStyleClass="{TemplateBinding ActualStyleClass}"
+                                             Grid.Column="1"
+                                             Margin="0, 0, 10, 0"
+                                             BackgroundImage="{TemplateBinding SendMessageButtonImage}"
+                                             BackgroundColor="Transparent"
+                                             Command="{TemplateBinding ActualSendMessageCommand}"
+                                             WidthRequest="30"
+                                             HeightRequest="30"
+                                             VerticalOptions="Center" />
+                        </Grid>
+                    </Grid>
+                </ControlTemplate>
+            </conversationalUi:RadChat.ControlTemplate>
+            <conversationalUi:RadChat.TypingIndicator>
+                <conversationalUi:TypingIndicator x:Name="MyTypingIndicator" />
+            </conversationalUi:RadChat.TypingIndicator>
+        </conversationalUi:RadChat>
 
         <primitives:RadBusyIndicator x:Name="BusyIndicator" 
                                      Grid.Row="1"/>
