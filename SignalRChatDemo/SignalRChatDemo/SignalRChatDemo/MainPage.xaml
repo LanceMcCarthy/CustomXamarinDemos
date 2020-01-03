@@ -5,30 +5,35 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:conversationalUi="clr-namespace:Telerik.XamarinForms.ConversationalUI;assembly=Telerik.XamarinForms.ConversationalUI"
              xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
-             mc:Ignorable="d"
-             x:Class="SignalRChatDemo.MainPage"
              xmlns:common="clr-namespace:Telerik.XamarinForms.Common;assembly=Telerik.XamarinForms.Common"
              xmlns:input="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             xmlns:customControls="clr-namespace:SignalRChatDemo.CustomControls;assembly=SignalRChatDemo"
+             mc:Ignorable="d"
+             x:Class="SignalRChatDemo.MainPage"
              x:Name="Page">
 
     <ContentPage.Resources>
         <conversationalUi:ChatListViewMarginConverter x:Key="ChatListViewMarginConverter" />
+
+
     </ContentPage.Resources>
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <Label x:Name="StatusLabel"
-               Text="{Binding BindingContext.service.ConnectionState, Source={x:Reference Page}}"/>
+               Text="{Binding BindingContext.service.ConnectionState, Source={x:Reference Page}}" />
 
         <conversationalUi:RadChat x:Name="ChatControl"
                                   Grid.Row="1">
+            <conversationalUi:RadChat.TypingIndicator>
+                <conversationalUi:TypingIndicator x:Name="MyTypingIndicator" />
+            </conversationalUi:RadChat.TypingIndicator>
             <conversationalUi:RadChat.ControlTemplate>
                 <ControlTemplate>
-
                     <Grid input:KeyboardHelper.IsTranslationTarget="True"
                           RowSpacing="2">
                         <Grid.RowDefinitions>
@@ -58,14 +63,17 @@
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
 
-                            <conversationalUi:ChatEntry common:StyleManager.InheritedStyleClass="{TemplateBinding ActualStyleClass}"
-                                                        Text="{TemplateBinding Message, Mode=TwoWay}"
-                                                        BackgroundColor="Transparent"
-                                                        VerticalOptions="Center"
-                                                        CompletedCommand="{TemplateBinding ActualSendMessageCommand}"
-                                                        FocusMediator="{TemplateBinding FocusMediator}"
-                                                        input:KeyboardHelper.IsTranslationSource="True" 
-                                                        TextChanged="RadEntry_OnTextChanged"/>
+                            <!-- ***NOTE***  Original ChatEntry control is replaced with TimedChatEntry -->
+                            <customControls:TimedChatEntry x:Name="MyTimedChatEntry" 
+                                                           common:StyleManager.InheritedStyleClass="{TemplateBinding ActualStyleClass}"
+                                                           Text="{TemplateBinding Message, Mode=TwoWay}"
+                                                           BackgroundColor="Transparent"
+                                                           VerticalOptions="Center"
+                                                           CompletedCommand="{TemplateBinding ActualSendMessageCommand}"
+                                                           FocusMediator="{TemplateBinding FocusMediator}"
+                                                           input:KeyboardHelper.IsTranslationSource="True"
+                                                           TypingStarted="TimedChatEntry_OnTypingStarted"
+                                                           TypingEnded="TimedChatEntry_OnTypingEnded" />
 
                             <input:RadButton common:StyleManager.InheritedStyleClass="{TemplateBinding ActualStyleClass}"
                                              Grid.Column="1"
@@ -80,13 +88,10 @@
                     </Grid>
                 </ControlTemplate>
             </conversationalUi:RadChat.ControlTemplate>
-            <conversationalUi:RadChat.TypingIndicator>
-                <conversationalUi:TypingIndicator x:Name="MyTypingIndicator" />
-            </conversationalUi:RadChat.TypingIndicator>
         </conversationalUi:RadChat>
 
-        <primitives:RadBusyIndicator x:Name="BusyIndicator" 
-                                     Grid.Row="1"/>
+        <primitives:RadBusyIndicator x:Name="BusyIndicator"
+                                     Grid.Row="1" />
     </Grid>
 
 </ContentPage>

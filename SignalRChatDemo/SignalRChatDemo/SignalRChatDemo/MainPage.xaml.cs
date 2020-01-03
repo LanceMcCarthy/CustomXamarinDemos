@@ -1,7 +1,9 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
+using Microsoft.AspNetCore.SignalR.Client;
 using SignalRChatDemo.Services;
 using Telerik.XamarinForms.ConversationalUI;
 using Xamarin.Forms;
@@ -12,19 +14,17 @@ namespace SignalRChatDemo
     public partial class MainPage : ContentPage
     {
         private ChatService service;
-        private Author me = new Author { Name = "Xamarin.Forms User" };
-        private ObservableCollection<Author> participants = new ObservableCollection<Author>();
+        private readonly Author me = new Author { Name = "Xamarin.Forms User" };
+        private readonly ObservableCollection<Author> participants = new ObservableCollection<Author>();
 
         public MainPage()
         {
             InitializeComponent();
 
             BindingContext = this;
-
             ChatControl.Author = me;
 
             ((INotifyCollectionChanged)ChatControl.Items).CollectionChanged += ChatItems_CollectionChanged;
-            MyTypingIndicator.Authors.CollectionChanged += TypingIndicatorAuthors_CollectionChanged;
         }
 
         protected override async void OnAppearing()
@@ -145,37 +145,20 @@ namespace SignalRChatDemo
             }
         }
 
-        private async void TypingIndicatorAuthors_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        private async void TimedChatEntry_OnTypingStarted(object sender, EventArgs e)
         {
-            if (e.NewItems != null && e.NewItems.Contains(me))
-            {
-                await service.SendTyperAsync(me.Name, true);
-            }
+            if (service == null || !BusyIndicator.IsBusy)
+                return; // Not ready yet, don't want to fire too early
 
-            if (e.OldItems != null && e.OldItems.Contains(me))
-            {
-                await service.SendTyperAsync(me.Name, false);
-            }
+            await service.SendTyperAsync(me.Name, true);
         }
 
-        private void RadEntry_OnTextChanged(object sender, TextChangedEventArgs e)
+        private async void TimedChatEntry_OnTypingEnded(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(e.NewTextValue))
-            {
-                // If the text is not empty add the user to the current typers list
-                if (!MyTypingIndicator.Authors.Contains(me))
-                {
-                    MyTypingIndicator.Authors.Add(me);
-                }
-            }
-            else
-            {
-                // USer has sent message because text is empty, remove them from the typers
-                if (MyTypingIndicator.Authors.Contains(me))
-                {
-                    MyTypingIndicator.Authors.Remove(me);
-                }
-            }
+            if (service == null || !BusyIndicator.IsBusy)
+                return; // Not ready yet, don't want to fire too early
+
+            await service.SendTyperAsync(me.Name, false);
         }
     }
 }

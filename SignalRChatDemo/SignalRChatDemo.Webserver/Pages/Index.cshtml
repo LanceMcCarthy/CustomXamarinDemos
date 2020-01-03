@@ -1,35 +1,41 @@
 ﻿@page
-    <div class="container">
-        <div class="row">&nbsp;</div>
-        <div class="row">
-            <div class="col-6">&nbsp;</div>
-            <div class="col-6">
-                UserName <input type="text" id="userInput" />
-                <br />
-                Message <input type="text" id="messageInput" />
-                <input type="button" id="sendButton" value="Send Message" />
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <hr />
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-6">&nbsp;</div>
-            <div class="col-6">
-                <ul id="messagesList"></ul>
-            </div>
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            UserName <input type="text" id="userInput" />
+            <br />
+            Message <input type="text" id="messageInput" />
+            <input type="button" id="sendButton" value="Send Message" />
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+
 <script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
 <script>
     "use strict";
     
-    var currentlyTyping = false;
     var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
+    var typingTimer;
+    var isTyping = false;
+    var doneTypingInterval = 2000;
+    var $input = $('#messageInput');
 
     //Disable send button until connection is established
     document.getElementById("sendButton").disabled = true;
@@ -37,15 +43,22 @@
     // insert messages
     connection.on("ReceiveMessage", function (user, message) {
         var msg = message.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-        var encodedMsg = user + " says " + msg;
+
         var li = document.createElement("li");
-        li.textContent = encodedMsg;
+        li.textContent = user + " says " + msg;
+
         document.getElementById("messagesList").appendChild(li);
     });
 
     // Add user typing messages
     connection.on("ReceiveTyper", function (user, isTyping) {
-        var encodedMsg = "";
+        var currentUser = document.getElementById("userInput").value;
+
+        // Ignore typer notification if it's the current user's name
+        if (currentUser === user)
+            return;
+
+        var encodedMsg;
 
         if (isTyping) {
             encodedMsg = user + " is typing...";
@@ -55,7 +68,6 @@
 
         var li = document.createElement("li");
         li.textContent = encodedMsg;
-
         document.getElementById("messagesList").appendChild(li);
     });
 
@@ -68,29 +80,32 @@
     document.getElementById("sendButton").addEventListener("click", function (event) {
         var user = document.getElementById("userInput").value;
         var message = document.getElementById("messageInput").value;
+
         connection.invoke("SendMessage", user, message).catch(function (err) {
             return console.error(err.toString());
         });
-        connection.invoke("SendTyper", user, false).catch(function (err) {
-            return console.error(err.toString());
-        });
-        currentlyTyping = false;
+
         event.preventDefault();
     });
 
-    document.getElementById("messageInput").addEventListener("keydown", function (event) {
-        if (currentlyTyping)
-            return;
+    $input.on('input propertychange paste', function () {
+        clearTimeout(typingTimer);
+        typingTimer = setTimeout(stoppedTyping, doneTypingInterval);
 
-        var user = document.getElementById("userInput").value;
-        var message = document.getElementById("messageInput").value;
-
-        if (message) {
-            connection.invoke("SendTyper", user, true).catch(function (err) {
-                return console.error(err.toString());
-            });
-            
-            currentlyTyping = true;
+        if(!isTyping){
+            startedTyping();
         }
     });
+
+    function startedTyping(){
+        var user = document.getElementById("userInput").value;
+        connection.invoke("SendTyper", user, true);
+        isTyping = true;
+    }
+
+    function stoppedTyping(){
+        var user = document.getElementById("userInput").value;
+        connection.invoke("SendTyper", user, false);
+        isTyping = false;
+    }
 </script>
