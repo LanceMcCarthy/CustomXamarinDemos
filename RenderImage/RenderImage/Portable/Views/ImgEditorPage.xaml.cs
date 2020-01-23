@@ -24,7 +24,7 @@ namespace RenderImage.Portable.Views
                 await imageEditor.SaveAsync(fileStream, ImageFormat.Jpeg, 0.9);
             }
 
-            await Navigation.PushAsync(new ResultsPage());
+            //await Navigation.PushAsync(new ResultsView());
         }
     }
 }

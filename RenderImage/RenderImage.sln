@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2003
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenderImage.Android", "RenderImage\Android\RenderImage.Android.csproj", "{ABC8C26C-2A61-4A74-8831-2C2B975CEA47}"
 EndProject
@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenderImage.iOS", "RenderIm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenderImage.UWP", "RenderImage\UWP\RenderImage.UWP.csproj", "{B29633DE-E93A-40ED-9690-DA8ABBB321E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenderImage.Portable", "RenderImage\Portable\RenderImage.Portable.csproj", "{C981D387-EB58-4DAA-B2CA-790422D9E316}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RenderImage.Portable", "RenderImage\Portable\RenderImage.Portable.csproj", "{C981D387-EB58-4DAA-B2CA-790422D9E316}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -127,7 +127,7 @@ Global
 		{32342D15-15D8-43CA-8B61-2E85DE748292}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
 		{32342D15-15D8-43CA-8B61-2E85DE748292}.AppStore|x64.ActiveCfg = AppStore|iPhone
 		{32342D15-15D8-43CA-8B61-2E85DE748292}.AppStore|x86.ActiveCfg = AppStore|iPhone
-		{32342D15-15D8-43CA-8B61-2E85DE748292}.Debug|Any CPU.ActiveCfg = Debug|iPhone
+		{32342D15-15D8-43CA-8B61-2E85DE748292}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
 		{32342D15-15D8-43CA-8B61-2E85DE748292}.Debug|ARM.ActiveCfg = Debug|iPhone
 		{32342D15-15D8-43CA-8B61-2E85DE748292}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{32342D15-15D8-43CA-8B61-2E85DE748292}.Debug|iPhone.Build.0 = Debug|iPhone
