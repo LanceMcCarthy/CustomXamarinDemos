@@ -1,5 +1,6 @@
 using Android.App;
 using Android.Content.PM;
+using Android.Runtime;
 using Android.OS;
 using Plugin.CurrentActivity;
 using RenderImage.Android.Services;
@@ -7,25 +8,25 @@ using Xamarin.Forms;
 
 namespace RenderImage.Android
 {
-    [Activity(Label = "RenderImage.Android", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
+    [Activity(Label = "RenderImage.Android", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle bundle)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
     
-            base.OnCreate(savedInstanceState);
+            base.OnCreate(bundle);
             
-            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            // ************ NOTE *************** //
 
             DependencyService.Register<RenderService>();
-            DependencyService.Register<HingeService>();
-            DependencyService.Register<LayoutService>();
 
-            HingeService.MainActivity = this;
-
-            CrossCurrentActivity.Current.Init(this, savedInstanceState);
+            // ********************************* //
+            
+            CrossCurrentActivity.Current.Init(this, bundle);
 
             LoadApplication(new Portable.App());
         }

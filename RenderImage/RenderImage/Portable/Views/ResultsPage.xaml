@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             xmlns:portable="clr-namespace:RenderImage.Portable;assembly=RenderImage.Portable"
+             x:Class="RenderImage.Portable.Views.ResultsPage"
+             Title="Final Result">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="export pdf"
+                     Icon="export.png"
+                     Clicked="ExportButton_OnClicked" />
+    </ContentPage.ToolbarItems>
+
+    <Grid BackgroundColor="DarkSlateGray">
+        <ScrollView>
+            <Image x:Name="image"
+                   Margin="10">
+                <Image.Source>
+                    <FileImageSource File="{x:Static portable:App.EditedImageFilePath}" />
+                </Image.Source>
+            </Image>
+        </ScrollView>
+
+        <primitives:RadBusyIndicator x:Name="BusyIndicator"
+                                     IsBusy="False"
+                                     IsVisible="False"
+                                     AnimationType="Animation3"
+                                     AnimationContentColor="SteelBlue"
+                                     BackgroundColor="#DDFFFFFF" />
+    </Grid>
+</ContentPage>
