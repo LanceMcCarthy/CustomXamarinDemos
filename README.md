@@ -13,6 +13,7 @@ Readme Quick-Links
 - [Drawer Dismiss Effect](https://github.com/LanceMcCarthy/CustomXamarinDemos#DrawerDismissEffect) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/DrawerDismissEffect))
 - [Android Call Detector](https://github.com/LanceMcCarthy/CustomXamarinDemos#AndroidCallDetector) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/CallDetector))
 - ReportViewer Control ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/XFReportViewerDemo))
+- [Custom Segmented Control](https://github.com/LanceMcCarthy/CustomXamarinDemos#SegmentCustomControl) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/SegmentedCustomControl))
 
 ## SignalR and ConversationalUI
 
@@ -80,6 +81,12 @@ A demo that shows you how to use Xamarin Effects to access the native features o
 
 ### Android
 ![Android Calendar](https://user-images.githubusercontent.com/3520532/42790912-6788c190-893b-11e8-8e39-cf550eaafdb9.png)
+
+## SegmentCustomControl
+
+This example shows how to build a custom control that dynamically generates RadButtons to create a SegmentedControl. It combines the features of the UI for Xamarin `RadButton` and `RadBorder` into a single control.
+
+![SegmentCustomControl](https://content.screencast.com/users/lance.mccarthy/folders/Snagit/media/1568d226-7fd3-4be2-80b3-17cbc87065f7/02.06.2020-19.32.GIF)
 
 ## TelerikThemeEditor
 
