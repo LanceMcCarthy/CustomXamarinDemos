@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SegmentedCustomControl.Portable"
+             xmlns:controls="clr-namespace:SegmentedCustomControl.Portable.Controls;assembly=SegmentedCustomControl.Portable"
+             xmlns:generic="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             x:Class="SegmentedCustomControl.Portable.Views.MainPage"
+             Title="{Binding Title}"
+             BackgroundColor="AntiqueWhite">
+
+    <Grid>
+        <controls:ButtonSegments ItemsSource="{Binding MyItems}"
+                                 SelectedIndex="{Binding MySelectedIndex, Mode=TwoWay}"
+                                 SelectedSegmentTextColor="#036ecb"
+                                 SelectedSegmentBackgroundColor="#e0edf8"
+                                 BackgroundColor="White"
+                                 BorderColor="#e1e1e1"
+                                 CornerRadius="4"
+                                 VerticalOptions="Start"
+                                 HeightRequest="30"
+                                 Margin="10">
+            <!-- Alternative to data binding 
+            <controls:ButtonSegments.ItemsSource>
+                <generic:List x:TypeArguments="x:String">
+                    <x:String>Popular</x:String>
+                    <x:String>Library</x:String>
+                </generic:List>
+            </controls:ButtonSegments.ItemsSource>
+        -->
+        </controls:ButtonSegments>
+
+        <Button Text="Change Selected Index"
+                Command="{Binding ChangeSelectedIndexCommand}"
+                VerticalOptions="End"
+                HorizontalOptions="Center"
+                Margin="5" />
+    </Grid>
+</ContentPage>

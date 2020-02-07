@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using SegmentedCustomControl.Portable.Views;
 using Xamarin.Forms;
 
 namespace SegmentedCustomControl.Portable
