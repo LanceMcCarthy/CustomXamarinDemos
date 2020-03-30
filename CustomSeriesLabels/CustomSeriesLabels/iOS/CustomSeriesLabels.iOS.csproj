@@ -87,7 +87,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Effects\CustomLabelEffect.iOS.cs" />
-    <Compile Include="Effects\MyBarChartDelegate.cs" />
+    <Compile Include="Effects\MyChartDelegate.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />

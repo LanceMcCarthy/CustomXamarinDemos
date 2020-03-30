@@ -5,9 +5,9 @@ using CustomSeriesLabels.Portable.Models;
 
 namespace CustomSeriesLabels.Portable.ViewModels
 {
-    public class MainViewModel : ViewModelBase
+    public class BarViewModel : ViewModelBase
     {
-        public MainViewModel()
+        public BarViewModel()
         {
             GenerateCategoricalData();
             GenerateScatterData();
@@ -45,7 +45,7 @@ namespace CustomSeriesLabels.Portable.ViewModels
 
             for (double x = 0; x < 30; x = x + 0.2)
             {
-                ScatterSeriesData.Add(new ScatterData{PointX = x, PointY = Math.Sin(x)});
+                ScatterSeriesData.Add(new ScatterData { PointX = x, PointY = Math.Sin(x) });
             }
         }
     }

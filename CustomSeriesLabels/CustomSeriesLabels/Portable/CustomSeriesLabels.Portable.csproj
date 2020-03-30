@@ -13,9 +13,23 @@
         <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
             <DependentUpon>*.xaml</DependentUpon>
         </Compile>
-        <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
+        <Compile Update="Views\CartesianPage.xaml.cs">
+          <DependentUpon>CartesianPage.xaml</DependentUpon>
+        </Compile>
+        <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\MainPage.xaml.cs">
             <DependentUpon>*.xaml</DependentUpon>
         </Compile>
+        <Compile Update="Views\RadialPage.xaml.cs">
+          <DependentUpon>RadialPage.xaml</DependentUpon>
+        </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Update="Views\RadialPage.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Views\CartesianPage.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
     </ItemGroup>
     <ItemGroup>
       <PackageReference Update="SkiaSharp.Views.Forms" Version="1.68.1.1" />

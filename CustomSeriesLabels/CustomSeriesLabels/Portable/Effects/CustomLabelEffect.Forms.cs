@@ -8,5 +8,7 @@ namespace CustomSeriesLabels.Portable.Effects
             : base("MyCompany.CustomLabelEffect")
         {
         }
+
+        public bool RotateLabels { get; set; }
     }
 }
