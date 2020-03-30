@@ -11,7 +11,6 @@ namespace CustomSeriesLabels.Portable.Views
         public MainPage()
         {
             InitializeComponent();
-            BindingContext = new MainViewModel();
         }
 
         private async void CartesianButton_OnClicked(object sender, EventArgs e)

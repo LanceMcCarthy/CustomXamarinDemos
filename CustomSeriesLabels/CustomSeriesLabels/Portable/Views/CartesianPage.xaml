@@ -8,6 +8,7 @@
              xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
              xmlns:effects="clr-namespace:CustomSeriesLabels.Portable.Effects"
              xmlns:viewModels="clr-namespace:CustomSeriesLabels.Portable.ViewModels;assembly=CustomSeriesLabels.Portable"
+             xmlns:formatters="clr-namespace:CustomSeriesLabels.Portable.Formatters;assembly=CustomSeriesLabels.Portable"
              x:Class="CustomSeriesLabels.Portable.Views.CartesianPage">
 
     <d:ContentPage.BindingContext>
@@ -33,12 +34,17 @@
         <telerikChart:RadCartesianChart Grid.Row="0">
             <!-- Xamarin.Forms Effect -->
             <telerikChart:RadCartesianChart.Effects>
-                <effects:CustomLabelEffect RotateLabels="True"/>
+                <effects:CustomLabelEffect RotateLabels="True" />
             </telerikChart:RadCartesianChart.Effects>
 
             <!--Axes -->
             <telerikChart:RadCartesianChart.HorizontalAxis>
-                <telerikChart:CategoricalAxis ShowLabels="True" />
+                <telerikChart:CategoricalAxis ShowLabels="True">
+                    <telerikChart:CategoricalAxis.LabelFormatter>
+                        <formatters:LongTextLabelFormatter MaxLineLength="12"
+                                                           MaxLength="100" />
+                    </telerikChart:CategoricalAxis.LabelFormatter>
+                </telerikChart:CategoricalAxis>
             </telerikChart:RadCartesianChart.HorizontalAxis>
             <telerikChart:RadCartesianChart.VerticalAxis>
                 <telerikChart:NumericalAxis ShowLabels="True" />
