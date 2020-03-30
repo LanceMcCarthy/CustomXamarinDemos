@@ -5,29 +5,35 @@
              RequestedTheme="Light">
 
     <Application.Resources>
-        <DataTemplate x:Key="HorizontalLabelTemplate">
-            <Grid Background="Red">
-                <TextBlock Text="{Binding DataItem.Value}"
-                           Foreground="White"
-                           Margin="5" />
-            </Grid>
-        </DataTemplate>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+            </ResourceDictionary.MergedDictionaries>
 
-        <DataTemplate x:Key="VerticalLabelTemplate">
-            <Grid Background="DarkSlateGray"
-                  Padding="5"
-                  RenderTransformOrigin="0.5,0.5">
-                <Grid.RenderTransform>
-                    <RotateTransform CenterX="0.5"
-                                     CenterY="0.5"
-                                     Angle="90" />
-                </Grid.RenderTransform>
-                <TextBlock Text="{Binding DataItem.Value}"
-                           Foreground="White"
-                           VerticalAlignment="Center"
-                           HorizontalAlignment="Center"
-                           Margin="5" />
-            </Grid>
-        </DataTemplate>
+            <DataTemplate x:Key="HorizontalLabelTemplate">
+                <Grid Background="Red">
+                    <TextBlock Text="{Binding DataItem.Value}"
+                               Foreground="White"
+                               Margin="5" />
+                </Grid>
+            </DataTemplate>
+
+            <DataTemplate x:Key="VerticalLabelTemplate">
+                <Grid Background="DarkSlateGray"
+                      Padding="5"
+                      RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <RotateTransform CenterX="0.5"
+                                         CenterY="0.5"
+                                         Angle="90" />
+                    </Grid.RenderTransform>
+                    <TextBlock Text="{Binding DataItem.Value}"
+                               Foreground="White"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"
+                               Margin="5" />
+                </Grid>
+            </DataTemplate>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

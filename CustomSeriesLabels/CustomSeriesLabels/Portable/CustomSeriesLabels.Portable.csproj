@@ -4,20 +4,34 @@
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="CommonHelpers" Version="1.0.12" />
-        <PackageReference Include="Telerik.UI.for.Xamarin" Version="2019.3.1119.1" />
-        <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
-        <PackageReference Include="SkiaSharp" Version="1.68.1" />
+        <PackageReference Include="Telerik.UI.for.Xamarin" Version="2020.1.318.1" />
+        <PackageReference Include="Xamarin.Forms" Version="4.5.0.495" />
+        <PackageReference Include="SkiaSharp" Version="1.68.1.1" />
         <PackageReference Include="SkiaSharp.Views.Forms " Version="1.68.0" />
     </ItemGroup>
     <ItemGroup>
         <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
             <DependentUpon>*.xaml</DependentUpon>
         </Compile>
-        <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
+        <Compile Update="Views\CartesianPage.xaml.cs">
+          <DependentUpon>CartesianPage.xaml</DependentUpon>
+        </Compile>
+        <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\MainPage.xaml.cs">
             <DependentUpon>*.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\RadialPage.xaml.cs">
+          <DependentUpon>RadialPage.xaml</DependentUpon>
         </Compile>
     </ItemGroup>
     <ItemGroup>
-      <PackageReference Update="SkiaSharp.Views.Forms" Version="1.68.1" />
+      <EmbeddedResource Update="Views\RadialPage.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Views\CartesianPage.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Update="SkiaSharp.Views.Forms" Version="1.68.1.1" />
     </ItemGroup>
 </Project>

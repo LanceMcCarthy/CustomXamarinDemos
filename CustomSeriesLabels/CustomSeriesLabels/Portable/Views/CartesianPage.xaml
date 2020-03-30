@@ -4,14 +4,15 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             xmlns:local="clr-namespace:CustomSeriesLabels.Portable"
+             xmlns:local="clr-namespace:CustomSeriesLabels.Portable.Views"
              xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
              xmlns:effects="clr-namespace:CustomSeriesLabels.Portable.Effects"
              xmlns:viewModels="clr-namespace:CustomSeriesLabels.Portable.ViewModels;assembly=CustomSeriesLabels.Portable"
-             x:Class="CustomSeriesLabels.Portable.MainPage">
+             xmlns:formatters="clr-namespace:CustomSeriesLabels.Portable.Formatters;assembly=CustomSeriesLabels.Portable"
+             x:Class="CustomSeriesLabels.Portable.Views.CartesianPage">
 
     <d:ContentPage.BindingContext>
-        <viewModels:MainViewModel />
+        <viewModels:BarViewModel />
     </d:ContentPage.BindingContext>
 
     <Grid>
@@ -33,12 +34,17 @@
         <telerikChart:RadCartesianChart Grid.Row="0">
             <!-- Xamarin.Forms Effect -->
             <telerikChart:RadCartesianChart.Effects>
-                <effects:CustomLabelEffect />
+                <effects:CustomLabelEffect RotateLabels="True" />
             </telerikChart:RadCartesianChart.Effects>
 
             <!--Axes -->
             <telerikChart:RadCartesianChart.HorizontalAxis>
-                <telerikChart:CategoricalAxis ShowLabels="True" />
+                <telerikChart:CategoricalAxis ShowLabels="True">
+                    <telerikChart:CategoricalAxis.LabelFormatter>
+                        <formatters:LongTextLabelFormatter MaxLineLength="12"
+                                                           MaxLength="100" />
+                    </telerikChart:CategoricalAxis.LabelFormatter>
+                </telerikChart:CategoricalAxis>
             </telerikChart:RadCartesianChart.HorizontalAxis>
             <telerikChart:RadCartesianChart.VerticalAxis>
                 <telerikChart:NumericalAxis ShowLabels="True" />

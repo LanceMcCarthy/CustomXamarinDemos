@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+using CustomSeriesLabels.Portable.Views;
 using Xamarin.Forms;
 
 namespace CustomSeriesLabels.Portable
@@ -13,7 +9,7 @@ namespace CustomSeriesLabels.Portable
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()

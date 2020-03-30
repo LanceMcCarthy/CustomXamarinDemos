@@ -1,4 +1,7 @@
-﻿using Telerik.XamarinForms.ChartRenderer.iOS;
+﻿using System;
+using System.Diagnostics;
+using System.Linq;
+using Telerik.XamarinForms.ChartRenderer.iOS;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
@@ -10,9 +13,19 @@ namespace CustomSeriesLabels.iOS.Effects
     {
         protected override void OnAttached()
         {
-            TKExtendedChart nativeChart = (TKExtendedChart)this.Control;
+            try
+            {
+                var effect = (Portable.Effects.CustomLabelEffect)Element.Effects.FirstOrDefault(e => e is Portable.Effects.CustomLabelEffect);
 
-            nativeChart.Delegate = new MyChartDelegate();
+                if(effect == null)
+                    return;
+
+                ((TKExtendedChart)this.Control).Delegate = new MyChartDelegate(effect.RotateLabels);
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine($"CustomLabelEffect Error: {ex}");
+            }
         }
 
         protected override void OnDetached()

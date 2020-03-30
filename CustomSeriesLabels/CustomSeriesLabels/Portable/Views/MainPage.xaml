@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:viewModels="clr-namespace:CustomSeriesLabels.Portable.ViewModels;assembly=CustomSeriesLabels.Portable"
+             x:Class="CustomSeriesLabels.Portable.Views.MainPage">
+
+    <d:ContentPage.BindingContext>
+        <viewModels:MainViewModel />
+    </d:ContentPage.BindingContext>
+
+    <Grid RowSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS"
+                    Value="5,20,5,10" />
+                <On Platform="Android"
+                    Value="10" />
+                <On Platform="UWP"
+                    Value="10" />
+            </OnPlatform>
+        </Grid.Padding>
+
+        <Label Text="Select Demo"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+        <Button Text="Cartesian Series"
+               HorizontalOptions="Center"
+               Clicked="CartesianButton_OnClicked"
+                Grid.Row="1"/>
+
+        <Button Text="Radial Series"
+               HorizontalOptions="Center"
+               Clicked="RadialButton_OnClicked"
+                Grid.Row="2" />
+    </Grid>
+</ContentPage>
