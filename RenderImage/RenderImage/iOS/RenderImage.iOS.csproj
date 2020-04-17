@@ -124,7 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Telerik.UI.for.Xamarin">
-      <Version>2020.1.114.1</Version>
+      <Version>2020.1.318.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991537" />
     <PackageReference Include="SkiaSharp" Version="1.68.1.1" />
