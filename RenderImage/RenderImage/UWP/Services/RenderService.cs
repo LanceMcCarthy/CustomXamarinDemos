@@ -22,7 +22,8 @@ namespace RenderImage.UWP.Services
             var pixels = pixelBuffer.ToArray();
             var displayInformation = DisplayInformation.GetForCurrentView();
 
-            var file = await ApplicationData.Current.LocalFolder.CreateFileAsync("temp" + ".png", CreationCollisionOption.ReplaceExisting);
+            var fileExtension = encodingFormat == RenderEncodingOptions.Png ? "png" : "jpg";
+            var file = await ApplicationData.Current.LocalFolder.CreateFileAsync($"temp.{fileExtension}", CreationCollisionOption.ReplaceExisting);
 
             using (var stream = await file.OpenAsync(FileAccessMode.ReadWrite))
             {
@@ -55,7 +56,8 @@ namespace RenderImage.UWP.Services
             var pixels = pixelBuffer.ToArray();
             var displayInformation = DisplayInformation.GetForCurrentView();
 
-            var file = await ApplicationData.Current.LocalFolder.CreateFileAsync("temp" + ".png", CreationCollisionOption.ReplaceExisting);
+            var fileExtension = encodingFormat == RenderEncodingOptions.Png ? "png" : "jpg";
+            var file = await ApplicationData.Current.LocalFolder.CreateFileAsync($"temp.{fileExtension}", CreationCollisionOption.ReplaceExisting);
 
             using (var stream = await file.OpenAsync(FileAccessMode.ReadWrite))
             {
@@ -97,7 +99,8 @@ namespace RenderImage.UWP.Services
             var pixels = pixelBuffer.ToArray();
             var displayInformation = DisplayInformation.GetForCurrentView();
 
-            var file = await ApplicationData.Current.LocalFolder.CreateFileAsync("temp" + ".png", CreationCollisionOption.ReplaceExisting);
+            var fileExtension = encodingFormat == RenderEncodingOptions.Png ? "png" : "jpg";
+            var file = await ApplicationData.Current.LocalFolder.CreateFileAsync($"temp.{fileExtension}", CreationCollisionOption.ReplaceExisting);
 
             using (var stream = await file.OpenAsync(FileAccessMode.ReadWrite))
             {
