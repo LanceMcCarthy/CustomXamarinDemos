@@ -12,7 +12,9 @@ namespace RenderImage.iOS.Services
     {
         public Task<byte[]> RenderAsync(RenderEncodingOptions encodingFormat = RenderEncodingOptions.Png)
         {
-            return Task.Run(() =>
+            byte[] bytes = null;
+
+            UIScreen.MainScreen.InvokeOnMainThread(() =>
             {
                 var capture = UIScreen.MainScreen.Capture();
 
@@ -20,30 +22,28 @@ namespace RenderImage.iOS.Services
                 {
                     using (var nsData = capture.AsJPEG())
                     {
-                        var bytes = new byte[nsData.Length];
-
+                        bytes = new byte[nsData.Length];
                         Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
-
-                        return bytes;
                     }
                 }
                 else
                 {
                     using (var nsData = capture.AsPNG())
                     {
-                        var bytes = new byte[nsData.Length];
-
+                        bytes = new byte[nsData.Length];
                         Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
-
-                        return bytes;
                     }
                 }
             });
+
+            return Task.Run(() => bytes);
         }
 
         public Task<byte[]> RenderAsync(int x, int y, int width, int height, RenderEncodingOptions encodingFormat = RenderEncodingOptions.Png)
         {
-            return Task.Run(() =>
+            byte[] bytes = null;
+
+            UIScreen.MainScreen.InvokeOnMainThread(() =>
             {
                 var capture = UIScreen.MainScreen.Capture();
 
@@ -64,31 +64,29 @@ namespace RenderImage.iOS.Services
                     {
                         using (var nsData = croppedImage.AsJPEG())
                         {
-                            var bytes = new byte[nsData.Length];
-
+                            bytes = new byte[nsData.Length];
                             Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
-
-                            return bytes;
                         }
                     }
                     else
                     {
                         using (var nsData = croppedImage.AsPNG())
                         {
-                            var bytes = new byte[nsData.Length];
-
+                            bytes = new byte[nsData.Length];
                             Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
-
-                            return bytes;
                         }
                     }
                 }
             });
+
+            return Task.Run(() => bytes);
         }
 
         public Task<byte[]> RenderRelativeAsync(int xProportion, int yProportion, int widthProportion, int heightProportion, RenderEncodingOptions encodingFormat = RenderEncodingOptions.Png)
         {
-            return Task.Run(() =>
+            byte[] bytes = null;
+
+            UIScreen.MainScreen.InvokeOnMainThread(() =>
             {
                 var capture = UIScreen.MainScreen.Capture();
 
@@ -105,26 +103,22 @@ namespace RenderImage.iOS.Services
                     {
                         using (var nsData = croppedImage.AsJPEG())
                         {
-                            var bytes = new byte[nsData.Length];
-
+                            bytes = new byte[nsData.Length];
                             Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
-
-                            return bytes;
                         }
                     }
                     else
                     {
                         using (var nsData = croppedImage.AsPNG())
                         {
-                            var bytes = new byte[nsData.Length];
-
+                            bytes = new byte[nsData.Length];
                             Marshal.Copy(nsData.Bytes, bytes, 0, Convert.ToInt32(nsData.Length));
-
-                            return bytes;
                         }
                     }
                 }
             });
+
+            return Task.Run(() => bytes);
         }
     }
 }
