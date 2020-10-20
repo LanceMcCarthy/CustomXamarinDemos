@@ -14,6 +14,7 @@ Readme Quick-Links
 - [Android Call Detector](https://github.com/LanceMcCarthy/CustomXamarinDemos#AndroidCallDetector) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/CallDetector))
 - ReportViewer Control ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/XFReportViewerDemo))
 - [Custom Segmented Control](https://github.com/LanceMcCarthy/CustomXamarinDemos#SegmentCustomControl) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/SegmentedCustomControl))
+- [Asynchronous DataTemplate](https://github.com/LanceMcCarthy/CustomXamarinDemos#AsyncTemplateCellDemo) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/AsyncTemplateCellDemo))
 
 ## SignalR and ConversationalUI
 
@@ -103,4 +104,10 @@ A Xamarin.Forms Android application that uses Android P (SDK 28) telephony featu
 ## DrawerDismissEffect
 
 This project shows how to use a Xamarin Platform Effect to disable the RadSideDrawer's ability to dismiss the drawer when tapping outside of the drawer area.
+
+## AsyncTemplateCellDemo
+
+This project shows how to asynchronously load additional data when a ListView cell loads, without blocking the UI thread.
+
+![image](https://user-images.githubusercontent.com/3520532/96622330-ceb26b00-12d7-11eb-82c7-014470318c05.png)
 
