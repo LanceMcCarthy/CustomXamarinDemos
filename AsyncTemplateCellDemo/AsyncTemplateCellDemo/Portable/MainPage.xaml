@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:AsyncTemplateCellDemo.Portable"
+             xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+             x:Class="AsyncTemplateCellDemo.Portable.MainPage">
+
+    <ContentPage.Resources>
+        <local:StatusToColorConverter x:Key="StatusToColorConv" />
+    </ContentPage.Resources>
+
+    <Grid>
+        <telerikDataControls:RadListView ItemsSource="{Binding Tasks}">
+            <telerikDataControls:RadListView.ItemTemplate>
+                <DataTemplate x:DataType="local:MyItem">
+                    <local:MyListViewTemplateCell>
+                        <local:MyListViewTemplateCell.View>
+                            <Grid Margin="20">
+                                <StackLayout>
+                                    <Label Text="{Binding CreatedBy, StringFormat='Created by: {0}'}" />
+                                    <Label Text="{Binding Recipient, StringFormat='Recipient: {0}'}" />
+                                    <Label Text="{Binding Status, StringFormat='Status: {0}'}"
+                                           TextColor="{Binding Status, Converter={StaticResource StatusToColorConv}}" />
+                                    <Label Text="{Binding Description}" />
+                                </StackLayout>
+
+                                <telerikPrimitives:RadBusyIndicator x:Name="LoadingIndicator"
+                                                                    IsBusy="{Binding IsFetchingData}"
+                                                                    IsVisible="{Binding IsFetchingData}"
+                                                                    AnimationType="Animation9" />
+                            </Grid>
+                        </local:MyListViewTemplateCell.View>
+                    </local:MyListViewTemplateCell>
+                </DataTemplate>
+            </telerikDataControls:RadListView.ItemTemplate>
+        </telerikDataControls:RadListView>
+    </Grid>
+</ContentPage>
