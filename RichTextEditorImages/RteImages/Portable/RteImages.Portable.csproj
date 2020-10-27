@@ -10,6 +10,12 @@
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Images\ninja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ninja.png" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Telerik.UI.for.Xamarin" Version="2020.3.1022.1" />
     <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
   </ItemGroup>

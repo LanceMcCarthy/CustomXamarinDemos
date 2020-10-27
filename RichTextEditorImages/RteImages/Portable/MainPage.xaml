@@ -9,46 +9,11 @@
              x:Class="RteImages.Portable.MainPage">
 
     <ContentPage.Resources>
-        <OnPlatform x:TypeArguments="x:String"
-                    x:Key="IconsFont">
+        <OnPlatform x:Key="IconsFont" x:TypeArguments="x:String">
             <On Platform="iOS">telerikfontexamples</On>
             <On Platform="Android">Fonts/telerikfontexamples.ttf#telerikfontexamples</On>
             <On Platform="UWP">/Assets/Fonts/telerikfontexamples.ttf#telerikfontexamples</On>
         </OnPlatform>
-
-        <Color x:Key="ToolbarColor">#2456BE</Color>
-        <Color x:Key="TranslucentDarkColor">#99000000</Color>
-        <Color x:Key="TranslucentLightColor">#CCFFFFFF</Color>
-
-        <Style x:Key="BaseToolbarItemStyle"
-               TargetType="rte:RichTextEditorToolbarItem">
-            <Setter Property="TextColor"
-                    Value="{StaticResource ToolbarColor}" />
-            <Setter Property="SelectedBackgroundColor"
-                    Value="{StaticResource ToolbarColor}" />
-            <Setter Property="SelectedColor"
-                    Value="White" />
-            <Setter Property="CheckedBackgroundColor"
-                    Value="{StaticResource ToolbarColor}" />
-            <Setter Property="CheckedColor"
-                    Value="White" />
-        </Style>
-
-        <!-- Implicit style, with a base style-->
-        <Style TargetType="rte:RichTextEditorToolbarItem"
-               BasedOn="{StaticResource BaseToolbarItemStyle}"
-               ApplyToDerivedTypes="True" />
-
-
-        <!-- Implicit style -->
-        <Style TargetType="portable:InsertImageToolbarItem"
-               BasedOn="{StaticResource BaseToolbarItemStyle}"
-               ApplyToDerivedTypes="True">
-            <!--<Setter Property="PopupContentStyle"
-                    Value="{StaticResource ImgPopupContentViewStyle}" />
-            <Setter Property="PickerPopupPlacement" Value="Center"/>
-            <Setter Property="PopupContentHeight" Value="400"/>-->
-        </Style>
     </ContentPage.Resources>
 
     <Grid>
@@ -63,10 +28,23 @@
                                       RichTextEditor="{x:Reference richTextEditor}"
                                       AutoGenerateItems="False"
                                       Grid.Row="1">
-            <portable:InsertImageToolbarItem Tapped="ToolbarItem_OnTapped"/>
+            <rte:RichTextEditorToolbarItem Text="&#xE808;"
+                                           FontFamily="{StaticResource IconsFont}"
+                                           Description="Insert image options">
+                <rte:RichTextEditorToolbarItem.Items>
+                    <rte:RichTextEditorToolbarItem Text="raw"
+                                                   Tapped="StaticBase64ToolbarItem_OnTapped"
+                                                   HorizontalOptions="Start" />
+                    <rte:RichTextEditorToolbarItem Text="url"
+                                                   Tapped="FromUrlToolbarItem_OnTapped"
+                                                   HorizontalOptions="Start" />
+                    <rte:RichTextEditorToolbarItem Text="file"
+                                                   Tapped="FileStreamToolbarItem_OnTapped"
+                                                   HorizontalOptions="Start" />
+                </rte:RichTextEditorToolbarItem.Items>
+            </rte:RichTextEditorToolbarItem>
             <!-- 
-            Please visit the following docs for the rest of the toolbar items 
-            https://docs.telerik.com/devtools/xamarin/controls/richtexteditor/richtexteditor-custom-toolbar 
+            Please visit the following docs for info on custom toolbar https://docs.telerik.com/devtools/xamarin/controls/richtexteditor/richtexteditor-custom-toolbar 
             -->
         </rte:RadRichTextEditorToolbar>
     </Grid>
