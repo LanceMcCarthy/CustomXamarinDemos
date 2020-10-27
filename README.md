@@ -15,7 +15,7 @@ Readme Quick-Links
 - ReportViewer Control ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/XFReportViewerDemo))
 - [Custom Segmented Control](https://github.com/LanceMcCarthy/CustomXamarinDemos#SegmentCustomControl) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/SegmentedCustomControl))
 - [Asynchronous DataTemplate](https://github.com/LanceMcCarthy/CustomXamarinDemos#AsyncTemplateCellDemo) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/AsyncTemplateCellDemo))
-- [RichTextEditor Insert Image Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#RichTextEditor%20Insert%20Image%20Demo) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/RichTextEditorImages))
+- [RichTextEditor Insert Image Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#richtexteditor-insert-image-demo) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/RichTextEditorImages))
 
 ## SignalR and ConversationalUI
 
