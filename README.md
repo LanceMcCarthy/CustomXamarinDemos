@@ -15,6 +15,7 @@ Readme Quick-Links
 - ReportViewer Control ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/XFReportViewerDemo))
 - [Custom Segmented Control](https://github.com/LanceMcCarthy/CustomXamarinDemos#SegmentCustomControl) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/SegmentedCustomControl))
 - [Asynchronous DataTemplate](https://github.com/LanceMcCarthy/CustomXamarinDemos#AsyncTemplateCellDemo) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/AsyncTemplateCellDemo))
+- [RichTextEditor Insert Image Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#RichTextEditor%20Insert%20Image%20Demo) ([Project Link](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/master/RichTextEditorImages))
 
 ## SignalR and ConversationalUI
 
@@ -110,4 +111,16 @@ This project shows how to use a Xamarin Platform Effect to disable the RadSideDr
 This project shows how to asynchronously load additional data when a ListView cell loads, without blocking the UI thread.
 
 ![image](https://user-images.githubusercontent.com/3520532/96622330-ceb26b00-12d7-11eb-82c7-014470318c05.png)
+
+## RichTextEditor Insert Image Demo
+
+Demonstrates how to insert an image into the Rich Text Editor from one of 3 sources:
+
+1. Online image, using a URL.
+2. Local file source, using a file stream
+3. Hard-coded Base64 string
+
+![image](https://user-images.githubusercontent.com/3520532/97328987-f1e79800-184c-11eb-9ef1-18c544a7e2cb.png)
+
+
 
