@@ -1,5 +1,4 @@
 using System;
-using CustomSeriesLabels.Portable.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -21,6 +20,11 @@ namespace CustomSeriesLabels.Portable.Views
         private async void RadialButton_OnClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new RadialPage());
+        }
+
+        private async void AnnotationsButton_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AnnotationsPage());
         }
     }
 }

@@ -3,10 +3,10 @@
         <TargetFramework>netstandard2.0</TargetFramework>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="CommonHelpers" Version="1.0.12" />
+        <PackageReference Include="CommonHelpers" Version="1.1.2" />
         <PackageReference Include="Telerik.UI.for.Xamarin" Version="2020.1.318.1" />
-        <PackageReference Include="Xamarin.Forms" Version="4.5.0.495" />
-        <PackageReference Include="SkiaSharp" Version="1.68.1.1" />
+        <PackageReference Include="Xamarin.Forms" Version="4.8.0.1560" />
+        <PackageReference Include="SkiaSharp" Version="2.80.2" />
         <PackageReference Include="SkiaSharp.Views.Forms " Version="1.68.0" />
     </ItemGroup>
     <ItemGroup>
@@ -24,6 +24,9 @@
         </Compile>
     </ItemGroup>
     <ItemGroup>
+      <EmbeddedResource Update="Views\AnnotationsPage.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
       <EmbeddedResource Update="Views\RadialPage.xaml">
         <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       </EmbeddedResource>
@@ -32,6 +35,6 @@
       </EmbeddedResource>
     </ItemGroup>
     <ItemGroup>
-      <PackageReference Update="SkiaSharp.Views.Forms" Version="1.68.1.1" />
+      <PackageReference Update="SkiaSharp.Views.Forms" Version="2.80.2" />
     </ItemGroup>
 </Project>

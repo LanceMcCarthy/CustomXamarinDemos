@@ -1,6 +1,7 @@
 using System;
 using Android.App;
 using Android.Content.PM;
+using Android.Content.Res;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;

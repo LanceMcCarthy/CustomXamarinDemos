@@ -1,6 +1,7 @@
 ﻿using Com.Telerik.Widget.Chart.Visualization.CartesianChart;
 using Com.Telerik.Widget.Chart.Visualization.CartesianChart.Series.Categorical;
 using Com.Telerik.Widget.Chart.Visualization.CartesianChart.Series.Scatter;
+using CustomSeriesLabels.Android.ChartFeatureRenderers;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using Color = Android.Graphics.Color; // Disambiguate .NET or Xamarin.Forms Color
