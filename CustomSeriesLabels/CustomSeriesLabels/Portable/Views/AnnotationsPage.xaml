@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:viewModels="clr-namespace:CustomSeriesLabels.Portable.ViewModels;assembly=CustomSeriesLabels.Portable"
+             xmlns:telerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
+             xmlns:effects="clr-namespace:CustomSeriesLabels.Portable.Effects;assembly=CustomSeriesLabels.Portable"
+             x:Class="CustomSeriesLabels.Portable.Views.AnnotationsPage">
+
+    <d:ContentPage.BindingContext>
+        <viewModels:AnnotationsViewModel />
+    </d:ContentPage.BindingContext>
+
+    <Grid Padding="20">
+        <telerikChart:RadCartesianChart>
+            <!-- Custom image annotation ( *** ONLY CONFIGURED FOR ANDROID *** ) -->
+            <telerikChart:RadCartesianChart.Effects>
+                <effects:CustomAnnotationEffect />
+            </telerikChart:RadCartesianChart.Effects>
+
+            <telerikChart:RadCartesianChart.HorizontalAxis>
+                <telerikChart:CategoricalAxis ShowLabels="True" />
+            </telerikChart:RadCartesianChart.HorizontalAxis>
+
+            <telerikChart:RadCartesianChart.VerticalAxis>
+                <telerikChart:NumericalAxis ShowLabels="True" 
+                                            Minimum="0" 
+                                            Maximum="15"/>
+            </telerikChart:RadCartesianChart.VerticalAxis>
+
+            <telerikChart:RadCartesianChart.Series>
+                <telerikChart:BarSeries ItemsSource="{Binding BarSeriesData}">
+                    <telerikChart:BarSeries.ValueBinding>
+                        <telerikChart:PropertyNameDataPointBinding PropertyName="Value" />
+                    </telerikChart:BarSeries.ValueBinding>
+                    <telerikChart:BarSeries.CategoryBinding>
+                        <telerikChart:PropertyNameDataPointBinding PropertyName="Category" />
+                    </telerikChart:BarSeries.CategoryBinding>
+                </telerikChart:BarSeries>
+            </telerikChart:RadCartesianChart.Series>
+        </telerikChart:RadCartesianChart>
+    </Grid>
+</ContentPage>
