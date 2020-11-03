@@ -19,12 +19,12 @@ namespace CustomSeriesLabels.Android.Effects
         {
             if (Control is RadCartesianChartView nativeChart && nativeChart.Series.Get(0) is BarSeries barSeries)
             {
-                var myImage = await GetMyImageAsync();
+                Bitmap myImage = await GetMyImageAsync("https://d585tldpucybw.cloudfront.net/sfimages/default-source/blogs/author-images/progress-blog-default-logo-transparent.png");
 
                 var annotation = new CartesianCustomAnnotation(
                     nativeChart.VerticalAxis,
                     nativeChart.HorizontalAxis,
-                    6,
+                    8,
                     "Feb",
                     myImage);
 
@@ -38,13 +38,13 @@ namespace CustomSeriesLabels.Android.Effects
         {
         }
 
-        private static async Task<Bitmap> GetMyImageAsync()
+        private static async Task<Bitmap> GetMyImageAsync(string imgUrl)
         {
-            var request = new System.Net.HttpWebRequest(new Uri("https://dvlup.blob.core.windows.net/general-app-files/OfficialIcons/LancelotFavicon.jpg"));
-
+            var fileName = System.IO.Path.GetFileName(imgUrl);
             var localFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            var imgPath = System.IO.Path.Combine(localFolder, "favicon.jpg");
+            var imgPath = System.IO.Path.Combine(localFolder, fileName);
 
+            var request = new System.Net.HttpWebRequest(new Uri(imgUrl));
             using (var response = request.GetResponse())
             using (var stream = response.GetResponseStream())
             {
