@@ -34,6 +34,16 @@
                                Margin="5" />
                 </Grid>
             </DataTemplate>
+
+            <DataTemplate x:Key="PieLabelTemplate">
+                <Grid Background="Red">
+                    <TextBlock Text="{Binding DataItem.Value}"
+                               Foreground="White"
+                               FontWeight="Bold"
+                               FontSize="18"
+                               Margin="5" />
+                </Grid>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

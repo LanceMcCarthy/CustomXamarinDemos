@@ -11,8 +11,10 @@ namespace CustomSeriesLabels.UWP.Effects
     {
         protected override void OnAttached()
         {
-            if (this.Element.Effects.FirstOrDefault(e => e is CustomSeriesLabels.Portable.Effects.CustomLabelEffect) is CustomSeriesLabels.Portable.Effects.CustomLabelEffect effect)
+            if (this.Element.Effects.FirstOrDefault(e => e is Portable.Effects.CustomLabelEffect) is Portable.Effects.CustomLabelEffect effect)
             {
+                // ********* CARTESIAN CHARTS ********* //
+
                 if (Control is RadCartesianChart nativeChart)
                 {
                     foreach (var series in nativeChart.Series)
@@ -36,6 +38,20 @@ namespace CustomSeriesLabels.UWP.Effects
 
                         series.LabelDefinitions.Add(labelDefinition);
                     }
+                }
+
+                // ********* PIE CHARTS ********* //
+
+                if (Control is RadPieChart nativePieChart)
+                {
+                    // 1. Clear the default label definition
+                    nativePieChart.Series[0].LabelDefinitions.Clear();
+
+                    // 2. Add a new label definition that uses the DataTemplate (must be in the UWP project's app.xaml)
+                    nativePieChart.Series[0].LabelDefinitions.Add(new ChartSeriesLabelDefinition
+                    {
+                        Template = App.Current.Resources["PieLabelTemplate"] as Windows.UI.Xaml.DataTemplate
+                    });
                 }
             }
         }
