@@ -1,0 +1,152 @@
+﻿@page
+<style>
+    .k-arcgauge-label {
+        font-size: 18px;
+    }
+</style>
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            UserName <input type="text" id="userInput" />
+            <br />
+            Message <input type="text" id="messageInput" />
+            <input type="button" id="sendButton" value="Send Message" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+        <div id="gauge" style="width:150px;height:150px;"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+
+<script>
+    "use strict";
+
+    var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
+    var typingTimer;
+    var isTyping = false;
+    var doneTypingInterval = 2000;
+    var $input = $('#messageInput');
+
+    $(document).ready(function () {
+        //Disable send button until connection is established
+        document.getElementById("sendButton").disabled = true;
+
+        // Create the Kendo UI Gauge
+        $("#gauge").kendoArcGauge({
+            value: $("#gauge-value").val(),
+            centerTemplate: '#: value # letters'
+        });
+    });
+    
+
+    // *********************** RECEIVE LOGIC ********************* //
+
+    // when we receive a new message from the server
+    connection.on("ReceiveMessage", function (user, message) {
+        var msg = message.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+        var li = document.createElement("li");
+        li.textContent = user + " says " + msg;
+
+        // Add the message ot the list
+        document.getElementById("messagesList").appendChild(li);
+
+        // Update the gauge
+        $("#gauge").data("kendoArcGauge").value(msg.length);
+    });
+
+    // When we receive a new typer's name form the server
+    connection.on("ReceiveTyper", function (user, isTyping) {
+        var currentUser = document.getElementById("userInput").value;
+
+        // Ignore typer notification if it's the current user's name
+        if (currentUser === user)
+            return;
+
+        var encodedMsg;
+
+        if (isTyping) {
+            encodedMsg = user + " is typing...";
+        } else {
+            encodedMsg = user + " has stopped typing.";
+        }
+
+        var li = document.createElement("li");
+        li.textContent = encodedMsg;
+        document.getElementById("messagesList").appendChild(li);
+    });
+    
+
+    // *********************** START UP ********************* //
+
+    connection.start().then(function () {
+        document.getElementById("sendButton").disabled = false;
+    }).catch(function (err) {
+        return console.error(err.toString());
+    });
+
+
+    // *********************** SEND LOGIC ********************* //
+
+    document.getElementById("sendButton").addEventListener("click", function (event) {
+        var user = document.getElementById("userInput").value;
+        var message = document.getElementById("messageInput").value;
+
+        connection.invoke("SendMessage", user, message).catch(function (err) {
+            return console.error(err.toString());
+        });
+
+        event.preventDefault();
+    });
+
+    document.getElementById("sendButton").addEventListener("click", function (event) {
+        var user = document.getElementById("userInput").value;
+        var message = document.getElementById("messageInput").value;
+
+        connection.invoke("SendChatRoomCount", user, message).catch(function (err) {
+            return console.error(err.toString());
+        });
+
+        event.preventDefault();
+    });
+    
+
+    // *********************** TYPING DETECTION LOGIC ********************* //
+
+    $input.on('input propertychange paste', function () {
+        clearTimeout(typingTimer);
+        typingTimer = setTimeout(stoppedTyping, doneTypingInterval);
+
+        if (!isTyping) {
+            startedTyping();
+        }
+    });
+
+    function startedTyping() {
+        var user = document.getElementById("userInput").value;
+        isTyping = true;
+        connection.invoke("SendTyper", user, isTyping);
+    }
+
+    function stoppedTyping() {
+        var user = document.getElementById("userInput").value;
+        isTyping = false;
+        connection.invoke("SendTyper", user, isTyping);
+    }
+    
+</script>
