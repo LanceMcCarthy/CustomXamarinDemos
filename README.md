@@ -1,22 +1,22 @@
 # CustomXamarinDemos
 
-| Demo Overview | Source Code Shortcut |
-|------|------|
-| [SignalR and ConversationalUI](https://github.com/LanceMcCarthy/CustomXamarinDemos#SignalR%20and%20ConversationalUI) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SignalRChatDemo) |
-| [IconGenerator Helper](https://github.com/LanceMcCarthy/CustomXamarinDemos#IconGenerator) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/IconAssetGenerator) |
-| [Real-time Filtering Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#RealTimeFiltering) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RealTimeFilteringDemos) |
-| [Cascading AutoCompleteViews Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#CascadingAutoCompleteViews) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CascadingAutoCompleteViews) |
-| [Custom Series Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#customserieslabels) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CustomSeriesLabels) |
-| [Render Image Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#renderimage) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RenderImage) |
-| [RangeSelection Test Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#rangeselectiontest) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RangeSelectionTest) |
-| [Telerik Theme Editor](https://github.com/LanceMcCarthy/CustomXamarinDemos#TelerikThemeEditor) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/TelerikThemeEditor) |
-| [Workouts](https://github.com/LanceMcCarthy/CustomXamarinDemos#Workouts) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/Workouts) |
-| [Drawer Dismiss Effect](https://github.com/LanceMcCarthy/CustomXamarinDemos#DrawerDismissEffect) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/DrawerDismissEffect) |
-| [Android Call Detector](https://github.com/LanceMcCarthy/CustomXamarinDemos#AndroidCallDetector)  | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CallDetector) |
-| ReportViewer Control | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/XFReportViewerDemo) |
-| [Custom Segmented Control](https://github.com/LanceMcCarthy/CustomXamarinDemos#SegmentCustomControl) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SegmentedCustomControl) |
-| [Asynchronous DataTemplate](https://github.com/LanceMcCarthy/CustomXamarinDemos#AsyncTemplateCellDemo) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/AsyncTemplateCellDemo) |
-| [RichTextEditor Insert Image Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#richtexteditor-insert-image-demo) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RichTextEditorImages) |
+| Demo Overview | Source Code Shortcut | Build |
+|------|------|------|
+| [SignalR and ConversationalUI](https://github.com/LanceMcCarthy/CustomXamarinDemos#SignalR%20and%20ConversationalUI) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SignalRChatDemo) | na |
+| [IconGenerator Helper](https://github.com/LanceMcCarthy/CustomXamarinDemos#IconGenerator) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/IconAssetGenerator) | na |
+| [Real-time Filtering Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#RealTimeFiltering) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RealTimeFilteringDemos) | na |
+| [Cascading AutoCompleteViews Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#CascadingAutoCompleteViews) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CascadingAutoCompleteViews) | na |
+| [Custom Series Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#customserieslabels) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CustomSeriesLabels) | na |
+| [Render Image Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#renderimage) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RenderImage) | na |
+| [RangeSelection Test Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#rangeselectiontest) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RangeSelectionTest) | na |
+| [Telerik Theme Editor](https://github.com/LanceMcCarthy/CustomXamarinDemos#TelerikThemeEditor) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/TelerikThemeEditor) | na |
+| [Workouts](https://github.com/LanceMcCarthy/CustomXamarinDemos#Workouts) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/Workouts) | na |
+| [Drawer Dismiss Effect](https://github.com/LanceMcCarthy/CustomXamarinDemos#DrawerDismissEffect) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/DrawerDismissEffect) | na |
+| [Android Call Detector](https://github.com/LanceMcCarthy/CustomXamarinDemos#AndroidCallDetector)  | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CallDetector) | na |
+| ReportViewer Control | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/XFReportViewerDemo) | na |
+| [Custom Segmented Control](https://github.com/LanceMcCarthy/CustomXamarinDemos#SegmentCustomControl) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SegmentedCustomControl) | na |
+| [Asynchronous DataTemplate](https://github.com/LanceMcCarthy/CustomXamarinDemos#AsyncTemplateCellDemo) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/AsyncTemplateCellDemo) | na |
+| [RichTextEditor Insert Image Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#richtexteditor-insert-image-demo) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RichTextEditorImages) | na |
 
 ## SignalR and ConversationalUI
 
