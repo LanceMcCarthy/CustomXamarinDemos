@@ -1,4 +1,4 @@
-name: Build and deploy .NET Core app to Windows WebApp UIforXamarinChatServer
+name: Deploy SignalR Demo
 on:
   push:
     branches:
