@@ -2,7 +2,7 @@
 
 | Demo Overview | Source Code Shortcut | Build |
 |------|------|------|
-| [SignalR and ConversationalUI](https://github.com/LanceMcCarthy/CustomXamarinDemos#SignalR%20and%20ConversationalUI) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SignalRChatDemo) | na |
+| [SignalR and ConversationalUI](https://github.com/LanceMcCarthy/CustomXamarinDemos#SignalR%20and%20ConversationalUI) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SignalRChatDemo) | [![Build and deploy .NET Core app to Windows WebApp UIforXamarinChatServer](https://github.com/LanceMcCarthy/CustomXamarinDemos/actions/workflows/release-signalrdemo.yml/badge.svg)](https://github.com/LanceMcCarthy/CustomXamarinDemos/actions/workflows/release-signalrdemo.yml) |
 | [IconGenerator Helper](https://github.com/LanceMcCarthy/CustomXamarinDemos#IconGenerator) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/IconAssetGenerator) | na |
 | [Real-time Filtering Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#RealTimeFiltering) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RealTimeFilteringDemos) | na |
 | [Cascading AutoCompleteViews Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#CascadingAutoCompleteViews) | [Src Folder](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CascadingAutoCompleteViews) | na |

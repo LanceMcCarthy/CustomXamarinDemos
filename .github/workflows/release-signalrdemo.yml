@@ -1,40 +1,38 @@
-name: Build and deploy .NET Core app to Windows WebApp UIforXamarinChatServer
+name: Deploy SignalR Demo
 on:
   push:
     branches:
     - release-signalrchatdemo
-env:
-  AZURE_WEBAPP_NAME: UIforXamarinChatServer
-  AZURE_WEBAPP_PACKAGE_PATH: SignalRChatDemo.Web/publish
-  AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.UIforXamarinChatServer_c558 }}
-  CONFIGURATION: Release
-  DOTNET_CORE_VERSION: 5.0.x
-  WORKING_DIRECTORY: SignalRChatDemo.Web
+
 jobs:
   build-and-deploy:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
+
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: ${{ env.DOTNET_CORE_VERSION }}
+        dotnet-version: 5.0.x
+
     - name: Restore
-      run: dotnet restore "${{ env.WORKING_DIRECTORY }}"
+      run: dotnet restore "src/SignalRChatDemo/SignalRChatDemo.Web"
+
     - name: Build
-      run: dotnet build "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-restore
-    - name: Test
-      run: dotnet test "${{ env.WORKING_DIRECTORY }}" --no-build
+      run: dotnet build "src/SignalRChatDemo/SignalRChatDemo.Web" --configuration Release --no-restore
+      
     - name: Publish
-      run: dotnet publish "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-build --output "${{ env.AZURE_WEBAPP_PACKAGE_PATH }}"
+      run: dotnet publish "src/SignalRChatDemo/SignalRChatDemo.Web" --configuration Release --no-build --output "src/SignalRChatDemo/SignalRChatDemo.Web/publish"
+
     - name: Deploy to Azure WebApp
       uses: azure/webapps-deploy@v2
       with:
-        app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
-        publish-profile: ${{ env.AZURE_WEBAPP_PUBLISH_PROFILE }}
+        app-name: UIforXamarinChatServer
+        package: src/SignalRChatDemo/SignalRChatDemo.Web/publish
+        publish-profile: ${{ secrets.UIforXamarinChatServer_c558 }}
+
     - name: Publish Artifacts
       uses: actions/upload-artifact@v1.0.0
       with:
         name: webapp
-        path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+        path: src/SignalRChatDemo/SignalRChatDemo.Web/publish
