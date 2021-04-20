@@ -23,8 +23,17 @@ namespace SignalRChatDemo
 
             BindingContext = this;
             ChatControl.Author = me;
+            service.PropertyChanged += Service_PropertyChanged;
 
             ((INotifyCollectionChanged)ChatControl.Items).CollectionChanged += ChatItems_CollectionChanged;
+        }
+
+        private void Service_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == nameof(ChatService.ConnectionState))
+            {
+                StatusLabel.Text = service.ConnectionState.ToString();
+            }
         }
 
         protected override async void OnAppearing()
@@ -36,7 +45,7 @@ namespace SignalRChatDemo
             BusyIndicator.IsBusy = true;
 
             // Create the SignalR service class
-            service = new ChatService("https://uiforxamarinchatserver.azurewebsites.net/ChatHub");
+            service = new ChatService("https://uiforxamarinchatserver.azurewebsites.net/chatHub");
             service.OnMessageReceived += ServiceOnMessageReceived;
             service.OnTypersUpdated += Service_OnTypersUpdated;
 
@@ -141,6 +150,8 @@ namespace SignalRChatDemo
                     var messageToSend = chatMessage.Text;
 
                     await service.SendMessageAsync(authorName, messageToSend);
+
+                    Indicator.Value = chatMessage.Text.Length;
                 }
             }
         }
