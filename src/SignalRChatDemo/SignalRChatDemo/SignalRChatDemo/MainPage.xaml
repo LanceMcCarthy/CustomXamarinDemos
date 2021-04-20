@@ -8,27 +8,54 @@
              xmlns:common="clr-namespace:Telerik.XamarinForms.Common;assembly=Telerik.XamarinForms.Common"
              xmlns:input="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
              xmlns:customControls="clr-namespace:SignalRChatDemo.CustomControls;assembly=SignalRChatDemo"
+             xmlns:gauges="clr-namespace:Telerik.XamarinForms.DataVisualization.Gauges;assembly=Telerik.XamarinForms.DataVisualization"
              mc:Ignorable="d"
              x:Class="SignalRChatDemo.MainPage"
              x:Name="Page">
 
     <ContentPage.Resources>
         <conversationalUi:ChatListViewMarginConverter x:Key="ChatListViewMarginConverter" />
-
-
     </ContentPage.Resources>
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Label x:Name="StatusLabel"
-               Text="{Binding BindingContext.service.ConnectionState, Source={x:Reference Page}}" />
+        <Label x:Name="StatusLabel" />
+
+        <gauges:RadHorizontalGauge x:Name="gauge"
+                                   Grid.Row="1"
+                                   HeightRequest="80"
+                                   Margin="10,0">
+            <gauges:RadHorizontalGauge.Axis>
+                <gauges:GaugeLinearAxis Maximum="100"
+                                        Minimum="0"
+                                        Step="10" />
+            </gauges:RadHorizontalGauge.Axis>
+            <gauges:RadHorizontalGauge.Indicators>
+                <gauges:GaugeShapeIndicator x:Name="Indicator" 
+                                            Value="0" />
+            </gauges:RadHorizontalGauge.Indicators>
+            <gauges:RadHorizontalGauge.Ranges>
+                <gauges:GaugeRangesDefinition>
+                    <gauges:GaugeGradientRange From="0"
+                                               To="100">
+                        <common:RadGradientStop Offset="0"
+                                                Color="Green" />
+                        <common:RadGradientStop Offset="50"
+                                                Color="Yellow" />
+                        <common:RadGradientStop Offset="100"
+                                                Color="Red" />
+                    </gauges:GaugeGradientRange>
+                </gauges:GaugeRangesDefinition>
+            </gauges:RadHorizontalGauge.Ranges>
+        </gauges:RadHorizontalGauge>
 
         <conversationalUi:RadChat x:Name="ChatControl"
-                                  Grid.Row="1">
+                                  Grid.Row="2">
             <conversationalUi:RadChat.TypingIndicator>
                 <conversationalUi:TypingIndicator x:Name="MyTypingIndicator" />
             </conversationalUi:RadChat.TypingIndicator>
@@ -64,7 +91,7 @@
                             </Grid.ColumnDefinitions>
 
                             <!-- ***NOTE***  Original ChatEntry control is replaced with TimedChatEntry -->
-                            <customControls:TimedChatEntry x:Name="MyTimedChatEntry" 
+                            <customControls:TimedChatEntry x:Name="MyTimedChatEntry"
                                                            common:StyleManager.InheritedStyleClass="{TemplateBinding ActualStyleClass}"
                                                            Text="{TemplateBinding Message, Mode=TwoWay}"
                                                            BackgroundColor="Transparent"
@@ -91,7 +118,7 @@
         </conversationalUi:RadChat>
 
         <primitives:RadBusyIndicator x:Name="BusyIndicator"
-                                     Grid.Row="1" />
+                                     Grid.Row="2" />
     </Grid>
 
 </ContentPage>
