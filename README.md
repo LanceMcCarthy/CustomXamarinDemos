@@ -68,7 +68,7 @@ UWP and iOS use the same white text on red background custom style.
 
 ## RenderImage
 
-This solution contains a Dependency Service that allows you to cature any part of the UI and render it as a PNG image. See <a href="https://github.com/LanceMcCarthy/CustomXamarinDemos/blob/master/RenderImage/README.md" target="_blank">the demo's readme</a> for more info
+This solution contains a Dependency Service that allows you to cature any part of the UI and render it as a PNG image. See [the specialized README](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RenderImage) for more info.
 
 ![UI Image Renderer](https://user-images.githubusercontent.com/3520532/44611891-1c9fb700-a7d2-11e8-95e1-ea0cc8b6eed6.png)
 
