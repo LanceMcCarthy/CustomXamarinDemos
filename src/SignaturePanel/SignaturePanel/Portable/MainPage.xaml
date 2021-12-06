@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:input="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             xmlns:controls="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+             xmlns:richTextEditor="clr-namespace:Telerik.XamarinForms.RichTextEditor;assembly=Telerik.XamarinForms.RichTextEditor"
+             x:Class="SignaturePanel.Portable.MainPage">
+
+    <Grid RowDefinitions="Auto,2*,1*,Auto"
+          BackgroundColor="White">
+        <richTextEditor:RadRichTextEditorToolbar x:Name="RichTextToolbar"
+                                                 RichTextEditor="{x:Reference RichTextEditor1}" />
+        <richTextEditor:RadRichTextEditor x:Name="RichTextEditor1"
+                                          Grid.Row="1" />
+
+        <controls:SignaturePadView x:Name="SignatureView"
+                                   StrokeWidth="3"
+                                   StrokeColor="SteelBlue"
+                                   BackgroundColor="Transparent"
+                                   ClearText="Clear Signature"
+                                   CaptionText="sign above the line, then click button to sign the document"
+                                   Grid.Row="2" />
+
+        <StackLayout Grid.Row="3">
+            <input:RadButton Text="Insert Signature"
+                             Clicked="SaveButton_OnClicked" />
+            <input:RadButton Text="Reset"
+                             Clicked="ClearButton_OnClicked" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
