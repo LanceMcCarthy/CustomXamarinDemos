@@ -1,31 +1,31 @@
-# CustomXamarinDemos
+# Custom Xamarin.Forms Demos
 
-| Demo Overview | Code Shortcut | CI-CD |
-|------|------|------|
-| [RichTextEditor Document Signature](https://github.com/LanceMcCarthy/CustomXamarinDemos#RichTextEditor%20Document%20Signtature) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SignaturePanel) | |
-| [SignalR and ConversationalUI](https://github.com/LanceMcCarthy/CustomXamarinDemos#SignalR%20and%20ConversationalUI) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SignalRChatDemo) | [![Build and deploy .NET Core app to Windows WebApp UIforXamarinChatServer](https://github.com/LanceMcCarthy/CustomXamarinDemos/actions/workflows/release-signalrdemo.yml/badge.svg)](https://github.com/LanceMcCarthy/CustomXamarinDemos/actions/workflows/release-signalrdemo.yml) |
-| [IconGenerator Helper](https://github.com/LanceMcCarthy/CustomXamarinDemos#IconGenerator) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/IconAssetGenerator) | na |
-| [Real-time Filtering Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#RealTimeFiltering) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RealTimeFilteringDemos) | na |
-| [Cascading AutoCompleteViews Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#CascadingAutoCompleteViews) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CascadingAutoCompleteViews) | na |
-| [Custom Series Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#customserieslabels) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CustomSeriesLabels) | na |
-| [Render Image Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#renderimage) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RenderImage) | na |
-| [RangeSelection Test Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#rangeselectiontest) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RangeSelectionTest) | na |
-| [Telerik Theme Editor](https://github.com/LanceMcCarthy/CustomXamarinDemos#TelerikThemeEditor) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/TelerikThemeEditor) | na |
-| [Workouts](https://github.com/LanceMcCarthy/CustomXamarinDemos#Workouts) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/Workouts) | na |
-| [Drawer Dismiss Effect](https://github.com/LanceMcCarthy/CustomXamarinDemos#DrawerDismissEffect) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/DrawerDismissEffect) | na |
-| [Android Call Detector](https://github.com/LanceMcCarthy/CustomXamarinDemos#AndroidCallDetector)  | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CallDetector) | na |
-| ReportViewer Control | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/XFReportViewerDemo) | na |
-| [Custom Segmented Control](https://github.com/LanceMcCarthy/CustomXamarinDemos#SegmentCustomControl) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SegmentedCustomControl) | na |
-| [Asynchronous DataTemplate](https://github.com/LanceMcCarthy/CustomXamarinDemos#AsyncTemplateCellDemo) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/AsyncTemplateCellDemo) | na |
-| [RichTextEditor Insert Image Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#richtexteditor-insert-image-demo) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RichTextEditorImages) | na |
+This is a set of demos for custom use and edge-case scenarios.
+
+| Overview links | Shortcut Links |
+|------|------|
+| [RichTextEditor Document Signature](https://github.com/LanceMcCarthy/CustomXamarinDemos#RichTextEditor%20Document%20Signtature) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SignaturePanel) |
+| [SignalR and ConversationalUI](https://github.com/LanceMcCarthy/CustomXamarinDemos#SignalR%20and%20ConversationalUI) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SignalRChatDemo) |
+| [IconGenerator Helper](https://github.com/LanceMcCarthy/CustomXamarinDemos#IconGenerator) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/IconAssetGenerator) |
+| [Real-time Filtering Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#RealTimeFiltering) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RealTimeFilteringDemos) |
+| [Cascading AutoCompleteViews Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#CascadingAutoCompleteViews) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CascadingAutoCompleteViews) |
+| [Custom Series Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#customserieslabels) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CustomSeriesLabels) |
+| [Render Image Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#renderimage) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RenderImage) |
+| [Telerik Theme Editor](https://github.com/LanceMcCarthy/CustomXamarinDemos#TelerikThemeEditor) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/TelerikThemeEditor) |
+| [Workouts](https://github.com/LanceMcCarthy/CustomXamarinDemos#Workouts) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/Workouts) |
+| [Drawer Dismiss Effect](https://github.com/LanceMcCarthy/CustomXamarinDemos#DrawerDismissEffect) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/DrawerDismissEffect) |
+| [Android Call Detector](https://github.com/LanceMcCarthy/CustomXamarinDemos#AndroidCallDetector)  | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CallDetector) |
+| [ReportViewer Control](https://github.com/LanceMcCarthy/CustomXamarinDemos#ReportViewer)  | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/XFReportViewerDemo) |
+| [Custom Segmented Control](https://github.com/LanceMcCarthy/CustomXamarinDemos#SegmentCustomControl) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SegmentedCustomControl) |
+| [Asynchronous DataTemplate](https://github.com/LanceMcCarthy/CustomXamarinDemos#AsyncTemplateCellDemo) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/AsyncTemplateCellDemo) |
 
 ## RichTextEditor Document Signature
 
-This demo shows you how to insert a hand-drawn signature into a RichTextEditor document.
+This demo shows you how to insert a hand-drawn signature into a RichTextEditor document. From there, you can export the rich document to docx Word document format.
 
 ![image](https://user-images.githubusercontent.com/3520532/144868496-16625e39-7175-4dba-8efe-a712c8e3acf2.png)
 
-## SignalR and ConversationalUI
+## SignalR and ConversationalUI [![Build and deploy .NET Core app to Windows WebApp UIforXamarinChatServer](https://github.com/LanceMcCarthy/CustomXamarinDemos/actions/workflows/release-signalrdemo.yml/badge.svg)](https://github.com/LanceMcCarthy/CustomXamarinDemos/actions/workflows/release-signalrdemo.yml)
 
 A demo that showcases the use of **SignalR** with the UI for Xamarin `RadChat` control. The source code also includes the SignalR Hub project (ASP.NET Core 2.2 application).
 
@@ -79,19 +79,6 @@ This solution contains a Dependency Service that allows you to cature any part o
 
 ![UI Image Renderer](https://user-images.githubusercontent.com/3520532/44611891-1c9fb700-a7d2-11e8-95e1-ea0cc8b6eed6.png)
 
-## RangeSelectionTest
-
-A demo that shows you how to use Xamarin Effects to access the native features of the UI for Xamarin RadCalendar and enable Range Selection on the native calendar control.
-
-### UWP
-![UWP Calendar](https://user-images.githubusercontent.com/3520532/42790664-515eb808-893a-11e8-8aed-a5ef529aa329.png)
-
-### iOS
-![iOS Calendar](https://user-images.githubusercontent.com/3520532/42790791-de7c9908-893a-11e8-86ed-73cfef765c3c.png)
-
-### Android
-![Android Calendar](https://user-images.githubusercontent.com/3520532/42790912-6788c190-893b-11e8-8e39-cf550eaafdb9.png)
-
 ## SegmentCustomControl
 
 This example shows how to build a custom control that dynamically generates RadButtons to create a SegmentedControl. It combines the features of the UI for Xamarin `RadButton` and `RadBorder` into a single control.
@@ -119,6 +106,10 @@ This project shows how to use a Xamarin Platform Effect to disable the RadSideDr
 This project shows how to asynchronously load additional data when a ListView cell loads, without blocking the UI thread.
 
 ![image](https://user-images.githubusercontent.com/3520532/96622330-ceb26b00-12d7-11eb-82c7-014470318c05.png)
+
+## ReportViewer
+
+This demo solution shows how to use a Xamarin.Forms WebView to load the Telerik Reporting HTML5 ReportViewer using a WebView and local HTML.
 
 ## RichTextEditor Insert Image Demo
 
