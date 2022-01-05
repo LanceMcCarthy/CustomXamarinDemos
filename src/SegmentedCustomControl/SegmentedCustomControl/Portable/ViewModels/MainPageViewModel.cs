@@ -9,6 +9,7 @@ namespace SegmentedCustomControl.Portable.ViewModels
     {
         private int mySelectedIndex;
         private List<string> myItems;
+        private string mySelectedItem;
 
         public MainPageViewModel()
         {
@@ -20,17 +21,7 @@ namespace SegmentedCustomControl.Portable.ViewModels
                 "Calendar"
             };
 
-            ChangeSelectedIndexCommand = new Command(() =>
-            {
-                if (MySelectedIndex == MyItems.Count - 1)
-                {
-                    MySelectedIndex = 0;
-                }
-                else
-                {
-                    MySelectedIndex++;
-                }
-            });
+            ChangeSelectedIndexCommand = new Command(ChangeSelectedIndex);
         }
 
         public List<string> MyItems
@@ -39,12 +30,30 @@ namespace SegmentedCustomControl.Portable.ViewModels
             set => SetProperty(ref myItems, value);
         }
 
-        public ICommand ChangeSelectedIndexCommand { get; }
-
         public int MySelectedIndex
         {
             get => mySelectedIndex;
             set => SetProperty(ref mySelectedIndex, value);
+        }
+
+        public string MySelectedItem
+        {
+            get => mySelectedItem;
+            set => SetProperty(ref mySelectedItem, value);
+        }
+
+        public ICommand ChangeSelectedIndexCommand { get; }
+
+        private void ChangeSelectedIndex()
+        {
+            if (MySelectedIndex == MyItems.Count - 1)
+            {
+                MySelectedIndex = 0;
+            }
+            else
+            {
+                MySelectedIndex++;
+            }
         }
     }
 }

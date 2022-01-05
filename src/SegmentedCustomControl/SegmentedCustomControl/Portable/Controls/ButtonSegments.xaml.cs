@@ -88,8 +88,10 @@ namespace SegmentedCustomControl.Portable.Controls
                 {
                     throw new ArgumentOutOfRangeException($"The SelectedIndex {(int)newValue} is out of range");
                 }
-
+                
                 self.SetSelectedButtonColor();
+                
+                self.SelectedItemChanged?.Invoke(self, new SelectedItemChangedEventArgs(self.ItemsSource[(int)newValue], (int)newValue));
             }
         }
 
@@ -109,7 +111,9 @@ namespace SegmentedCustomControl.Portable.Controls
             }
         }
 
-        // internal methods
+        public event EventHandler<SelectedItemChangedEventArgs> SelectedItemChanged;
+
+        #region Internal Methods
 
         private void CreateButtons()
         {
@@ -197,5 +201,7 @@ namespace SegmentedCustomControl.Portable.Controls
                 }
             }
         }
+
+        #endregion
     }
 }

@@ -10,5 +10,10 @@ namespace SegmentedCustomControl.Portable.Views
             InitializeComponent();
             BindingContext = new MainPageViewModel();
         }
+
+        private void ButtonSegments_OnSelectedItemChanged(object sender, SelectedItemChangedEventArgs e)
+        {
+            SelectedItemLabel.Text = $"{e.SelectedItem} at index {e.SelectedItemIndex}";
+        }
     }
 }
