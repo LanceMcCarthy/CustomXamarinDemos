@@ -4,6 +4,7 @@ This is a set of demos for custom use and edge-case scenarios.
 
 | Overview links | Shortcut Links |
 |------|------|
+| [PdfViewer Document Signature](https://github.com/LanceMcCarthy/CustomXamarinDemos#PdfViewer%20With%20RadSignaturePad) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/PdfViewerWithSignaturePad) |
 | [RichTextEditor Document Signature](https://github.com/LanceMcCarthy/CustomXamarinDemos#RichTextEditor%20Document%20Signtature) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SignaturePanel) |
 | [SignalR and ConversationalUI](https://github.com/LanceMcCarthy/CustomXamarinDemos#SignalR%20and%20ConversationalUI) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SignalRChatDemo) |
 | [IconGenerator Helper](https://github.com/LanceMcCarthy/CustomXamarinDemos#IconGenerator) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/IconAssetGenerator) |
@@ -19,9 +20,15 @@ This is a set of demos for custom use and edge-case scenarios.
 | [Custom Segmented Control](https://github.com/LanceMcCarthy/CustomXamarinDemos#SegmentCustomControl) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SegmentedCustomControl) |
 | [Asynchronous DataTemplate](https://github.com/LanceMcCarthy/CustomXamarinDemos#AsyncTemplateCellDemo) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/AsyncTemplateCellDemo) |
 
+## PdfViewer With RadSignaturePad
+
+this demo uses the PdfDocumentProcessing libraries to locate a signatureWidget in the FixedDocument and replaces it with the image of the user's written signature.
+
+![image](https://user-images.githubusercontent.com/3520532/152617425-620767a4-27c9-4135-a871-3068b10d71cc.png)
+
 ## RichTextEditor Document Signature
 
-This demo shows you how to insert a hand-drawn signature into a RichTextEditor document. From there, you can export the rich document to docx Word document format.
+This demo shows you how to insert a hand-drawn signature into a RichTextEditor document. From there, you can export the rich document to DOCX Word document format.
 
 ![image](https://user-images.githubusercontent.com/3520532/144868496-16625e39-7175-4dba-8efe-a712c8e3acf2.png)
 
