@@ -41,7 +41,7 @@ namespace PdfViewerWithSignaturePad
             }
         }
 
-        public static async Task<byte[]> GetSignatureImageAsync(RadSignaturePad pad, Telerik.XamarinForms.Input.ImageFormat imgFormat = Telerik.XamarinForms.Input.ImageFormat.Jpeg)
+        public static async Task<byte[]> GetSignatureImageAsync(RadSignaturePad pad, Telerik.XamarinForms.Input.ImageFormat imgFormat)
         {
             Debug.WriteLine($"Getting signature Image...", "Signature Image Save");
 
@@ -68,8 +68,8 @@ namespace PdfViewerWithSignaturePad
 
                 imgBytes = imgStream.ToArray();
             }
-
-            Debug.WriteLine($"Signature image saved. Size: {imgBytes.Length} bytes.", "Signature Image Save");
+            
+            Debug.WriteLine($"Signature Image Created! In memory as a {imgFormat} byte[] - Length: {imgBytes.Length}", "SignAndSave");
 
             return imgBytes;
         }

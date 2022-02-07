@@ -3,7 +3,9 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Telerik.Windows.Documents.Extensibility;
 using Telerik.Windows.Documents.Fixed.FormatProviders.Pdf;
+using Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Export;
 using Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Filters;
 using Telerik.Windows.Documents.Fixed.Model;
 using Telerik.Windows.Documents.Fixed.Model.Annotations;
@@ -34,13 +36,13 @@ namespace PdfViewerWithSignaturePad
 
         private async void SignAndSaveButton_OnClicked(object sender, EventArgs e)
         {
-            var imgBytes = await HelperMethods.GetSignatureImageAsync(SignaturePad1, ImageFormat.Png);
+            var imgBytes = await HelperMethods.GetSignatureImageAsync(SignaturePad1, ImageFormat.Jpeg);
             
-            var signedDocument = AddSignatureToDocument(originalDocument, imgBytes);
+            var signedDocument = AddSignatureToDocument(originalDocument, imgBytes, ImageFormat.Jpeg);
             
             if (signedDocument != null)
             {
-                Debug.WriteLine($"Saving signed document as PDF file...", "Result");
+                Debug.WriteLine($"Saving signed document as PDF file...", "SignAndSave");
 
                 // 1.Export the completed FixedDocument to a PDF
                 byte[] pdfFileBytes = new PdfFormatProvider().Export(signedDocument);
@@ -52,7 +54,7 @@ namespace PdfViewerWithSignaturePad
 
                 File.WriteAllBytes(filePath, pdfFileBytes);
 
-                Debug.WriteLine($"showing signed document in PdfViewer", "Result");
+                Debug.WriteLine($"Showing signed document in PdfViewer", "SignAndSave");
 
                 // 3. as a final step, you can show the signed PDF in the PdfViewer
                 PdfViewer1.Source = null;
@@ -60,19 +62,21 @@ namespace PdfViewerWithSignaturePad
             }
             else
             {
-                Debug.WriteLine($"SignedDocument was null", "Result");
+                Debug.WriteLine($"SignedDocument was null", "SignAndSave");
 
                 await DisplayAlert("No Signature Field", "There was no signature field detected in the document, signing incomplete.", "OK");
             }
         }
 
-        private static RadFixedDocument AddSignatureToDocument(RadFixedDocument document, byte[] imageBytes)
+        private static RadFixedDocument AddSignatureToDocument(RadFixedDocument document, byte[] imageBytes, Telerik.XamarinForms.Input.ImageFormat imgFormat)
         {
-            Widget signatureWidget = null;
+            Debug.WriteLine($"AddSignatureToDocument Started, using {imgFormat}.", "Document Processing");
 
+            Widget signatureWidget = null;
+            
+            // We'll use a clone of the original document to perform editing operations with (just in case something goes wrong)
             Debug.WriteLine($"Cloning original document...", "Document Processing");
 
-            // We'll use a clone of the original document to perform editing operations with (just in case something goes wrong)
             RadFixedDocument workingDocument = document.Clone();
 
             Debug.WriteLine($"Document cloned, iterating over FormFields...", "Document Processing");
@@ -105,8 +109,7 @@ namespace PdfViewerWithSignaturePad
                         // WARNING - this demo has the signature on the first page, if yours is on a different page, you'll need to update this
                         var currentPage = workingDocument.Pages.First();
 
-                        // An easy way to edit the document is to use a FixedContentEditor.
-                        // See https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/editing/fixedcontenteditor
+                        // An easy way to edit the document is to use a FixedContentEditor. See https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/editing/fixedcontenteditor
 
                         Debug.WriteLine($"Starting up a FixedContentEditor at the first page...", "Document Processing");
 
@@ -127,23 +130,42 @@ namespace PdfViewerWithSignaturePad
                         var imageHeight = Convert.ToInt32(signatureWidget.Rect.Height);
                         var imageWidth = Convert.ToInt32(signatureWidget.Rect.Width);
 
-                        Debug.WriteLine($"Drawing image with Width: {imageWidth}, Height: {imageHeight}", "Document Processing");
 
-                        // Because we're in a .NET Standard 2.0 project type, we need to manally handle the pixels in the byte[] for transparency
-                        HelperMethods.GetRawDataFromRgbaSource(imageBytes, out var data, out var alpha);
+                        Debug.WriteLine($"Processing {imgFormat} image - Width: {imageWidth}, Height: {imageHeight}", "Document Processing");
 
-                        byte[] rawAlpha = HelperMethods.CompressDataWithDeflate(alpha);
+                        Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource imageSource = null;
 
-                        EncodedImageData imageData = new EncodedImageData(
-                            imageBytes,
-                            rawAlpha,
-                            8,
-                            imageWidth,
-                            imageHeight,
-                            ColorSpaceNames.DeviceRgb,
-                            new string[] { PdfFilterNames.FlateDecode });
+                        // Check what the image format is, we use different paths depending on PNG or JPEG to create ImageSource
+                        if (imgFormat == ImageFormat.Png)
+                        {
+                            // Because we're in a .NET Standard 2.0 project type, we need to manually handle the pixels in the byte[] for transparency
+                            HelperMethods.GetRawDataFromRgbaSource(imageBytes, out var data, out var alpha);
 
-                        var imageSource = new Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource(imageData);
+                            byte[] rawAlpha = HelperMethods.CompressDataWithDeflate(alpha);
+
+                            EncodedImageData imageData = new EncodedImageData(
+                                imageBytes,
+                                rawAlpha,
+                                8,
+                                imageWidth,
+                                imageHeight,
+                                ColorSpaceNames.DeviceRgb,
+                                new string[] { PdfFilterNames.FlateDecode });
+                            
+                            imageSource = new Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource(imageData);
+                        }
+                        else if (imgFormat == ImageFormat.Jpeg)
+                        {
+                            using (var imgStream = new MemoryStream(imageBytes))
+                            {
+                                // For JPEG, use the extensibility manager to convert the image data to jpeg
+                                FixedExtensibilityManager.JpegImageConverter.TryConvertToJpegImageData(imageBytes, ImageQuality.Low, out var jpegImageData);
+
+                                imageSource = new Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource(new MemoryStream(jpegImageData));
+                            }
+                        }
+
+                        Debug.WriteLine($"Drawing {imgFormat} image - Width: {imageWidth}, Height: {imageHeight}", "Document Processing");
 
                         editor.DrawImage(imageSource, imageWidth, imageHeight);
                         
@@ -151,12 +173,10 @@ namespace PdfViewerWithSignaturePad
                     }
                 }
             }
-
-
+            
             if (signatureWidget != null)
             {
                 // Finally, remove the SignatureWidget
-
                 Debug.WriteLine($"Draw complete. Attempting to remove SignatureWidget with the field name of {signatureWidget.Field.Name}...", "Document Processing");
 
                 if (workingDocument.AcroForm.FormFields.Contains(signatureWidget.Field.Name))
