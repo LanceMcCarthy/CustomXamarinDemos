@@ -70,7 +70,7 @@ namespace PdfViewerWithSignaturePad
 
         private static RadFixedDocument AddSignatureToDocument(RadFixedDocument document, byte[] imageBytes, Telerik.XamarinForms.Input.ImageFormat imgFormat)
         {
-            Debug.WriteLine($"AddSignatureToDocument Started, using {imgFormat}.", "Document Processing");
+            Debug.WriteLine($"AddSignatureToDocument method starting, using image type: {imgFormat}.", "Document Processing");
 
             Widget signatureWidget = null;
             
@@ -79,29 +79,26 @@ namespace PdfViewerWithSignaturePad
 
             RadFixedDocument workingDocument = document.Clone();
 
-            Debug.WriteLine($"Document cloned, iterating over FormFields...", "Document Processing");
-
             var formFieldsCount = workingDocument.AcroForm.FormFields.Count;
 
-            Debug.WriteLine($"Found {formFieldsCount} FormFields!", "Document Processing");
+            Debug.WriteLine($"Document has {formFieldsCount} FormField(s). Iterating over FormFields...", "Document Processing");
 
             foreach (var formField in workingDocument.AcroForm.FormFields)
             {
                 var widgetsCount = formField.Widgets.Count();
 
-                Debug.WriteLine($"Found {widgetsCount} Widgets in the {formField.Name} FormField", "Document Processing");
+                Debug.WriteLine($"Found {widgetsCount} widget(s) in the {formField.Name}. Iterating over widgets...", "Document Processing");
 
                 foreach (var widget in formField.Widgets)
                 {
-                    Debug.WriteLine($"Found a {widget.WidgetContentType} in {widget.Field.Name} widget", "Document Processing");
+                    Debug.WriteLine($"Found {widget.WidgetContentType} in the {widget.Field.Name} widget", "Document Processing");
 
                     // We've discovered a SignatureWidget in the document.
 
                     if (widget.WidgetContentType == WidgetContentType.SignatureContent)
                     {
                         // We've discovered a SignatureWidget in the document.
-                        Debug.WriteLine($"***** Discovered a SignatureWidget! *****", "Document Processing");
-                        Debug.WriteLine($"Widget Located at: X: {widget.Rect.X}, Y: {widget.Rect.Y}", "Document Processing");
+                        Debug.WriteLine($"***** SignatureWidget detected! Located at: X: {widget.Rect.X}, Y: {widget.Rect.Y} *****", "Document Processing");
 
                         // IMPORTANT: We're creating another references to this widget to differentiate it and operate on
                         signatureWidget = widget;
@@ -117,33 +114,34 @@ namespace PdfViewerWithSignaturePad
 
                         Debug.WriteLine($"Editor Created, starting position at {editor.Position.Matrix.OffsetX}, {editor.Position.Matrix.OffsetY}", "Document Processing");
 
-                        // Move the Editor to the same location on the page that the SignatureWidget was
-                        // See https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/concepts/position
+                        // Move the Editor to the same location on the page that the SignatureWidget was. See https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/concepts/position
                         editor.Position.Translate(signatureWidget.Rect.X, signatureWidget.Rect.Y);
 
-                        Debug.WriteLine($"Moved Editor to position - Matrix.OffsetX: {editor.Position.Matrix.OffsetX}, Matrix.OffsetY: {editor.Position.Matrix.OffsetY}", "Document Processing");
-
-                        Debug.WriteLine($"Loading JPEG byte[] into MemoryStream...", "Document Processing");
-
-                        // Draw the image on the document
-                        // See https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/editing/fixedcontenteditor#inserting-image
+                        Debug.WriteLine($"Editor moved to position - Matrix.OffsetX: {editor.Position.Matrix.OffsetX}, Matrix.OffsetY: {editor.Position.Matrix.OffsetY}", "Document Processing");
+                        
+                        // Draw the image on the document. See https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/editing/fixedcontenteditor#inserting-image
                         var imageHeight = Convert.ToInt32(signatureWidget.Rect.Height);
                         var imageWidth = Convert.ToInt32(signatureWidget.Rect.Width);
-
-
-                        Debug.WriteLine($"Processing {imgFormat} image - Width: {imageWidth}, Height: {imageHeight}", "Document Processing");
+                        
+                        Debug.WriteLine($"Processing {imgFormat} image. Desired dimensions - Width: {imageWidth}, Height: {imageHeight}", "Document Processing");
 
                         Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource imageSource = null;
 
                         // Check what the image format is, we use different paths depending on PNG or JPEG to create ImageSource
                         if (imgFormat == ImageFormat.Png)
                         {
+                            Debug.WriteLine($"Processing PND. Separating RGB data and Alpha data...", "Document Processing");
+
                             // Because we're in a .NET Standard 2.0 project type, we need to manually handle the pixels in the byte[] for transparency
-                            HelperMethods.GetRawDataFromRgbaSource(imageBytes, out var data, out var alpha);
+                            HelperMethods.GetRawDataFromRgbaSource(imageBytes, out var rgbData, out var alphaData);
 
-                            byte[] rawAlpha = HelperMethods.CompressDataWithDeflate(alpha);
+                            Debug.WriteLine($"RGB data length: {rgbData.Length} and Alpha data length: {alphaData.Length} ", "Document Processing");
 
-                            EncodedImageData imageData = new EncodedImageData(
+                            byte[] rawAlpha = HelperMethods.CompressDataWithDeflate(alphaData);
+
+                            Debug.WriteLine($"Compressed Alpha data - length: {rawAlpha.Length}. Creating EncodedImageData...", "Document Processing");
+
+                            var imageData = new EncodedImageData(
                                 imageBytes,
                                 rawAlpha,
                                 8,
@@ -151,17 +149,24 @@ namespace PdfViewerWithSignaturePad
                                 imageHeight,
                                 ColorSpaceNames.DeviceRgb,
                                 new string[] { PdfFilterNames.FlateDecode });
-                            
+
+                            Debug.WriteLine($"Creating ImageSource...", "Document Processing");
+
                             imageSource = new Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource(imageData);
                         }
                         else if (imgFormat == ImageFormat.Jpeg)
                         {
-                            using (var imgStream = new MemoryStream(imageBytes))
-                            {
-                                // For JPEG, use the extensibility manager to convert the image data to jpeg
-                                FixedExtensibilityManager.JpegImageConverter.TryConvertToJpegImageData(imageBytes, ImageQuality.Low, out var jpegImageData);
+                            Debug.WriteLine($"Loading JPEG byte[] into TryConvertToJpegImageData...", "Document Processing");
+                            
+                            FixedExtensibilityManager.JpegImageConverter.TryConvertToJpegImageData(imageBytes, ImageQuality.Low, out var jpegImageData);
+                            
+                            Debug.WriteLine($"Loading converted JPEG byte[] into MemoryStream...", "Document Processing");
 
-                                imageSource = new Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource(new MemoryStream(jpegImageData));
+                            using (var imgStream = new MemoryStream(jpegImageData))
+                            {
+                                Debug.WriteLine($"Creating ImageSource...", "Document Processing");
+
+                                imageSource = new Telerik.Windows.Documents.Fixed.Model.Resources.ImageSource(imgStream);
                             }
                         }
 
