@@ -5,31 +5,22 @@
              xmlns:input="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
              x:Class="PdfViewerWithSignaturePad.MainPage">
 
-    <Grid RowDefinitions="3*, Auto, Auto"
-          ColumnDefinitions="*,*">
+    <Grid RowDefinitions="3*, Auto, Auto">
         <pdfViewer:RadPdfViewer x:Name="PdfViewer1"
-                                Grid.Row="0"
-                                Grid.Column="0"
-                                Grid.ColumnSpan="2"/>
+                                Grid.Row="0"/>
 
         <input:RadSignaturePad x:Name="SignaturePad1"
                                HeightRequest="150"
-                               Grid.Row="1"
-                               Grid.Column="0"
-                               Grid.ColumnSpan="2" />
-
-        <input:RadButton x:Name="LoadButton"
-                         Text="Load"
-                         Clicked="LoadButton_OnClicked"
-                         Grid.Row="2"
-                         Grid.Column="0"
-                         Grid.ColumnSpan="1" />
+                               Grid.Row="1"/>
 
         <input:RadButton x:Name="SignAndSaveButton"
                          Text="Sign"
                          Clicked="SignAndSaveButton_OnClicked"
-                         Grid.Row="2"
-                         Grid.Column="1"
-                         Grid.ColumnSpan="1" />
+                         HorizontalOptions="Fill"
+                         BorderColor="DarkGreen"
+                         BorderThickness="2"
+                         TextColor="DarkGreen"
+                         BackgroundColor="LightBlue"
+                         Grid.Row="2"/>
     </Grid>
 </ContentPage>
