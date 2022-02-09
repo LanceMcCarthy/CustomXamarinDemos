@@ -24,7 +24,7 @@ This is a set of demos for custom use and edge-case scenarios.
 
 This demo uses the PdfDocumentProcessing libraries to locate a SignatureWidget in the RadFixedDocument and replaces it with the written signature in a RadSignaturePad.
 
-![image](https://user-images.githubusercontent.com/3520532/152846980-019c1cc5-7331-416a-b291-78444a58d80f.png)
+![signaturepad-pdf-insert-written-signature](https://user-images.githubusercontent.com/3520532/153298646-0435899e-46c8-4226-8434-5b259bcfcb21.png)
 
 ## RichTextEditor Document Signature
 
