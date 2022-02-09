@@ -13,14 +13,25 @@
                                HeightRequest="150"
                                Grid.Row="1"/>
 
-        <input:RadButton x:Name="SignAndSaveButton"
-                         Text="Sign"
-                         Clicked="SignAndSaveButton_OnClicked"
-                         HorizontalOptions="Fill"
-                         BorderColor="DarkGreen"
-                         BorderThickness="2"
-                         TextColor="DarkGreen"
-                         BackgroundColor="LightBlue"
-                         Grid.Row="2"/>
+        <Grid ColumnDefinitions="Auto,*, *"
+              Grid.Row="2">
+            <input:RadComboBox x:Name="FormatComboBox"
+                               SelectionChanged="FormatComboBox_OnSelectionChanged" 
+                               Margin="5"/>
+
+            <input:RadButton x:Name="ClearButton"
+                             Text="Clear"
+                             Clicked="ClearButton_OnClicked"
+                             HorizontalOptions="Fill"
+                             Margin="0,5,5,5"
+                             Grid.Column="1" />
+
+            <input:RadButton x:Name="SignAndSaveButton"
+                             Text="Sign"
+                             Clicked="SignAndSaveButton_OnClicked"
+                             HorizontalOptions="Fill"
+                             Margin="0,5,5,5"
+                             Grid.Column="2" />
+        </Grid>
     </Grid>
 </ContentPage>
