@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:telerikGrid="clr-namespace:Telerik.XamarinForms.DataGrid;assembly=Telerik.XamarinForms.DataGrid"
+             xmlns:portable="clr-namespace:ReverseLoadOnDemand.Portable;assembly=ReverseLoadOnDemand.Portable"
+             mc:Ignorable="d"
+             x:Class="ReverseLoadOnDemand.Portable.MainPage"
+             x:Name="ThisPage">
+
+    <Grid>
+        <telerikGrid:RadDataGrid x:Name="dataGrid"
+                                 LoadOnDemand="DataGrid_LoadOnDemand"
+                                 LoadOnDemandMode="Automatic"
+                                 AutoGenerateColumns="False">
+            <telerikGrid:RadDataGrid.Columns>
+                <telerikGrid:DataGridTextColumn PropertyName="Name"
+                                                HeaderText="Name">
+                    <telerikGrid:DataGridColumn.CellContentTemplate>
+                        <DataTemplate>
+                            <portable:MyLabel Text="{Binding Name}"
+                                              VerticalOptions="Center"
+                                              HeightRequest="50" />
+                        </DataTemplate>
+                    </telerikGrid:DataGridColumn.CellContentTemplate>
+                </telerikGrid:DataGridTextColumn>
+            </telerikGrid:RadDataGrid.Columns>
+        </telerikGrid:RadDataGrid>
+    </Grid>
+
+</ContentPage>
