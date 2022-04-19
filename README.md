@@ -2,23 +2,16 @@
 
 This is a set of demos for custom use and edge-case scenarios.
 
-| Overview links | Shortcut Links |
-|------|------|
-| [PdfViewer Document Signature](https://github.com/LanceMcCarthy/CustomXamarinDemos#PdfViewer%20With%20RadSignaturePad) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/PdfViewerWithSignaturePad) |
-| [RichTextEditor Document Signature](https://github.com/LanceMcCarthy/CustomXamarinDemos#RichTextEditor%20Document%20Signtature) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SignaturePanel) |
-| [SignalR and ConversationalUI](https://github.com/LanceMcCarthy/CustomXamarinDemos#SignalR%20and%20ConversationalUI) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SignalRChatDemo) |
-| [IconGenerator Helper](https://github.com/LanceMcCarthy/CustomXamarinDemos#IconGenerator) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/IconAssetGenerator) |
-| [Real-time Filtering Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#RealTimeFiltering) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RealTimeFilteringDemos) |
-| [Cascading AutoCompleteViews Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#CascadingAutoCompleteViews) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CascadingAutoCompleteViews) |
-| [Custom Series Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#customserieslabels) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CustomSeriesLabels) |
-| [Render Image Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#renderimage) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RenderImage) |
-| [Telerik Theme Editor](https://github.com/LanceMcCarthy/CustomXamarinDemos#TelerikThemeEditor) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/TelerikThemeEditor) |
-| [Workouts](https://github.com/LanceMcCarthy/CustomXamarinDemos#Workouts) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/Workouts) |
-| [Drawer Dismiss Effect](https://github.com/LanceMcCarthy/CustomXamarinDemos#DrawerDismissEffect) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/DrawerDismissEffect) |
-| [Android Call Detector](https://github.com/LanceMcCarthy/CustomXamarinDemos#AndroidCallDetector)  | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CallDetector) |
-| [ReportViewer Control](https://github.com/LanceMcCarthy/CustomXamarinDemos#ReportViewer)  | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/XFReportViewerDemo) |
-| [Custom Segmented Control](https://github.com/LanceMcCarthy/CustomXamarinDemos#SegmentCustomControl) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SegmentedCustomControl) |
-| [Asynchronous DataTemplate](https://github.com/LanceMcCarthy/CustomXamarinDemos#AsyncTemplateCellDemo) | [source code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/AsyncTemplateCellDemo) |
+| Demo Overview | Source || Demo Overview | Source |
+|------|------|-|------|------|
+| [PdfViewer Document Signature](https://github.com/LanceMcCarthy/CustomXamarinDemos#PdfViewer%20With%20RadSignaturePad) | [code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/PdfViewerWithSignaturePad) || [Asynchronous DataTemplate](https://github.com/LanceMcCarthy/CustomXamarinDemos#AsyncTemplateCellDemo) | [code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/AsyncTemplateCellDemo) |
+| [RichTextEditor Document Signature](https://github.com/LanceMcCarthy/CustomXamarinDemos#RichTextEditor%20Document%20Signtature) | [code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SignaturePanel) || [Reverse LoadOnDemand](https://github.com/LanceMcCarthy/CustomXamarinDemos#Reverse%20LoadOnDemand) | [code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/ReverseLoadOnDemand) |
+| [SignalR and ConversationalUI](https://github.com/LanceMcCarthy/CustomXamarinDemos#SignalR%20and%20ConversationalUI) | [code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SignalRChatDemo) || [ReportViewer Control](https://github.com/LanceMcCarthy/CustomXamarinDemos#ReportViewer)  | [code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/XFReportViewerDemo) |
+| [IconGenerator Helper](https://github.com/LanceMcCarthy/CustomXamarinDemos#IconGenerator) | [code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/IconAssetGenerator) || [Render Image Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#renderimage) | [code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RenderImage) |
+| [Custom Realtime Filtering](https://github.com/LanceMcCarthy/CustomXamarinDemos#RealTimeFiltering) | [code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/RealTimeFilteringDemos) || [Custom Segmented Control](https://github.com/LanceMcCarthy/CustomXamarinDemos#SegmentCustomControl) | [code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/SegmentedCustomControl) |
+| [Cascading AutoCompleteViews](https://github.com/LanceMcCarthy/CustomXamarinDemos#CascadingAutoCompleteViews) | [code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CascadingAutoCompleteViews) || [Drawer Dismiss Effect](https://github.com/LanceMcCarthy/CustomXamarinDemos#DrawerDismissEffect) | [code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/DrawerDismissEffect) |
+| [Custom Series Demo](https://github.com/LanceMcCarthy/CustomXamarinDemos#customserieslabels) | [code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CustomSeriesLabels) || [Android Call Detector](https://github.com/LanceMcCarthy/CustomXamarinDemos#AndroidCallDetector)  | [code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/CallDetector) |
+| [Telerik Theme Editor](https://github.com/LanceMcCarthy/CustomXamarinDemos#TelerikThemeEditor) | [code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/TelerikThemeEditor) || [Workouts](https://github.com/LanceMcCarthy/CustomXamarinDemos#Workouts) | [code](https://github.com/LanceMcCarthy/CustomXamarinDemos/tree/main/src/Workouts) |
 
 ## PdfViewer With RadSignaturePad
 
@@ -37,6 +30,18 @@ This demo shows you how to insert a hand-drawn signature into a RichTextEditor d
 A demo that showcases the use of **SignalR** with the UI for Xamarin `RadChat` control. The source code also includes the SignalR Hub project (ASP.NET Core 2.2 application).
 
 ![SignalR Demo](https://user-images.githubusercontent.com/3520532/60218868-a1b68b00-983e-11e9-8bec-9d6c934e90b5.png)
+
+## Reverse LoadOnDemand
+
+This demo project shows you how to implement your own data virtualization feature by dynamically fetching the **previous** or **next** set of data items as the user is scrolling. This effectively gives you both normal and reverse LoadOnDemand.
+
+![reverse-lod](https://user-images.githubusercontent.com/3520532/164092713-f55cb393-8bf9-4216-88fc-a630e19baf46.png)
+
+## AsyncTemplateCellDemo
+
+This project shows how to asynchronously load additional data when a ListView cell loads, without blocking the UI thread.
+
+![image](https://user-images.githubusercontent.com/3520532/96622330-ceb26b00-12d7-11eb-82c7-014470318c05.png)
 
 ## IconGenerator
 
@@ -107,12 +112,6 @@ A Xamarin.Forms Android application that uses Android P (SDK 28) telephony featu
 ## DrawerDismissEffect
 
 This project shows how to use a Xamarin Platform Effect to disable the RadSideDrawer's ability to dismiss the drawer when tapping outside of the drawer area.
-
-## AsyncTemplateCellDemo
-
-This project shows how to asynchronously load additional data when a ListView cell loads, without blocking the UI thread.
-
-![image](https://user-images.githubusercontent.com/3520532/96622330-ceb26b00-12d7-11eb-82c7-014470318c05.png)
 
 ## ReportViewer
 
