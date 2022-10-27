@@ -1,19 +1,21 @@
+using ReverseLoadOnDemand.Portable.Services;
 using Xamarin.Forms;
 
-namespace ReverseLoadOnDemand.Portable
+namespace ReverseLoadOnDemand.Portable;
+
+public partial class App : Application
 {
-    public partial class App : Application
+    public static ItemDataService DataService { get; set; }
+    public static ChatDataService ChatService { get; set; }
+
+    public App()
     {
-        public static ItemDataService DataService { get; set; }
+        InitializeComponent();
 
-        public App()
-        {
-            InitializeComponent();
+        // Mocking a DependencyInjection service
+        App.DataService = new ItemDataService();
+        App.ChatService = new ChatDataService();
 
-            // Mocking a DependencyInjection service
-            App.DataService = new ItemDataService();
-
-            MainPage = new MainPage();
-        }
+        MainPage = new RootPage();
     }
 }

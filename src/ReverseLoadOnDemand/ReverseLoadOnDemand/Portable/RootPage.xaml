@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:ReverseLoadOnDemand.Portable.Views;assembly=ReverseLoadOnDemand.Portable"
+             xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             x:Class="ReverseLoadOnDemand.Portable.RootPage">
+    <Grid>
+        <primitives:RadSideDrawer x:Name="drawer"
+                                  DrawerTransitionType="SlideInOnTop"
+                                  DrawerLength="200">
+            <primitives:RadSideDrawer.MainContent>
+                <views:DataGridView />
+            </primitives:RadSideDrawer.MainContent>
+            <primitives:RadSideDrawer.DrawerContent>
+                <Grid BackgroundColor="AntiqueWhite">
+                    <StackLayout>
+                        <Grid Background="Black"
+                              HeightRequest="200">
+                            <Label Text="My App"
+                                   TextColor="AntiqueWhite"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        </Grid>
+                        <Button Text="DataGrid"
+                                Clicked="DataGridViewButton_OnClicked" />
+                        <Button Text="Chat"
+                                Clicked="ChatViewButton_OnClicked" />
+                    </StackLayout>
+                </Grid>
+            </primitives:RadSideDrawer.DrawerContent>
+        </primitives:RadSideDrawer>
+
+        <Button Text="MENU"
+                VerticalOptions="Start"
+                HorizontalOptions="End"
+                Margin="10"
+                Clicked="Button_OnClicked" />
+    </Grid>
+</ContentPage>

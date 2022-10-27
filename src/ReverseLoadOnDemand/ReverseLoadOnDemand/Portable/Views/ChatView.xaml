@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:telerikChat="clr-namespace:Telerik.XamarinForms.ConversationalUI;assembly=Telerik.XamarinForms.ConversationalUI"
+             xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             xmlns:controls="clr-namespace:ReverseLoadOnDemand.Portable.Controls;assembly=ReverseLoadOnDemand.Portable"
+             xmlns:models="clr-namespace:ReverseLoadOnDemand.Portable.Models;assembly=ReverseLoadOnDemand.Portable"
+             x:Class="ReverseLoadOnDemand.Portable.Views.ChatView">
+
+    <ContentView.Resources>
+        <Style x:Key="BaseMessageLabelStyle"
+               TargetType="controls:MyChatLabel">
+            <Setter Property="Margin"
+                    Value="20, 5, 20, 5" />
+            <Setter Property="FontSize"
+                    Value="16" />
+            <Setter Property="LineBreakMode"
+                    Value="WordWrap" />
+            <Setter Property="TextColor"
+                    Value="Black" />
+            <Setter Property="HorizontalOptions"
+                    Value="Start" />
+
+        </Style>
+    </ContentView.Resources>
+
+    <Grid RowDefinitions="*,Auto">
+        <telerikChat:RadChat x:Name="Chat1"
+                             PropertyChanged="Chat1_PropertyChanged"
+                             Grid.Row="0">
+            <telerikChat:RadChat.ItemConverter>
+                <models:ChatItemConverter />
+            </telerikChat:RadChat.ItemConverter>
+            <telerikChat:RadChat.ItemTemplateSelector>
+                <models:MyChatItemTemplateSelector>
+                    <models:MyChatItemTemplateSelector.RightTemplate>
+                        <DataTemplate>
+                            <StackLayout Orientation="Horizontal"
+                                         Padding="5"
+                                         Spacing="5"
+                                         HorizontalOptions="End">
+                                <primitives:RadBorder BackgroundColor="#E0E0E0"
+                                                      CornerRadius="7, 0, 7, 7">
+                                    <StackLayout Spacing="5"
+                                                 Padding="5">
+                                        <Label Text="{Binding Author.Name}"
+                                               FontSize="Micro"
+                                               FontAttributes="Italic"/>
+                                        <controls:MyChatLabel Text="{Binding Text}"
+                                                              Style="{StaticResource BaseMessageLabelStyle}" />
+                                    </StackLayout>
+                                </primitives:RadBorder>
+
+                                <Image Source="{Binding Author.Avatar}"
+                                       Margin="5"
+                                       WidthRequest="45"
+                                       HeightRequest="45"
+                                       VerticalOptions="Start"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </models:MyChatItemTemplateSelector.RightTemplate>
+                    <models:MyChatItemTemplateSelector.LeftTemplate>
+                        <DataTemplate>
+                            <StackLayout Orientation="Horizontal"
+                                         HorizontalOptions="Start"
+                                         Padding="5"
+                                         Spacing="5">
+                                <Image Source="{Binding Author.Avatar}"
+                                       Margin="5"
+                                       WidthRequest="45"
+                                       HeightRequest="45"
+                                       VerticalOptions="Start" />
+                                <primitives:RadBorder BackgroundColor="#E0E0E0"
+                                                      CornerRadius="0, 7, 7, 7">
+                                    <StackLayout Spacing="5">
+                                        <Label Text="{Binding Author.Name}"
+                                               FontSize="Micro"
+                                               FontAttributes="Italic" />
+                                        <controls:MyChatLabel Text="{Binding Text}"
+                                                              Style="{StaticResource BaseMessageLabelStyle}" />
+                                    </StackLayout>
+                                </primitives:RadBorder>
+                            </StackLayout>
+                        </DataTemplate>
+                    </models:MyChatItemTemplateSelector.LeftTemplate>
+                </models:MyChatItemTemplateSelector>
+            </telerikChat:RadChat.ItemTemplateSelector>
+        </telerikChat:RadChat>
+
+        <primitives:RadLinearProgressBar x:Name="ProgBar"
+                                         Value="100"
+                                         ValueDisplayMode="None"
+                                         IsIndeterminate="True"
+                                         IndeterminateAnimationEasing="CubicInOut"
+                                         TrackFill="LightBlue"
+                                         ProgressFill="#2374FF"
+                                         Grid.Row="1" />
+    </Grid>
+</ContentView>
